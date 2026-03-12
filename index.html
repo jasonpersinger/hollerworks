@@ -334,7 +334,113 @@
       }
     }
 
-    /* renderPost, renderSubmit, renderAdmin added in Tasks 5-7 */
+    // ── Post Detail ───────────────────────────────────────────────────────
+    async function renderPost(el, id) {
+      try {
+        const snap = await getDoc(doc(db, 'posts', id));
+
+        if (!snap.exists() || snap.data().status !== 'approved') {
+          el.innerHTML = '';
+          const back = document.createElement('a');
+          back.className = 'back-link';
+          back.href = '#/';
+          back.textContent = '← back to board';
+          const errDiv = document.createElement('div');
+          errDiv.className = 'msg msg-err';
+          errDiv.textContent = 'post not found.';
+          el.appendChild(back);
+          el.appendChild(errDiv);
+          return;
+        }
+
+        const p = snap.data();
+        const date = p.createdAt?.toDate
+          ? p.createdAt.toDate().toLocaleDateString('en-US',
+              { year: 'numeric', month: 'short', day: 'numeric' })
+          : '';
+
+        el.innerHTML = '';
+
+        const back = document.createElement('a');
+        back.className = 'back-link';
+        back.href = '#/';
+        back.textContent = '← back to board';
+
+        const titleEl = document.createElement('div');
+        titleEl.className = 'post-detail-title';
+        titleEl.textContent = p.title;
+
+        const metaEl = document.createElement('div');
+        metaEl.className = 'detail-meta';
+
+        const metaItems = [
+          { label: 'type',     value: p.type,         isBadge: true },
+          { label: 'category', value: p.category },
+          { label: 'location', value: p.location },
+          { label: 'comp',     value: p.compensation },
+          ...(date ? [{ label: 'posted', value: date }] : [])
+        ];
+
+        metaItems.forEach(({ label, value, isBadge }) => {
+          const row = document.createElement('div');
+          row.className = 'meta-row';
+          const lbl = document.createElement('span');
+          lbl.className = 'meta-label';
+          lbl.textContent = label;
+          row.appendChild(lbl);
+          if (isBadge) {
+            const badge = document.createElement('span');
+            badge.className = `badge badge-${value === 'need' ? 'need' : 'offer'}`;
+            badge.textContent = value === 'need' ? 'need' : 'offer';
+            row.appendChild(badge);
+          } else {
+            row.appendChild(document.createTextNode(value || ''));
+          }
+          metaEl.appendChild(row);
+        });
+
+        el.appendChild(back);
+        el.appendChild(titleEl);
+        el.appendChild(metaEl);
+
+        if (p.description) {
+          const desc = document.createElement('div');
+          desc.className = 'detail-desc';
+          desc.textContent = p.description;
+          el.appendChild(desc);
+        }
+
+        const contactRow = document.createElement('div');
+        contactRow.className = 'meta-row';
+        contactRow.style.marginTop = '20px';
+        contactRow.style.fontSize = '12px';
+        const contactLbl = document.createElement('span');
+        contactLbl.className = 'meta-label';
+        contactLbl.textContent = 'contact';
+        const contactLink = document.createElement('a');
+        // Guard against javascript: URLs — only allow mailto: and http(s):
+        if (isEmail(p.contact)) {
+          contactLink.href = `mailto:${p.contact}`;
+        } else if (p.contact && (p.contact.startsWith('https://') || p.contact.startsWith('http://'))) {
+          contactLink.href = p.contact;
+          contactLink.target = '_blank';
+          contactLink.rel = 'noopener noreferrer';
+        } else {
+          // Unknown scheme — render as text, not a link
+          contactLink.removeAttribute('href');
+        }
+        contactLink.textContent = p.contact;
+        contactRow.appendChild(contactLbl);
+        contactRow.appendChild(contactLink);
+        el.appendChild(contactRow);
+
+      } catch (err) {
+        console.error(err);
+        el.textContent = `error: ${err.message}`;
+      }
+    }
+
+    /* renderSubmit, renderAdmin added in Tasks 6-7 */
 
     render(); // initial render — must be after all view functions
   </script>
