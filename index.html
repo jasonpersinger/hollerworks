@@ -610,7 +610,7 @@
           adminAuthed = true;
           renderPendingQueue(el);
         } else {
-          pwMsg.innerHTML = '';
+          pwMsg.textContent = '';
           const err = document.createElement('div');
           err.className = 'msg msg-err';
           err.textContent = 'incorrect password';
