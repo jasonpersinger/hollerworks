@@ -440,7 +440,130 @@
       }
     }
 
-    /* renderSubmit, renderAdmin added in Tasks 6-7 */
+    // ── Submit View ───────────────────────────────────────────────────────
+    const CATEGORIES = [
+      'Software & Dev', 'IT & Support', 'Data & AI', 'Design & UX',
+      'Admin & Operations', 'Finance & Accounting', 'HR & Recruiting',
+      'Marketing & Content', 'Remote-Friendly', 'Other'
+    ];
+
+    function renderSubmit(el) {
+      el.innerHTML = '';
+
+      const heading = document.createElement('div');
+      heading.className = 'page-heading';
+      heading.textContent = '// submit a post';
+
+      const msgEl = document.createElement('div');
+      msgEl.id = 'formMsg';
+
+      const form = document.createElement('form');
+      form.id = 'submitForm';
+      form.autocomplete = 'off';
+
+      form.innerHTML = `
+        <div class="form-group">
+          <label class="form-label">type *</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="type" value="need" required> need</label>
+            <label class="radio-label"><input type="radio" name="type" value="offer"> offer</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-title">title * <span id="titleCount" class="char-count" style="float:right">0/80</span></label>
+          <input class="form-input" id="f-title" type="text" maxlength="80" required placeholder="e.g. wordpress dev needed for small biz site">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-cat">category *</label>
+          <select class="form-select" id="f-cat" required>
+            <option value="">— select —</option>
+            ${CATEGORIES.map(c => `<option value="${escHtml(c)}">${escHtml(c)}</option>`).join('')}
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-loc">location *</label>
+          <input class="form-input" id="f-loc" type="text" required placeholder='e.g. roanoke, va / "remote"'>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-comp">compensation * — no ghost posts</label>
+          <input class="form-input" id="f-comp" type="text" required placeholder="e.g. $25/hr · trade · negotiate">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-desc">description <span id="descCount" class="char-count" style="float:right">0/500</span></label>
+          <textarea class="form-textarea" id="f-desc" maxlength="500" placeholder="optional — more detail"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-contact">contact * (email or URL)</label>
+          <input class="form-input" id="f-contact" type="text" required placeholder="you@example.com or https://...">
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">submit post</button>`;
+
+      el.appendChild(heading);
+      el.appendChild(msgEl);
+      el.appendChild(form);
+
+      form.querySelector('#f-title').addEventListener('input', function() {
+        form.querySelector('#titleCount').textContent = `${this.value.length}/80`;
+      });
+      form.querySelector('#f-desc').addEventListener('input', function() {
+        form.querySelector('#descCount').textContent = `${this.value.length}/500`;
+      });
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('#submitBtn');
+        msgEl.innerHTML = '';
+        btn.disabled = true;
+        btn.textContent = 'submitting...';
+
+        const type    = form.querySelector('input[name="type"]:checked')?.value;
+        const title   = form.querySelector('#f-title').value.trim();
+        const cat     = form.querySelector('#f-cat').value;
+        const loc     = form.querySelector('#f-loc').value.trim();
+        const comp    = form.querySelector('#f-comp').value.trim();
+        const desc    = form.querySelector('#f-desc').value.trim();
+        const contact = form.querySelector('#f-contact').value.trim();
+
+        if (!type || !title || !cat || !loc || !comp || !contact) {
+          const errDiv = document.createElement('div');
+          errDiv.className = 'msg msg-err';
+          errDiv.textContent = 'all required fields must be filled in.';
+          msgEl.appendChild(errDiv);
+          btn.disabled = false;
+          btn.textContent = 'submit post';
+          return;
+        }
+
+        try {
+          await addDoc(collection(db, 'posts'), {
+            type, title, category: cat, location: loc,
+            compensation: comp, description: desc, contact,
+            status: 'pending', createdAt: serverTimestamp()
+          });
+
+          el.innerHTML = '';
+          const ok = document.createElement('div');
+          ok.className = 'msg msg-ok';
+          ok.textContent = 'post submitted — it will appear on the board after review. thanks.';
+          const backLink = document.createElement('a');
+          backLink.href = '#/';
+          backLink.style.fontSize = '12px';
+          backLink.textContent = '← back to board';
+          el.appendChild(ok);
+          el.appendChild(backLink);
+        } catch (err) {
+          console.error(err);
+          const errDiv = document.createElement('div');
+          errDiv.className = 'msg msg-err';
+          errDiv.textContent = `submit failed: ${err.message}`;
+          msgEl.appendChild(errDiv);
+          btn.disabled = false;
+          btn.textContent = 'submit post';
+        }
+      });
+    }
+
+    /* renderAdmin added in Task 7 */
 
     render(); // initial render — must be after all view functions
   </script>
