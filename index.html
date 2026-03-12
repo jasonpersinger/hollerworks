@@ -563,7 +563,170 @@
       });
     }
 
-    /* renderAdmin added in Task 7 */
+    // ── Admin View ────────────────────────────────────────────────────────
+    let adminAuthed = false;
+
+    async function renderAdmin(el) {
+      if (!adminAuthed) { renderPasswordGate(el); return; }
+      await renderPendingQueue(el);
+    }
+
+    function renderPasswordGate(el) {
+      el.innerHTML = '';
+
+      const heading = document.createElement('div');
+      heading.className = 'page-heading';
+      heading.textContent = '// admin';
+
+      const gate = document.createElement('div');
+      gate.className = 'pw-gate';
+
+      const pwInput = document.createElement('input');
+      pwInput.className = 'form-input';
+      pwInput.type = 'password';
+      pwInput.placeholder = 'password';
+      pwInput.autocomplete = 'current-password';
+
+      const spacer = document.createElement('div');
+      spacer.style.height = '10px';
+
+      const pwBtn = document.createElement('button');
+      pwBtn.className = 'submit-btn';
+      pwBtn.style.width = '100%';
+      pwBtn.textContent = 'enter';
+
+      const pwMsg = document.createElement('div');
+      pwMsg.style.marginTop = '10px';
+
+      gate.appendChild(pwInput);
+      gate.appendChild(spacer);
+      gate.appendChild(pwBtn);
+      gate.appendChild(pwMsg);
+      el.appendChild(heading);
+      el.appendChild(gate);
+
+      const check = () => {
+        if (pwInput.value === ADMIN_PASSWORD) {
+          adminAuthed = true;
+          renderPendingQueue(el);
+        } else {
+          pwMsg.innerHTML = '';
+          const err = document.createElement('div');
+          err.className = 'msg msg-err';
+          err.textContent = 'incorrect password';
+          pwMsg.appendChild(err);
+        }
+      };
+
+      pwBtn.addEventListener('click', check);
+      pwInput.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+      pwInput.focus();
+    }
+
+    async function renderPendingQueue(el) {
+      try {
+        const q = query(
+          collection(db, 'posts'),
+          where('status', '==', 'pending'),
+          orderBy('createdAt', 'desc')
+        );
+        const snap = await getDocs(q);
+
+        el.innerHTML = '';
+        const heading = document.createElement('div');
+        heading.className = 'page-heading';
+        heading.textContent = `// admin — pending queue (${snap.size})`;
+        el.appendChild(heading);
+
+        if (snap.empty) {
+          const empty = document.createElement('div');
+          empty.className = 'empty';
+          empty.textContent = 'no pending posts.';
+          el.appendChild(empty);
+          return;
+        }
+
+        snap.docs.forEach(d => {
+          const p = d.data();
+          const date = p.createdAt?.toDate
+            ? p.createdAt.toDate().toLocaleDateString('en-US',
+                { year: 'numeric', month: 'short', day: 'numeric' })
+            : 'unknown date';
+
+          const card = document.createElement('div');
+          card.className = 'admin-card';
+
+          const titleEl = document.createElement('div');
+          titleEl.className = 'admin-card-title';
+          const badge = document.createElement('span');
+          badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
+          badge.textContent = p.type === 'need' ? 'need' : 'offer';
+          titleEl.appendChild(badge);
+          titleEl.appendChild(document.createTextNode(p.title || ''));
+
+          const metaEl = document.createElement('div');
+          metaEl.className = 'admin-card-meta';
+          metaEl.innerHTML =
+            `<span class="meta-label">category</span>${escHtml(p.category)}<br>` +
+            `<span class="meta-label">location</span>${escHtml(p.location)}<br>` +
+            `<span class="meta-label">comp</span>${escHtml(p.compensation)}<br>` +
+            `<span class="meta-label">contact</span>${escHtml(p.contact)}<br>` +
+            `<span class="meta-label">submitted</span>${escHtml(date)}`;
+
+          card.appendChild(titleEl);
+          card.appendChild(metaEl);
+
+          if (p.description) {
+            const desc = document.createElement('div');
+            desc.className = 'admin-card-desc';
+            desc.textContent = p.description;
+            card.appendChild(desc);
+          }
+
+          const actions = document.createElement('div');
+          actions.className = 'admin-actions';
+
+          ['approve', 'reject'].forEach(action => {
+            const btn = document.createElement('button');
+            btn.className = `btn btn-${action}`;
+            btn.textContent = action;
+            btn.addEventListener('click', async () => {
+              btn.disabled = true;
+              btn.textContent = action + 'ing...';
+              const status = action === 'approve' ? 'approved' : 'rejected';
+              try {
+                await updateDoc(doc(db, 'posts', d.id), { status });
+                card.remove();
+                const remaining = el.querySelectorAll('.admin-card');
+                if (remaining.length === 0) {
+                  const empty = document.createElement('div');
+                  empty.className = 'empty';
+                  empty.textContent = 'no pending posts.';
+                  el.appendChild(empty);
+                  heading.textContent = '// admin — pending queue (0)';
+                }
+              } catch (err) {
+                console.error(err);
+                btn.disabled = false;
+                btn.textContent = action;
+                const errDiv = document.createElement('div');
+                errDiv.className = 'msg msg-err';
+                errDiv.style.marginTop = '8px';
+                errDiv.textContent = `error: ${err.message}`;
+                card.appendChild(errDiv);
+              }
+            });
+            actions.appendChild(btn);
+          });
+
+          card.appendChild(actions);
+          el.appendChild(card);
+        });
+      } catch (err) {
+        console.error(err);
+        el.textContent = `error loading queue: ${err.message}`;
+      }
+    }
 
     render(); // initial render — must be after all view functions
   </script>
