@@ -429,7 +429,7 @@
           // Unknown scheme — render as text, not a link
           contactLink.removeAttribute('href');
         }
-        contactLink.textContent = p.contact;
+        contactLink.textContent = p.contact || '';
         contactRow.appendChild(contactLbl);
         contactRow.appendChild(contactLink);
         el.appendChild(contactRow);
