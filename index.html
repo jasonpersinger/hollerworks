@@ -129,7 +129,115 @@
     <main id="content"></main>
   </div>
   <script type="module">
-    /* Firebase init + JS router added in Task 3 */
+    import { initializeApp }
+      from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFirestore, collection, getDocs, getDoc, doc,
+             addDoc, updateDoc, query, where, orderBy, limit,
+             startAfter, serverTimestamp }
+      from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+    // ── CONFIG — replace with your Firebase project values ────────────────
+    const FIREBASE_CONFIG = {
+      apiKey:            "YOUR_API_KEY",
+      authDomain:        "YOUR_PROJECT.firebaseapp.com",
+      projectId:         "YOUR_PROJECT_ID",
+      storageBucket:     "YOUR_PROJECT.appspot.com",
+      messagingSenderId: "YOUR_SENDER_ID",
+      appId:             "YOUR_APP_ID"
+    };
+    const ADMIN_PASSWORD = "YOUR_ADMIN_PASSWORD"; // change before deploy
+    const PAGE_SIZE = 20;
+    // ─────────────────────────────────────────────────────────────────────
+
+    const app = initializeApp(FIREBASE_CONFIG);
+    const db  = getFirestore(app);
+
+    // ── State ─────────────────────────────────────────────────────────────
+    let state = {
+      filter:      'all',  // 'all' | 'need' | 'offer'
+      cat:         null,   // null | category string
+      page:        1,
+      pageCursors: [null]  // pageCursors[0]=null (page 1), pageCursors[n]=startAfter doc
+    };
+
+    // ── Router ────────────────────────────────────────────────────────────
+    function getRoute() {
+      const hash = window.location.hash.replace('#', '') || '/';
+      if (hash === '/' || hash === '') return { view: 'board' };
+      if (hash.startsWith('/post/'))   return { view: 'post', id: hash.replace('/post/', '') };
+      if (hash === '/submit')          return { view: 'submit' };
+      if (hash === '/admin')           return { view: 'admin' };
+      return { view: 'board' };
+    }
+
+    function navigate(path) {
+      window.location.hash = path;
+    }
+
+    async function render() {
+      const route = getRoute();
+      updateRailActive(route);
+      const content = document.getElementById('content');
+      content.textContent = 'loading...';
+
+      if (route.view === 'board')  await renderBoard(content);
+      if (route.view === 'post')   await renderPost(content, route.id);
+      if (route.view === 'submit') renderSubmit(content);
+      if (route.view === 'admin')  await renderAdmin(content);
+    }
+
+    function updateRailActive(route) {
+      document.querySelectorAll('[data-filter]').forEach(el => {
+        el.classList.toggle('active',
+          el.dataset.filter === state.filter && route.view === 'board');
+      });
+      document.querySelectorAll('[data-cat]').forEach(el => {
+        el.classList.toggle('active',
+          el.dataset.cat === state.cat && route.view === 'board');
+      });
+    }
+
+    // ── Utilities ─────────────────────────────────────────────────────────
+    function escHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function isEmail(str) {
+      return str && str.includes('@') && !str.startsWith('http');
+    }
+
+    function showMsg(el, type, text) {
+      // type is always a safe constant string ('ok'/'err'); text is escaped
+      el.innerHTML = `<div class="msg msg-${type}">${escHtml(text)}</div>`;
+    }
+
+    // ── Rail wiring ───────────────────────────────────────────────────────
+    document.querySelectorAll('[data-filter]').forEach(el => {
+      el.addEventListener('click', () => {
+        state.filter = el.dataset.filter;
+        state.cat = null; state.page = 1; state.pageCursors = [null];
+        navigate('/');
+      });
+    });
+
+    document.querySelectorAll('[data-cat]').forEach(el => {
+      el.addEventListener('click', () => {
+        state.cat = el.dataset.cat;
+        state.filter = 'all'; state.page = 1; state.pageCursors = [null];
+        navigate('/');
+      });
+    });
+
+    document.getElementById('postBtn').addEventListener('click', () => navigate('/submit'));
+    window.addEventListener('hashchange', render);
+
+    /* renderBoard, renderPost, renderSubmit, renderAdmin added in Tasks 4-7 */
+    /* render() call at bottom of script added in Task 4 */
   </script>
 </body>
 </html>
