@@ -290,7 +290,7 @@
 
           const badge = document.createElement('span');
           badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
-          badge.textContent = p.type;
+          badge.textContent = p.type === 'need' ? 'need' : 'offer';
 
           const metaText = document.createTextNode(
             `${p.category || ''}${p.location ? ' · ' + p.location : ''}${p.compensation ? ' · ' + p.compensation : ''}`
