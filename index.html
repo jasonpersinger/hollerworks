@@ -240,8 +240,103 @@
     document.getElementById('postBtn').addEventListener('click', () => navigate('/submit'));
     window.addEventListener('hashchange', render);
 
-    /* renderBoard, renderPost, renderSubmit, renderAdmin added in Tasks 4-7 */
-    /* render() call at bottom of script added in Task 4 */
+    // ── Board View ────────────────────────────────────────────────────────
+    async function renderBoard(el) {
+      try {
+        let constraints = [
+          collection(db, 'posts'),
+          where('status', '==', 'approved'),
+          orderBy('createdAt', 'desc')
+        ];
+        if (state.filter !== 'all') constraints.push(where('type', '==', state.filter));
+        if (state.cat)              constraints.push(where('category', '==', state.cat));
+        constraints.push(limit(PAGE_SIZE + 1));
+
+        let q = query(...constraints);
+        const cursor = state.pageCursors[state.page - 1];
+        if (cursor) q = query(q, startAfter(cursor));
+
+        const snap  = await getDocs(q);
+        const docs  = snap.docs;
+        const hasNext = docs.length > PAGE_SIZE;
+        const posts = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
+
+        if (hasNext) state.pageCursors[state.page] = posts[posts.length - 1];
+
+        el.innerHTML = '';
+
+        if (posts.length === 0) {
+          const empty = document.createElement('div');
+          empty.className = 'empty';
+          empty.textContent = 'no posts found.';
+          el.appendChild(empty);
+          return;
+        }
+
+        const fragment = document.createDocumentFragment();
+
+        posts.forEach(d => {
+          const p = d.data();
+          const row = document.createElement('div');
+          row.className = 'post-row';
+          row.dataset.id = d.id;
+
+          const title = document.createElement('div');
+          title.className = 'post-title';
+          title.textContent = p.title;
+
+          const meta = document.createElement('div');
+          meta.className = 'post-meta';
+
+          const badge = document.createElement('span');
+          badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
+          badge.textContent = p.type;
+
+          const metaText = document.createTextNode(
+            `${p.category || ''}${p.location ? ' · ' + p.location : ''}${p.compensation ? ' · ' + p.compensation : ''}`
+          );
+
+          meta.appendChild(badge);
+          meta.appendChild(metaText);
+          row.appendChild(title);
+          row.appendChild(meta);
+          row.addEventListener('click', () => navigate(`/post/${d.id}`));
+          fragment.appendChild(row);
+        });
+
+        el.appendChild(fragment);
+
+        if (state.page > 1 || hasNext) {
+          const pag = document.createElement('div');
+          pag.className = 'pagination';
+          if (state.page > 1) {
+            const prev = document.createElement('button');
+            prev.className = 'page-btn';
+            prev.textContent = '← prev';
+            prev.addEventListener('click', () => { state.page--; render(); });
+            pag.appendChild(prev);
+          }
+          const lbl = document.createElement('span');
+          lbl.textContent = `page ${state.page}`;
+          pag.appendChild(lbl);
+          if (hasNext) {
+            const next = document.createElement('button');
+            next.className = 'page-btn';
+            next.textContent = 'next →';
+            next.addEventListener('click', () => { state.page++; render(); });
+            pag.appendChild(next);
+          }
+          el.appendChild(pag);
+        }
+      } catch (err) {
+        console.error(err);
+        el.textContent = `error loading posts: ${err.message}`;
+      }
+    }
+
+    /* renderPost, renderSubmit, renderAdmin added in Tasks 5-7 */
+
+    render(); // initial render — must be after all view functions
   </script>
 </body>
 </html>
