@@ -164,7 +164,11 @@
     function getRoute() {
       const hash = window.location.hash.replace('#', '') || '/';
       if (hash === '/' || hash === '') return { view: 'board' };
-      if (hash.startsWith('/post/'))   return { view: 'post', id: hash.replace('/post/', '') };
+      if (hash.startsWith('/post/')) {
+        const id = hash.replace('/post/', '').trim();
+        if (!id) return { view: 'board' };
+        return { view: 'post', id };
+      }
       if (hash === '/submit')          return { view: 'submit' };
       if (hash === '/admin')           return { view: 'admin' };
       return { view: 'board' };
@@ -212,8 +216,8 @@
     }
 
     function showMsg(el, type, text) {
-      // type is always a safe constant string ('ok'/'err'); text is escaped
-      el.innerHTML = `<div class="msg msg-${type}">${escHtml(text)}</div>`;
+      const safeType = type === 'ok' ? 'ok' : 'err';
+      el.innerHTML = `<div class="msg msg-${safeType}">${escHtml(text)}</div>`;
     }
 
     // ── Rail wiring ───────────────────────────────────────────────────────
