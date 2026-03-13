@@ -245,9 +245,8 @@
 
     // ── Router ────────────────────────────────────────────────────────────
     function getRoute() {
-      const raw = window.location.hash.replace('#', '') || '/';
-      const [path, qs] = raw.split('?');
-      const params = new URLSearchParams(qs || '');
+      const path = window.location.pathname;
+      const params = new URLSearchParams(window.location.search);
       if (path === '/' || path === '') {
         return {
           view:           'board',
@@ -270,7 +269,8 @@
     }
 
     function navigate(path) {
-      window.location.hash = path;
+      history.pushState({}, '', path);
+      render();
     }
 
     function navigateBoard() {
@@ -281,9 +281,9 @@
       if (state.locationState)  params.set('st', state.locationState);
       if (state.locationRegion) params.set('rgn', state.locationRegion);
       const qs = params.toString();
-      const newHash = '#/' + (qs ? '?' + qs : '');
-      if (window.location.hash === newHash) render();
-      else window.location.hash = newHash;
+      const url = '/' + (qs ? '?' + qs : '');
+      history.pushState({}, '', url);
+      render();
     }
 
     function renderAbout(el) {
@@ -426,7 +426,7 @@
     document.getElementById('postBtn').addEventListener('click', () => navigate('/submit'));
     document.getElementById('aboutBtn').addEventListener('click', () => navigate('/about'));
     document.getElementById('logoHome').addEventListener('click', () => navigate('/'));
-    window.addEventListener('hashchange', render);
+    window.addEventListener('popstate', render);
 
     // ── Mobile drawer ─────────────────────────────────────────────────────
     const drawerOverlay = document.getElementById('drawer-overlay');
@@ -785,7 +785,7 @@
           el.innerHTML = '';
           const back = document.createElement('a');
           back.className = 'back-link';
-          back.href = '#/';
+          back.href = '/';
           back.textContent = '← back to board';
           const errDiv = document.createElement('div');
           errDiv.className = 'msg msg-err';
@@ -805,7 +805,7 @@
 
         const back = document.createElement('a');
         back.className = 'back-link';
-        back.href = '#/';
+        back.href = '/';
         back.textContent = '← back to board';
 
         const titleEl = document.createElement('div');
@@ -1152,7 +1152,7 @@
           el.appendChild(cta);
 
           const backLink = document.createElement('a');
-          backLink.href = '#/';
+          backLink.href = '/';
           backLink.style.cssText = 'font-size:12px; display:block; margin-top:18px;';
           backLink.textContent = '← back to board';
           el.appendChild(backLink);
