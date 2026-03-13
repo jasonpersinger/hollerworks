@@ -66,7 +66,8 @@
     .badge { font-size: 10px; padding: 1px 5px; border: 1px solid; margin-right: 6px; }
     .badge-need  { color: var(--rust);  border-color: var(--rust); }
     .badge-offer { color: var(--brown); border-color: var(--brown); }
-    .badge-urgent  { color: var(--rust);  border-color: var(--rust); }
+    .badge-urgent  { background: var(--rust); color: var(--black); border-color: var(--rust); font-weight: bold; }
+    .post-row-urgent { background: #130a00; }
     .badge-remote  { color: var(--brown); border-color: var(--brown); }
     .post-row-featured { border: 1px solid var(--rust); border-left: 3px solid var(--rust); background: #110d08; padding-left: 10px; }
     .featured-label { font-size: 9px; color: var(--rust); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
@@ -710,7 +711,7 @@
         const fragment = document.createDocumentFragment();
         hits.forEach(hit => {
           const row = document.createElement('div');
-          row.className = 'post-row';
+          row.className = 'post-row' + (hit.urgent ? ' post-row-urgent' : '');
           row.dataset.id = hit.objectID;
 
           const title = document.createElement('div');
@@ -754,7 +755,7 @@
     function appendPostRow(fragment, d, isFeatured) {
       const p   = d.data();
       const row = document.createElement('div');
-      row.className = 'post-row' + (isFeatured ? ' post-row-featured' : '');
+      row.className = 'post-row' + (isFeatured ? ' post-row-featured' : '') + (p.urgent ? ' post-row-urgent' : '');
       row.dataset.id = d.id;
 
       if (isFeatured) {
