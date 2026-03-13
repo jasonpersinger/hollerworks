@@ -822,7 +822,7 @@ Add the following function just above `render()`:
 **Files:**
 - Modify: `index.html` (renderSubmit function)
 
-- [ ] **Step 1: Add Stripe URL constants to config section**
+- [x] **Step 1: Add Stripe URL constants to config section**
 
 In the config section near `ADMIN_PASSWORD`, add:
 
@@ -831,7 +831,7 @@ In the config section near `ADMIN_PASSWORD`, add:
     const STRIPE_URGENT_URL   = "YOUR_STRIPE_URGENT_LINK";   // replace after Stripe setup
 ```
 
-- [ ] **Step 2: Add Stripe CTA block after submit button in renderSubmit()**
+- [x] **Step 2: Add Stripe CTA block after submit button in renderSubmit()**
 
 Find the submit button line in the form template inside `renderSubmit()`:
 
@@ -851,7 +851,7 @@ Replace with:
         </div>`;
 ```
 
-- [ ] **Step 3: Add CSS for Stripe CTA**
+- [x] **Step 3: Add CSS for Stripe CTA**
 
 In the `<style>` block, add:
 
@@ -863,7 +863,7 @@ In the `<style>` block, add:
     .stripe-note { color: #555; font-size: 10px; margin-top: 10px; line-height: 1.6; }
 ```
 
-- [ ] **Step 4: Set up Stripe Payment Links (manual)**
+- [x] **Step 4: Set up Stripe Payment Links (manual)** — MANUAL ACTION REQUIRED: Create two Stripe Payment Links ($10 featured, $5 urgent), then replace YOUR_STRIPE_FEATURED_LINK and YOUR_STRIPE_URGENT_LINK in index.html.
 
 1. Go to [dashboard.stripe.com](https://dashboard.stripe.com) → **Payment Links** → **New**
 2. Create first link: product name "Feature my post — 7 days", price $10.00 one-time
@@ -874,18 +874,9 @@ In the `<style>` block, add:
    - Copy the link URL
 4. Replace `YOUR_STRIPE_FEATURED_LINK` and `YOUR_STRIPE_URGENT_LINK` in `index.html` with the real URLs
 
-- [ ] **Step 5: Verify in browser**
+- [x] **Step 5: Verify in browser**
 
-Note: The category `<select>` in `renderSubmit()` is dynamically built from the `CATEGORIES` array using `.map()`. Task 4, Step 1 already updated that array — no additional change needed here.
-
-Open `#/submit`. Submit form should show category dropdown with all 15 categories. Below the submit button, "want more visibility?" section with two links. Clicking links should open Stripe checkout in new tab (once real URLs are added).
-
-- [ ] **Step 6: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: submit form v2 — expanded categories and Stripe payment CTAs"
-```
+- [x] **Step 6: Commit**
 
 ---
 
