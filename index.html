@@ -147,8 +147,8 @@
       <div class="rail-section">
         <div class="rail-label">browse</div>
         <button class="rail-link" data-filter="all">all posts</button>
-        <button class="rail-link" data-filter="need">[need]</button>
-        <button class="rail-link" data-filter="offer">[offer]</button>
+        <button class="rail-link" data-filter="need">[have a job]</button>
+        <button class="rail-link" data-filter="offer">[need a job]</button>
         <button class="rail-link" data-remote="1"><img src="assets/icon-remote.png" class="cat-icon" alt="">[remote]</button>
       </div>
       <div class="rail-section">
@@ -609,7 +609,7 @@
           meta.className = 'post-meta';
           const badge = document.createElement('span');
           badge.className = `badge badge-${hit.type === 'need' ? 'need' : 'offer'}`;
-          badge.textContent = hit.type === 'need' ? 'need' : 'offer';
+          badge.textContent = hit.type === 'need' ? 'have a job' : 'need a job';
           meta.appendChild(badge);
           if (hit.urgent) {
             const ub = document.createElement('span');
@@ -661,7 +661,7 @@
 
       const badge = document.createElement('span');
       badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
-      badge.textContent = p.type === 'need' ? 'need' : 'offer';
+      badge.textContent = p.type === 'need' ? 'have a job' : 'need a job';
       meta.appendChild(badge);
 
       if (p.urgent) {
@@ -751,7 +751,7 @@
           if (isBadge) {
             const badge = document.createElement('span');
             badge.className = `badge badge-${value === 'need' ? 'need' : 'offer'}`;
-            badge.textContent = value === 'need' ? 'need' : 'offer';
+            badge.textContent = value === 'need' ? 'have a job' : 'need a job';
             row.appendChild(badge);
           } else if (isUrgent) {
             const ub = document.createElement('span');
@@ -869,8 +869,8 @@
         <div class="form-group">
           <label class="form-label">type *</label>
           <div class="radio-group">
-            <label class="radio-label"><input type="radio" name="type" value="need" required> need</label>
-            <label class="radio-label"><input type="radio" name="type" value="offer"> offer</label>
+            <label class="radio-label"><input type="radio" name="type" value="need" required> have a job</label>
+            <label class="radio-label"><input type="radio" name="type" value="offer"> need a job</label>
           </div>
         </div>
         <div class="form-group">
@@ -1356,7 +1356,7 @@
           titleEl.className = 'admin-card-title';
           const badge = document.createElement('span');
           badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
-          badge.textContent = p.type === 'need' ? 'need' : 'offer';
+          badge.textContent = p.type === 'need' ? 'have a job' : 'need a job';
           titleEl.appendChild(badge);
           titleEl.appendChild(document.createTextNode(p.title || ''));
 
