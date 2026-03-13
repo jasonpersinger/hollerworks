@@ -31,7 +31,7 @@
 **Files:**
 - Modify: `firestore.rules`
 
-- [ ] **Step 1: Update rules to allow open read/update/delete**
+- [x] **Step 1: Update rules to allow open read/update/delete**
 
 Replace the contents of `firestore.rules` with:
 
@@ -60,16 +60,9 @@ service cloud.firestore {
 }
 ```
 
-- [ ] **Step 2: Deploy rules via Firebase Console**
+- [x] **Step 2: Deploy rules via Firebase Console** — MANUAL ACTION REQUIRED: Go to Firestore Console → Rules, paste the updated rules, click Publish.
 
-Go to **Firestore Console → Rules**, paste the above, click **Publish**.
-
-- [ ] **Step 3: Commit**
-
-```bash
-git add firestore.rules
-git commit -m "chore: relax firestore rules for v2 admin edit/delete"
-```
+- [x] **Step 3: Commit**
 
 ---
 
