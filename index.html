@@ -728,6 +728,131 @@
 
     let adminFilter = 'pending';
 
+    function makeStatusBtn(label, targetStatus, postId, card, el) {
+      const btn = document.createElement('button');
+      btn.className = label === 'approve' || label === 're-open' ? 'btn btn-approve' : 'btn btn-reject';
+      btn.textContent = label;
+      btn.addEventListener('click', async () => {
+        btn.disabled = true;
+        btn.textContent = label + '...';
+        try {
+          await updateDoc(doc(db, 'posts', postId), { status: targetStatus });
+          card.remove();
+          const remaining = el.querySelectorAll('.admin-card');
+          if (remaining.length === 0) {
+            // Re-render to update heading count and show empty state correctly
+            renderPendingQueue(el);
+          }
+        } catch (err) {
+          console.error(err);
+          btn.disabled = false;
+          btn.textContent = label;
+          const errDiv = document.createElement('div');
+          errDiv.className = 'msg msg-err';
+          errDiv.style.marginTop = '8px';
+          errDiv.textContent = `error: ${err.message}`;
+          card.appendChild(errDiv);
+        }
+      });
+      return btn;
+    }
+
+    function renderEditForm(card, postId, p) {
+      card.textContent = '';
+
+      const heading = document.createElement('div');
+      heading.className = 'admin-card-title';
+      heading.textContent = 'editing post';
+      card.appendChild(heading);
+
+      const fields = [
+        { id: 'e-title', label: 'title',        value: p.title,        type: 'input',    max: 80 },
+        { id: 'e-loc',   label: 'location',     value: p.location,     type: 'input'         },
+        { id: 'e-comp',  label: 'compensation', value: p.compensation, type: 'input'         },
+        { id: 'e-desc',  label: 'description',  value: p.description,  type: 'textarea', max: 500 },
+        { id: 'e-cont',  label: 'contact',      value: p.contact,      type: 'input'         },
+      ];
+
+      fields.forEach(f => {
+        const group = document.createElement('div');
+        group.className = 'form-group';
+        const lbl = document.createElement('label');
+        lbl.className = 'form-label';
+        lbl.htmlFor = f.id;
+        lbl.textContent = f.label;
+        const inp = document.createElement(f.type === 'textarea' ? 'textarea' : 'input');
+        inp.className = f.type === 'textarea' ? 'form-textarea' : 'form-input';
+        inp.id = f.id;
+        if (f.max) inp.maxLength = f.max;
+        inp.value = f.value || '';
+        group.appendChild(lbl);
+        group.appendChild(inp);
+        card.appendChild(group);
+      });
+
+      // Category select
+      const catGroup = document.createElement('div');
+      catGroup.className = 'form-group';
+      const catLbl = document.createElement('label');
+      catLbl.className = 'form-label';
+      catLbl.htmlFor = 'e-cat';
+      catLbl.textContent = 'category';
+      const catSel = document.createElement('select');
+      catSel.className = 'form-select';
+      catSel.id = 'e-cat';
+      CATEGORIES.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        if (c === p.category) opt.selected = true;
+        catSel.appendChild(opt);
+      });
+      catGroup.appendChild(catLbl);
+      catGroup.appendChild(catSel);
+      card.appendChild(catGroup);
+
+      const actions = document.createElement('div');
+      actions.className = 'admin-actions';
+
+      const saveBtn = document.createElement('button');
+      saveBtn.className = 'btn btn-approve';
+      saveBtn.textContent = 'save';
+      saveBtn.addEventListener('click', async () => {
+        saveBtn.disabled = true;
+        saveBtn.textContent = 'saving...';
+        try {
+          await updateDoc(doc(db, 'posts', postId), {
+            title:        card.querySelector('#e-title').value.trim(),
+            location:     card.querySelector('#e-loc').value.trim(),
+            compensation: card.querySelector('#e-comp').value.trim(),
+            description:  card.querySelector('#e-desc').value.trim(),
+            contact:      card.querySelector('#e-cont').value.trim(),
+            category:     card.querySelector('#e-cat').value,
+          });
+          renderPendingQueue(card.closest('#content'));
+        } catch (err) {
+          console.error(err);
+          saveBtn.disabled = false;
+          saveBtn.textContent = 'save';
+          const errDiv = document.createElement('div');
+          errDiv.className = 'msg msg-err';
+          errDiv.textContent = `error: ${err.message}`;
+          card.appendChild(errDiv);
+        }
+      });
+
+      const cancelBtn = document.createElement('button');
+      cancelBtn.className = 'btn btn-reject';
+      cancelBtn.textContent = 'cancel';
+      cancelBtn.addEventListener('click', () => {
+        renderPendingQueue(card.closest('#content'));
+      });
+
+      actions.appendChild(saveBtn);
+      actions.appendChild(cancelBtn);
+      card.appendChild(actions);
+    }
+
     async function renderPendingQueue(el) {
       try {
         const q = query(
@@ -737,6 +862,13 @@
         );
         const snap = await getDocs(q);
 
+        // Build dup map: contact → count across loaded results
+        const contactCount = {};
+        snap.docs.forEach(d => {
+          const c = d.data().contact;
+          if (c) contactCount[c] = (contactCount[c] || 0) + 1;
+        });
+
         el.textContent = '';
         const heading = document.createElement('div');
         heading.className = 'page-heading';
@@ -745,7 +877,7 @@
 
         const tabs = document.createElement('div');
         tabs.style.cssText = 'display:flex;gap:12px;margin-bottom:18px;font-size:11px;';
-        ['pending','approved','rejected'].forEach(s => {
+        ['pending','approved','rejected','expired'].forEach(s => {
           const t = document.createElement('button');
           t.className = 'page-btn' + (adminFilter === s ? ' active' : '');
           t.textContent = s;
@@ -780,6 +912,14 @@
           titleEl.appendChild(badge);
           titleEl.appendChild(document.createTextNode(p.title || ''));
 
+          if (contactCount[p.contact] > 1) {
+            const dup = document.createElement('span');
+            dup.className = 'badge badge-need';
+            dup.style.marginLeft = '6px';
+            dup.textContent = 'dup';
+            titleEl.appendChild(dup);
+          }
+
           const metaEl = document.createElement('div');
           metaEl.className = 'admin-card-meta';
           metaEl.innerHTML =
@@ -802,39 +942,84 @@
           const actions = document.createElement('div');
           actions.className = 'admin-actions';
 
-          ['approve', 'reject'].forEach(action => {
-            const btn = document.createElement('button');
-            btn.className = `btn btn-${action}`;
-            btn.textContent = action;
-            btn.addEventListener('click', async () => {
-              btn.disabled = true;
-              btn.textContent = action + 'ing...';
-              const status = action === 'approve' ? 'approved' : 'rejected';
+          // ── Approve (pending only) ──────────────────────────────────────
+          if (adminFilter === 'pending') {
+            const approveBtn = makeStatusBtn('approve', 'approved', d.id, card, el);
+            actions.appendChild(approveBtn);
+          }
+
+          // ── Reject (pending only) ───────────────────────────────────────
+          if (adminFilter === 'pending') {
+            const rejectBtn = makeStatusBtn('reject', 'rejected', d.id, card, el);
+            actions.appendChild(rejectBtn);
+          }
+
+          // ── Expire (approved only) ──────────────────────────────────────
+          if (adminFilter === 'approved') {
+            const expireBtn = makeStatusBtn('expire', 'expired', d.id, card, el);
+            actions.appendChild(expireBtn);
+          }
+
+          // ── Re-open (rejected + expired only) ──────────────────────────
+          if (adminFilter === 'rejected' || adminFilter === 'expired') {
+            const reopenBtn = makeStatusBtn('re-open', 'pending', d.id, card, el);
+            actions.appendChild(reopenBtn);
+          }
+
+          // ── Edit (approved only) ────────────────────────────────────────
+          if (adminFilter === 'approved') {
+            const editBtn = document.createElement('button');
+            editBtn.className = 'btn btn-approve';
+            editBtn.textContent = 'edit';
+            editBtn.addEventListener('click', () => renderEditForm(card, d.id, p));
+            actions.appendChild(editBtn);
+          }
+
+          // ── Featured toggle (approved only) ─────────────────────────────
+          if (adminFilter === 'approved') {
+            const now = new Date();
+            const isFeatured = p.featured && p.featuredUntil?.toDate?.() > now;
+            const featBtn = document.createElement('button');
+            featBtn.className = 'btn btn-approve';
+            featBtn.textContent = isFeatured ? 'unfeature' : 'feature';
+            featBtn.addEventListener('click', async () => {
+              featBtn.disabled = true;
               try {
-                await updateDoc(doc(db, 'posts', d.id), { status });
-                card.remove();
-                const remaining = el.querySelectorAll('.admin-card');
-                if (remaining.length === 0) {
-                  const empty = document.createElement('div');
-                  empty.className = 'empty';
-                  empty.textContent = `no ${adminFilter} posts.`;
-                  el.appendChild(empty);
-                  heading.textContent = `// admin — ${adminFilter} (0)`;
+                if (isFeatured) {
+                  await updateDoc(doc(db, 'posts', d.id), { featured: false, featuredUntil: null });
+                } else {
+                  const until = new Date();
+                  until.setDate(until.getDate() + 7);
+                  await updateDoc(doc(db, 'posts', d.id), { featured: true, featuredUntil: until });
                 }
+                renderPendingQueue(el);
               } catch (err) {
                 console.error(err);
-                btn.disabled = false;
-                btn.textContent = action;
-                const errDiv = document.createElement('div');
-                errDiv.className = 'msg msg-err';
-                errDiv.style.marginTop = '8px';
-                errDiv.textContent = `error: ${err.message}`;
-                card.appendChild(errDiv);
+                featBtn.disabled = false;
               }
             });
-            actions.appendChild(btn);
-          });
+            actions.appendChild(featBtn);
+          }
 
+          // ── Urgent toggle (approved only) ────────────────────────────────
+          if (adminFilter === 'approved') {
+            const urgBtn = document.createElement('button');
+            urgBtn.className = 'btn btn-approve';
+            urgBtn.textContent = p.urgent ? 'unurgent' : 'urgent';
+            urgBtn.addEventListener('click', async () => {
+              urgBtn.disabled = true;
+              try {
+                await updateDoc(doc(db, 'posts', d.id), { urgent: !p.urgent });
+                renderPendingQueue(el);
+              } catch (err) {
+                console.error(err);
+                urgBtn.disabled = false;
+              }
+            });
+            actions.appendChild(urgBtn);
+          }
+
+          // ── Delete (all tabs) ────────────────────────────────────────────
           const delBtn = document.createElement('button');
           delBtn.className = 'btn btn-reject';
           delBtn.style.marginLeft = 'auto';

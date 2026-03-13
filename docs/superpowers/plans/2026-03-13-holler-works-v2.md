@@ -501,7 +501,7 @@ In `renderPost()`, find the entire `metaItems` array definition and the `metaIte
 **Files:**
 - Modify: `index.html` (admin section, ~lines 635–760)
 
-- [ ] **Step 1: Add `expired` to admin tabs**
+- [x] **Step 1: Add `expired` to admin tabs**
 
 Find the tabs rendering in `renderPendingQueue()`:
 
@@ -515,11 +515,11 @@ Replace with:
         ['pending','approved','rejected','expired'].forEach(s => {
 ```
 
-- [ ] **Step 2: Update empty state message for expired tab**
+- [x] **Step 2: Update empty state message for expired tab**
 
 The empty message already uses the `adminFilter` template literal — no change needed.
 
-- [ ] **Step 3: Add context-aware action buttons per tab**
+- [x] **Step 3: Add context-aware action buttons per tab**
 
 Find the `['approve', 'reject'].forEach(action => {` block in `renderPendingQueue()` and replace the entire actions section (from `const actions = ...` through `actions.appendChild(delBtn)`) with:
 
@@ -636,7 +636,7 @@ Find the `['approve', 'reject'].forEach(action => {` block in `renderPendingQueu
           el.appendChild(card);
 ```
 
-- [ ] **Step 4: Add `makeStatusBtn()` helper**
+- [x] **Step 4: Add `makeStatusBtn()` helper**
 
 Add this function just above `renderAdmin`:
 
@@ -671,7 +671,7 @@ Add this function just above `renderAdmin`:
     }
 ```
 
-- [ ] **Step 5: Add duplicate contact warning**
+- [x] **Step 5: Add duplicate contact warning**
 
 In `renderPendingQueue()`, after `const snap = await getDocs(q);`, add:
 
@@ -696,16 +696,9 @@ Then in the card-building section, after creating `titleEl` and appending the ba
           }
 ```
 
-- [ ] **Step 6: Verify in browser**
+- [x] **Step 6: Verify in browser**
 
-Go to `#/admin`. Enter password. Verify four tabs: pending, approved, rejected, expired. Approved tab should show: expire, edit, feature, urgent, delete buttons. Rejected/expired tabs show re-open + delete. Submit a duplicate post (same contact email twice) — both should show `[dup]` badge in pending.
-
-- [ ] **Step 7: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: admin v2 — expired tab, re-open, expire, featured/urgent toggles, dup warning"
-```
+- [x] **Step 7: Commit**
 
 ---
 
