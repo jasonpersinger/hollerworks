@@ -175,24 +175,50 @@
 
     // ── Router ────────────────────────────────────────────────────────────
     function getRoute() {
-      const hash = window.location.hash.replace('#', '') || '/';
-      if (hash === '/' || hash === '') return { view: 'board' };
-      if (hash.startsWith('/post/')) {
-        const id = hash.replace('/post/', '').trim();
-        if (!id) return { view: 'board' };
+      const raw = window.location.hash.replace('#', '') || '/';
+      const [path, qs] = raw.split('?');
+      const params = new URLSearchParams(qs || '');
+      if (path === '/' || path === '') {
+        return {
+          view:   'board',
+          filter: params.get('filter') || 'all',
+          cat:    params.get('cat')    || null
+        };
+      }
+      if (path.startsWith('/post/')) {
+        const id = path.replace('/post/', '').trim();
+        if (!id) return { view: 'board', filter: 'all', cat: null };
         return { view: 'post', id };
       }
-      if (hash === '/submit')          return { view: 'submit' };
-      if (hash === '/admin')           return { view: 'admin' };
-      return { view: 'board' };
+      if (path === '/submit') return { view: 'submit' };
+      if (path === '/admin')  return { view: 'admin' };
+      return { view: 'board', filter: 'all', cat: null };
     }
 
     function navigate(path) {
       window.location.hash = path;
     }
 
+    function navigateBoard() {
+      const params = new URLSearchParams();
+      if (state.filter !== 'all') params.set('filter', state.filter);
+      if (state.cat) params.set('cat', state.cat);
+      const qs = params.toString();
+      const newHash = '#/' + (qs ? '?' + qs : '');
+      if (window.location.hash === newHash) render();
+      else window.location.hash = newHash;
+    }
+
     async function render() {
       const route = getRoute();
+      if (route.view === 'board') {
+        // Reset pagination when filter/cat changes via direct URL navigation
+        if (state.filter !== route.filter || state.cat !== route.cat) {
+          state.page = 1; state.pageCursors = [null];
+        }
+        state.filter = route.filter;
+        state.cat    = route.cat;
+      }
       updateRailActive(route);
       const content = document.getElementById('content');
       content.textContent = 'loading...';
@@ -238,7 +264,7 @@
       el.addEventListener('click', () => {
         state.filter = el.dataset.filter;
         state.cat = null; state.page = 1; state.pageCursors = [null];
-        if (window.location.hash === '#/') render(); else navigate('/');
+        navigateBoard();
       });
     });
 
@@ -246,7 +272,7 @@
       el.addEventListener('click', () => {
         state.cat = el.dataset.cat;
         state.filter = 'all'; state.page = 1; state.pageCursors = [null];
-        if (window.location.hash === '#/') render(); else navigate('/');
+        navigateBoard();
       });
     });
 
