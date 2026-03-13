@@ -36,6 +36,7 @@
     }
     #content { flex: 1; padding: 28px 36px; max-width: 820px; }
     .rail-logo { color: var(--lgray); font-size: 14px; line-height: 1.4; }
+    .rail-logo .tagline { color: var(--brown); font-size: 11px; margin-top: 2px; }
     .rail-tagline { display: flex; flex-direction: column; gap: 1px; }
     .tagline-line { color: var(--lgray); font-size: 13px; font-weight: bold; letter-spacing: 0.05em; }
     .rail-logo-img { width: 52px; height: auto; display: block; margin-bottom: 8px; image-rendering: pixelated; image-rendering: crisp-edges; }
@@ -60,7 +61,8 @@
     .badge { font-size: 10px; padding: 1px 5px; border: 1px solid; margin-right: 6px; }
     .badge-need  { color: var(--rust);  border-color: var(--rust); }
     .badge-offer { color: var(--brown); border-color: var(--brown); }
-    .badge-urgent { color: var(--rust); border-color: var(--rust); }
+    .badge-urgent  { color: var(--rust);  border-color: var(--rust); }
+    .badge-remote  { color: var(--brown); border-color: var(--brown); }
     .post-row-featured { border-left: 3px solid var(--rust); background: #110d08; padding-left: 10px; }
     .featured-label { font-size: 9px; color: var(--rust); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
     .post-detail-title { color: var(--lgray); font-size: 17px; margin-bottom: 14px; }
@@ -127,6 +129,7 @@
       <div class="rail-logo">
         <img src="assets/logo.png" alt="" class="rail-logo-img">
         HOLLER.WORKS
+        <div class="tagline">// appalachia</div>
       </div>
       <div class="rail-tagline">
         <div class="tagline-line">STAY.</div>
@@ -137,6 +140,7 @@
         <button class="rail-link" data-filter="all">all posts</button>
         <button class="rail-link" data-filter="need">[need]</button>
         <button class="rail-link" data-filter="offer">[offer]</button>
+        <button class="rail-link" data-remote="1"><img src="assets/icon-remote.png" class="cat-icon" alt="">[remote]</button>
       </div>
       <div class="rail-section">
         <img src="assets/icon-mountain.png" alt="" class="rail-mountain">
@@ -149,12 +153,13 @@
         <button class="rail-link" data-cat="Finance &amp; Accounting"><img src="assets/icon-finance.png" class="cat-icon" alt="">finance</button>
         <button class="rail-link" data-cat="HR &amp; Recruiting"><img src="assets/icon-hr.png" class="cat-icon" alt="">HR</button>
         <button class="rail-link" data-cat="Marketing &amp; Content"><img src="assets/icon-marketing.png" class="cat-icon" alt="">marketing</button>
-        <button class="rail-link" data-cat="Writing &amp; Editorial">writing</button>
-        <button class="rail-link" data-cat="Photography &amp; Video">photo &amp; video</button>
-        <button class="rail-link" data-cat="Music &amp; Audio">music &amp; audio</button>
-        <button class="rail-link" data-cat="Trades &amp; Skilled Labor">trades</button>
-        <button class="rail-link" data-cat="Healthcare &amp; Wellness">healthcare</button>
-        <button class="rail-link" data-cat="Remote-Friendly"><img src="assets/icon-remote.png" class="cat-icon" alt="">remote-friendly</button>
+        <button class="rail-link" data-cat="Writing &amp; Editorial"><img src="assets/icon-writing.png" class="cat-icon" alt="">writing</button>
+        <button class="rail-link" data-cat="Photography &amp; Video"><img src="assets/icon-photo.png" class="cat-icon" alt="">photo &amp; video</button>
+        <button class="rail-link" data-cat="Music &amp; Audio"><img src="assets/icon-music.png" class="cat-icon" alt="">music &amp; audio</button>
+        <button class="rail-link" data-cat="Trades &amp; Skilled Labor"><img src="assets/icon-trades.png" class="cat-icon" alt="">trades</button>
+        <button class="rail-link" data-cat="Healthcare &amp; Wellness"><img src="assets/icon-health.png" class="cat-icon" alt="">healthcare</button>
+        <button class="rail-link" data-cat="Hair &amp; Beauty"><img src="assets/icon-hair.png" class="cat-icon" alt="">hair &amp; beauty</button>
+        <button class="rail-link" data-cat="Arts &amp; Culture"><img src="assets/icon-arts.png" class="cat-icon" alt="">arts &amp; culture</button>
         <button class="rail-link" data-cat="Other"><img src="assets/icon-other.png" class="cat-icon" alt="">other</button>
       </div>
       <button class="post-btn" id="postBtn">[+ post]</button>
@@ -198,6 +203,7 @@
     let state = {
       filter:      'all',  // 'all' | 'need' | 'offer'
       cat:         null,   // null | category string
+      remote:      false,  // true = only remote-friendly posts
       page:        1,
       pageCursors: [null]  // pageCursors[0]=null (page 1), pageCursors[n]=startAfter doc
     };
@@ -211,7 +217,8 @@
         return {
           view:   'board',
           filter: params.get('filter') || 'all',
-          cat:    params.get('cat')    || null
+          cat:    params.get('cat')    || null,
+          remote: params.get('remote') === '1'
         };
       }
       if (path.startsWith('/post/')) {
@@ -232,6 +239,7 @@
       const params = new URLSearchParams();
       if (state.filter !== 'all') params.set('filter', state.filter);
       if (state.cat) params.set('cat', state.cat);
+      if (state.remote) params.set('remote', '1');
       const qs = params.toString();
       const newHash = '#/' + (qs ? '?' + qs : '');
       if (window.location.hash === newHash) render();
@@ -241,12 +249,13 @@
     async function render() {
       const route = getRoute();
       if (route.view === 'board') {
-        // Reset pagination when filter/cat changes via direct URL navigation
-        if (state.filter !== route.filter || state.cat !== route.cat) {
+        // Reset pagination when filter/cat/remote changes via direct URL navigation
+        if (state.filter !== route.filter || state.cat !== route.cat || state.remote !== route.remote) {
           state.page = 1; state.pageCursors = [null];
         }
         state.filter = route.filter;
         state.cat    = route.cat;
+        state.remote = route.remote;
       }
       updateRailActive(route);
       const content = document.getElementById('content');
@@ -267,6 +276,8 @@
         el.classList.toggle('active',
           el.dataset.cat === state.cat && route.view === 'board');
       });
+      const remoteBtn = document.querySelector('[data-remote]');
+      if (remoteBtn) remoteBtn.classList.toggle('active', state.remote && route.view === 'board');
     }
 
     // ── Utilities ─────────────────────────────────────────────────────────
@@ -305,7 +316,7 @@
     document.querySelectorAll('[data-filter]').forEach(el => {
       el.addEventListener('click', () => {
         state.filter = el.dataset.filter;
-        state.cat = null; state.page = 1; state.pageCursors = [null];
+        state.cat = null; state.remote = false; state.page = 1; state.pageCursors = [null];
         navigateBoard();
       });
     });
@@ -313,9 +324,15 @@
     document.querySelectorAll('[data-cat]').forEach(el => {
       el.addEventListener('click', () => {
         state.cat = el.dataset.cat;
-        state.filter = 'all'; state.page = 1; state.pageCursors = [null];
+        state.filter = 'all'; state.remote = false; state.page = 1; state.pageCursors = [null];
         navigateBoard();
       });
+    });
+
+    document.querySelector('[data-remote]').addEventListener('click', () => {
+      state.remote = !state.remote;
+      state.page = 1; state.pageCursors = [null];
+      navigateBoard();
     });
 
     document.getElementById('postBtn').addEventListener('click', () => navigate('/submit'));
@@ -400,8 +417,9 @@
           where('status', '==', 'approved'),
           orderBy('createdAt', 'desc')
         ];
-        if (state.filter !== 'all') constraints.push(where('type',     '==', state.filter));
-        if (state.cat)              constraints.push(where('category', '==', state.cat));
+        if (state.filter !== 'all') constraints.push(where('type',            '==', state.filter));
+        if (state.cat)              constraints.push(where('category',        '==', state.cat));
+        if (state.remote)           constraints.push(where('remoteFriendly',  '==', true));
         constraints.push(limit(PAGE_SIZE + 1));
 
         let q = query(...constraints);
@@ -500,6 +518,12 @@
             ub.textContent = 'urgent';
             meta.appendChild(ub);
           }
+          if (hit.remoteFriendly) {
+            const rb = document.createElement('span');
+            rb.className = 'badge badge-remote';
+            rb.textContent = 'remote';
+            meta.appendChild(rb);
+          }
           meta.appendChild(document.createTextNode(
             `${hit.category || ''}${hit.location ? ' · ' + hit.location : ''}`
           ));
@@ -546,6 +570,13 @@
         ub.className = 'badge badge-urgent';
         ub.textContent = 'urgent';
         meta.appendChild(ub);
+      }
+
+      if (p.remoteFriendly) {
+        const rb = document.createElement('span');
+        rb.className = 'badge badge-remote';
+        rb.textContent = 'remote';
+        meta.appendChild(rb);
       }
 
       const age = p.createdAt?.toDate ? timeAgo(p.createdAt.toDate()) : '';
@@ -600,15 +631,16 @@
 
         const metaItems = [
           { label: 'type',     value: p.type,     isBadge: true },
-          ...(p.urgent ? [{ label: 'urgency', isUrgent: true }] : []),
+          ...(p.urgent         ? [{ label: 'urgency', isUrgent: true }] : []),
+          ...(p.remoteFriendly ? [{ label: 'remote',  isRemote: true  }] : []),
           { label: 'category', value: p.category },
           { label: 'location', value: p.location },
           { label: 'comp',     value: p.compensation },
           ...(date ? [{ label: 'posted', value: date }] : [])
         ];
 
-        metaItems.forEach(({ label, value, isBadge, isUrgent }) => {
-          if (!value && !isUrgent) return;
+        metaItems.forEach(({ label, value, isBadge, isUrgent, isRemote }) => {
+          if (!value && !isUrgent && !isRemote) return;
           const row = document.createElement('div');
           row.className = 'meta-row';
           const lbl = document.createElement('span');
@@ -625,6 +657,11 @@
             ub.className = 'badge badge-urgent';
             ub.textContent = 'urgent';
             row.appendChild(ub);
+          } else if (isRemote) {
+            const rb = document.createElement('span');
+            rb.className = 'badge badge-remote';
+            rb.textContent = 'remote-friendly';
+            row.appendChild(rb);
           } else {
             row.appendChild(document.createTextNode(value || ''));
           }
@@ -678,7 +715,7 @@
       'Admin & Operations', 'Finance & Accounting', 'HR & Recruiting',
       'Marketing & Content', 'Writing & Editorial', 'Photography & Video',
       'Music & Audio', 'Trades & Skilled Labor', 'Healthcare & Wellness',
-      'Remote-Friendly', 'Other'
+      'Hair & Beauty', 'Arts & Culture', 'Other'
     ];
 
     function renderSubmit(el) {
@@ -730,6 +767,9 @@
           <label class="form-label" for="f-contact">contact * (email or URL)</label>
           <input class="form-input" id="f-contact" type="text" required placeholder="you@example.com or https://...">
         </div>
+        <div class="form-group">
+          <label class="radio-label"><input type="checkbox" id="f-remote"> remote-friendly</label>
+        </div>
         <button type="submit" class="submit-btn" id="submitBtn">submit post</button>
         <div class="stripe-cta">
           <div class="stripe-cta-label">want more visibility?</div>
@@ -775,10 +815,11 @@
         }
 
         try {
+          const remoteFriendly = form.querySelector('#f-remote').checked;
           await addDoc(collection(db, 'posts'), {
             type, title, category: cat, location: loc,
             compensation: comp, description: desc, contact,
-            status: 'pending', createdAt: serverTimestamp()
+            remoteFriendly, status: 'pending', createdAt: serverTimestamp()
           });
 
           el.innerHTML = '';
@@ -948,6 +989,19 @@
       catGroup.appendChild(catSel);
       card.appendChild(catGroup);
 
+      const remoteGroup = document.createElement('div');
+      remoteGroup.className = 'form-group';
+      const remoteLbl = document.createElement('label');
+      remoteLbl.className = 'radio-label';
+      const remoteChk = document.createElement('input');
+      remoteChk.type = 'checkbox';
+      remoteChk.id = 'e-remote';
+      remoteChk.checked = !!p.remoteFriendly;
+      remoteLbl.appendChild(remoteChk);
+      remoteLbl.appendChild(document.createTextNode(' remote-friendly'));
+      remoteGroup.appendChild(remoteLbl);
+      card.appendChild(remoteGroup);
+
       const actions = document.createElement('div');
       actions.className = 'admin-actions';
 
@@ -959,12 +1013,13 @@
         saveBtn.textContent = 'saving...';
         try {
           await updateDoc(doc(db, 'posts', postId), {
-            title:        card.querySelector('#e-title').value.trim(),
-            location:     card.querySelector('#e-loc').value.trim(),
-            compensation: card.querySelector('#e-comp').value.trim(),
-            description:  card.querySelector('#e-desc').value.trim(),
-            contact:      card.querySelector('#e-cont').value.trim(),
-            category:     card.querySelector('#e-cat').value,
+            title:          card.querySelector('#e-title').value.trim(),
+            location:       card.querySelector('#e-loc').value.trim(),
+            compensation:   card.querySelector('#e-comp').value.trim(),
+            description:    card.querySelector('#e-desc').value.trim(),
+            contact:        card.querySelector('#e-cont').value.trim(),
+            category:       card.querySelector('#e-cat').value,
+            remoteFriendly: card.querySelector('#e-remote').checked,
           });
           renderPendingQueue(card.closest('#content'));
         } catch (err) {
@@ -1064,6 +1119,7 @@
             `<span class="meta-label">location</span>${escHtml(p.location)}<br>` +
             `<span class="meta-label">comp</span>${escHtml(p.compensation)}<br>` +
             `<span class="meta-label">contact</span>${escHtml(p.contact)}<br>` +
+            (p.remoteFriendly ? `<span class="meta-label">remote</span><span class="badge badge-remote">remote-friendly</span><br>` : '') +
             `<span class="meta-label">submitted</span>${escHtml(date)}`;
 
           card.appendChild(titleEl);

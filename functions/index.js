@@ -62,14 +62,15 @@ exports.onPostStatusChange = onDocumentUpdated('posts/{postId}', async (event) =
 
     // Add to Algolia
     await index.saveObject({
-      objectID:     postId,
-      title:        after.title        || '',
-      description:  after.description  || '',
-      category:     after.category     || '',
-      location:     after.location     || '',
-      type:         after.type         || '',
-      compensation: after.compensation || '',
-      approvedAt:   Date.now(),
+      objectID:       postId,
+      title:          after.title          || '',
+      description:    after.description    || '',
+      category:       after.category       || '',
+      location:       after.location       || '',
+      type:           after.type           || '',
+      compensation:   after.compensation   || '',
+      remoteFriendly: after.remoteFriendly || false,
+      approvedAt:     Date.now(),
     });
 
   } else if (after.status === 'expired' || after.status === 'rejected') {
