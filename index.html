@@ -125,15 +125,32 @@
     .about-body { color: var(--gray); font-size: 13px; line-height: 1.8; margin-bottom: 14px; max-width: 560px; }
     .site-footer { padding: 24px 36px; font-size: 10px; color: #333; line-height: 1.8; border-top: 1px solid #161616; }
     .site-footer a { color: #333; text-decoration: underline; }
+    .menu-btn { background: none; border: none; color: var(--rust); font-size: 20px; cursor: pointer; padding: 4px; line-height: 1; }
+    .post-btn-sm { width: auto; padding: 5px 10px; font-size: 11px; }
+    .mobile-wordmark { color: var(--lgray); font-size: 12px; letter-spacing: 0.08em; }
+    #mobile-header { display: none; }
+    #drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65); z-index: 150; }
     @media (max-width: 600px) {
+      body { padding-top: 48px; }
+      #mobile-header { display: flex; position: fixed; top: 0; left: 0; right: 0; height: 48px; background: var(--black); border-bottom: 1px solid #1e1e1e; align-items: center; justify-content: space-between; padding: 0 14px; z-index: 100; }
+      #drawer-overlay.open { display: block; }
       #app { flex-direction: column; }
-      #rail { width: 100%; min-width: unset; border-right: none; border-bottom: 1px solid #1e1e1e; padding: 14px 16px; flex-direction: row; flex-wrap: wrap; gap: 16px; }
+      #rail { position: fixed; top: 0; left: 0; width: 280px; min-width: unset; height: 100vh; overflow-y: auto; border-right: 1px solid #2a2a2a; border-bottom: none; padding: 20px 16px; flex-direction: column; gap: 20px; transform: translateX(-280px); transition: transform 0.22s ease; z-index: 200; }
+      #rail.open { transform: translateX(0); }
       #content { padding: 16px; }
+      .radio-group { flex-direction: column; gap: 10px; }
+      .loc-filter-bar { flex-wrap: wrap; }
+      .site-footer { padding: 16px; }
     }
   </style>
 </head>
 <body>
   <div id="app">
+    <div id="mobile-header">
+      <button class="menu-btn" id="drawerBtn"><i class="fa-solid fa-bars"></i></button>
+      <span class="mobile-wordmark">HOLLER.WORKS</span>
+      <button class="post-btn post-btn-sm" id="mobilePostBtn">[+ post]</button>
+    </div>
     <nav id="rail">
       <div class="rail-logo">
         <img src="assets/logo.png" alt="home" class="rail-logo-img" id="logoHome">
@@ -179,6 +196,7 @@
       <button class="rail-link" id="aboutBtn">[about]</button>
       <button class="post-btn" id="postBtn">[+ post]</button>
     </nav>
+    <div id="drawer-overlay"></div>
     <main id="content"></main>
   </div>
   <script type="module">
@@ -409,6 +427,26 @@
     document.getElementById('aboutBtn').addEventListener('click', () => navigate('/about'));
     document.getElementById('logoHome').addEventListener('click', () => navigate('/'));
     window.addEventListener('hashchange', render);
+
+    // ── Mobile drawer ─────────────────────────────────────────────────────
+    const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerBtn     = document.getElementById('drawerBtn');
+    const mobilePostBtn = document.getElementById('mobilePostBtn');
+    const railEl        = document.getElementById('rail');
+
+    function closeDrawer() {
+      railEl.classList.remove('open');
+      drawerOverlay.classList.remove('open');
+    }
+    drawerBtn.addEventListener('click', () => {
+      railEl.classList.add('open');
+      drawerOverlay.classList.add('open');
+    });
+    drawerOverlay.addEventListener('click', closeDrawer);
+    mobilePostBtn.addEventListener('click', () => { closeDrawer(); navigate('/submit'); });
+    railEl.addEventListener('click', e => {
+      if (e.target.closest('.rail-link') || e.target.closest('.post-btn')) closeDrawer();
+    });
 
     // ── Board View ────────────────────────────────────────────────────────
     async function renderBoard(el) {
