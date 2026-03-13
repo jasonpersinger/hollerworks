@@ -2,7 +2,7 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /posts/{postId} {
-      allow read: if resource.data.status == "approved";
+      allow read: if true;
       allow create: if request.resource.data.keys().hasAll([
                         "type","title","category","location",
                         "compensation","contact","status","createdAt"
@@ -12,9 +12,8 @@ service cloud.firestore {
                     && request.resource.data.title.size() <= 80
                     && (!request.resource.data.keys().hasAll(["description"])
                         || request.resource.data.description.size() <= 500);
-      allow update: if request.resource.data.diff(resource.data)
-                        .affectedKeys().hasOnly(["status"])
-                    && request.resource.data.status in ["approved","rejected"];
+      allow update: if true;
+      allow delete: if true;
     }
     match /mail/{docId} {
       allow read, write: if false;
