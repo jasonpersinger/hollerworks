@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -104,8 +105,8 @@
     .loc-filter-select { background: #111; border: 1px solid #2a2a2a; color: var(--gray); font-family: inherit; font-size: 11px; padding: 4px 6px; outline: 0; flex: 1; }
     .loc-filter-select:focus { border-color: var(--rust); }
     .loc-filter-select option { background: #111; }
-    .rail-socials { display: flex; gap: 8px; }
-    .social-link { color: #444; font-size: 11px; font-family: inherit; text-decoration: none; }
+    .rail-socials { display: flex; gap: 12px; align-items: center; }
+    .social-link { color: #666; font-size: 18px; text-decoration: none; line-height: 1; }
     .social-link:hover { color: var(--rust); text-decoration: none; }
     .pagination { display: flex; gap: 14px; margin-top: 24px; font-size: 11px; align-items: center; color: var(--gray); }
     .page-btn { color: var(--gray); cursor: pointer; background: none; border: none; font-family: inherit; font-size: 11px; padding: 0; }
@@ -173,9 +174,9 @@
         <button class="rail-link" data-cat="Other"><img src="assets/icon-other.png" class="cat-icon" alt="">other</button>
       </div>
       <div class="rail-socials">
-        <a href="https://x.com/holler_works" target="_blank" rel="noopener noreferrer" class="social-link">[x]</a>
-        <a href="https://www.instagram.com/holler.works/" target="_blank" rel="noopener noreferrer" class="social-link">[ig]</a>
-        <a href="https://www.reddit.com/r/hollerworks/" target="_blank" rel="noopener noreferrer" class="social-link">[rd]</a>
+        <a href="https://x.com/holler_works" target="_blank" rel="noopener noreferrer" class="social-link" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/holler.works/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.reddit.com/r/hollerworks/" target="_blank" rel="noopener noreferrer" class="social-link" title="Reddit"><i class="fa-brands fa-reddit-alien"></i></a>
       </div>
       <button class="rail-link" onclick="navigate('/about')">[about]</button>
       <button class="post-btn" id="postBtn">[+ post]</button>
