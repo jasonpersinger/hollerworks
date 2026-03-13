@@ -236,7 +236,7 @@ Find and replace the entire rail wiring section (the two `querySelectorAll` bloc
 **Files:**
 - Modify: `index.html` (CATEGORIES constant + rail HTML + rail icons)
 
-- [ ] **Step 1: Update `CATEGORIES` constant**
+- [x] **Step 1: Update `CATEGORIES` constant**
 
 Find and replace the `CATEGORIES` array near the renderSubmit function:
 
@@ -250,7 +250,7 @@ Find and replace the `CATEGORIES` array near the renderSubmit function:
     ];
 ```
 
-- [ ] **Step 2: Update rail category buttons in HTML**
+- [x] **Step 2: Update rail category buttons in HTML**
 
 Find the entire `<div class="rail-section">` that contains category buttons and replace with:
 
@@ -276,16 +276,9 @@ Find the entire `<div class="rail-section">` that contains category buttons and 
       </div>
 ```
 
-- [ ] **Step 3: Verify in browser**
+- [x] **Step 3: Verify in browser**
 
-Open `index.html`. Rail should show 15 category options. New categories (writing, photo & video, music, trades, healthcare) render without icons but with the `> ` prefix. Clicking each should filter the board.
-
-- [ ] **Step 4: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: expand categories to include creative and skilled trades"
-```
+- [x] **Step 4: Commit**
 
 ---
 
