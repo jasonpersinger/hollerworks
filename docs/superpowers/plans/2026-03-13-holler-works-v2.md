@@ -1047,7 +1047,7 @@ At the top of `renderBoard()`, before the featured posts query, add:
       });
 
       if (searchActive) {
-        doSearch(resultsEl, lastSearchQuery);
+        await doSearch(resultsEl, lastSearchQuery);
       } else {
         await renderBoardResults(resultsEl);
       }
@@ -1140,7 +1140,31 @@ After `renderBoard()`, add:
     }
 ```
 
-Also, Task 5's `renderBoard()` included the featured + paginated query logic inline — now that logic lives in `renderBoardResults()`. The Task 5 `renderBoard()` body (the featured query, main query, fragment building, pagination) should be **deleted** and replaced with just the search bar setup that calls `renderBoardResults`. The final `renderBoard()` from Task 5 Step 3 is now only the search bar scaffolding (Steps 5 of this task) that calls `await renderBoardResults(resultsEl)`. Both functions together form the complete board rendering.
+- [ ] **Step 6b: Remove inline query logic from `renderBoard()`**
+
+The `renderBoard()` function currently (after Task 5) contains the full featured-query + main-query + pagination logic inline (from `// ── Featured posts` through the closing `} catch (err)` block). Now that this logic lives in `renderBoardResults()`, **delete** everything inside `renderBoard()`'s `try` block from the `// ── Featured posts` comment through the end of the try block and the catch block. The resulting `renderBoard()` should contain only: the search bar setup (Step 5 of this task), the `resultsEl` div, the event listeners, and the final `if (searchActive) / else` branch — plus its own `try/catch` wrapper.
+
+The final structure of `renderBoard()` after this step:
+
+```js
+    async function renderBoard(el) {
+      try {
+        // ── Search bar ─────────────────────────────────────────
+        el.textContent = '';
+        // ... search bar DOM setup ...
+        // ... event listeners ...
+        if (searchActive) {
+          await doSearch(resultsEl, lastSearchQuery);
+        } else {
+          await renderBoardResults(resultsEl);
+        }
+        return;
+      } catch (err) {
+        console.error(err);
+        el.textContent = `error loading posts: ${err.message}`;
+      }
+    }
+```
 
 - [ ] **Step 7: Add `doSearch()` function**
 
@@ -1430,6 +1454,9 @@ Expected: all 3 functions deploy successfully. Note: requires Blaze plan.
 
 `dailyExpiry` stale featured — `featured + featuredUntil`:
 - Collection: `posts`, Field 1: `featured` (Ascending), Field 2: `featuredUntil` (Ascending)
+
+Featured board query — `status + featured`:
+- Collection: `posts`, Field 1: `status` (Ascending), Field 2: `featured` (Ascending)
 
 **Existing board indexes (from v1 — confirm still present):**
 
