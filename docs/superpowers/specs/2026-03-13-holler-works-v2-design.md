@@ -74,9 +74,9 @@ Single `index.html` SPA. Firebase Firestore backend. No build step.
 Replace full dates with relative time on listings: "just now", "2h ago", "3d ago", "2mo ago". Full date still shown on post detail view.
 
 ### Featured Posts
-- Fetched in a separate query, prepended to board listing
+- Fetched with query: `status == 'approved' AND featured == true`, prepended to board listing
+- Client-side: posts where `featuredUntil < now` are skipped (not rendered as featured) even if `featured: true` in Firestore — server cleanup by `dailyExpiry` may lag up to 24h
 - Visual treatment: rust-colored left border, subtle background tint
-- Client-side: posts where `featuredUntil < now` are rendered without featured styling even if `featured: true` in Firestore (server cleanup handled by `dailyExpiry`)
 
 ### Urgent Badge
 - Shown on board listing and post detail
@@ -89,6 +89,7 @@ Replace full dates with relative time on listings: "just now", "2h ago", "3d ago
 - Only `approved` posts are indexed in Algolia
 - Results replace board listing while query is active; clearing search restores normal board
 - Search state is **not** URL-encoded — it is transient UI state only. Refreshing or sharing a URL does not preserve an active search. This is intentional for v2 simplicity.
+- Search **ignores** active URL filter/category state. An active search queries all approved posts in Algolia regardless of the current `#/?filter=` or `#/?cat=` in the URL. This is intentional — search is a global escape hatch.
 
 ### Deep Links
 Hash encodes filter + category state:
@@ -120,7 +121,7 @@ Want more visibility?
 
 Payment is separate from submission. User submits first, pays separately if desired.
 
-**Payment matching:** Stripe Payment Links support a custom "reference" field at checkout. Instructions shown to the user: "Include your post title AND contact email in the order note so we can find your post." Admin matches payment to post using title + contact email combination (contact email is the unique fallback when titles are ambiguous). Admin fulfills by toggling `featured`/`urgent` in the admin panel.
+**Payment matching:** Stripe Payment Links support a custom customer-facing text field added in the Payment Link settings ("Add a custom field"). Label it "Your post title + contact email". Instructions shown to user below the CTA: "Include your post title and contact email in the order so we can find your post." Admin matches payment using title + contact email. If a payment cannot be matched (user omitted info), admin emails the Stripe receipt address to request details. Unmatched payments are refunded after 7 days. Posts rejected after a featured payment are refunded manually. These edge cases are low-frequency and handled operationally, not in code.
 
 ---
 
@@ -171,9 +172,9 @@ Board query only shows `status == 'approved'` posts — expired posts disappear 
 Three functions in `functions/index.js`:
 
 ### 1. `onNewPost` (Firestore trigger)
-Fires on `posts/{postId}` create. Writes to the `mail` collection (Firebase Trigger Email extension), which sends email to the configured admin address with post title, type, category, location, compensation, and contact.
+Fires on `posts/{postId}` create. Writes to the `mail` collection (Firebase Trigger Email extension), which sends email to the configured admin address with post title, type, category, location, compensation, and contact. **No Algolia interaction** — posts are pending at creation and not indexed until approved.
 
-**Admin email address:** configured as an environment variable `ADMIN_EMAIL` in Cloud Functions config.
+**Admin email address:** configured via Cloud Functions v2 `.env` file as `ADMIN_EMAIL`.
 
 ### 2. `onPostStatusChange` (Firestore trigger)
 Fires on `posts/{postId}` update. **Guard:** only execute logic if `before.status !== after.status` — prevents spurious re-runs on non-status edits (e.g., admin editing title on an approved post).
@@ -183,11 +184,13 @@ Handles:
 - Status → `expired` or `rejected`: remove from Algolia
 - `featured`/`urgent` field changes: **not** synced to Algolia (display-only, not searchable)
 
-Because the guard checks `before.status !== after.status`, `approvedAt` is only set once — when the post first transitions to `approved`. Subsequent edits to an approved post do not overwrite `approvedAt`.
+Because the guard checks `before.status !== after.status`, `approvedAt` is only set when status actually changes to `approved`. This means:
+- Editing an already-approved post (no status change) → guard blocks execution, `approvedAt` unchanged ✓
+- Re-approving a previously expired/rejected post (status changes to `approved` again) → `approvedAt` is reset to now, restarting the 28-day expiry clock. This is intentional.
 
 ### 3. `dailyExpiry` (scheduled, runs daily at midnight ET)
 1. Query `status == 'approved'` where `approvedAt < now - 28 days` → batch-update to `expired`, remove from Algolia
-2. Query `featured == true` where `featuredUntil < now` → batch-update `featured: false`
+2. Query `featured == true` where `featuredUntil < now` → batch-update `featured: false, featuredUntil: null`
 
 ---
 
