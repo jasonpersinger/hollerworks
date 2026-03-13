@@ -21,16 +21,13 @@
       background: var(--black);
       color: var(--gray);
       font-family: 'Courier New', Courier, monospace;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
       font-size: 14px;
       line-height: 1.6;
       min-height: 100vh;
     }
     a { color: var(--rust); text-decoration: none; cursor: pointer; }
     a:hover { text-decoration: underline; }
-    #app { display: flex; flex: 1; }
+    #app { display: flex; min-height: 100vh; }
     #rail {
       width: 196px; min-width: 196px;
       border-right: 1px solid #1e1e1e;
@@ -131,24 +128,6 @@
       #rail { width: 100%; min-width: unset; border-right: none; border-bottom: 1px solid #1e1e1e; padding: 14px 16px; flex-direction: row; flex-wrap: wrap; gap: 16px; }
       #content { padding: 16px; }
     }
-    .sal-footer {
-      width: 100%;
-      background: var(--black);
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      padding: 24px 0 12px;
-    }
-    .sal-footer img {
-      width: 64px;
-      height: auto;
-      display: block;
-      image-rendering: pixelated;
-      mix-blend-mode: screen;
-    }
-    .sal-footer .s-blue   { filter: hue-rotate(180deg) saturate(1.4); }
-    .sal-footer .s-orange { filter: hue-rotate(315deg) saturate(1.6); }
-    .sal-footer .s-red    { filter: hue-rotate(300deg) saturate(1.8); }
   </style>
 </head>
 <body>
@@ -199,12 +178,6 @@
     </nav>
     <main id="content"></main>
   </div>
-  <footer class="sal-footer">
-    <img src="assets/logo.png" alt="">
-    <img src="assets/logo.png" alt="" class="s-blue">
-    <img src="assets/logo.png" alt="" class="s-orange">
-    <img src="assets/logo.png" alt="" class="s-red">
-  </footer>
   <script type="module">
     import { initializeApp }
       from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
