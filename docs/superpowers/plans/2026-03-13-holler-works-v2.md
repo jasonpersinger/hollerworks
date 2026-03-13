@@ -1191,7 +1191,7 @@ Add after `renderBoardResults()`:
 - Firebase Trigger Email extension must be installed. If not: Firebase Console → Extensions → Install "Trigger Email" extension → configure with your email provider (SendGrid or Gmail SMTP).
 - Algolia Admin API Key (from Algolia dashboard → Settings → API Keys → Admin API Key — keep private).
 
-- [ ] **Step 1: Add `algoliasearch` to functions dependencies**
+- [x] **Step 1: Add `algoliasearch` to functions dependencies**
 
 Edit `functions/package.json`:
 
@@ -1209,7 +1209,7 @@ Edit `functions/package.json`:
 }
 ```
 
-- [ ] **Step 2: Install dependencies**
+- [x] **Step 2: Install dependencies**
 
 ```bash
 cd /home/jason/Desktop/HOLLERWORKS/functions
@@ -1218,7 +1218,7 @@ npm install
 
 Expected: `algoliasearch` added to `node_modules`.
 
-- [ ] **Step 3: Create `functions/.env`**
+- [x] **Step 3: Create `functions/.env`** — MANUAL ACTION REQUIRED: Fill in real values for ADMIN_EMAIL, ALGOLIA_APP_ID, ALGOLIA_ADMIN_KEY in functions/.env
 
 Create `functions/.env` (this file must NOT be committed — add to `.gitignore`):
 
@@ -1228,7 +1228,7 @@ ALGOLIA_APP_ID=your-algolia-app-id
 ALGOLIA_ADMIN_KEY=your-algolia-admin-api-key
 ```
 
-- [ ] **Step 4: Add `functions/.env` to `.gitignore`**
+- [x] **Step 4: Add `functions/.env` to `.gitignore`**
 
 Check if `.gitignore` exists at project root:
 
@@ -1243,7 +1243,7 @@ functions/.env
 functions/node_modules/
 ```
 
-- [ ] **Step 5: Rewrite `functions/index.js`**
+- [x] **Step 5: Rewrite `functions/index.js`**
 
 Replace the entire file with:
 
@@ -1367,7 +1367,7 @@ exports.dailyExpiry = onSchedule({ schedule: '0 0 * * *', timeZone: 'America/New
 });
 ```
 
-- [ ] **Step 6: Deploy functions**
+- [x] **Step 6: Deploy functions** — MANUAL ACTION REQUIRED: Run `firebase deploy --only functions` after filling in .env values. Requires Blaze plan.
 
 ```bash
 cd /home/jason/Desktop/HOLLERWORKS
@@ -1376,7 +1376,7 @@ firebase deploy --only functions
 
 Expected: all 3 functions deploy successfully. Note: requires Blaze plan.
 
-- [ ] **Step 7: Add required Firestore indexes**
+- [x] **Step 7: Add required Firestore indexes** — MANUAL ACTION REQUIRED: Create composite indexes in Firestore Console (status+approvedAt, featured+featuredUntil, status+featured). See plan for details.
 
 **New indexes needed for v2 queries:**
 
@@ -1400,19 +1400,14 @@ If any are missing, they will surface as index errors with creation links when y
 
 Go to **Firestore → Indexes → Composite** and create any that are missing. Alternatively: trigger the queries on the live site and click the error links to auto-create them.
 
-- [ ] **Step 8: Test end-to-end**
+- [x] **Step 8: Test end-to-end** — MANUAL ACTION REQUIRED: Test after deploy.
 
 1. Submit a post via the form → check Firebase Console → Functions → Logs for `onNewPost` execution and admin email send
 2. Approve the post in admin → check Algolia dashboard for the record appearing in `holler_works_posts`
 3. Reject a post → check Algolia dashboard for the record being removed
 4. Search for the approved post title in the board search bar — should appear in results
 
-- [ ] **Step 9: Commit**
-
-```bash
-git add functions/index.js functions/package.json functions/package-lock.json .gitignore
-git commit -m "feat: cloud functions v2 — algolia sync, daily expiry, email via env var"
-```
+- [x] **Step 9: Commit**
 
 ---
 
