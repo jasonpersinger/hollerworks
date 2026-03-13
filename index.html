@@ -313,6 +313,17 @@
         .replace(/"/g, '&quot;');
     }
 
+    function formatLocation(p) {
+      if (p.locationState) {
+        const parts = [];
+        if (p.locationCity)   parts.push(p.locationCity);
+        if (p.locationRegion) parts.push(p.locationRegion);
+        parts.push(p.locationState);
+        return parts.join(', ');
+      }
+      return p.location || '';
+    }
+
     function isEmail(str) {
       return str && str.includes('@') && !str.startsWith('http');
     }
@@ -666,8 +677,9 @@
       }
 
       const age = p.createdAt?.toDate ? timeAgo(p.createdAt.toDate()) : '';
+      const locStr = formatLocation(p);
       meta.appendChild(document.createTextNode(
-        `${p.category || ''}${p.location ? ' · ' + p.location : ''}${age ? ' · ' + age : ''}`
+        `${p.category || ''}${locStr ? ' · ' + locStr : ''}${age ? ' · ' + age : ''}`
       ));
 
       row.appendChild(title);
@@ -720,7 +732,8 @@
           ...(p.urgent         ? [{ label: 'urgency', isUrgent: true }] : []),
           ...(p.remoteFriendly ? [{ label: 'remote',  isRemote: true  }] : []),
           { label: 'category', value: p.category },
-          { label: 'location', value: p.location },
+          { label: 'location', value: formatLocation(p) },
+          ...(p.locationNotes ? [{ label: 'loc notes', value: p.locationNotes }] : []),
           { label: 'comp',     value: p.compensation },
           ...(date ? [{ label: 'posted', value: date }] : [])
         ];
