@@ -431,6 +431,10 @@
         searchBar.appendChild(clearBtn);
         el.appendChild(searchBar);
 
+        const filterBarEl = document.createElement('div');
+        el.appendChild(filterBarEl);
+        renderLocationFilterBar(filterBarEl);
+
         const resultsEl = document.createElement('div');
         el.appendChild(resultsEl);
 
@@ -568,7 +572,6 @@
         if (hasNext) state.pageCursors[state.page] = posts[posts.length - 1];
 
         el.textContent = '';
-        renderLocationFilterBar(el);
 
         if (featuredDocs.length === 0 && posts.length === 0) {
           const empty = document.createElement('div');
@@ -615,7 +618,16 @@
     async function doSearch(el, queryStr) {
       el.textContent = 'searching...';
       try {
-        const { hits, nbHits } = await searchIndex.search(queryStr, { hitsPerPage: 40 });
+        const facetFilters = [];
+        if (state.locationState)   facetFilters.push(`locationState:${state.locationState}`);
+        if (state.locationRegion)  facetFilters.push(`locationRegion:${state.locationRegion}`);
+        if (state.filter !== 'all') facetFilters.push(`type:${state.filter}`);
+        if (state.cat)             facetFilters.push(`category:${state.cat}`);
+
+        const { hits, nbHits } = await searchIndex.search(queryStr, {
+          hitsPerPage: 40,
+          facetFilters: facetFilters.length ? facetFilters : undefined,
+        });
         el.textContent = '';
 
         const countEl = document.createElement('div');
