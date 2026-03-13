@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>holler.works // tech jobs & skills — appalachia</title>
+  <meta name="description" content="holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.">
+  <meta property="og:site_name" content="holler.works">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="holler.works // tech jobs &amp; skills -- appalachia">
+  <meta property="og:description" content="holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -317,7 +323,22 @@
       el.appendChild(tagline);
     }
 
+    function resetMeta() {
+      document.title = 'holler.works // tech jobs & skills \u2014 appalachia';
+      document.querySelector('meta[name="description"]').content =
+        'holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.';
+      document.querySelector('meta[property="og:title"]').content =
+        'holler.works // tech jobs & skills \u2014 appalachia';
+      document.querySelector('meta[property="og:description"]').content =
+        'holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.';
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.remove();
+      const jsonLd = document.getElementById('json-ld-jobposting');
+      if (jsonLd) jsonLd.remove();
+    }
+
     async function render() {
+      resetMeta();
       const route = getRoute();
       if (route.view === 'board') {
         // Reset pagination when filter/cat/remote/location changes via direct URL navigation
@@ -796,6 +817,58 @@
         }
 
         const p = snap.data();
+
+        // ── SEO: dynamic meta + JSON-LD ────────────────────────────────────
+        document.title = p.title + ' -- holler.works';
+        document.querySelector('meta[name="description"]').content =
+          (p.description || '').slice(0, 160);
+        document.querySelector('meta[property="og:title"]').content =
+          p.title + ' -- holler.works';
+        document.querySelector('meta[property="og:description"]').content =
+          (p.description || '').slice(0, 160);
+        const ogUrlMeta = document.createElement('meta');
+        ogUrlMeta.setAttribute('property', 'og:url');
+        ogUrlMeta.content = 'https://holler.works/post/' + id;
+        document.head.appendChild(ogUrlMeta);
+
+        if (p.type === 'need') {
+          const locationAddr = {
+            '@type': 'PostalAddress',
+            addressLocality: p.locationCity || p.locationRegion || '',
+            addressRegion:   p.locationState || '',
+            addressCountry:  'US'
+          };
+          const schema = {
+            '@context': 'https://schema.org',
+            '@type': 'JobPosting',
+            title: p.title,
+            description: p.description +
+              (p.compensation ? '\n\nCompensation: ' + p.compensation : ''),
+            datePosted: p.createdAt?.toDate
+              ? p.createdAt.toDate().toISOString()
+              : new Date().toISOString(),
+            hiringOrganization: {
+              '@type': 'Organization',
+              name: 'holler.works community',
+              sameAs: 'https://holler.works'
+            },
+            jobLocation: { '@type': 'Place', address: locationAddr },
+            ...(p.remoteFriendly ? {
+              jobLocationType: 'TELECOMMUTE',
+              applicantLocationRequirements: { '@type': 'Country', name: 'US' }
+            } : {}),
+            occupationalCategory: p.category || '',
+            directApply: true,
+            url: 'https://holler.works/post/' + id
+          };
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.id = 'json-ld-jobposting';
+          script.textContent = JSON.stringify(schema);
+          document.head.appendChild(script);
+        }
+        // ── end SEO ────────────────────────────────────────────────────────
+
         const date = p.createdAt?.toDate
           ? p.createdAt.toDate().toLocaleDateString('en-US',
               { year: 'numeric', month: 'short', day: 'numeric' })
