@@ -100,6 +100,13 @@
     .msg-ok  { border: 1px solid var(--brown); color: var(--brown); }
     .msg-err { border: 1px solid var(--rust);  color: var(--rust); }
     .empty { color: #444; font-size: 13px; padding: 40px 0; }
+    .loc-filter-bar { display: flex; gap: 8px; margin-bottom: 16px; }
+    .loc-filter-select { background: #111; border: 1px solid #2a2a2a; color: var(--gray); font-family: inherit; font-size: 11px; padding: 4px 6px; outline: 0; flex: 1; }
+    .loc-filter-select:focus { border-color: var(--rust); }
+    .loc-filter-select option { background: #111; }
+    .rail-socials { display: flex; gap: 8px; }
+    .social-link { color: #444; font-size: 11px; font-family: inherit; text-decoration: none; }
+    .social-link:hover { color: var(--rust); text-decoration: none; }
     .pagination { display: flex; gap: 14px; margin-top: 24px; font-size: 11px; align-items: center; color: var(--gray); }
     .page-btn { color: var(--gray); cursor: pointer; background: none; border: none; font-family: inherit; font-size: 11px; padding: 0; }
     .page-btn:hover { color: var(--rust); }
@@ -161,6 +168,11 @@
         <button class="rail-link" data-cat="Hair &amp; Beauty"><img src="assets/icon-hair.png" class="cat-icon" alt="">hair &amp; beauty</button>
         <button class="rail-link" data-cat="Arts &amp; Culture"><img src="assets/icon-arts.png" class="cat-icon" alt="">arts &amp; culture</button>
         <button class="rail-link" data-cat="Other"><img src="assets/icon-other.png" class="cat-icon" alt="">other</button>
+      </div>
+      <div class="rail-socials">
+        <a href="https://x.com/holler_works" target="_blank" rel="noopener noreferrer" class="social-link">[x]</a>
+        <a href="https://www.instagram.com/holler.works/" target="_blank" rel="noopener noreferrer" class="social-link">[ig]</a>
+        <a href="https://www.reddit.com/r/hollerworks/" target="_blank" rel="noopener noreferrer" class="social-link">[rd]</a>
       </div>
       <button class="post-btn" id="postBtn">[+ post]</button>
     </nav>
@@ -717,6 +729,38 @@
       'Music & Audio', 'Trades & Skilled Labor', 'Healthcare & Wellness',
       'Hair & Beauty', 'Arts & Culture', 'Other'
     ];
+
+    const LOCATIONS = {
+      'Alabama':        ['Northeast Alabama', 'Northern Alabama'],
+      'Georgia':        ['North Georgia', 'Northwest Georgia', 'Northeast Georgia'],
+      'Kentucky':       ['Eastern Kentucky', 'Southeast Kentucky'],
+      'Maryland':       ['Western Maryland'],
+      'Mississippi':    ['Northeast Mississippi'],
+      'New York':       ['Southern Tier'],
+      'North Carolina': ['Western NC', 'High Country', 'Foothills', 'Southwest NC'],
+      'Ohio':           ['Southeastern Ohio', 'Northeast Ohio'],
+      'Pennsylvania':   ['Western PA', 'Southwest PA', 'North Central PA'],
+      'South Carolina': ['Upstate South Carolina'],
+      'Tennessee':      ['East Tennessee', 'Tri-Cities', 'Southeast Tennessee'],
+      'Virginia':       ['Southwest Virginia', 'Southside Virginia'],
+      'West Virginia':  ['Northern WV', 'Central WV', 'Southern WV'],
+    };
+
+    const LOCATION_CITIES = {
+      'Alabama':        ['Anniston', 'Gadsden', 'Huntsville'],
+      'Georgia':        ['Rome'],
+      'Kentucky':       ['Ashland'],
+      'Maryland':       ['Cumberland'],
+      'Mississippi':    ['Tupelo'],
+      'New York':       ['Binghamton'],
+      'North Carolina': ['Asheville'],
+      'Ohio':           ['Youngstown'],
+      'Pennsylvania':   ['Pittsburgh', 'Scranton', 'Altoona'],
+      'South Carolina': ['Greenville', 'Spartanburg'],
+      'Tennessee':      ['Knoxville', 'Chattanooga', 'Johnson City', 'Kingsport', 'Bristol'],
+      'Virginia':       ['Roanoke', 'Blacksburg'],
+      'West Virginia':  ['Charleston', 'Huntington', 'Morgantown', 'Wheeling', 'Beckley'],
+    };
 
     function renderSubmit(el) {
       el.innerHTML = '';
