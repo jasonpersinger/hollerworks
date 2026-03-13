@@ -21,13 +21,16 @@
       background: var(--black);
       color: var(--gray);
       font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
       font-size: 14px;
       line-height: 1.6;
       min-height: 100vh;
     }
     a { color: var(--rust); text-decoration: none; cursor: pointer; }
     a:hover { text-decoration: underline; }
-    #app { display: flex; min-height: 100vh; }
+    #app { display: flex; flex: 1; }
     #rail {
       width: 196px; min-width: 196px;
       border-right: 1px solid #1e1e1e;
