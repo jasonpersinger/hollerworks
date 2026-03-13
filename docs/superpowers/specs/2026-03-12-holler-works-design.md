@@ -19,7 +19,7 @@ A community-driven tech job and skills board for Appalachia. People post either 
 - Compensation required on every listing — no ghost posts
 - Moderated — all posts approved before going live
 - Lightweight — single HTML file, no frameworks, fast on any connection
-- Aesthetic — monospace fonts, ASCII art accents, rust/brown/gray on black
+- Aesthetic — monospace fonts, ASCII art accents, rust/brown/gray on black, no em dashes
 
 ---
 
