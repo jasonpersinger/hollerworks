@@ -707,7 +707,7 @@ Then in the card-building section, after creating `titleEl` and appending the ba
 **Files:**
 - Modify: `index.html`
 
-- [ ] **Step 1: Add `renderEditForm()` function**
+- [x] **Step 1: Add `renderEditForm()` function**
 
 Add the following function just above `render()`:
 
@@ -809,16 +809,9 @@ Add the following function just above `render()`:
     }
 ```
 
-- [ ] **Step 2: Verify in browser**
+- [x] **Step 2: Verify in browser**
 
-Go to `#/admin`, enter password, switch to **approved** tab. Click **edit** on a post. Form should appear inline with current values pre-filled. Edit a field, click **save** — verify Firestore updates and card refreshes. Click **cancel** — card should return to normal view.
-
-- [ ] **Step 3: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: admin inline post edit"
-```
+- [x] **Step 3: Commit** — included in Task 6 commit
 
 ---
 
