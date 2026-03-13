@@ -1008,13 +1008,7 @@
         <div class="form-group">
           <label class="radio-label"><input type="checkbox" id="f-remote"> remote-friendly</label>
         </div>
-        <button type="submit" class="submit-btn" id="submitBtn">submit post</button>
-        <div class="stripe-cta">
-          <div class="stripe-cta-label">want more visibility?</div>
-          <a href="${STRIPE_FEATURED_URL}" target="_blank" rel="noopener noreferrer" class="stripe-link">→ feature this post for 7 days — $10</a>
-          <a href="${STRIPE_URGENT_URL}"   target="_blank" rel="noopener noreferrer" class="stripe-link">→ mark as urgent — $5</a>
-          <div class="stripe-note">submit your post first, then pay separately. include your post title and contact email in the stripe order so we can find your post.</div>
-        </div>`;
+        <button type="submit" class="submit-btn" id="submitBtn">submit post</button>`;
 
       el.appendChild(heading);
       el.appendChild(msgEl);
@@ -1102,7 +1096,7 @@
 
         try {
           const remoteFriendly = form.querySelector('#f-remote').checked;
-          await addDoc(collection(db, 'posts'), {
+          const docRef = await addDoc(collection(db, 'posts'), {
             type, title, category: cat,
             locationState: locState, locationRegion: locRegion,
             locationCity:  locCity  || null,
@@ -1111,15 +1105,56 @@
             remoteFriendly, status: 'pending', createdAt: serverTimestamp()
           });
 
-          el.innerHTML = '';
+          const postId      = docRef.id;
+          const featuredUrl = STRIPE_FEATURED_URL
+            + '?prefilled_email=' + encodeURIComponent(contact)
+            + '&client_reference_id=' + postId;
+          const urgentUrl   = STRIPE_URGENT_URL
+            + '?prefilled_email=' + encodeURIComponent(contact)
+            + '&client_reference_id=' + postId;
+
+          el.textContent = '';
+
           const ok = document.createElement('div');
           ok.className = 'msg msg-ok';
-          ok.textContent = 'post submitted — it will appear on the board after review. thanks.';
+          ok.textContent = 'post submitted -- it will appear on the board after review.';
+          el.appendChild(ok);
+
+          const cta = document.createElement('div');
+          cta.className = 'stripe-cta';
+
+          const ctaLabel = document.createElement('div');
+          ctaLabel.className = 'stripe-cta-label';
+          ctaLabel.textContent = 'want more visibility?';
+          cta.appendChild(ctaLabel);
+
+          const featuredLink = document.createElement('a');
+          featuredLink.href = featuredUrl;
+          featuredLink.target = '_blank';
+          featuredLink.rel = 'noopener noreferrer';
+          featuredLink.className = 'stripe-link';
+          featuredLink.textContent = '→ feature this post for 7 days -- $10';
+          cta.appendChild(featuredLink);
+
+          const urgentLink = document.createElement('a');
+          urgentLink.href = urgentUrl;
+          urgentLink.target = '_blank';
+          urgentLink.rel = 'noopener noreferrer';
+          urgentLink.className = 'stripe-link';
+          urgentLink.textContent = '→ mark as urgent -- $5';
+          cta.appendChild(urgentLink);
+
+          const note = document.createElement('div');
+          note.className = 'stripe-note';
+          note.textContent = 'payment is linked to your post automatically.';
+          cta.appendChild(note);
+
+          el.appendChild(cta);
+
           const backLink = document.createElement('a');
           backLink.href = '#/';
-          backLink.style.fontSize = '12px';
+          backLink.style.cssText = 'font-size:12px; display:block; margin-top:18px;';
           backLink.textContent = '← back to board';
-          el.appendChild(ok);
           el.appendChild(backLink);
         } catch (err) {
           console.error(err);
@@ -1594,7 +1629,7 @@
     render(); // initial render — must be after all view functions
   </script>
   <footer class="site-footer">
-    holler.works is a community job and skills board for the Appalachian region. Buyers and sellers of tech services connect directly. Posting is free. Optional paid upgrades: featured placement (7 days) — $10 · urgent badge — $5. Payments processed by Polar. All sales final; no refunds once a listing goes live. Contact: hey@holler.works
+    holler.works is a community job and skills board for the Appalachian region. Buyers and sellers of tech services connect directly. Posting is free. Optional paid upgrades: featured placement (7 days) — $10 · urgent badge — $5. Payments processed by Stripe. All sales final; no refunds once a listing goes live. Contact: hey@holler.works
   </footer>
 </body>
 </html>
