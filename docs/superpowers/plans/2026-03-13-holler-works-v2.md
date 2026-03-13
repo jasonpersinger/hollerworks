@@ -71,7 +71,7 @@ service cloud.firestore {
 **Files:**
 - Modify: `index.html` (rail section, ~line 111–115)
 
-- [ ] **Step 1: Replace tagline in rail**
+- [x] **Step 1: Replace tagline in rail**
 
 In `index.html`, find the `.rail-logo` div:
 
@@ -96,7 +96,7 @@ Replace with:
       </div>
 ```
 
-- [ ] **Step 2: Replace `.rail-logo .tagline` CSS rule with tagline styles**
+- [x] **Step 2: Replace `.rail-logo .tagline` CSS rule with tagline styles**
 
 Find this CSS rule and replace it (this removes the old rule and adds the new ones in one step):
 
@@ -111,16 +111,9 @@ New:
     .tagline-line { color: var(--lgray); font-size: 13px; font-weight: bold; letter-spacing: 0.05em; }
 ```
 
-- [ ] **Step 4: Verify in browser**
+- [x] **Step 4: Verify in browser**
 
-Open `index.html`. Rail should show HOLLER.WORKS logo, then STAY. / BUILD. in light gray, then BROWSE section.
-
-- [ ] **Step 5: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: update rail identity to STAY. BUILD. tagline"
-```
+- [x] **Step 5: Commit**
 
 ---
 
