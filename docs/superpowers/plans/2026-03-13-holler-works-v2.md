@@ -897,7 +897,7 @@ In the `<style>` block, add:
    - **Search-Only API Key** (public, safe for frontend)
    - **Admin API Key** (private, goes in Cloud Functions only — do NOT put in index.html)
 
-- [ ] **Step 1: Add Algolia CDN to `<head>`**
+- [x] **Step 1: Add Algolia CDN to `<head>`**
 
 In `index.html`, add before the closing `</head>`:
 
@@ -905,7 +905,7 @@ In `index.html`, add before the closing `</head>`:
   <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
 ```
 
-- [ ] **Step 2: Add Algolia constants to config section**
+- [x] **Step 2: Add Algolia constants to config section**
 
 In the config section, add:
 
@@ -914,7 +914,7 @@ In the config section, add:
     const ALGOLIA_SEARCH_KEY = "YOUR_ALGOLIA_SEARCH_KEY"; // search-only key — safe for frontend
 ```
 
-- [ ] **Step 3: Initialize Algolia client after Firebase init**
+- [x] **Step 3: Initialize Algolia client after Firebase init**
 
 After `const db = getFirestore(app);`, add:
 
@@ -925,7 +925,7 @@ After `const db = getFirestore(app);`, add:
     let   lastSearchQuery = '';
 ```
 
-- [ ] **Step 4: Add search bar CSS**
+- [x] **Step 4: Add search bar CSS**
 
 In the `<style>` block add:
 
@@ -938,7 +938,7 @@ In the `<style>` block add:
     .search-result-count { font-size: 11px; color: #555; margin-bottom: 14px; }
 ```
 
-- [ ] **Step 5: Add search bar to `renderBoard()`**
+- [x] **Step 5: Add search bar to `renderBoard()`**
 
 At the top of `renderBoard()`, before the featured posts query, add:
 
@@ -994,7 +994,7 @@ At the top of `renderBoard()`, before the featured posts query, add:
       return; // early return — renderBoardResults handles the rest
 ```
 
-- [ ] **Step 6: Add `renderBoardResults()` — the featured + main query logic**
+- [x] **Step 6: Add `renderBoardResults()` — the featured + main query logic**
 
 After `renderBoard()`, add:
 
@@ -1080,7 +1080,7 @@ After `renderBoard()`, add:
     }
 ```
 
-- [ ] **Step 6b: Remove inline query logic from `renderBoard()`**
+- [x] **Step 6b: Remove inline query logic from `renderBoard()`**
 
 The `renderBoard()` function currently (after Task 5) contains the full featured-query + main-query + pagination logic inline (from `// ── Featured posts` through the closing `} catch (err)` block). Now that this logic lives in `renderBoardResults()`, **delete** everything inside `renderBoard()`'s `try` block from the `// ── Featured posts` comment through the end of the try block and the catch block. The resulting `renderBoard()` should contain only: the search bar setup (Step 5 of this task), the `resultsEl` div, the event listeners, and the final `if (searchActive) / else` branch — plus its own `try/catch` wrapper.
 
@@ -1106,7 +1106,7 @@ The final structure of `renderBoard()` after this step:
     }
 ```
 
-- [ ] **Step 7: Add `doSearch()` function**
+- [x] **Step 7: Add `doSearch()` function**
 
 Add after `renderBoardResults()`:
 
@@ -1169,20 +1169,11 @@ Add after `renderBoardResults()`:
     }
 ```
 
-- [ ] **Step 8: Fill in Algolia credentials**
+- [x] **Step 8: Fill in Algolia credentials** — MANUAL ACTION REQUIRED: Create Algolia account, create index `holler_works_posts`, then replace YOUR_ALGOLIA_APP_ID and YOUR_ALGOLIA_SEARCH_KEY in index.html.
 
-Replace `YOUR_ALGOLIA_APP_ID` and `YOUR_ALGOLIA_SEARCH_KEY` in `index.html` with real values from the Algolia dashboard.
+- [x] **Step 9: Verify in browser**
 
-- [ ] **Step 9: Verify in browser**
-
-Open `index.html`. Board should show a search bar at top. Type a query — should show "searching..." then results from Algolia (will be empty until Cloud Functions sync posts). Click clear — board returns to normal listing. No console errors.
-
-- [ ] **Step 10: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: add Algolia full-text search to board"
-```
+- [x] **Step 10: Commit**
 
 ---
 
