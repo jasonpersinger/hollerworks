@@ -123,6 +123,8 @@
     .search-clear { background: none; border: none; color: #555; font-family: inherit; font-size: 11px; cursor: pointer; padding: 0; white-space: nowrap; }
     .search-clear:hover { color: var(--rust); }
     .search-result-count { font-size: 11px; color: #555; margin-bottom: 14px; }
+    .site-footer { padding: 24px 36px; font-size: 10px; color: #333; line-height: 1.8; border-top: 1px solid #161616; }
+    .site-footer a { color: #333; text-decoration: underline; }
     @media (max-width: 600px) {
       #app { flex-direction: column; }
       #rail { width: 100%; min-width: unset; border-right: none; border-bottom: 1px solid #1e1e1e; padding: 14px 16px; flex-direction: row; flex-wrap: wrap; gap: 16px; }
@@ -1505,5 +1507,8 @@
 
     render(); // initial render — must be after all view functions
   </script>
+  <footer class="site-footer">
+    holler.works is a community job and skills board for the Appalachian region. Buyers and sellers of tech services connect directly. Posting is free. Optional paid upgrades: featured placement (7 days) — $10 · urgent badge — $5. Payments processed by Polar. All sales final; no refunds once a listing goes live. Contact: hello@holler.works
+  </footer>
 </body>
 </html>
