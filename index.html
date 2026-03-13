@@ -213,11 +213,13 @@
 
     // ── State ─────────────────────────────────────────────────────────────
     let state = {
-      filter:      'all',  // 'all' | 'need' | 'offer'
-      cat:         null,   // null | category string
-      remote:      false,  // true = only remote-friendly posts
-      page:        1,
-      pageCursors: [null]  // pageCursors[0]=null (page 1), pageCursors[n]=startAfter doc
+      filter:         'all',  // 'all' | 'need' | 'offer'
+      cat:            null,   // null | category string
+      remote:         false,  // true = only remote-friendly posts
+      locationState:  null,
+      locationRegion: null,
+      page:           1,
+      pageCursors:    [null]  // pageCursors[0]=null (page 1), pageCursors[n]=startAfter doc
     };
 
     // ── Router ────────────────────────────────────────────────────────────
@@ -227,10 +229,12 @@
       const params = new URLSearchParams(qs || '');
       if (path === '/' || path === '') {
         return {
-          view:   'board',
-          filter: params.get('filter') || 'all',
-          cat:    params.get('cat')    || null,
-          remote: params.get('remote') === '1'
+          view:           'board',
+          filter:         params.get('filter') || 'all',
+          cat:            params.get('cat')    || null,
+          remote:         params.get('remote') === '1',
+          locationState:  params.get('st')     || null,
+          locationRegion: params.get('rgn')    || null,
         };
       }
       if (path.startsWith('/post/')) {
@@ -252,6 +256,8 @@
       if (state.filter !== 'all') params.set('filter', state.filter);
       if (state.cat) params.set('cat', state.cat);
       if (state.remote) params.set('remote', '1');
+      if (state.locationState)  params.set('st', state.locationState);
+      if (state.locationRegion) params.set('rgn', state.locationRegion);
       const qs = params.toString();
       const newHash = '#/' + (qs ? '?' + qs : '');
       if (window.location.hash === newHash) render();
@@ -261,13 +267,18 @@
     async function render() {
       const route = getRoute();
       if (route.view === 'board') {
-        // Reset pagination when filter/cat/remote changes via direct URL navigation
-        if (state.filter !== route.filter || state.cat !== route.cat || state.remote !== route.remote) {
+        // Reset pagination when filter/cat/remote/location changes via direct URL navigation
+        if (state.filter !== route.filter || state.cat !== route.cat ||
+            state.remote !== route.remote ||
+            state.locationState !== route.locationState ||
+            state.locationRegion !== route.locationRegion) {
           state.page = 1; state.pageCursors = [null];
         }
-        state.filter = route.filter;
-        state.cat    = route.cat;
-        state.remote = route.remote;
+        state.filter         = route.filter;
+        state.cat            = route.cat;
+        state.remote         = route.remote;
+        state.locationState  = route.locationState;
+        state.locationRegion = route.locationRegion;
       }
       updateRailActive(route);
       const content = document.getElementById('content');
@@ -408,6 +419,66 @@
       }
     }
 
+    function renderLocationFilterBar(container) {
+      const bar = document.createElement('div');
+      bar.className = 'loc-filter-bar';
+
+      const stateSel = document.createElement('select');
+      stateSel.className = 'loc-filter-select';
+      const blankOpt = document.createElement('option');
+      blankOpt.value = '';
+      blankOpt.textContent = 'all states';
+      stateSel.appendChild(blankOpt);
+      Object.keys(LOCATIONS).sort().forEach(s => {
+        const o = document.createElement('option');
+        o.value = s;
+        o.textContent = s;
+        if (s === state.locationState) o.selected = true;
+        stateSel.appendChild(o);
+      });
+
+      const regionSel = document.createElement('select');
+      regionSel.className = 'loc-filter-select';
+      regionSel.style.display = state.locationState ? '' : 'none';
+
+      function populateRegions(st) {
+        regionSel.textContent = '';
+        const blank = document.createElement('option');
+        blank.value = '';
+        blank.textContent = 'all regions';
+        regionSel.appendChild(blank);
+        if (st && LOCATIONS[st]) {
+          LOCATIONS[st].forEach(r => {
+            const o = document.createElement('option');
+            o.value = r;
+            o.textContent = r;
+            if (r === state.locationRegion) o.selected = true;
+            regionSel.appendChild(o);
+          });
+        }
+      }
+      populateRegions(state.locationState);
+
+      stateSel.addEventListener('change', () => {
+        state.locationState  = stateSel.value || null;
+        state.locationRegion = null;
+        regionSel.style.display = state.locationState ? '' : 'none';
+        populateRegions(state.locationState);
+        state.page = 1; state.pageCursors = [null];
+        navigateBoard();
+      });
+
+      regionSel.addEventListener('change', () => {
+        state.locationRegion = regionSel.value || null;
+        state.page = 1; state.pageCursors = [null];
+        navigateBoard();
+      });
+
+      bar.appendChild(stateSel);
+      bar.appendChild(regionSel);
+      container.appendChild(bar);
+    }
+
     async function renderBoardResults(el) {
       try {
         const now = new Date();
@@ -432,6 +503,8 @@
         if (state.filter !== 'all') constraints.push(where('type',            '==', state.filter));
         if (state.cat)              constraints.push(where('category',        '==', state.cat));
         if (state.remote)           constraints.push(where('remoteFriendly',  '==', true));
+        if (state.locationState)    constraints.push(where('locationState',   '==', state.locationState));
+        if (state.locationRegion)   constraints.push(where('locationRegion',  '==', state.locationRegion));
         constraints.push(limit(PAGE_SIZE + 1));
 
         let q = query(...constraints);
@@ -446,6 +519,7 @@
         if (hasNext) state.pageCursors[state.page] = posts[posts.length - 1];
 
         el.textContent = '';
+        renderLocationFilterBar(el);
 
         if (featuredDocs.length === 0 && posts.length === 0) {
           const empty = document.createElement('div');
