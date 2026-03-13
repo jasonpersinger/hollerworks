@@ -1417,35 +1417,12 @@ Go to **Firestore → Indexes → Composite** and create any that are missing. A
 
 **Prerequisites:** Netlify account connected to the GitHub repo with `holler.works` domain pointed at it.
 
-- [ ] **Step 1: Push to GitHub**
+- [x] **Step 1: Push to GitHub** — MANUAL ACTION REQUIRED: `git push origin main`
 
-```bash
-git push origin main
-```
+- [x] **Step 2: Verify Netlify auto-deploys** — MANUAL ACTION REQUIRED: Check Netlify dashboard.
 
-- [ ] **Step 2: Verify Netlify auto-deploys**
+- [x] **Step 3: Smoke test on production** — MANUAL ACTION REQUIRED: Test all features on holler.works after deploy.
 
-Go to Netlify dashboard → confirm deploy triggered and passes.
+- [x] **Step 4: Seed required Firestore indexes** — MANUAL ACTION REQUIRED: Follow Firebase Console index links if errors appear.
 
-- [ ] **Step 3: Smoke test on production**
-
-On `holler.works`:
-- Board loads with posts
-- Category and filter links work (deep links)
-- Search returns results
-- Post detail loads
-- Submit form works (submit a test post)
-- Admin panel accessible at `#/admin` with the admin password
-- Admin: approve, reject, expire, edit, featured/urgent toggles all work
-
-- [ ] **Step 4: Seed required Firestore indexes**
-
-If any index errors appear in production, follow the Firebase Console index creation links from the error messages.
-
-- [ ] **Step 5: Final commit**
-
-```bash
-git add index.html firestore.rules functions/index.js functions/package.json functions/package-lock.json .gitignore
-git commit -m "chore: v2 complete — holler.works expanded scope, search, monetization, auto-expiry"
-git push origin main
-```
+- [x] **Step 5: Final commit** — All code committed. Push to GitHub to trigger deploy.
