@@ -870,8 +870,27 @@
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label" for="f-loc">location *</label>
-          <input class="form-input" id="f-loc" type="text" required placeholder='e.g. roanoke, va / "remote"'>
+          <label class="form-label" for="f-loc-state">state *</label>
+          <select class="form-select" id="f-loc-state" required>
+            <option value="">— select state —</option>
+            ${Object.keys(LOCATIONS).sort().map(s => `<option value="${escHtml(s)}">${escHtml(s)}</option>`).join('')}
+          </select>
+        </div>
+        <div class="form-group" id="f-loc-region-group" style="display:none">
+          <label class="form-label" for="f-loc-region">region *</label>
+          <select class="form-select" id="f-loc-region">
+            <option value="">— select region —</option>
+          </select>
+        </div>
+        <div class="form-group" id="f-loc-city-group" style="display:none">
+          <label class="form-label" for="f-loc-city">city</label>
+          <select class="form-select" id="f-loc-city">
+            <option value="">— select city (optional) —</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-loc-notes">location notes</label>
+          <input class="form-input" id="f-loc-notes" type="text" maxlength="100" placeholder="e.g. remote, based in Harlan County">
         </div>
         <div class="form-group">
           <label class="form-label" for="f-comp">compensation * — no ghost posts</label>
@@ -900,6 +919,51 @@
       el.appendChild(msgEl);
       el.appendChild(form);
 
+      const stateSel    = form.querySelector('#f-loc-state');
+      const regionGroup = form.querySelector('#f-loc-region-group');
+      const regionSel   = form.querySelector('#f-loc-region');
+      const cityGroup   = form.querySelector('#f-loc-city-group');
+      const citySel     = form.querySelector('#f-loc-city');
+
+      stateSel.addEventListener('change', () => {
+        const st = stateSel.value;
+        regionSel.textContent = '';
+        const blank = document.createElement('option');
+        blank.value = ''; blank.textContent = '— select region —';
+        regionSel.appendChild(blank);
+        regionGroup.style.display = st ? '' : 'none';
+        cityGroup.style.display = 'none';
+        citySel.textContent = '';
+        const cblank = document.createElement('option');
+        cblank.value = ''; cblank.textContent = '— select city (optional) —';
+        citySel.appendChild(cblank);
+        if (st && LOCATIONS[st]) {
+          LOCATIONS[st].forEach(r => {
+            const o = document.createElement('option');
+            o.value = r; o.textContent = r;
+            regionSel.appendChild(o);
+          });
+        }
+      });
+
+      regionSel.addEventListener('change', () => {
+        const st = stateSel.value;
+        citySel.textContent = '';
+        const cblank = document.createElement('option');
+        cblank.value = ''; cblank.textContent = '— select city (optional) —';
+        citySel.appendChild(cblank);
+        if (st && LOCATION_CITIES[st]) {
+          cityGroup.style.display = '';
+          LOCATION_CITIES[st].forEach(c => {
+            const o = document.createElement('option');
+            o.value = c; o.textContent = c;
+            citySel.appendChild(o);
+          });
+        } else {
+          cityGroup.style.display = 'none';
+        }
+      });
+
       form.querySelector('#f-title').addEventListener('input', function() {
         form.querySelector('#titleCount').textContent = `${this.value.length}/80`;
       });
@@ -914,15 +978,18 @@
         btn.disabled = true;
         btn.textContent = 'submitting...';
 
-        const type    = form.querySelector('input[name="type"]:checked')?.value;
-        const title   = form.querySelector('#f-title').value.trim();
-        const cat     = form.querySelector('#f-cat').value;
-        const loc     = form.querySelector('#f-loc').value.trim();
-        const comp    = form.querySelector('#f-comp').value.trim();
-        const desc    = form.querySelector('#f-desc').value.trim();
-        const contact = form.querySelector('#f-contact').value.trim();
+        const type      = form.querySelector('input[name="type"]:checked')?.value;
+        const title     = form.querySelector('#f-title').value.trim();
+        const cat       = form.querySelector('#f-cat').value;
+        const locState  = form.querySelector('#f-loc-state').value;
+        const locRegion = form.querySelector('#f-loc-region').value;
+        const locCity   = form.querySelector('#f-loc-city').value;
+        const locNotes  = form.querySelector('#f-loc-notes').value.trim();
+        const comp      = form.querySelector('#f-comp').value.trim();
+        const desc      = form.querySelector('#f-desc').value.trim();
+        const contact   = form.querySelector('#f-contact').value.trim();
 
-        if (!type || !title || !cat || !loc || !comp || !contact) {
+        if (!type || !title || !cat || !locState || !locRegion || !comp || !contact) {
           const errDiv = document.createElement('div');
           errDiv.className = 'msg msg-err';
           errDiv.textContent = 'all required fields must be filled in.';
@@ -935,7 +1002,10 @@
         try {
           const remoteFriendly = form.querySelector('#f-remote').checked;
           await addDoc(collection(db, 'posts'), {
-            type, title, category: cat, location: loc,
+            type, title, category: cat,
+            locationState: locState, locationRegion: locRegion,
+            locationCity:  locCity  || null,
+            locationNotes: locNotes || null,
             compensation: comp, description: desc, contact,
             remoteFriendly, status: 'pending', createdAt: serverTimestamp()
           });
