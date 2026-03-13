@@ -40,7 +40,7 @@
     .rail-logo .tagline { color: var(--brown); font-size: 11px; margin-top: 2px; }
     .rail-tagline { display: flex; flex-direction: column; gap: 1px; }
     .tagline-line { color: var(--lgray); font-size: 13px; font-weight: bold; letter-spacing: 0.05em; }
-    .rail-logo-img { width: 52px; height: auto; display: block; margin-bottom: 8px; image-rendering: pixelated; image-rendering: crisp-edges; }
+    .rail-logo-img { width: 52px; height: auto; display: block; margin-bottom: 8px; image-rendering: pixelated; image-rendering: crisp-edges; cursor: pointer; }
     .rail-mountain { display: block; width: 100%; height: auto; image-rendering: pixelated; image-rendering: crisp-edges; opacity: 0.6; margin: 4px 0; }
     .rail-section { display: flex; flex-direction: column; gap: 3px; }
     .rail-label { color: var(--brown); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
@@ -136,7 +136,7 @@
   <div id="app">
     <nav id="rail">
       <div class="rail-logo">
-        <img src="assets/logo.png" alt="" class="rail-logo-img">
+        <img src="assets/logo.png" alt="home" class="rail-logo-img" id="logoHome">
         HOLLER.WORKS
         <div class="tagline">// appalachia</div>
       </div>
@@ -407,6 +407,7 @@
 
     document.getElementById('postBtn').addEventListener('click', () => navigate('/submit'));
     document.getElementById('aboutBtn').addEventListener('click', () => navigate('/about'));
+    document.getElementById('logoHome').addEventListener('click', () => navigate('/'));
     window.addEventListener('hashchange', render);
 
     // ── Board View ────────────────────────────────────────────────────────
