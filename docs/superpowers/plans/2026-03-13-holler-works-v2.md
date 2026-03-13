@@ -128,7 +128,7 @@ New:
 Currently state lives in a JS object and rails call `navigate('/')` which may not trigger `hashchange` if already on `#/`. The fix: encode filter+cat in the hash query string (`#/?filter=need&cat=...`) so every state change produces a unique URL. This also makes filters shareable/bookmarkable for free.
 `─────────────────────────────────────────────────`
 
-- [ ] **Step 1: Replace `getRoute()` with URL-parsing version**
+- [x] **Step 1: Replace `getRoute()` with URL-parsing version**
 
 Find and replace the entire `getRoute()` function:
 
@@ -155,7 +155,7 @@ Find and replace the entire `getRoute()` function:
     }
 ```
 
-- [ ] **Step 2: Add `navigateBoard()` helper**
+- [x] **Step 2: Add `navigateBoard()` helper**
 
 After the updated `getRoute()`, replace the existing `navigate()` function with:
 
@@ -175,7 +175,7 @@ After the updated `getRoute()`, replace the existing `navigate()` function with:
     }
 ```
 
-- [ ] **Step 3: Update `render()` to sync state from URL**
+- [x] **Step 3: Update `render()` to sync state from URL**
 
 Find the `render()` function and add state sync at the top:
 
@@ -201,7 +201,7 @@ Find the `render()` function and add state sync at the top:
     }
 ```
 
-- [ ] **Step 4: Replace rail button handlers**
+- [x] **Step 4: Replace rail button handlers**
 
 Find and replace the entire rail wiring section (the two `querySelectorAll` blocks for `[data-filter]` and `[data-cat]`):
 
@@ -223,16 +223,9 @@ Find and replace the entire rail wiring section (the two `querySelectorAll` bloc
     });
 ```
 
-- [ ] **Step 5: Verify in browser**
+- [x] **Step 5: Verify in browser**
 
-Open `index.html`. Click **[need]** — URL should change to `#/?filter=need`. Click a category — URL should change to `#/?cat=Software+%26+Dev`. Both should update the board. Copy a filtered URL, paste in new tab — board should open with that filter active.
-
-- [ ] **Step 6: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: encode filter/cat state in hash URL for deep links"
-```
+- [x] **Step 6: Commit**
 
 ---
 
