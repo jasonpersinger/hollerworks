@@ -123,6 +123,7 @@
     .search-clear { background: none; border: none; color: #555; font-family: inherit; font-size: 11px; cursor: pointer; padding: 0; white-space: nowrap; }
     .search-clear:hover { color: var(--rust); }
     .search-result-count { font-size: 11px; color: #555; margin-bottom: 14px; }
+    .about-body { color: var(--gray); font-size: 13px; line-height: 1.8; margin-bottom: 14px; max-width: 560px; }
     .site-footer { padding: 24px 36px; font-size: 10px; color: #333; line-height: 1.8; border-top: 1px solid #161616; }
     .site-footer a { color: #333; text-decoration: underline; }
     @media (max-width: 600px) {
@@ -176,6 +177,7 @@
         <a href="https://www.instagram.com/holler.works/" target="_blank" rel="noopener noreferrer" class="social-link">[ig]</a>
         <a href="https://www.reddit.com/r/hollerworks/" target="_blank" rel="noopener noreferrer" class="social-link">[rd]</a>
       </div>
+      <button class="rail-link" onclick="navigate('/about')">[about]</button>
       <button class="post-btn" id="postBtn">[+ post]</button>
     </nav>
     <main id="content"></main>
@@ -246,6 +248,7 @@
       }
       if (path === '/submit') return { view: 'submit' };
       if (path === '/admin')  return { view: 'admin' };
+      if (path === '/about')  return { view: 'about' };
       return { view: 'board', filter: 'all', cat: null };
     }
 
@@ -264,6 +267,37 @@
       const newHash = '#/' + (qs ? '?' + qs : '');
       if (window.location.hash === newHash) render();
       else window.location.hash = newHash;
+    }
+
+    function renderAbout(el) {
+      el.textContent = '';
+
+      const heading = document.createElement('div');
+      heading.className = 'page-heading';
+      heading.textContent = '[about]';
+      el.appendChild(heading);
+
+      [
+        'holler.works is a community job and skills board built for Appalachia.',
+        'No recruiter middlemen. No ghost posts. Compensation is required on every listing. Posts are moderated before they go live.',
+        'Post for free. If you want more visibility, featured placement runs $10 for 7 days. Urgent badge is $5.',
+      ].forEach(text => {
+        const p = document.createElement('p');
+        p.className = 'about-body';
+        p.textContent = text;
+        el.appendChild(p);
+      });
+
+      const tagline = document.createElement('div');
+      tagline.className = 'rail-tagline';
+      tagline.style.marginTop = '28px';
+      ['STAY.', 'BUILD.'].forEach(line => {
+        const d = document.createElement('div');
+        d.className = 'tagline-line';
+        d.textContent = line;
+        tagline.appendChild(d);
+      });
+      el.appendChild(tagline);
     }
 
     async function render() {
@@ -290,6 +324,7 @@
       if (route.view === 'post')   await renderPost(content, route.id);
       if (route.view === 'submit') renderSubmit(content);
       if (route.view === 'admin')  await renderAdmin(content);
+      if (route.view === 'about')  renderAbout(content);
     }
 
     function updateRailActive(route) {
