@@ -1190,6 +1190,51 @@
       catGroup.appendChild(catSel);
       card.appendChild(catGroup);
 
+      if (p.locationState) {
+        // State
+        const stGrp = document.createElement('div');
+        stGrp.className = 'form-group';
+        const stLbl = document.createElement('label');
+        stLbl.className = 'form-label'; stLbl.textContent = 'state';
+        const stSel = document.createElement('select');
+        stSel.className = 'form-select'; stSel.id = 'e-loc-state';
+        Object.keys(LOCATIONS).sort().forEach(s => {
+          const o = document.createElement('option');
+          o.value = s; o.textContent = s;
+          if (s === p.locationState) o.selected = true;
+          stSel.appendChild(o);
+        });
+        stGrp.appendChild(stLbl); stGrp.appendChild(stSel);
+        card.appendChild(stGrp);
+
+        // Region
+        const rgGrp = document.createElement('div');
+        rgGrp.className = 'form-group';
+        const rgLbl = document.createElement('label');
+        rgLbl.className = 'form-label'; rgLbl.textContent = 'region';
+        const rgSel = document.createElement('select');
+        rgSel.className = 'form-select'; rgSel.id = 'e-loc-region';
+        (LOCATIONS[p.locationState] || []).forEach(r => {
+          const o = document.createElement('option');
+          o.value = r; o.textContent = r;
+          if (r === p.locationRegion) o.selected = true;
+          rgSel.appendChild(o);
+        });
+        rgGrp.appendChild(rgLbl); rgGrp.appendChild(rgSel);
+        card.appendChild(rgGrp);
+
+        // Notes
+        const ntGrp = document.createElement('div');
+        ntGrp.className = 'form-group';
+        const ntLbl = document.createElement('label');
+        ntLbl.className = 'form-label'; ntLbl.textContent = 'location notes';
+        const ntInp = document.createElement('input');
+        ntInp.className = 'form-input'; ntInp.id = 'e-loc-notes';
+        ntInp.maxLength = 100; ntInp.value = p.locationNotes || '';
+        ntGrp.appendChild(ntLbl); ntGrp.appendChild(ntInp);
+        card.appendChild(ntGrp);
+      }
+
       const remoteGroup = document.createElement('div');
       remoteGroup.className = 'form-group';
       const remoteLbl = document.createElement('label');
@@ -1213,15 +1258,23 @@
         saveBtn.disabled = true;
         saveBtn.textContent = 'saving...';
         try {
-          await updateDoc(doc(db, 'posts', postId), {
+          const updates = {
             title:          card.querySelector('#e-title').value.trim(),
-            location:       card.querySelector('#e-loc').value.trim(),
             compensation:   card.querySelector('#e-comp').value.trim(),
             description:    card.querySelector('#e-desc').value.trim(),
             contact:        card.querySelector('#e-cont').value.trim(),
             category:       card.querySelector('#e-cat').value,
             remoteFriendly: card.querySelector('#e-remote').checked,
-          });
+          };
+          const legacyLoc = card.querySelector('#e-loc');
+          if (legacyLoc) updates.location = legacyLoc.value.trim();
+          const eState  = card.querySelector('#e-loc-state');
+          const eRegion = card.querySelector('#e-loc-region');
+          const eNotes  = card.querySelector('#e-loc-notes');
+          if (eState)  updates.locationState  = eState.value;
+          if (eRegion) updates.locationRegion = eRegion.value;
+          if (eNotes)  updates.locationNotes  = eNotes.value.trim() || null;
+          await updateDoc(doc(db, 'posts', postId), updates);
           renderPendingQueue(card.closest('#content'));
         } catch (err) {
           console.error(err);
@@ -1317,7 +1370,7 @@
           metaEl.className = 'admin-card-meta';
           metaEl.innerHTML =
             `<span class="meta-label">category</span>${escHtml(p.category)}<br>` +
-            `<span class="meta-label">location</span>${escHtml(p.location)}<br>` +
+            `<span class="meta-label">location</span>${escHtml(formatLocation(p))}<br>` +
             `<span class="meta-label">comp</span>${escHtml(p.compensation)}<br>` +
             `<span class="meta-label">contact</span>${escHtml(p.contact)}<br>` +
             (p.remoteFriendly ? `<span class="meta-label">remote</span><span class="badge badge-remote">remote-friendly</span><br>` : '') +
