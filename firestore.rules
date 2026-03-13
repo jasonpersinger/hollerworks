@@ -4,7 +4,8 @@ service cloud.firestore {
     match /posts/{postId} {
       allow read: if true;
       allow create: if request.resource.data.keys().hasAll([
-                        "type","title","category","location",
+                        "type","title","category",
+                        "locationState","locationRegion",
                         "compensation","contact","status","createdAt"
                       ])
                     && request.resource.data.status == "pending"
