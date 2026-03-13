@@ -287,7 +287,7 @@ Find the entire `<div class="rail-section">` that contains category buttons and 
 **Files:**
 - Modify: `index.html` (utilities section + renderBoard)
 
-- [ ] **Step 1: Add `timeAgo()` utility**
+- [x] **Step 1: Add `timeAgo()` utility**
 
 In the utilities section (after `showMsg()`), add:
 
@@ -306,7 +306,7 @@ In the utilities section (after `showMsg()`), add:
     }
 ```
 
-- [ ] **Step 2: Add CSS for featured and urgent styles**
+- [x] **Step 2: Add CSS for featured and urgent styles**
 
 In the `<style>` block, after `.badge-offer` rule, add:
 
@@ -316,7 +316,7 @@ In the `<style>` block, after `.badge-offer` rule, add:
     .featured-label { font-size: 9px; color: var(--rust); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
 ```
 
-- [ ] **Step 3: Replace `renderBoard()` with featured-aware version**
+- [x] **Step 3: Replace `renderBoard()` with featured-aware version**
 
 Replace the entire `renderBoard()` function with:
 
@@ -449,7 +449,7 @@ Replace the entire `renderBoard()` function with:
     }
 ```
 
-- [ ] **Step 4: Add urgent badge to post detail view**
+- [x] **Step 4: Add urgent badge to post detail view**
 
 In `renderPost()`, find the entire `metaItems` array definition and the `metaItems.forEach` loop that follows it. Replace both with:
 
@@ -488,18 +488,9 @@ In `renderPost()`, find the entire `metaItems` array definition and the `metaIte
         });
 ```
 
-- [ ] **Step 5: Verify in browser**
+- [x] **Step 5: Verify in browser**
 
-Open `index.html`. Board should show post age ("Xd ago"). If you have a test post with `urgent: true` in Firestore, it should show an `[urgent]` badge. No console errors.
-
-To test featured: manually set `featured: true` + `featuredUntil: <timestamp 7 days from now>` on an approved post in Firestore Console. Reload — it should appear first with a rust left border and "★ featured" label.
-
-- [ ] **Step 6: Commit**
-
-```bash
-git add index.html
-git commit -m "feat: add post age, featured posts, urgent badge to board"
-```
+- [x] **Step 6: Commit**
 
 ---
 

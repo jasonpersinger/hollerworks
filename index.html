@@ -59,6 +59,9 @@
     .badge { font-size: 10px; padding: 1px 5px; border: 1px solid; margin-right: 6px; }
     .badge-need  { color: var(--rust);  border-color: var(--rust); }
     .badge-offer { color: var(--brown); border-color: var(--brown); }
+    .badge-urgent { color: var(--rust); border-color: var(--rust); }
+    .post-row-featured { border-left: 3px solid var(--rust); background: #110d08; padding-left: 10px; }
+    .featured-label { font-size: 9px; color: var(--rust); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
     .post-detail-title { color: var(--lgray); font-size: 17px; margin-bottom: 14px; }
     .detail-meta { margin-bottom: 20px; display: flex; flex-direction: column; gap: 5px; }
     .meta-row { font-size: 12px; }
@@ -264,6 +267,19 @@
       el.innerHTML = `<div class="msg msg-${safeType}">${escHtml(text)}</div>`;
     }
 
+    function timeAgo(date) {
+      const seconds = Math.floor((new Date() - date) / 1000);
+      if (seconds < 60)  return 'just now';
+      const minutes = Math.floor(seconds / 60);
+      if (minutes < 60)  return `${minutes}m ago`;
+      const hours = Math.floor(minutes / 60);
+      if (hours < 24)    return `${hours}h ago`;
+      const days = Math.floor(hours / 24);
+      if (days < 30)     return `${days}d ago`;
+      const months = Math.floor(days / 30);
+      return `${months}mo ago`;
+    }
+
     // ── Rail wiring ───────────────────────────────────────────────────────
     document.querySelectorAll('[data-filter]').forEach(el => {
       el.addEventListener('click', () => {
@@ -287,12 +303,25 @@
     // ── Board View ────────────────────────────────────────────────────────
     async function renderBoard(el) {
       try {
+        // ── Featured posts (separate query, prepended) ────────────────────
+        const now = new Date();
+        const featSnap = await getDocs(query(
+          collection(db, 'posts'),
+          where('status',   '==', 'approved'),
+          where('featured', '==', true)
+        ));
+        const featuredDocs = featSnap.docs.filter(d => {
+          const until = d.data().featuredUntil?.toDate?.();
+          return until && until > now;
+        });
+
+        // ── Main board query ──────────────────────────────────────────────
         let constraints = [
           collection(db, 'posts'),
           where('status', '==', 'approved'),
           orderBy('createdAt', 'desc')
         ];
-        if (state.filter !== 'all') constraints.push(where('type', '==', state.filter));
+        if (state.filter !== 'all') constraints.push(where('type',     '==', state.filter));
         if (state.cat)              constraints.push(where('category', '==', state.cat));
         constraints.push(limit(PAGE_SIZE + 1));
 
@@ -300,16 +329,16 @@
         const cursor = state.pageCursors[state.page - 1];
         if (cursor) q = query(q, startAfter(cursor));
 
-        const snap  = await getDocs(q);
-        const docs  = snap.docs;
-        const hasNext = docs.length > PAGE_SIZE;
-        const posts = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
+        const snap     = await getDocs(q);
+        const docs     = snap.docs;
+        const hasNext  = docs.length > PAGE_SIZE;
+        const posts    = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
 
         if (hasNext) state.pageCursors[state.page] = posts[posts.length - 1];
 
-        el.innerHTML = '';
+        el.textContent = '';
 
-        if (posts.length === 0) {
+        if (featuredDocs.length === 0 && posts.length === 0) {
           const empty = document.createElement('div');
           empty.className = 'empty';
           empty.textContent = 'no posts found.';
@@ -319,37 +348,15 @@
 
         const fragment = document.createDocumentFragment();
 
-        posts.forEach(d => {
-          const p = d.data();
-          const row = document.createElement('div');
-          row.className = 'post-row';
-          row.dataset.id = d.id;
-
-          const title = document.createElement('div');
-          title.className = 'post-title';
-          title.textContent = p.title;
-
-          const meta = document.createElement('div');
-          meta.className = 'post-meta';
-
-          const badge = document.createElement('span');
-          badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
-          badge.textContent = p.type === 'need' ? 'need' : 'offer';
-
-          const metaText = document.createTextNode(
-            `${p.category || ''}${p.location ? ' · ' + p.location : ''}${p.compensation ? ' · ' + p.compensation : ''}`
-          );
-
-          meta.appendChild(badge);
-          meta.appendChild(metaText);
-          row.appendChild(title);
-          row.appendChild(meta);
-          row.addEventListener('click', () => navigate(`/post/${d.id}`));
-          fragment.appendChild(row);
-        });
+        // Render featured first
+        featuredDocs.forEach(d => appendPostRow(fragment, d, true));
+        // Then regular posts (skip any already shown as featured)
+        const featuredIds = new Set(featuredDocs.map(d => d.id));
+        posts.forEach(d => { if (!featuredIds.has(d.id)) appendPostRow(fragment, d, false); });
 
         el.appendChild(fragment);
 
+        // Pagination
         if (state.page > 1 || hasNext) {
           const pag = document.createElement('div');
           pag.className = 'pagination';
@@ -376,6 +383,49 @@
         console.error(err);
         el.textContent = `error loading posts: ${err.message}`;
       }
+    }
+
+    function appendPostRow(fragment, d, isFeatured) {
+      const p   = d.data();
+      const row = document.createElement('div');
+      row.className = 'post-row' + (isFeatured ? ' post-row-featured' : '');
+      row.dataset.id = d.id;
+
+      if (isFeatured) {
+        const fl = document.createElement('div');
+        fl.className = 'featured-label';
+        fl.textContent = '★ featured';
+        row.appendChild(fl);
+      }
+
+      const title = document.createElement('div');
+      title.className = 'post-title';
+      title.textContent = p.title;
+
+      const meta = document.createElement('div');
+      meta.className = 'post-meta';
+
+      const badge = document.createElement('span');
+      badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
+      badge.textContent = p.type === 'need' ? 'need' : 'offer';
+      meta.appendChild(badge);
+
+      if (p.urgent) {
+        const ub = document.createElement('span');
+        ub.className = 'badge badge-urgent';
+        ub.textContent = 'urgent';
+        meta.appendChild(ub);
+      }
+
+      const age = p.createdAt?.toDate ? timeAgo(p.createdAt.toDate()) : '';
+      meta.appendChild(document.createTextNode(
+        `${p.category || ''}${p.location ? ' · ' + p.location : ''}${age ? ' · ' + age : ''}`
+      ));
+
+      row.appendChild(title);
+      row.appendChild(meta);
+      row.addEventListener('click', () => navigate(`/post/${d.id}`));
+      fragment.appendChild(row);
     }
 
     // ── Post Detail ───────────────────────────────────────────────────────
@@ -418,14 +468,16 @@
         metaEl.className = 'detail-meta';
 
         const metaItems = [
-          { label: 'type',     value: p.type,         isBadge: true },
+          { label: 'type',     value: p.type,     isBadge: true },
+          ...(p.urgent ? [{ label: 'urgency', isUrgent: true }] : []),
           { label: 'category', value: p.category },
           { label: 'location', value: p.location },
           { label: 'comp',     value: p.compensation },
           ...(date ? [{ label: 'posted', value: date }] : [])
         ];
 
-        metaItems.forEach(({ label, value, isBadge }) => {
+        metaItems.forEach(({ label, value, isBadge, isUrgent }) => {
+          if (!value && !isUrgent) return;
           const row = document.createElement('div');
           row.className = 'meta-row';
           const lbl = document.createElement('span');
@@ -437,6 +489,11 @@
             badge.className = `badge badge-${value === 'need' ? 'need' : 'offer'}`;
             badge.textContent = value === 'need' ? 'need' : 'offer';
             row.appendChild(badge);
+          } else if (isUrgent) {
+            const ub = document.createElement('span');
+            ub.className = 'badge badge-urgent';
+            ub.textContent = 'urgent';
+            row.appendChild(ub);
           } else {
             row.appendChild(document.createTextNode(value || ''));
           }
