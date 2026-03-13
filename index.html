@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -107,6 +108,12 @@
     .stripe-link { display: block; color: var(--rust); font-size: 12px; margin-bottom: 5px; }
     .stripe-link:hover { text-decoration: underline; }
     .stripe-note { color: #555; font-size: 10px; margin-top: 10px; line-height: 1.6; }
+    .search-bar { display: flex; gap: 8px; margin-bottom: 20px; align-items: center; }
+    .search-input { flex: 1; background: #111; border: 1px solid #2a2a2a; color: var(--lgray); font-family: inherit; font-size: 13px; padding: 7px 10px; outline: 0; }
+    .search-input:focus { border-color: var(--rust); outline: 2px solid var(--rust); outline-offset: 2px; }
+    .search-clear { background: none; border: none; color: #555; font-family: inherit; font-size: 11px; cursor: pointer; padding: 0; white-space: nowrap; }
+    .search-clear:hover { color: var(--rust); }
+    .search-result-count { font-size: 11px; color: #555; margin-bottom: 14px; }
     @media (max-width: 600px) {
       #app { flex-direction: column; }
       #rail { width: 100%; min-width: unset; border-right: none; border-bottom: 1px solid #1e1e1e; padding: 14px 16px; flex-direction: row; flex-wrap: wrap; gap: 16px; }
@@ -175,10 +182,17 @@
     const PAGE_SIZE = 20;
     const STRIPE_FEATURED_URL = "YOUR_STRIPE_FEATURED_LINK"; // replace after Stripe setup
     const STRIPE_URGENT_URL   = "YOUR_STRIPE_URGENT_LINK";   // replace after Stripe setup
+    const ALGOLIA_APP_ID    = "YOUR_ALGOLIA_APP_ID";    // replace after Algolia setup
+    const ALGOLIA_SEARCH_KEY = "YOUR_ALGOLIA_SEARCH_KEY"; // search-only key — safe for frontend
     // ─────────────────────────────────────────────────────────────────────
 
     const app = initializeApp(FIREBASE_CONFIG);
     const db  = getFirestore(app);
+
+    const algoliaClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
+    const searchIndex   = algoliaClient.initIndex('holler_works_posts');
+    let   searchActive  = false;
+    let   lastSearchQuery = '';
 
     // ── State ─────────────────────────────────────────────────────────────
     let state = {
@@ -310,8 +324,66 @@
     // ── Board View ────────────────────────────────────────────────────────
     async function renderBoard(el) {
       try {
-        // ── Featured posts (separate query, prepended) ────────────────────
+        // ── Search bar ─────────────────────────────────────────────────────
+        el.textContent = '';
+        const searchBar = document.createElement('div');
+        searchBar.className = 'search-bar';
+        const searchInput = document.createElement('input');
+        searchInput.className = 'search-input';
+        searchInput.type = 'text';
+        searchInput.placeholder = 'search posts...';
+        searchInput.autocomplete = 'off';
+        searchInput.value = searchActive ? lastSearchQuery : '';
+        const clearBtn = document.createElement('button');
+        clearBtn.className = 'search-clear';
+        clearBtn.textContent = 'clear';
+        clearBtn.style.display = searchActive ? '' : 'none';
+        searchBar.appendChild(searchInput);
+        searchBar.appendChild(clearBtn);
+        el.appendChild(searchBar);
+
+        const resultsEl = document.createElement('div');
+        el.appendChild(resultsEl);
+
+        let searchTimer = null;
+        searchInput.addEventListener('input', () => {
+          clearTimeout(searchTimer);
+          const q = searchInput.value.trim();
+          lastSearchQuery = q;
+          clearBtn.style.display = q ? '' : 'none';
+          if (!q) {
+            searchActive = false;
+            renderBoardResults(resultsEl);
+            return;
+          }
+          searchActive = true;
+          searchTimer = setTimeout(() => doSearch(resultsEl, q), 300);
+        });
+        clearBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          lastSearchQuery = '';
+          clearBtn.style.display = 'none';
+          searchActive = false;
+          renderBoardResults(resultsEl);
+        });
+
+        if (searchActive) {
+          await doSearch(resultsEl, lastSearchQuery);
+        } else {
+          await renderBoardResults(resultsEl);
+        }
+        return; // early return — renderBoardResults handles the rest
+      } catch (err) {
+        console.error(err);
+        el.textContent = `error loading posts: ${err.message}`;
+      }
+    }
+
+    async function renderBoardResults(el) {
+      try {
         const now = new Date();
+
+        // ── Featured posts ─────────────────────────────────────────────────
         const featSnap = await getDocs(query(
           collection(db, 'posts'),
           where('status',   '==', 'approved'),
@@ -322,7 +394,7 @@
           return until && until > now;
         });
 
-        // ── Main board query ──────────────────────────────────────────────
+        // ── Main board query ───────────────────────────────────────────────
         let constraints = [
           collection(db, 'posts'),
           where('status', '==', 'approved'),
@@ -336,10 +408,10 @@
         const cursor = state.pageCursors[state.page - 1];
         if (cursor) q = query(q, startAfter(cursor));
 
-        const snap     = await getDocs(q);
-        const docs     = snap.docs;
-        const hasNext  = docs.length > PAGE_SIZE;
-        const posts    = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
+        const snap    = await getDocs(q);
+        const docs    = snap.docs;
+        const hasNext = docs.length > PAGE_SIZE;
+        const posts   = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
 
         if (hasNext) state.pageCursors[state.page] = posts[posts.length - 1];
 
@@ -354,16 +426,11 @@
         }
 
         const fragment = document.createDocumentFragment();
-
-        // Render featured first
         featuredDocs.forEach(d => appendPostRow(fragment, d, true));
-        // Then regular posts (skip any already shown as featured)
         const featuredIds = new Set(featuredDocs.map(d => d.id));
         posts.forEach(d => { if (!featuredIds.has(d.id)) appendPostRow(fragment, d, false); });
-
         el.appendChild(fragment);
 
-        // Pagination
         if (state.page > 1 || hasNext) {
           const pag = document.createElement('div');
           pag.className = 'pagination';
@@ -389,6 +456,63 @@
       } catch (err) {
         console.error(err);
         el.textContent = `error loading posts: ${err.message}`;
+      }
+    }
+
+    async function doSearch(el, queryStr) {
+      el.textContent = 'searching...';
+      try {
+        const { hits, nbHits } = await searchIndex.search(queryStr, { hitsPerPage: 40 });
+        el.textContent = '';
+
+        const countEl = document.createElement('div');
+        countEl.className = 'search-result-count';
+        countEl.textContent = `${nbHits} result${nbHits !== 1 ? 's' : ''} for "${queryStr}"`;
+        el.appendChild(countEl);
+
+        if (hits.length === 0) {
+          const empty = document.createElement('div');
+          empty.className = 'empty';
+          empty.textContent = 'no results found.';
+          el.appendChild(empty);
+          return;
+        }
+
+        const fragment = document.createDocumentFragment();
+        hits.forEach(hit => {
+          const row = document.createElement('div');
+          row.className = 'post-row';
+          row.dataset.id = hit.objectID;
+
+          const title = document.createElement('div');
+          title.className = 'post-title';
+          title.textContent = hit.title;
+
+          const meta = document.createElement('div');
+          meta.className = 'post-meta';
+          const badge = document.createElement('span');
+          badge.className = `badge badge-${hit.type === 'need' ? 'need' : 'offer'}`;
+          badge.textContent = hit.type === 'need' ? 'need' : 'offer';
+          meta.appendChild(badge);
+          if (hit.urgent) {
+            const ub = document.createElement('span');
+            ub.className = 'badge badge-urgent';
+            ub.textContent = 'urgent';
+            meta.appendChild(ub);
+          }
+          meta.appendChild(document.createTextNode(
+            `${hit.category || ''}${hit.location ? ' · ' + hit.location : ''}`
+          ));
+
+          row.appendChild(title);
+          row.appendChild(meta);
+          row.addEventListener('click', () => navigate(`/post/${hit.objectID}`));
+          fragment.appendChild(row);
+        });
+        el.appendChild(fragment);
+      } catch (err) {
+        console.error(err);
+        el.textContent = `search error: ${err.message}`;
       }
     }
 
