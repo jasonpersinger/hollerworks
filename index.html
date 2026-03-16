@@ -2315,6 +2315,55 @@
           visiblePosts.forEach(p => adminSelectedIds.add(p.id));
           renderPendingQueue(el);
         });
+        const runBulkAction = async ({ action, ids, successLabel, confirmLabel, button }) => {
+          if (!ids.length) return;
+          if (confirmLabel && !confirm(confirmLabel)) return;
+          if (button) {
+            button.disabled = true;
+            button.textContent = 'working...';
+          }
+          try {
+            await adminCall(adminBulkUpdatePostsFn, {
+              postIds: ids,
+              action,
+            });
+            ids.forEach(id => adminSelectedIds.delete(id));
+            setAdminFlash('ok', `${successLabel} (${ids.length}).`);
+            renderPendingQueue(el);
+          } catch (err) {
+            if (handleAdminError(err, el)) return;
+            setAdminFlash('err', err.message || 'bulk action failed.');
+            renderPendingQueue(el);
+          }
+        };
+        if (adminFilter === 'pending' && visiblePosts.length) {
+          const approveAllBtn = document.createElement('button');
+          approveAllBtn.className = 'page-btn';
+          approveAllBtn.textContent = 'approve all shown';
+          approveAllBtn.addEventListener('click', () => {
+            runBulkAction({
+              action: 'approve',
+              ids: visiblePosts.map(p => p.id),
+              successLabel: 'approved all shown',
+              confirmLabel: `Approve all ${visiblePosts.length} visible pending posts?`,
+              button: approveAllBtn,
+            });
+          });
+          const rejectAllBtn = document.createElement('button');
+          rejectAllBtn.className = 'page-btn';
+          rejectAllBtn.textContent = 'reject all shown';
+          rejectAllBtn.addEventListener('click', () => {
+            runBulkAction({
+              action: 'reject',
+              ids: visiblePosts.map(p => p.id),
+              successLabel: 'rejected all shown',
+              confirmLabel: `Reject all ${visiblePosts.length} visible pending posts?`,
+              button: rejectAllBtn,
+            });
+          });
+          toolsLeft.appendChild(approveAllBtn);
+          toolsLeft.appendChild(rejectAllBtn);
+        }
         const clearSelectionBtn = document.createElement('button');
         clearSelectionBtn.className = 'page-btn';
         clearSelectionBtn.textContent = 'clear selection';
@@ -2456,24 +2505,12 @@
             btn.className = action === 'delete' ? 'btn btn-reject' : 'btn btn-approve';
             btn.textContent = label;
             btn.addEventListener('click', async () => {
-              btn.disabled = true;
-              btn.textContent = 'working...';
-              try {
-                await adminCall(adminBulkUpdatePostsFn, {
-                  postIds: [...adminSelectedIds],
-                  action,
-                });
-                const count = adminSelectedIds.size;
-                adminSelectedIds.clear();
-                setAdminFlash('ok', `${label.replace(' selected', '')} (${count}).`);
-                renderPendingQueue(el);
-              } catch (err) {
-                if (handleAdminError(err, el)) return;
-                btn.disabled = false;
-                btn.textContent = label;
-                setAdminFlash('err', err.message || 'bulk action failed.');
-                renderPendingQueue(el);
-              }
+              runBulkAction({
+                action,
+                ids: [...adminSelectedIds],
+                successLabel: label.replace(' selected', ''),
+                button: btn,
+              });
             });
             bulkBar.appendChild(btn);
           });
