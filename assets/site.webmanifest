@@ -1,0 +1,20 @@
+{
+  "name": "HOLLER.WORKS",
+  "short_name": "HOLLER",
+  "description": "A moderated job board for tech and tech-adjacent work in Appalachia.",
+  "background_color": "#0e0e0e",
+  "theme_color": "#0e0e0e",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,4 +1,111 @@
+[build]
+  command = "bash scripts/build-netlify.sh"
+  publish = "dist"
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "https://us-central1-hollerworks-be0a1.cloudfunctions.net/dynamicSitemap"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/post/*"
+  to = "https://us-central1-hollerworks-be0a1.cloudfunctions.net/renderPostPage?postId=:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/alerts/unsubscribe"
+  to = "https://us-central1-hollerworks-be0a1.cloudfunctions.net/manageAlertSubscription"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/analytics/track"
+  to = "https://us-central1-hollerworks-be0a1.cloudfunctions.net/trackEvent"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/functions/*"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/scripts/*"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/firebase.json"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/firestore.rules"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/firestore.indexes.json"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/bookmarks.html"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.gitignore"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.firebaserc"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.directory"
+  to = "/index.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"

@@ -1,0 +1,20 @@
+functions/
+docs/
+.claude/
+.netlify/
+.playwright-mcp/
+.superpowers/
+.worktrees/
+.git/
+.gitignore
+.firebaserc
+.directory
+README.md
+firebase-debug.log
+firebase.json
+firestore.indexes.json
+firestore.rules
+bookmarks.html
+ChatGPT Image Mar 12, 2026, 03_34_25 PM.png
+Screenshot_20260313_055612.png
+bc4fce05-c119-4ec0-8d2c-9b6b5cd331f8.png

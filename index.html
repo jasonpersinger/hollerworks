@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>holler.works // tech jobs & skills — appalachia</title>
-  <meta name="description" content="holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.">
+  <title>holler.works // tech jobs in appalachia</title>
+  <meta name="description" content="holler.works is a moderated job board for tech and tech-adjacent work in Appalachia. Compensation is required on every listing.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://holler.works/">
   <meta property="og:site_name" content="holler.works">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="holler.works // tech jobs &amp; skills -- appalachia">
-  <meta property="og:description" content="holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.">
+  <meta property="og:title" content="holler.works // tech jobs in appalachia">
+  <meta property="og:description" content="holler.works is a moderated job board for tech and tech-adjacent work in Appalachia. Compensation is required on every listing.">
+  <meta property="og:url" content="https://holler.works/">
+  <meta property="og:image" content="https://holler.works/assets/social-banner.png">
+  <meta name="theme-color" content="#0e0e0e">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="holler.works // tech jobs in appalachia">
+  <meta name="twitter:description" content="holler.works is a moderated job board for tech and tech-adjacent work in Appalachia. Compensation is required on every listing.">
+  <meta name="twitter:image" content="https://holler.works/assets/social-banner.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
   <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,8 +68,18 @@
     .rail-link.active::before { color: var(--rust); }
     .post-btn { display: block; border: 1px solid var(--rust); color: var(--rust); padding: 7px 12px; font-family: inherit; font-size: 12px; cursor: pointer; background: transparent; text-align: center; width: 100%; }
     .post-btn:hover { background: var(--rust); color: var(--black); }
-    .post-row { border-bottom: 1px solid #161616; padding: 13px 8px; cursor: pointer; }
-    .post-row:hover { background: #111; }
+    .post-row { display: block; border-bottom: 1px solid #161616; padding: 13px 8px; cursor: pointer; color: inherit; text-decoration: none; }
+    .post-row:hover { background: #111; text-decoration: none; }
+    .post-row:focus-visible,
+    .menu-btn:focus-visible,
+    .post-btn:focus-visible,
+    .rail-link:focus-visible,
+    .page-btn:focus-visible,
+    .social-link:focus-visible,
+    .share-btn:focus-visible {
+      outline: 2px solid var(--rust);
+      outline-offset: 2px;
+    }
     .post-title { color: var(--lgray); font-size: 13px; margin-bottom: 5px; }
     .post-title::before { content: '> '; color: var(--rust); }
     .post-meta { color: var(--gray); font-size: 11px; }
@@ -118,11 +138,7 @@
     .page-btn:hover { color: var(--rust); }
     .page-btn.active { color: var(--rust); }
     .pw-gate { max-width: 300px; }
-    .stripe-cta { margin-top: 22px; border-top: 1px solid #1e1e1e; padding-top: 16px; }
-    .stripe-cta-label { color: var(--brown); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
-    .stripe-link { display: block; color: var(--rust); font-size: 12px; margin-bottom: 5px; }
-    .stripe-link:hover { text-decoration: underline; }
-    .stripe-note { color: #555; font-size: 10px; margin-top: 10px; line-height: 1.6; }
+    .submit-note { margin-top: 22px; border-top: 1px solid #1e1e1e; padding-top: 16px; color: #666; font-size: 12px; line-height: 1.8; }
     .search-bar { display: flex; gap: 8px; margin-bottom: 20px; align-items: center; }
     .search-input { flex: 1; background: #111; border: 1px solid #2a2a2a; color: var(--lgray); font-family: inherit; font-size: 13px; padding: 7px 10px; outline: 0; }
     .search-input:focus { border-color: var(--rust); outline: 2px solid var(--rust); outline-offset: 2px; }
@@ -130,6 +146,29 @@
     .search-clear:hover { color: var(--rust); }
     .search-result-count { font-size: 11px; color: #555; margin-bottom: 14px; }
     .about-body { color: var(--gray); font-size: 13px; line-height: 1.8; margin-bottom: 14px; max-width: 560px; }
+    .trust-panel { border: 1px solid #1e1e1e; background: #111; padding: 14px 16px; margin-bottom: 18px; }
+    .trust-title { color: var(--lgray); font-size: 13px; margin-bottom: 6px; }
+    .trust-copy { color: var(--gray); font-size: 12px; line-height: 1.8; margin-bottom: 10px; }
+    .trust-items { display: flex; flex-wrap: wrap; gap: 8px; }
+    .trust-item { border: 1px solid #2a2a2a; color: var(--brown); font-size: 10px; letter-spacing: 0.06em; padding: 3px 7px; text-transform: uppercase; }
+    .board-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(250px, 0.9fr); gap: 18px; margin-bottom: 18px; }
+    .mini-panel { border: 1px solid #1e1e1e; background: #111; padding: 14px 16px; }
+    .mini-panel-title { color: var(--lgray); font-size: 12px; margin-bottom: 8px; }
+    .mini-panel-copy { color: var(--gray); font-size: 11px; line-height: 1.8; margin-bottom: 12px; }
+    .mini-panel-copy:last-child { margin-bottom: 0; }
+    .mini-panel-rows { display: grid; gap: 8px; font-size: 11px; }
+    .mini-panel-row { display: flex; justify-content: space-between; gap: 12px; color: var(--gray); }
+    .mini-panel-row strong { color: var(--lgray); font-weight: normal; }
+    .inline-form { display: flex; gap: 8px; align-items: center; }
+    .inline-form .form-input { min-width: 0; }
+    .inline-form .submit-btn { padding: 9px 14px; white-space: nowrap; }
+    .micro-copy { color: #666; font-size: 10px; line-height: 1.7; margin-top: 8px; }
+    .company-line { color: var(--brown); font-size: 11px; margin-bottom: 4px; }
+    .company-line a { color: var(--brown); }
+    .company-chip { display: inline-block; border: 1px solid #2a2a2a; color: var(--brown); font-size: 10px; padding: 2px 6px; margin-right: 6px; }
+    .turnstile-wrap { min-height: 70px; display: flex; align-items: center; }
+    .turnstile-note { color: #666; font-size: 11px; line-height: 1.6; margin-top: 8px; }
+    .turnstile-status { color: var(--brown); font-size: 11px; line-height: 1.6; margin-top: 6px; }
     .share-bar { display: flex; gap: 14px; align-items: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #1e1e1e; }
     .share-label { color: #555; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
     .share-btn { background: none; border: none; color: #666; font-size: 16px; cursor: pointer; padding: 0; line-height: 1; font-family: inherit; }
@@ -140,6 +179,14 @@
     .menu-btn { background: none; border: none; color: var(--rust); font-size: 20px; cursor: pointer; padding: 4px; line-height: 1; }
     .post-btn-sm { width: auto; padding: 5px 10px; font-size: 11px; }
     .mobile-wordmark { color: var(--lgray); font-size: 12px; letter-spacing: 0.08em; }
+    .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .admin-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+    .admin-tools-left, .admin-tools-right { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .admin-check { margin-right: 10px; accent-color: var(--rust); }
+    .admin-flag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .admin-flag { border: 1px solid #2a2a2a; color: var(--rust); font-size: 10px; padding: 2px 6px; text-transform: lowercase; }
+    .admin-note { margin-top: 10px; padding-top: 10px; border-top: 1px solid #1e1e1e; color: #777; font-size: 11px; line-height: 1.8; }
+    .admin-quick-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
     #mobile-header { display: none; }
     #drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65); z-index: 150; }
     @media (max-width: 600px) {
@@ -150,6 +197,8 @@
       #rail { position: fixed; top: 0; left: 0; width: 280px; min-width: unset; height: 100vh; overflow-y: auto; border-right: 1px solid #2a2a2a; border-bottom: none; padding: 20px 16px; flex-direction: column; gap: 20px; transform: translateX(-280px); transition: transform 0.22s ease; z-index: 200; }
       #rail.open { transform: translateX(0); }
       #content { padding: 16px; }
+      .board-grid { grid-template-columns: 1fr; }
+      .inline-form { flex-direction: column; align-items: stretch; }
       .radio-group { flex-direction: column; gap: 10px; }
       .loc-filter-bar { flex-wrap: wrap; }
       .site-footer { padding: 16px; }
@@ -159,11 +208,11 @@
 <body>
   <div id="app">
     <div id="mobile-header">
-      <button class="menu-btn" id="drawerBtn"><i class="fa-solid fa-bars"></i></button>
+      <button class="menu-btn" id="drawerBtn" aria-label="Open menu" aria-controls="rail" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
       <span class="mobile-wordmark">HOLLER.WORKS</span>
       <button class="post-btn post-btn-sm" id="mobilePostBtn">[+ post]</button>
     </div>
-    <nav id="rail">
+    <nav id="rail" aria-label="Primary">
       <div class="rail-logo">
         <img src="assets/logo.png" alt="home" class="rail-logo-img" id="logoHome">
         HOLLER.WORKS
@@ -176,8 +225,6 @@
       <div class="rail-section">
         <div class="rail-label">browse</div>
         <button class="rail-link" data-filter="all">all posts</button>
-        <button class="rail-link" data-filter="need">[have a job]</button>
-        <button class="rail-link" data-filter="offer">[need a job]</button>
         <button class="rail-link" data-remote="1">[remote]</button>
       </div>
       <div class="rail-section">
@@ -187,39 +234,37 @@
         <button class="rail-link" data-cat="IT &amp; Support">IT &amp; support</button>
         <button class="rail-link" data-cat="Data &amp; AI">data &amp; AI</button>
         <button class="rail-link" data-cat="Design &amp; UX">design &amp; UX</button>
-        <button class="rail-link" data-cat="Admin &amp; Operations">admin &amp; ops</button>
-        <button class="rail-link" data-cat="Finance &amp; Accounting">finance</button>
-        <button class="rail-link" data-cat="HR &amp; Recruiting">HR</button>
+        <button class="rail-link" data-cat="Product &amp; Project">product</button>
+        <button class="rail-link" data-cat="DevOps &amp; Cloud">devops</button>
+        <button class="rail-link" data-cat="Cybersecurity">security</button>
+        <button class="rail-link" data-cat="QA &amp; Testing">QA</button>
+        <button class="rail-link" data-cat="Sales &amp; Customer Success">sales</button>
         <button class="rail-link" data-cat="Marketing &amp; Content">marketing</button>
-        <button class="rail-link" data-cat="Writing &amp; Editorial">writing</button>
-        <button class="rail-link" data-cat="Photography &amp; Video">photo &amp; video</button>
-        <button class="rail-link" data-cat="Music &amp; Audio">music &amp; audio</button>
-        <button class="rail-link" data-cat="Trades &amp; Skilled Labor">trades</button>
-        <button class="rail-link" data-cat="Healthcare &amp; Wellness">healthcare</button>
-        <button class="rail-link" data-cat="Hair &amp; Beauty">hair &amp; beauty</button>
-        <button class="rail-link" data-cat="Arts &amp; Culture">arts &amp; culture</button>
-        <button class="rail-link" data-cat="Other">other</button>
+        <button class="rail-link" data-cat="Technical Writing &amp; Docs">docs</button>
+        <button class="rail-link" data-cat="Other Tech-Adjacent">other</button>
       </div>
       <div class="rail-socials">
-        <a href="https://x.com/holler_works" target="_blank" rel="noopener noreferrer" class="social-link" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/holler.works/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.reddit.com/r/hollerworks/" target="_blank" rel="noopener noreferrer" class="social-link" title="Reddit"><i class="fa-brands fa-reddit-alien"></i></a>
+        <a href="https://x.com/holler_works" target="_blank" rel="noopener noreferrer" class="social-link" title="X / Twitter" aria-label="Visit holler.works on X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/holler.works/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Visit holler.works on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.reddit.com/r/hollerworks/" target="_blank" rel="noopener noreferrer" class="social-link" title="Reddit" aria-label="Visit holler.works on Reddit"><i class="fa-brands fa-reddit-alien"></i></a>
       </div>
       <button class="rail-link" id="aboutBtn">[about]</button>
       <button class="post-btn" id="postBtn">[+ post]</button>
     </nav>
     <div id="drawer-overlay"></div>
-    <main id="content"></main>
+    <main id="content" tabindex="-1"></main>
   </div>
   <script type="module">
     import { initializeApp }
       from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFunctions, httpsCallable }
+      from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-functions.js';
     import { getFirestore, collection, getDocs, getDoc, doc,
-             addDoc, updateDoc, deleteDoc, query, where, orderBy, limit,
-             startAfter, serverTimestamp }
+             query, where, orderBy, limit,
+             startAfter }
       from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
-    // ── CONFIG — replace with your Firebase project values ────────────────
+    // ── CONFIG ────────────────────────────────────────────────────────────
     const FIREBASE_CONFIG = {
       apiKey:            "AIzaSyDzo-gD95x2mKGY0Y32tKYl2yru9G4aG9g",
       authDomain:        "hollerworks-be0a1.firebaseapp.com",
@@ -228,16 +273,29 @@
       messagingSenderId: "404959828439",
       appId:             "1:404959828439:web:c35e6af7d9bea9b066d392"
     };
-    const ADMIN_PASSWORD = "[REDACTED_OLD_PASSWORD]";
     const PAGE_SIZE = 20;
-    const STRIPE_FEATURED_URL = "https://buy.stripe.com/00wfZib2ycuWeYp2eN6sw01";
-    const STRIPE_URGENT_URL   = "https://buy.stripe.com/6oUbJ22w22Um03v5qZ6sw00";
+    const SITE_URL = 'https://holler.works';
+    const SUPPORT_EMAIL = 'hey@holler.works';
+    const TRACK_EVENT_URL = '/analytics/track';
+    const MAX_DESCRIPTION_LENGTH = 3000;
+    const TURNSTILE_SITE_KEY = "0x4AAAAAACrwRV3V8uxrbhZb";
     const ALGOLIA_APP_ID    = "MM97K5DA2P";
     const ALGOLIA_SEARCH_KEY = "5d10ce853fdae4234ba360716dd06938";
     // ─────────────────────────────────────────────────────────────────────
 
     const app = initializeApp(FIREBASE_CONFIG);
     const db  = getFirestore(app);
+    const functions = getFunctions(app);
+    const adminRequestLoginLinkFn = httpsCallable(functions, 'adminRequestLoginLink');
+    const adminConsumeLoginLinkFn = httpsCallable(functions, 'adminConsumeLoginLink');
+    const adminListPostsFn = httpsCallable(functions, 'adminListPosts');
+    const adminUpdatePostFn = httpsCallable(functions, 'adminUpdatePost');
+    const adminBulkUpdatePostsFn = httpsCallable(functions, 'adminBulkUpdatePosts');
+    const adminImportPostsFn = httpsCallable(functions, 'adminImportPosts');
+    const adminDeletePostFn = httpsCallable(functions, 'adminDeletePost');
+    const reportListingFn = httpsCallable(functions, 'reportListing');
+    const submitPostFn = httpsCallable(functions, 'submitPost');
+    const subscribeJobAlertFn = httpsCallable(functions, 'subscribeJobAlert');
 
     const algoliaClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
     const searchIndex   = algoliaClient.initIndex('holler_works_posts');
@@ -246,7 +304,7 @@
 
     // ── State ─────────────────────────────────────────────────────────────
     let state = {
-      filter:         'all',  // 'all' | 'need' | 'offer'
+      filter:         'all',
       cat:            null,   // null | category string
       remote:         false,  // true = only remote-friendly posts
       locationState:  null,
@@ -254,6 +312,31 @@
       page:           1,
       pageCursors:    [null]  // pageCursors[0]=null (page 1), pageCursors[n]=startAfter doc
     };
+    let adminSessionToken = sessionStorage.getItem('hollerAdminSession') || '';
+    let adminSessionEmail = sessionStorage.getItem('hollerAdminSessionEmail') || '';
+    let adminFlash = null;
+    let adminSelectedIds = new Set();
+    let adminSearchQuery = '';
+    let adminImportDraft = '';
+    let adminImportStatus = 'pending';
+    let adminLoginExchange = null;
+    const ADMIN_IMPORT_TEMPLATE = JSON.stringify([
+      {
+        title: 'Full-Stack Engineer',
+        category: 'Software & Dev',
+        companyName: 'Mountain Software Co.',
+        companyWebsite: 'https://mountainsoftware.example',
+        companyLinkedIn: 'https://www.linkedin.com/company/mountain-software/',
+        locationState: 'West Virginia',
+        locationRegion: 'Northern WV',
+        locationCity: 'Morgantown',
+        locationNotes: 'Hybrid, 2 days onsite',
+        compensation: '$95k-$120k',
+        description: 'Build and maintain product features for a small team serving Appalachian businesses.',
+        contact: 'https://mountainsoftware.example/careers/full-stack-engineer',
+        remoteFriendly: true
+      }
+    ], null, 2);
 
     // ── Router ────────────────────────────────────────────────────────────
     function getRoute() {
@@ -262,7 +345,7 @@
       if (path === '/' || path === '') {
         return {
           view:           'board',
-          filter:         params.get('filter') || 'all',
+          filter:         'all',
           cat:            params.get('cat')    || null,
           remote:         params.get('remote') === '1',
           locationState:  params.get('st')     || null,
@@ -275,7 +358,7 @@
         return { view: 'post', id };
       }
       if (path === '/submit') return { view: 'submit' };
-      if (path === '/admin')  return { view: 'admin' };
+      if (path === '/admin')  return { view: 'admin', loginToken: params.get('login') || null };
       if (path === '/about')  return { view: 'about' };
       return { view: 'board', filter: 'all', cat: null };
     }
@@ -287,7 +370,6 @@
 
     function navigateBoard() {
       const params = new URLSearchParams();
-      if (state.filter !== 'all') params.set('filter', state.filter);
       if (state.cat) params.set('cat', state.cat);
       if (state.remote) params.set('remote', '1');
       if (state.locationState)  params.set('st', state.locationState);
@@ -301,21 +383,37 @@
     function renderAbout(el) {
       el.textContent = '';
 
-      const heading = document.createElement('div');
+      const heading = document.createElement('h1');
       heading.className = 'page-heading';
       heading.textContent = '[about]';
       el.appendChild(heading);
 
       [
-        'holler.works is a community job and skills board built for Appalachia.',
-        'No recruiter middlemen. No ghost posts. Compensation is required on every listing. Posts are moderated before they go live.',
-        'Post for free. If you want more visibility, featured placement runs $10 for 7 days. Urgent badge is $5.',
+        'The goal of holler.works is to make it easier to find real tech and tech-adjacent work tied to Appalachia. That includes local roles, remote-friendly jobs, contract work, and practical digital work that helps people stay, build, or come back.',
+        'Every listing is reviewed before it goes live. Compensation is required on every post. The goal is a board that feels useful and trustworthy, not bloated.',
+        'Posting is free during rollout. Paid placement is not self-serve yet.',
+        'Job seekers can subscribe to daily alerts from the main board using whatever filters are currently active.',
       ].forEach(text => {
         const p = document.createElement('p');
         p.className = 'about-body';
         p.textContent = text;
         el.appendChild(p);
       });
+
+      const opsPanel = document.createElement('section');
+      opsPanel.className = 'mini-panel';
+      opsPanel.style.maxWidth = '560px';
+      opsPanel.style.marginBottom = '18px';
+      opsPanel.innerHTML = `
+        <div class="mini-panel-title">how the board is run</div>
+        <div class="mini-panel-rows">
+          <div class="mini-panel-row"><span>scope</span><strong>tech + tech-adjacent only</strong></div>
+          <div class="mini-panel-row"><span>review</span><strong>every listing is reviewed by a human</strong></div>
+          <div class="mini-panel-row"><span>comp</span><strong>required on every listing</strong></div>
+          <div class="mini-panel-row"><span>lifecycle</span><strong>approved posts expire after 28 days</strong></div>
+          <div class="mini-panel-row"><span>placements</span><strong>manual for now, not self-serve</strong></div>
+        </div>`;
+      el.appendChild(opsPanel);
 
       const tagline = document.createElement('div');
       tagline.className = 'rail-tagline';
@@ -330,15 +428,20 @@
     }
 
     function resetMeta() {
-      document.title = 'holler.works // tech jobs & skills \u2014 appalachia';
+      document.title = 'holler.works // tech jobs in appalachia';
+      document.querySelector('meta[name="robots"]').content = 'index,follow';
       document.querySelector('meta[name="description"]').content =
-        'holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.';
+        'holler.works is a moderated job board for tech and tech-adjacent work in Appalachia. Compensation is required on every listing.';
       document.querySelector('meta[property="og:title"]').content =
-        'holler.works // tech jobs & skills \u2014 appalachia';
+        'holler.works // tech jobs in appalachia';
       document.querySelector('meta[property="og:description"]').content =
-        'holler.works -- tech jobs and skills board for Appalachia. No recruiters. Compensation required on every listing.';
-      const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.remove();
+        'holler.works is a moderated job board for tech and tech-adjacent work in Appalachia. Compensation is required on every listing.';
+      document.querySelector('meta[name="twitter:title"]').content =
+        'holler.works // tech jobs in appalachia';
+      document.querySelector('meta[name="twitter:description"]').content =
+        'holler.works is a moderated job board for tech and tech-adjacent work in Appalachia. Compensation is required on every listing.';
+      document.querySelector('meta[property="og:url"]').content = SITE_URL + '/';
+      document.querySelector('link[rel="canonical"]').href = SITE_URL + '/';
       const jsonLd = document.getElementById('json-ld-jobposting');
       if (jsonLd) jsonLd.remove();
     }
@@ -348,13 +451,13 @@
       const route = getRoute();
       if (route.view === 'board') {
         // Reset pagination when filter/cat/remote/location changes via direct URL navigation
-        if (state.filter !== route.filter || state.cat !== route.cat ||
+        if (state.cat !== route.cat ||
             state.remote !== route.remote ||
             state.locationState !== route.locationState ||
             state.locationRegion !== route.locationRegion) {
           state.page = 1; state.pageCursors = [null];
         }
-        state.filter         = route.filter;
+        state.filter         = 'all';
         state.cat            = route.cat;
         state.remote         = route.remote;
         state.locationState  = route.locationState;
@@ -366,9 +469,16 @@
 
       if (route.view === 'board')  await renderBoard(content);
       if (route.view === 'post')   await renderPost(content, route.id);
-      if (route.view === 'submit') renderSubmit(content);
-      if (route.view === 'admin')  await renderAdmin(content);
+      if (route.view === 'submit') {
+        document.querySelector('meta[name="robots"]').content = 'noindex,nofollow';
+        renderSubmit(content);
+      }
+      if (route.view === 'admin') {
+        document.querySelector('meta[name="robots"]').content = 'noindex,nofollow';
+        await renderAdmin(content);
+      }
       if (route.view === 'about')  renderAbout(content);
+      content.focus();
     }
 
     function updateRailActive(route) {
@@ -405,6 +515,24 @@
       return p.location || '';
     }
 
+    function formatAlertSummary(filters = {}) {
+      const parts = [];
+      if (filters.cat || filters.category) parts.push(filters.cat || filters.category);
+      if (filters.remote || filters.remoteFriendly) parts.push('remote-friendly');
+      if (filters.locationRegion) parts.push(filters.locationRegion);
+      if (filters.locationState) parts.push(filters.locationState);
+      return parts.length ? parts.join(' · ') : 'all holler.works posts';
+    }
+
+    function formatCompanyLink(p) {
+      if (!p.companyWebsite) return '';
+      try {
+        return new URL(p.companyWebsite).hostname.replace(/^www\./, '');
+      } catch {
+        return p.companyWebsite;
+      }
+    }
+
     function isEmail(str) {
       return str && str.includes('@') && !str.startsWith('http');
     }
@@ -412,6 +540,37 @@
     function showMsg(el, type, text) {
       const safeType = type === 'ok' ? 'ok' : 'err';
       el.innerHTML = `<div class="msg msg-${safeType}">${escHtml(text)}</div>`;
+    }
+
+    function trackEvent(eventName, payload = {}) {
+      try {
+        fetch(TRACK_EVENT_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ eventName, ...payload }),
+          keepalive: true,
+        }).catch(() => {});
+      } catch {
+        // Ignore analytics failures.
+      }
+    }
+
+    function trackEventOnce(storageKey, eventName, payload = {}) {
+      try {
+        if (sessionStorage.getItem(storageKey)) return;
+        sessionStorage.setItem(storageKey, '1');
+      } catch {
+        // Ignore storage issues and still attempt the event.
+      }
+      trackEvent(eventName, payload);
+    }
+
+    function shouldHandleClientNavigation(event) {
+      return event.button === 0 &&
+        !event.metaKey &&
+        !event.ctrlKey &&
+        !event.shiftKey &&
+        !event.altKey;
     }
 
     function timeAgo(date) {
@@ -427,10 +586,14 @@
       return `${months}mo ago`;
     }
 
+    function setAdminFlash(type, text) {
+      adminFlash = { type, text };
+    }
+
     // ── Rail wiring ───────────────────────────────────────────────────────
     document.querySelectorAll('[data-filter]').forEach(el => {
       el.addEventListener('click', () => {
-        state.filter = el.dataset.filter;
+        state.filter = 'all';
         state.cat = null; state.remote = false; state.page = 1; state.pageCursors = [null];
         navigateBoard();
       });
@@ -464,22 +627,104 @@
     function closeDrawer() {
       railEl.classList.remove('open');
       drawerOverlay.classList.remove('open');
+      drawerBtn.setAttribute('aria-expanded', 'false');
     }
-    drawerBtn.addEventListener('click', () => {
+    function openDrawer() {
       railEl.classList.add('open');
       drawerOverlay.classList.add('open');
+      drawerBtn.setAttribute('aria-expanded', 'true');
+    }
+    drawerBtn.addEventListener('click', () => {
+      if (railEl.classList.contains('open')) closeDrawer();
+      else openDrawer();
     });
     drawerOverlay.addEventListener('click', closeDrawer);
     mobilePostBtn.addEventListener('click', () => { closeDrawer(); navigate('/submit'); });
     railEl.addEventListener('click', e => {
       if (e.target.closest('.rail-link') || e.target.closest('.post-btn')) closeDrawer();
     });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && railEl.classList.contains('open')) closeDrawer();
+    });
 
     // ── Board View ────────────────────────────────────────────────────────
     async function renderBoard(el) {
       try {
-        // ── Search bar ─────────────────────────────────────────────────────
         el.textContent = '';
+
+        const boardGrid = document.createElement('section');
+        boardGrid.className = 'board-grid';
+
+        const trustPanel = document.createElement('section');
+        trustPanel.className = 'trust-panel';
+        trustPanel.innerHTML = `
+          <div class="trust-title">moderated tech jobs for appalachia</div>
+          <div class="trust-copy">At holler.works, the focus is tech and tech-adjacent work connected to Appalachia. Every listing is reviewed by a real human before it goes live, compensation is required, and obvious junk gets filtered out before it reaches the board.</div>
+          <div class="trust-items">
+            <span class="trust-item">moderated listings</span>
+            <span class="trust-item">comp required</span>
+            <span class="trust-item">tech-focused</span>
+            <span class="trust-item">free to post</span>
+          </div>`;
+        boardGrid.appendChild(trustPanel);
+
+        const alertPanel = document.createElement('section');
+        alertPanel.className = 'mini-panel';
+        alertPanel.innerHTML = `
+          <div class="mini-panel-title">daily job alerts</div>
+          <div class="mini-panel-copy">Pick the filters you care about and we will send a once-a-day update when new approved listings match.</div>
+          <div class="mini-panel-copy"><strong>current scope:</strong> ${escHtml(formatAlertSummary({
+            category: state.cat,
+            remoteFriendly: state.remote,
+            locationState: state.locationState,
+            locationRegion: state.locationRegion,
+          }))}</div>
+        `;
+        const alertMsg = document.createElement('div');
+        const alertForm = document.createElement('form');
+        alertForm.className = 'inline-form';
+        alertForm.innerHTML = `
+          <label class="hp-field" for="alertEmail">alert email</label>
+          <input class="form-input" id="alertEmail" type="email" placeholder="you@example.com" required>
+          <button class="submit-btn" type="submit">save alert</button>`;
+        alertForm.addEventListener('submit', async evt => {
+          evt.preventDefault();
+          alertMsg.innerHTML = '';
+          const btn = alertForm.querySelector('button');
+          btn.disabled = true;
+          btn.textContent = 'saving...';
+          try {
+            const email = alertForm.querySelector('#alertEmail').value.trim();
+            const { data } = await subscribeJobAlertFn({
+              email,
+              category: state.cat,
+              locationState: state.locationState,
+              locationRegion: state.locationRegion,
+              remoteFriendly: state.remote,
+            });
+            showMsg(alertMsg, 'ok', `${data.existing ? 'updated' : 'saved'} daily alert for ${data.label}.`);
+            trackEvent('alert_signup');
+            alertForm.reset();
+          } catch (err) {
+            console.error(err);
+            showMsg(alertMsg, 'err', err.message || 'could not save alert.');
+          } finally {
+            btn.disabled = false;
+            btn.textContent = 'save alert';
+          }
+        });
+        alertPanel.appendChild(alertForm);
+        alertPanel.appendChild(alertMsg);
+        const alertFinePrint = document.createElement('div');
+        alertFinePrint.className = 'micro-copy';
+        alertFinePrint.textContent = 'Alerts link back to the board and include a one-click unsubscribe link.';
+        alertPanel.appendChild(alertFinePrint);
+        boardGrid.appendChild(alertPanel);
+
+        el.appendChild(boardGrid);
+        trackEventOnce('analytics:board-view', 'board_view');
+
+        // ── Search bar ─────────────────────────────────────────────────────
         const searchBar = document.createElement('div');
         searchBar.className = 'search-bar';
         const searchInput = document.createElement('input');
@@ -618,7 +863,6 @@
           where('status', '==', 'approved'),
           orderBy('createdAt', 'desc')
         ];
-        if (state.filter !== 'all') constraints.push(where('type',            '==', state.filter));
         if (state.cat)              constraints.push(where('category',        '==', state.cat));
         if (state.remote)           constraints.push(where('remoteFriendly',  '==', true));
         if (state.locationState)    constraints.push(where('locationState',   '==', state.locationState));
@@ -638,10 +882,30 @@
 
         el.textContent = '';
 
+        const stats = document.createElement('div');
+        stats.className = 'mini-panel';
+        stats.style.marginBottom = '16px';
+        stats.innerHTML = `
+          <div class="mini-panel-title">board snapshot</div>
+          <div class="mini-panel-rows">
+            <div class="mini-panel-row"><span>featured right now</span><strong>${featuredDocs.length}</strong></div>
+            <div class="mini-panel-row"><span>visible on this page</span><strong>${posts.length}</strong></div>
+            <div class="mini-panel-row"><span>filter scope</span><strong>${escHtml(formatAlertSummary({
+              category: state.cat,
+              remoteFriendly: state.remote,
+              locationState: state.locationState,
+              locationRegion: state.locationRegion,
+            }))}</strong></div>
+          </div>`;
+        el.appendChild(stats);
+
         if (featuredDocs.length === 0 && posts.length === 0) {
           const empty = document.createElement('div');
-          empty.className = 'empty';
-          empty.textContent = 'no posts found.';
+          empty.className = 'empty mini-panel';
+          empty.innerHTML = `
+            <div class="mini-panel-title">no matching posts yet</div>
+            <div class="mini-panel-copy">Try a broader filter, save an alert for this slice of the board, or come back after more listings are seeded.</div>
+            <div class="mini-panel-copy"><a href="/submit">have a relevant role to post?</a></div>`;
           el.appendChild(empty);
           return;
         }
@@ -684,23 +948,26 @@
       el.textContent = 'searching...';
       try {
         const facetFilters = [];
-        if (state.locationState)   facetFilters.push(`locationState:${state.locationState}`);
-        if (state.locationRegion)  facetFilters.push(`locationRegion:${state.locationRegion}`);
-        if (state.filter !== 'all') facetFilters.push(`type:${state.filter}`);
-        if (state.cat)             facetFilters.push(`category:${state.cat}`);
+        if (state.locationState)    facetFilters.push(`locationState:${state.locationState}`);
+        if (state.locationRegion)   facetFilters.push(`locationRegion:${state.locationRegion}`);
+        if (state.cat)              facetFilters.push(`category:${state.cat}`);
+        if (state.remote)           facetFilters.push('remoteFriendly:true');
 
-        const { hits, nbHits } = await searchIndex.search(queryStr, {
+        const { hits } = await searchIndex.search(queryStr, {
           hitsPerPage: 40,
           facetFilters: facetFilters.length ? facetFilters : undefined,
         });
+        const filteredHits = state.remote
+          ? hits.filter(hit => !!hit.remoteFriendly)
+          : hits;
         el.textContent = '';
 
         const countEl = document.createElement('div');
         countEl.className = 'search-result-count';
-        countEl.textContent = `${nbHits} result${nbHits !== 1 ? 's' : ''} for "${queryStr}"`;
+        countEl.textContent = `${filteredHits.length} result${filteredHits.length !== 1 ? 's' : ''} for "${queryStr}"`;
         el.appendChild(countEl);
 
-        if (hits.length === 0) {
+        if (filteredHits.length === 0) {
           const empty = document.createElement('div');
           empty.className = 'empty';
           empty.textContent = 'no results found.';
@@ -709,10 +976,25 @@
         }
 
         const fragment = document.createDocumentFragment();
-        hits.forEach(hit => {
-          const row = document.createElement('div');
+        filteredHits.forEach(hit => {
+          const locationText = formatLocation(hit);
+          const row = document.createElement('a');
           row.className = 'post-row' + (hit.urgent ? ' post-row-urgent' : '');
           row.dataset.id = hit.objectID;
+          row.href = `/post/${hit.objectID}`;
+
+          if (hit.companyName) {
+            const company = document.createElement('div');
+            company.className = 'company-line';
+            company.textContent = hit.companyName;
+            row.appendChild(company);
+            if (hit.companyWebsite) {
+              const companyChip = document.createElement('div');
+              companyChip.className = 'company-chip';
+              companyChip.textContent = formatCompanyLink(hit);
+              row.appendChild(companyChip);
+            }
+          }
 
           const title = document.createElement('div');
           title.className = 'post-title';
@@ -720,10 +1002,12 @@
 
           const meta = document.createElement('div');
           meta.className = 'post-meta';
-          const badge = document.createElement('span');
-          badge.className = `badge badge-${hit.type === 'need' ? 'need' : 'offer'}`;
-          badge.textContent = hit.type === 'need' ? 'have a job' : 'need a job';
-          meta.appendChild(badge);
+          if (hit.type && hit.type !== 'need') {
+            const badge = document.createElement('span');
+            badge.className = 'badge badge-offer';
+            badge.textContent = 'legacy profile';
+            meta.appendChild(badge);
+          }
           if (hit.urgent) {
             const ub = document.createElement('span');
             ub.className = 'badge badge-urgent';
@@ -737,12 +1021,16 @@
             meta.appendChild(rb);
           }
           meta.appendChild(document.createTextNode(
-            `${hit.category || ''}${hit.location ? ' · ' + hit.location : ''}`
+            `${hit.category || ''}${locationText ? ' · ' + locationText : ''}`
           ));
 
           row.appendChild(title);
           row.appendChild(meta);
-          row.addEventListener('click', () => navigate(`/post/${hit.objectID}`));
+          row.addEventListener('click', e => {
+            if (!shouldHandleClientNavigation(e)) return;
+            e.preventDefault();
+            navigate(`/post/${hit.objectID}`);
+          });
           fragment.appendChild(row);
         });
         el.appendChild(fragment);
@@ -754,15 +1042,29 @@
 
     function appendPostRow(fragment, d, isFeatured) {
       const p   = d.data();
-      const row = document.createElement('div');
+      const row = document.createElement('a');
       row.className = 'post-row' + (isFeatured ? ' post-row-featured' : '') + (p.urgent ? ' post-row-urgent' : '');
       row.dataset.id = d.id;
+      row.href = `/post/${d.id}`;
 
       if (isFeatured) {
         const fl = document.createElement('div');
         fl.className = 'featured-label';
         fl.textContent = '★ featured';
         row.appendChild(fl);
+      }
+
+      if (p.companyName) {
+        const company = document.createElement('div');
+        company.className = 'company-line';
+        company.textContent = p.companyName;
+        row.appendChild(company);
+        if (p.companyWebsite) {
+          const companyChip = document.createElement('div');
+          companyChip.className = 'company-chip';
+          companyChip.textContent = formatCompanyLink(p);
+          row.appendChild(companyChip);
+        }
       }
 
       const title = document.createElement('div');
@@ -772,10 +1074,12 @@
       const meta = document.createElement('div');
       meta.className = 'post-meta';
 
-      const badge = document.createElement('span');
-      badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
-      badge.textContent = p.type === 'need' ? 'have a job' : 'need a job';
-      meta.appendChild(badge);
+      if (p.type && p.type !== 'need') {
+        const badge = document.createElement('span');
+        badge.className = 'badge badge-offer';
+        badge.textContent = 'legacy profile';
+        meta.appendChild(badge);
+      }
 
       if (p.urgent) {
         const ub = document.createElement('span');
@@ -799,7 +1103,11 @@
 
       row.appendChild(title);
       row.appendChild(meta);
-      row.addEventListener('click', () => navigate(`/post/${d.id}`));
+      row.addEventListener('click', e => {
+        if (!shouldHandleClientNavigation(e)) return;
+        e.preventDefault();
+        navigate(`/post/${d.id}`);
+      });
       fragment.appendChild(row);
     }
 
@@ -825,17 +1133,19 @@
         const p = snap.data();
 
         // ── SEO: dynamic meta + JSON-LD ────────────────────────────────────
-        document.title = p.title + ' -- holler.works';
+        document.title = `${p.title}${p.companyName ? ` at ${p.companyName}` : ''} -- holler.works`;
         document.querySelector('meta[name="description"]').content =
-          (p.description || '').slice(0, 160);
+          `${p.companyName ? `${p.companyName}. ` : ''}${(p.description || '').slice(0, 140)}`.slice(0, 160);
         document.querySelector('meta[property="og:title"]').content =
-          p.title + ' -- holler.works';
+          `${p.title}${p.companyName ? ` at ${p.companyName}` : ''} -- holler.works`;
         document.querySelector('meta[property="og:description"]').content =
-          (p.description || '').slice(0, 160);
-        const ogUrlMeta = document.createElement('meta');
-        ogUrlMeta.setAttribute('property', 'og:url');
-        ogUrlMeta.content = 'https://holler.works/post/' + id;
-        document.head.appendChild(ogUrlMeta);
+          `${p.companyName ? `${p.companyName}. ` : ''}${(p.description || '').slice(0, 140)}`.slice(0, 160);
+        document.querySelector('meta[name="twitter:title"]').content =
+          `${p.title}${p.companyName ? ` at ${p.companyName}` : ''} -- holler.works`;
+        document.querySelector('meta[name="twitter:description"]').content =
+          `${p.companyName ? `${p.companyName}. ` : ''}${(p.description || '').slice(0, 140)}`.slice(0, 160);
+        document.querySelector('meta[property="og:url"]').content = SITE_URL + '/post/' + id;
+        document.querySelector('link[rel="canonical"]').href = SITE_URL + '/post/' + id;
 
         if (p.type === 'need') {
           const locationAddr = {
@@ -855,8 +1165,8 @@
               : new Date().toISOString(),
             hiringOrganization: {
               '@type': 'Organization',
-              name: 'holler.works community',
-              sameAs: 'https://holler.works'
+              name: p.companyName || 'holler.works community',
+              sameAs: p.companyWebsite || p.companyLinkedIn || 'https://holler.works'
             },
             jobLocation: { '@type': 'Place', address: locationAddr },
             ...(p.remoteFriendly ? {
@@ -891,11 +1201,24 @@
         titleEl.className = 'post-detail-title';
         titleEl.textContent = p.title;
 
+        if (p.companyName) {
+          const companyEl = document.createElement('div');
+          companyEl.className = 'company-line';
+          companyEl.style.fontSize = '12px';
+          companyEl.style.marginBottom = '10px';
+          companyEl.textContent = p.companyName;
+          el.appendChild(back);
+          el.appendChild(companyEl);
+        } else {
+          el.appendChild(back);
+        }
+
         const metaEl = document.createElement('div');
         metaEl.className = 'detail-meta';
 
         const metaItems = [
-          { label: 'type',     value: p.type,     isBadge: true },
+          ...(p.companyWebsite ? [{ label: 'site', value: p.companyWebsite, isLink: true }] : []),
+          ...(p.companyLinkedIn ? [{ label: 'profile', value: p.companyLinkedIn, isLink: true, text: 'company profile' }] : []),
           ...(p.urgent         ? [{ label: 'urgency', isUrgent: true }] : []),
           ...(p.remoteFriendly ? [{ label: 'remote',  isRemote: true  }] : []),
           { label: 'category', value: p.category },
@@ -905,7 +1228,7 @@
           ...(date ? [{ label: 'posted', value: date }] : [])
         ];
 
-        metaItems.forEach(({ label, value, isBadge, isUrgent, isRemote }) => {
+        metaItems.forEach(({ label, value, isUrgent, isRemote, isLink, text }) => {
           if (!value && !isUrgent && !isRemote) return;
           const row = document.createElement('div');
           row.className = 'meta-row';
@@ -913,12 +1236,7 @@
           lbl.className = 'meta-label';
           lbl.textContent = label;
           row.appendChild(lbl);
-          if (isBadge) {
-            const badge = document.createElement('span');
-            badge.className = `badge badge-${value === 'need' ? 'need' : 'offer'}`;
-            badge.textContent = value === 'need' ? 'have a job' : 'need a job';
-            row.appendChild(badge);
-          } else if (isUrgent) {
+          if (isUrgent) {
             const ub = document.createElement('span');
             ub.className = 'badge badge-urgent';
             ub.textContent = 'urgent';
@@ -928,15 +1246,24 @@
             rb.className = 'badge badge-remote';
             rb.textContent = 'remote-friendly';
             row.appendChild(rb);
+          } else if (isLink) {
+            const link = document.createElement('a');
+            link.href = value;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = text || formatCompanyLink({ companyWebsite: value });
+            row.appendChild(link);
           } else {
             row.appendChild(document.createTextNode(value || ''));
           }
           metaEl.appendChild(row);
         });
-
-        el.appendChild(back);
         el.appendChild(titleEl);
         el.appendChild(metaEl);
+        const opsNote = document.createElement('div');
+        opsNote.className = 'micro-copy';
+        opsNote.textContent = 'Reviewed by a human before publishing. Approved listings expire after 28 days unless refreshed.';
+        el.appendChild(opsNote);
 
         if (p.description) {
           const desc = document.createElement('div');
@@ -951,7 +1278,7 @@
         contactRow.style.fontSize = '12px';
         const contactLbl = document.createElement('span');
         contactLbl.className = 'meta-label';
-        contactLbl.textContent = 'contact';
+        contactLbl.textContent = isEmail(p.contact) ? 'contact' : 'apply';
         const contactLink = document.createElement('a');
         // Guard against javascript: URLs — only allow mailto: and http(s):
         if (isEmail(p.contact)) {
@@ -965,9 +1292,15 @@
           contactLink.removeAttribute('href');
         }
         contactLink.textContent = p.contact || '';
+        if (contactLink.hasAttribute('href')) {
+          contactLink.addEventListener('click', () => {
+            trackEvent('apply_click', { postId: id });
+          });
+        }
         contactRow.appendChild(contactLbl);
         contactRow.appendChild(contactLink);
         el.appendChild(contactRow);
+        trackEventOnce(`analytics:post:${id}`, 'post_view', { postId: id });
 
         // ── Share bar ───────────────────────────────────────────────────────
         const postUrl   = 'https://holler.works/post/' + id;
@@ -1022,6 +1355,100 @@
         shareBar.appendChild(copyBtn);
 
         el.appendChild(shareBar);
+
+        const reportSection = document.createElement('div');
+        reportSection.className = 'mini-panel';
+        reportSection.style.marginTop = '20px';
+        const reportHeading = document.createElement('div');
+        reportHeading.className = 'mini-panel-title';
+        reportHeading.textContent = 'report this listing';
+        const reportCopy = document.createElement('div');
+        reportCopy.className = 'mini-panel-copy';
+        reportCopy.textContent = 'If something looks stale, misleading, or off-topic, send a note and we will review it.';
+        const reportToggle = document.createElement('button');
+        reportToggle.className = 'page-btn';
+        reportToggle.style.marginTop = '10px';
+        reportToggle.textContent = 'open report form';
+        const reportWrap = document.createElement('div');
+        reportWrap.style.display = 'none';
+        reportWrap.style.marginTop = '14px';
+        const reportMsg = document.createElement('div');
+        const reasonLabel = document.createElement('label');
+        reasonLabel.className = 'form-label';
+        reasonLabel.textContent = 'what should we know?';
+        const reasonInput = document.createElement('textarea');
+        reasonInput.className = 'form-textarea';
+        reasonInput.maxLength = 600;
+        reasonInput.placeholder = 'Tell us what looks wrong, stale, misleading, or off-topic.';
+        const emailLabel = document.createElement('label');
+        emailLabel.className = 'form-label';
+        emailLabel.style.marginTop = '12px';
+        emailLabel.textContent = 'your email (optional)';
+        const emailInput = document.createElement('input');
+        emailInput.className = 'form-input';
+        emailInput.type = 'email';
+        emailInput.maxLength = 200;
+        emailInput.placeholder = 'you@example.com';
+        const reportActions = document.createElement('div');
+        reportActions.className = 'admin-actions';
+        reportActions.style.marginTop = '12px';
+        const reportSubmit = document.createElement('button');
+        reportSubmit.className = 'btn btn-approve';
+        reportSubmit.textContent = 'send report';
+        const reportCancel = document.createElement('button');
+        reportCancel.className = 'btn btn-reject';
+        reportCancel.textContent = 'cancel';
+        reportCancel.addEventListener('click', () => {
+          reportWrap.style.display = 'none';
+          reportToggle.textContent = 'open report form';
+          reportMsg.textContent = '';
+        });
+        reportSubmit.addEventListener('click', async () => {
+          reportMsg.textContent = '';
+          if (reasonInput.value.trim().length < 20) {
+            showMsg(reportMsg, 'err', 'Please share a little more detail before sending.');
+            return;
+          }
+          reportSubmit.disabled = true;
+          reportSubmit.textContent = 'sending...';
+          try {
+            await reportListingFn({
+              postId: id,
+              reason: reasonInput.value.trim(),
+              email: emailInput.value.trim(),
+            });
+            reasonInput.value = '';
+            emailInput.value = '';
+            showMsg(reportMsg, 'ok', 'Thanks. We will review this listing.');
+            reportWrap.style.display = 'none';
+            reportToggle.textContent = 'report sent';
+          } catch (err) {
+            console.error(err);
+            showMsg(reportMsg, 'err', err.message || 'Could not send the report.');
+          } finally {
+            reportSubmit.disabled = false;
+            reportSubmit.textContent = 'send report';
+          }
+        });
+        reportToggle.addEventListener('click', () => {
+          const isOpen = reportWrap.style.display !== 'none';
+          reportWrap.style.display = isOpen ? 'none' : '';
+          reportToggle.textContent = isOpen ? 'open report form' : 'hide report form';
+          if (!isOpen) reasonInput.focus();
+        });
+        reportActions.appendChild(reportSubmit);
+        reportActions.appendChild(reportCancel);
+        reportWrap.appendChild(reasonLabel);
+        reportWrap.appendChild(reasonInput);
+        reportWrap.appendChild(emailLabel);
+        reportWrap.appendChild(emailInput);
+        reportWrap.appendChild(reportActions);
+        reportWrap.appendChild(reportMsg);
+        reportSection.appendChild(reportHeading);
+        reportSection.appendChild(reportCopy);
+        reportSection.appendChild(reportToggle);
+        reportSection.appendChild(reportWrap);
+        el.appendChild(reportSection);
         // ── end share bar ───────────────────────────────────────────────────
 
       } catch (err) {
@@ -1033,10 +1460,9 @@
     // ── Submit View ───────────────────────────────────────────────────────
     const CATEGORIES = [
       'Software & Dev', 'IT & Support', 'Data & AI', 'Design & UX',
-      'Admin & Operations', 'Finance & Accounting', 'HR & Recruiting',
-      'Marketing & Content', 'Writing & Editorial', 'Photography & Video',
-      'Music & Audio', 'Trades & Skilled Labor', 'Healthcare & Wellness',
-      'Hair & Beauty', 'Arts & Culture', 'Other'
+      'Product & Project', 'DevOps & Cloud', 'Cybersecurity',
+      'QA & Testing', 'Sales & Customer Success', 'Marketing & Content',
+      'Technical Writing & Docs', 'Other Tech-Adjacent'
     ];
 
     const LOCATIONS = {
@@ -1074,7 +1500,7 @@
     function renderSubmit(el) {
       el.innerHTML = '';
 
-      const heading = document.createElement('div');
+      const heading = document.createElement('h1');
       heading.className = 'page-heading';
       heading.textContent = '// submit a post';
 
@@ -1084,15 +1510,14 @@
       const form = document.createElement('form');
       form.id = 'submitForm';
       form.autocomplete = 'off';
+      const formStartedAt = Date.now();
+      const type = 'need';
+      let turnstileToken = '';
+      let turnstileWidgetId = null;
 
       form.innerHTML = `
-        <div class="form-group">
-          <label class="form-label">type *</label>
-          <div class="radio-group">
-            <label class="radio-label"><input type="radio" name="type" value="need" required> have a job</label>
-            <label class="radio-label"><input type="radio" name="type" value="offer"> need a job</label>
-          </div>
-        </div>
+        <p class="about-body">Post a tech or tech-adjacent job tied to Appalachia. Every submission is reviewed before it goes live. Compensation is required, and duplicate or low-quality submissions are removed.</p>
+        <p class="micro-copy" style="margin:-6px 0 16px;">If you are hiring, include a real company name and company website so the board stays credible from day one. Approved posts expire after 28 days unless refreshed.</p>
         <div class="form-group">
           <label class="form-label" for="f-title">title * <span id="titleCount" class="char-count" style="float:right">0/80</span></label>
           <input class="form-input" id="f-title" type="text" maxlength="80" required placeholder="e.g. wordpress dev needed for small biz site">
@@ -1103,6 +1528,18 @@
             <option value="">— select —</option>
             ${CATEGORIES.map(c => `<option value="${escHtml(c)}">${escHtml(c)}</option>`).join('')}
           </select>
+        </div>
+        <div class="form-group" id="f-company-group">
+          <label class="form-label" for="f-company">company name <span id="companyReq">*</span></label>
+          <input class="form-input" id="f-company" type="text" maxlength="80" placeholder="e.g. mountain software co.">
+        </div>
+        <div class="form-group" id="f-company-site-group">
+          <label class="form-label" for="f-company-site">company website <span id="companySiteReq">*</span></label>
+          <input class="form-input" id="f-company-site" type="text" maxlength="200" placeholder="https://company.com">
+        </div>
+        <div class="form-group" id="f-company-linkedin-group">
+          <label class="form-label" for="f-company-linkedin">company linkedin</label>
+          <input class="form-input" id="f-company-linkedin" type="text" maxlength="200" placeholder="https://www.linkedin.com/company/...">
         </div>
         <div class="form-group">
           <label class="form-label" for="f-loc-state">state *</label>
@@ -1132,12 +1569,22 @@
           <input class="form-input" id="f-comp" type="text" required placeholder="e.g. $25/hr · trade · negotiate">
         </div>
         <div class="form-group">
-          <label class="form-label" for="f-desc">description <span id="descCount" class="char-count" style="float:right">0/500</span></label>
-          <textarea class="form-textarea" id="f-desc" maxlength="500" placeholder="optional — more detail"></textarea>
+          <label class="form-label" for="f-desc">description <span id="descCount" class="char-count" style="float:right">0/${MAX_DESCRIPTION_LENGTH}</span></label>
+          <textarea class="form-textarea" id="f-desc" maxlength="${MAX_DESCRIPTION_LENGTH}" placeholder="optional — more detail"></textarea>
         </div>
         <div class="form-group">
-          <label class="form-label" for="f-contact">contact * (email or URL)</label>
+          <label class="form-label" for="f-contact">application link or recruiter contact *</label>
           <input class="form-input" id="f-contact" type="text" required placeholder="you@example.com or https://...">
+        </div>
+        <div class="form-group hp-field" aria-hidden="true">
+          <label class="form-label" for="f-website">website</label>
+          <input class="form-input" id="f-website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="turnstileWidget">verification *</label>
+          <div class="turnstile-wrap" id="turnstileWidget">loading verification...</div>
+          <div class="turnstile-status" id="turnstileStatus">verification is loading...</div>
+          <div class="turnstile-note">This helps keep spam and junk listings off the board. If no prompt appears, verification may complete automatically.</div>
         </div>
         <div class="form-group">
           <label class="radio-label"><input type="checkbox" id="f-remote"> remote-friendly</label>
@@ -1153,6 +1600,59 @@
       const regionSel   = form.querySelector('#f-loc-region');
       const cityGroup   = form.querySelector('#f-loc-city-group');
       const citySel     = form.querySelector('#f-loc-city');
+      const turnstileEl = form.querySelector('#turnstileWidget');
+      const turnstileStatusEl = form.querySelector('#turnstileStatus');
+      const companyInput = form.querySelector('#f-company');
+      const companySiteInput = form.querySelector('#f-company-site');
+      const companyLinkedInInput = form.querySelector('#f-company-linkedin');
+
+      const renderTurnstileWidget = () => {
+        if (!window.turnstile?.render) return false;
+        turnstileEl.textContent = '';
+        turnstileStatusEl.textContent = 'verification is running...';
+        turnstileWidgetId = window.turnstile.render(turnstileEl, {
+          sitekey: TURNSTILE_SITE_KEY,
+          theme: 'dark',
+          appearance: 'always',
+          callback: token => {
+            turnstileToken = token;
+            turnstileStatusEl.textContent = 'verification ready.';
+          },
+          'expired-callback': () => {
+            turnstileToken = '';
+            turnstileStatusEl.textContent = 'verification expired. please retry.';
+          },
+          'timeout-callback': () => {
+            turnstileToken = '';
+            turnstileStatusEl.textContent = 'verification timed out. please retry.';
+          },
+          'error-callback': () => {
+            turnstileToken = '';
+            turnstileEl.textContent = 'verification failed to load. reload and try again.';
+            turnstileStatusEl.textContent = 'verification failed.';
+          },
+        });
+        return true;
+      };
+
+      const waitForTurnstile = () => {
+        if (renderTurnstileWidget()) return;
+        let attempts = 0;
+        const poll = window.setInterval(() => {
+          attempts += 1;
+          if (renderTurnstileWidget()) {
+            window.clearInterval(poll);
+            return;
+          }
+          if (attempts >= 40) {
+            window.clearInterval(poll);
+            turnstileEl.textContent = 'verification failed to load. reload and try again.';
+            turnstileStatusEl.textContent = 'verification failed.';
+          }
+        }, 250);
+      };
+
+      waitForTurnstile();
 
       stateSel.addEventListener('change', () => {
         const st = stateSel.value;
@@ -1197,7 +1697,7 @@
         form.querySelector('#titleCount').textContent = `${this.value.length}/80`;
       });
       form.querySelector('#f-desc').addEventListener('input', function() {
-        form.querySelector('#descCount').textContent = `${this.value.length}/500`;
+        form.querySelector('#descCount').textContent = `${this.value.length}/${MAX_DESCRIPTION_LENGTH}`;
       });
 
       form.addEventListener('submit', async (e) => {
@@ -1207,9 +1707,11 @@
         btn.disabled = true;
         btn.textContent = 'submitting...';
 
-        const type      = form.querySelector('input[name="type"]:checked')?.value;
         const title     = form.querySelector('#f-title').value.trim();
         const cat       = form.querySelector('#f-cat').value;
+        const companyName = companyInput.value.trim();
+        const companyWebsite = companySiteInput.value.trim();
+        const companyLinkedIn = companyLinkedInInput.value.trim();
         const locState  = form.querySelector('#f-loc-state').value;
         const locRegion = form.querySelector('#f-loc-region').value;
         const locCity   = form.querySelector('#f-loc-city').value;
@@ -1217,8 +1719,9 @@
         const comp      = form.querySelector('#f-comp').value.trim();
         const desc      = form.querySelector('#f-desc').value.trim();
         const contact   = form.querySelector('#f-contact').value.trim();
+        const website   = form.querySelector('#f-website').value.trim();
 
-        if (!type || !title || !cat || !locState || !locRegion || !comp || !contact) {
+        if (!title || !cat || !locState || !locRegion || !comp || !contact) {
           const errDiv = document.createElement('div');
           errDiv.className = 'msg msg-err';
           errDiv.textContent = 'all required fields must be filled in.';
@@ -1227,63 +1730,52 @@
           btn.textContent = 'submit post';
           return;
         }
+        if (!companyName || !companyWebsite) {
+          const errDiv = document.createElement('div');
+          errDiv.className = 'msg msg-err';
+          errDiv.textContent = 'job posts need a company name and company website.';
+          msgEl.appendChild(errDiv);
+          btn.disabled = false;
+          btn.textContent = 'submit post';
+          return;
+        }
+        if (!turnstileToken) {
+          const errDiv = document.createElement('div');
+          errDiv.className = 'msg msg-err';
+          errDiv.textContent = 'complete the verification check before submitting.';
+          msgEl.appendChild(errDiv);
+          btn.disabled = false;
+          btn.textContent = 'submit post';
+          return;
+        }
 
         try {
           const remoteFriendly = form.querySelector('#f-remote').checked;
-          const docRef = await addDoc(collection(db, 'posts'), {
+          await submitPostFn({
             type, title, category: cat,
+            companyName,
+            companyWebsite,
+            companyLinkedIn,
             locationState: locState, locationRegion: locRegion,
             locationCity:  locCity  || null,
             locationNotes: locNotes || null,
             compensation: comp, description: desc, contact,
-            remoteFriendly, status: 'pending', createdAt: serverTimestamp()
+            remoteFriendly, website, formStartedAt,
+            turnstileToken
           });
-
-          const postId      = docRef.id;
-          const featuredUrl = STRIPE_FEATURED_URL
-            + '?prefilled_email=' + encodeURIComponent(contact)
-            + '&client_reference_id=' + postId;
-          const urgentUrl   = STRIPE_URGENT_URL
-            + '?prefilled_email=' + encodeURIComponent(contact)
-            + '&client_reference_id=' + postId;
 
           el.textContent = '';
 
           const ok = document.createElement('div');
           ok.className = 'msg msg-ok';
-          ok.textContent = 'post submitted -- it will appear on the board after review.';
+          ok.textContent = 'post submitted -- if it fits the board, it will appear after review.';
           el.appendChild(ok);
-
-          const cta = document.createElement('div');
-          cta.className = 'stripe-cta';
-
-          const ctaLabel = document.createElement('div');
-          ctaLabel.className = 'stripe-cta-label';
-          ctaLabel.textContent = 'want more visibility?';
-          cta.appendChild(ctaLabel);
-
-          const featuredLink = document.createElement('a');
-          featuredLink.href = featuredUrl;
-          featuredLink.target = '_blank';
-          featuredLink.rel = 'noopener noreferrer';
-          featuredLink.className = 'stripe-link';
-          featuredLink.textContent = '→ feature this post for 7 days -- $10';
-          cta.appendChild(featuredLink);
-
-          const urgentLink = document.createElement('a');
-          urgentLink.href = urgentUrl;
-          urgentLink.target = '_blank';
-          urgentLink.rel = 'noopener noreferrer';
-          urgentLink.className = 'stripe-link';
-          urgentLink.textContent = '→ mark as urgent -- $5';
-          cta.appendChild(urgentLink);
+          trackEvent('submit_success');
 
           const note = document.createElement('div');
-          note.className = 'stripe-note';
-          note.textContent = 'payment is linked to your post automatically.';
-          cta.appendChild(note);
-
-          el.appendChild(cta);
+          note.className = 'submit-note';
+          note.textContent = `Posting is free during rollout. Paid placement is not self-serve yet. If you want to talk about sponsorships later, email ${SUPPORT_EMAIL}.`;
+          el.appendChild(note);
 
           const backLink = document.createElement('a');
           backLink.href = '/';
@@ -1292,6 +1784,11 @@
           el.appendChild(backLink);
         } catch (err) {
           console.error(err);
+          if (window.turnstile?.reset && turnstileWidgetId !== null) {
+            turnstileToken = '';
+            window.turnstile.reset(turnstileWidgetId);
+            turnstileStatusEl.textContent = 'verification reset. complete the check and try again.';
+          }
           const errDiv = document.createElement('div');
           errDiv.className = 'msg msg-err';
           errDiv.textContent = `submit failed: ${err.message}`;
@@ -1303,66 +1800,159 @@
     }
 
     // ── Admin View ────────────────────────────────────────────────────────
-    let adminAuthed = false;
-
     async function renderAdmin(el) {
-      if (!adminAuthed) { renderPasswordGate(el); return; }
+      const route = getRoute();
+      if (!adminSessionToken && route.loginToken) {
+        el.textContent = '';
+        const heading = document.createElement('h1');
+        heading.className = 'page-heading';
+        heading.textContent = '// admin';
+        const gate = document.createElement('div');
+        gate.className = 'pw-gate';
+        gate.textContent = 'signing you in...';
+        el.appendChild(heading);
+        el.appendChild(gate);
+        try {
+          await consumeAdminLogin(route.loginToken);
+          setAdminFlash('ok', `signed in as ${adminSessionEmail}.`);
+          await renderPendingQueue(el);
+          return;
+        } catch (err) {
+          console.error(err);
+          renderAdminLogin(el, {
+            type: 'err',
+            text: err?.message || 'that sign-in link is invalid or expired.',
+          });
+          return;
+        }
+      }
+      if (!adminSessionToken) {
+        renderAdminLogin(el);
+        return;
+      }
       await renderPendingQueue(el);
     }
 
-    function renderPasswordGate(el) {
-      el.innerHTML = '';
+    async function consumeAdminLogin(loginToken) {
+      if (adminLoginExchange) return adminLoginExchange;
+      adminLoginExchange = (async () => {
+        const { data } = await adminConsumeLoginLinkFn({ loginToken });
+        adminSessionToken = data.token;
+        adminSessionEmail = data.email || '';
+        sessionStorage.setItem('hollerAdminSession', adminSessionToken);
+        sessionStorage.setItem('hollerAdminSessionEmail', adminSessionEmail);
+        window.history.replaceState({}, '', '/admin');
+      })();
+      try {
+        await adminLoginExchange;
+      } finally {
+        adminLoginExchange = null;
+      }
+    }
 
-      const heading = document.createElement('div');
+    function renderAdminLogin(el, flash = null) {
+      el.textContent = '';
+
+      const heading = document.createElement('h1');
       heading.className = 'page-heading';
       heading.textContent = '// admin';
 
       const gate = document.createElement('div');
       gate.className = 'pw-gate';
 
-      const pwInput = document.createElement('input');
-      pwInput.className = 'form-input';
-      pwInput.type = 'password';
-      pwInput.placeholder = 'password';
-      pwInput.autocomplete = 'current-password';
+      const helper = document.createElement('div');
+      helper.className = 'about-body';
+      helper.style.marginBottom = '18px';
+      helper.textContent = 'enter your admin email and we will send a one-time sign-in link.';
+
+      const emailLabel = document.createElement('label');
+      emailLabel.className = 'form-label';
+      emailLabel.textContent = 'admin email';
+
+      const emailInput = document.createElement('input');
+      emailInput.className = 'form-input';
+      emailInput.type = 'email';
+      emailInput.placeholder = 'you@company.com';
+      emailInput.autocomplete = 'email';
 
       const spacer = document.createElement('div');
       spacer.style.height = '10px';
 
-      const pwBtn = document.createElement('button');
-      pwBtn.className = 'submit-btn';
-      pwBtn.style.width = '100%';
-      pwBtn.textContent = 'enter';
+      const finePrint = document.createElement('div');
+      finePrint.className = 'micro-copy';
+      finePrint.style.marginBottom = '12px';
+      finePrint.textContent = 'Links expire after 15 minutes and only work once.';
 
-      const pwMsg = document.createElement('div');
-      pwMsg.style.marginTop = '10px';
+      const emailBtn = document.createElement('button');
+      emailBtn.className = 'submit-btn';
+      emailBtn.style.width = '100%';
+      emailBtn.textContent = 'send sign-in link';
 
-      gate.appendChild(pwInput);
+      const emailMsg = document.createElement('div');
+      emailMsg.style.marginTop = '10px';
+
+      gate.appendChild(helper);
+      gate.appendChild(emailLabel);
+      gate.appendChild(emailInput);
       gate.appendChild(spacer);
-      gate.appendChild(pwBtn);
-      gate.appendChild(pwMsg);
+      gate.appendChild(finePrint);
+      gate.appendChild(emailBtn);
+      gate.appendChild(emailMsg);
       el.appendChild(heading);
       el.appendChild(gate);
 
-      const check = () => {
-        if (pwInput.value === ADMIN_PASSWORD) {
-          adminAuthed = true;
-          renderPendingQueue(el);
-        } else {
-          pwMsg.textContent = '';
-          const err = document.createElement('div');
-          err.className = 'msg msg-err';
-          err.textContent = 'incorrect password';
-          pwMsg.appendChild(err);
+      if (flash) {
+        showMsg(emailMsg, flash.type, flash.text);
+      }
+
+      const requestLink = async () => {
+        emailBtn.disabled = true;
+        emailBtn.textContent = 'sending...';
+        emailMsg.textContent = '';
+        try {
+          await adminRequestLoginLinkFn({ email: emailInput.value.trim() });
+          showMsg(emailMsg, 'ok', 'If that address is approved, a sign-in link is on the way.');
+        } catch (err) {
+          console.error(err);
+          showMsg(emailMsg, 'err', err.message || 'sign-in failed.');
+        } finally {
+          emailBtn.disabled = false;
+          emailBtn.textContent = 'send sign-in link';
         }
       };
 
-      pwBtn.addEventListener('click', check);
-      pwInput.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
-      pwInput.focus();
+      emailBtn.addEventListener('click', requestLink);
+      emailInput.addEventListener('keydown', e => { if (e.key === 'Enter') requestLink(); });
+      emailInput.focus();
     }
 
     let adminFilter = 'pending';
+
+    function clearAdminSession() {
+      adminSessionToken = '';
+      adminSessionEmail = '';
+      sessionStorage.removeItem('hollerAdminSession');
+      sessionStorage.removeItem('hollerAdminSessionEmail');
+    }
+
+    async function adminCall(fn, payload = {}) {
+      const { data } = await fn({ token: adminSessionToken, ...payload });
+      return data;
+    }
+
+    function handleAdminError(err, el) {
+      console.error(err);
+      if (err?.code === 'functions/unauthenticated' || err?.code === 'functions/permission-denied') {
+        clearAdminSession();
+        renderAdminLogin(el);
+        const msg = document.createElement('div');
+        msg.className = 'msg msg-err';
+        msg.textContent = 'admin session expired. sign in again.';
+        el.appendChild(msg);
+        return true;
+      }
+      return false;
+    }
 
     function makeStatusBtn(label, targetStatus, postId, card, el) {
       const btn = document.createElement('button');
@@ -1372,15 +1962,17 @@
         btn.disabled = true;
         btn.textContent = label + '...';
         try {
-          await updateDoc(doc(db, 'posts', postId), { status: targetStatus });
-          card.remove();
-          const remaining = el.querySelectorAll('.admin-card');
-          if (remaining.length === 0) {
-            // Re-render to update heading count and show empty state correctly
-            renderPendingQueue(el);
-          }
+          await adminCall(adminUpdatePostFn, { postId, updates: { status: targetStatus } });
+          adminSelectedIds.delete(postId);
+          const statusVerb = {
+            approve: 'approved',
+            reject: 'rejected',
+            're-open': 're-opened',
+          }[label] || `${label}d`;
+          setAdminFlash('ok', `${statusVerb} 1 post.`);
+          renderPendingQueue(el);
         } catch (err) {
-          console.error(err);
+          if (handleAdminError(err, el)) return;
           btn.disabled = false;
           btn.textContent = label;
           const errDiv = document.createElement('div');
@@ -1403,10 +1995,13 @@
 
       const fields = [
         { id: 'e-title', label: 'title',        value: p.title,        type: 'input',    max: 80 },
-        { id: 'e-loc',   label: 'location',     value: p.location,     type: 'input'         },
+        { id: 'e-company', label: 'company name', value: p.companyName, type: 'input', max: 80 },
+        { id: 'e-company-site', label: 'company website', value: p.companyWebsite, type: 'input', max: 200 },
+        { id: 'e-company-linkedin', label: 'company linkedin', value: p.companyLinkedIn, type: 'input', max: 200 },
         { id: 'e-comp',  label: 'compensation', value: p.compensation, type: 'input'         },
-        { id: 'e-desc',  label: 'description',  value: p.description,  type: 'textarea', max: 500 },
+        { id: 'e-desc',  label: 'description',  value: p.description,  type: 'textarea', max: MAX_DESCRIPTION_LENGTH },
         { id: 'e-cont',  label: 'contact',      value: p.contact,      type: 'input'         },
+        { id: 'e-mod-notes', label: 'moderation notes', value: p.moderationNotes, type: 'textarea', max: 500 },
       ];
 
       fields.forEach(f => {
@@ -1480,6 +2075,56 @@
         rgGrp.appendChild(rgLbl); rgGrp.appendChild(rgSel);
         card.appendChild(rgGrp);
 
+        // City
+        const ctGrp = document.createElement('div');
+        ctGrp.className = 'form-group';
+        const ctLbl = document.createElement('label');
+        ctLbl.className = 'form-label'; ctLbl.textContent = 'city';
+        const ctSel = document.createElement('select');
+        ctSel.className = 'form-select'; ctSel.id = 'e-loc-city';
+        const blankCity = document.createElement('option');
+        blankCity.value = ''; blankCity.textContent = '— optional —';
+        ctSel.appendChild(blankCity);
+        (LOCATION_CITIES[p.locationState] || []).forEach(city => {
+          const o = document.createElement('option');
+          o.value = city; o.textContent = city;
+          if (city === p.locationCity) o.selected = true;
+          ctSel.appendChild(o);
+        });
+        ctGrp.appendChild(ctLbl); ctGrp.appendChild(ctSel);
+        card.appendChild(ctGrp);
+
+        const populateRegions = (stateName, selectedRegion = '') => {
+          rgSel.textContent = '';
+          (LOCATIONS[stateName] || []).forEach(region => {
+            const o = document.createElement('option');
+            o.value = region;
+            o.textContent = region;
+            if (region === selectedRegion) o.selected = true;
+            rgSel.appendChild(o);
+          });
+        };
+
+        const populateCities = (stateName, selectedCity = '') => {
+          ctSel.textContent = '';
+          const blank = document.createElement('option');
+          blank.value = '';
+          blank.textContent = '— optional —';
+          ctSel.appendChild(blank);
+          (LOCATION_CITIES[stateName] || []).forEach(city => {
+            const o = document.createElement('option');
+            o.value = city;
+            o.textContent = city;
+            if (city === selectedCity) o.selected = true;
+            ctSel.appendChild(o);
+          });
+        };
+
+        stSel.addEventListener('change', () => {
+          populateRegions(stSel.value);
+          populateCities(stSel.value);
+        });
+
         // Notes
         const ntGrp = document.createElement('div');
         ntGrp.className = 'form-group';
@@ -1517,24 +2162,29 @@
         try {
           const updates = {
             title:          card.querySelector('#e-title').value.trim(),
+            companyName:    card.querySelector('#e-company').value.trim() || null,
+            companyWebsite: card.querySelector('#e-company-site').value.trim() || null,
+            companyLinkedIn: card.querySelector('#e-company-linkedin').value.trim() || null,
             compensation:   card.querySelector('#e-comp').value.trim(),
             description:    card.querySelector('#e-desc').value.trim(),
             contact:        card.querySelector('#e-cont').value.trim(),
             category:       card.querySelector('#e-cat').value,
+            moderationNotes: card.querySelector('#e-mod-notes').value.trim() || null,
             remoteFriendly: card.querySelector('#e-remote').checked,
           };
-          const legacyLoc = card.querySelector('#e-loc');
-          if (legacyLoc) updates.location = legacyLoc.value.trim();
           const eState  = card.querySelector('#e-loc-state');
           const eRegion = card.querySelector('#e-loc-region');
+          const eCity   = card.querySelector('#e-loc-city');
           const eNotes  = card.querySelector('#e-loc-notes');
           if (eState)  updates.locationState  = eState.value;
           if (eRegion) updates.locationRegion = eRegion.value;
+          if (eCity)   updates.locationCity   = eCity.value || null;
           if (eNotes)  updates.locationNotes  = eNotes.value.trim() || null;
-          await updateDoc(doc(db, 'posts', postId), updates);
+          await adminCall(adminUpdatePostFn, { postId, updates });
+          setAdminFlash('ok', `saved changes: ${updates.title}`);
           renderPendingQueue(card.closest('#content'));
         } catch (err) {
-          console.error(err);
+          if (handleAdminError(err, card.closest('#content'))) return;
           saveBtn.disabled = false;
           saveBtn.textContent = 'save';
           const errDiv = document.createElement('div');
@@ -1558,61 +2208,315 @@
 
     async function renderPendingQueue(el) {
       try {
-        const q = query(
-          collection(db, 'posts'),
-          where('status', '==', adminFilter),
-          orderBy('createdAt', 'desc')
-        );
-        const snap = await getDocs(q);
+        const { posts, counts, dashboard, sessionEmail } = await adminCall(adminListPostsFn, { status: adminFilter });
+        if (sessionEmail) {
+          adminSessionEmail = sessionEmail;
+          sessionStorage.setItem('hollerAdminSessionEmail', adminSessionEmail);
+        }
 
         // Build dup map: contact → count across loaded results
         const contactCount = {};
-        snap.docs.forEach(d => {
-          const c = d.data().contact;
+        posts.forEach(p => {
+          const c = p.contact;
           if (c) contactCount[c] = (contactCount[c] || 0) + 1;
         });
+        const visiblePosts = posts.filter(p => {
+          const q = adminSearchQuery.trim().toLowerCase();
+          if (!q) return true;
+          return [
+            p.title,
+            p.companyName,
+            p.contact,
+            p.category,
+            formatLocation(p),
+          ].some(value => String(value || '').toLowerCase().includes(q));
+        });
+        adminSelectedIds = new Set([...adminSelectedIds].filter(id => visiblePosts.some(p => p.id === id)));
 
         el.textContent = '';
         const heading = document.createElement('div');
         heading.className = 'page-heading';
-        heading.textContent = `// admin — ${adminFilter} (${snap.size})`;
+        heading.textContent = `// admin — ${adminFilter} (${visiblePosts.length})`;
         el.appendChild(heading);
+
+        const sessionBar = document.createElement('div');
+        sessionBar.style.cssText = 'display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;font-size:11px;color:#666;';
+        const sessionLabel = document.createElement('div');
+        sessionLabel.textContent = adminSessionEmail ? `admin session active as ${adminSessionEmail}` : 'admin session active';
+        const signOutBtn = document.createElement('button');
+        signOutBtn.className = 'page-btn';
+        signOutBtn.textContent = 'sign out';
+        signOutBtn.addEventListener('click', () => {
+          clearAdminSession();
+          navigate('/admin');
+        });
+        sessionBar.appendChild(sessionLabel);
+        sessionBar.appendChild(signOutBtn);
+        el.appendChild(sessionBar);
+
+        if (dashboard) {
+          const dashboardGrid = document.createElement('section');
+          dashboardGrid.className = 'board-grid';
+          dashboardGrid.style.marginBottom = '18px';
+
+          const metricsPanel = document.createElement('div');
+          metricsPanel.className = 'mini-panel';
+          metricsPanel.innerHTML = `
+            <div class="mini-panel-title">launch ops snapshot</div>
+            <div class="mini-panel-rows">
+              <div class="mini-panel-row"><span>active alerts</span><strong>${dashboard.activeAlerts || 0}</strong></div>
+              <div class="mini-panel-row"><span>board views, last 7d</span><strong>${dashboard.analytics?.totals?.boardViews || 0}</strong></div>
+              <div class="mini-panel-row"><span>post views, last 7d</span><strong>${dashboard.analytics?.totals?.postViews || 0}</strong></div>
+              <div class="mini-panel-row"><span>apply clicks, last 7d</span><strong>${dashboard.analytics?.totals?.applyClicks || 0}</strong></div>
+              <div class="mini-panel-row"><span>alert signups, last 7d</span><strong>${dashboard.analytics?.totals?.alertSignups || 0}</strong></div>
+              <div class="mini-panel-row"><span>successful submissions, last 7d</span><strong>${dashboard.analytics?.totals?.submitSuccesses || 0}</strong></div>
+            </div>`;
+
+          const dailyPanel = document.createElement('div');
+          dailyPanel.className = 'mini-panel';
+          const dailyRows = (dashboard.analytics?.daily || []).slice(-3).map(row => `
+            <div class="mini-panel-row"><span>${escHtml(row.dayKey)}</span><strong>${row.boardViews || 0} / ${row.postViews || 0} / ${row.applyClicks || 0}</strong></div>
+          `).join('');
+          dailyPanel.innerHTML = `
+            <div class="mini-panel-title">recent activity</div>
+            <div class="mini-panel-copy">Each row shows board views / post views / apply clicks.</div>
+            <div class="mini-panel-rows">${dailyRows || '<div class="mini-panel-copy">no analytics recorded yet.</div>'}</div>`;
+
+          dashboardGrid.appendChild(metricsPanel);
+          dashboardGrid.appendChild(dailyPanel);
+          el.appendChild(dashboardGrid);
+        }
+
+        const toolbar = document.createElement('div');
+        toolbar.className = 'admin-toolbar';
+        const toolsLeft = document.createElement('div');
+        toolsLeft.className = 'admin-tools-left';
+        const searchInput = document.createElement('input');
+        searchInput.className = 'search-input';
+        searchInput.style.maxWidth = '280px';
+        searchInput.placeholder = 'filter this queue...';
+        searchInput.value = adminSearchQuery;
+        searchInput.addEventListener('keydown', event => {
+          if (event.key !== 'Enter') return;
+          event.preventDefault();
+          adminSearchQuery = searchInput.value;
+          renderPendingQueue(el);
+        });
+        searchInput.addEventListener('change', () => {
+          adminSearchQuery = searchInput.value;
+          renderPendingQueue(el);
+        });
+        const selectAllBtn = document.createElement('button');
+        selectAllBtn.className = 'page-btn';
+        selectAllBtn.textContent = 'select visible';
+        selectAllBtn.addEventListener('click', () => {
+          visiblePosts.forEach(p => adminSelectedIds.add(p.id));
+          renderPendingQueue(el);
+        });
+        const clearSelectionBtn = document.createElement('button');
+        clearSelectionBtn.className = 'page-btn';
+        clearSelectionBtn.textContent = 'clear selection';
+        clearSelectionBtn.addEventListener('click', () => {
+          adminSelectedIds.clear();
+          renderPendingQueue(el);
+        });
+        toolsLeft.appendChild(searchInput);
+        toolsLeft.appendChild(selectAllBtn);
+        toolsLeft.appendChild(clearSelectionBtn);
+        const toolsRight = document.createElement('div');
+        toolsRight.className = 'admin-tools-right';
+        const selectionLabel = document.createElement('div');
+        selectionLabel.textContent = `${adminSelectedIds.size} selected`;
+        toolsRight.appendChild(selectionLabel);
+        toolbar.appendChild(toolsLeft);
+        toolbar.appendChild(toolsRight);
+        el.appendChild(toolbar);
+
+        const importPanel = document.createElement('div');
+        importPanel.className = 'mini-panel';
+        importPanel.style.marginBottom = '18px';
+        const importMsg = document.createElement('div');
+        const importHeading = document.createElement('div');
+        importHeading.className = 'mini-panel-title';
+        importHeading.textContent = 'seed / import posts';
+        const importCopy = document.createElement('div');
+        importCopy.className = 'mini-panel-copy';
+        importCopy.textContent = 'Paste a JSON array of posts. Imported listings still go through validation, and you can choose whether they land in pending review or go live immediately.';
+        const importTextarea = document.createElement('textarea');
+        importTextarea.className = 'form-textarea';
+        importTextarea.style.minHeight = '220px';
+        importTextarea.placeholder = 'Paste a JSON array of post objects here...';
+        importTextarea.value = adminImportDraft;
+        importTextarea.addEventListener('input', () => {
+          adminImportDraft = importTextarea.value;
+        });
+        const importControls = document.createElement('div');
+        importControls.className = 'admin-tools-left';
+        importControls.style.marginTop = '12px';
+        const importStatusLabel = document.createElement('label');
+        importStatusLabel.className = 'form-label';
+        importStatusLabel.style.marginBottom = '0';
+        importStatusLabel.textContent = 'import as';
+        const importStatusSelect = document.createElement('select');
+        importStatusSelect.className = 'form-select';
+        importStatusSelect.style.maxWidth = '160px';
+        [
+          ['pending', 'pending review'],
+          ['approved', 'approved / live']
+        ].forEach(([value, label]) => {
+          const option = document.createElement('option');
+          option.value = value;
+          option.textContent = label;
+          option.selected = adminImportStatus === value;
+          importStatusSelect.appendChild(option);
+        });
+        importStatusSelect.addEventListener('change', () => {
+          adminImportStatus = importStatusSelect.value;
+        });
+        const sampleBtn = document.createElement('button');
+        sampleBtn.className = 'btn btn-reject';
+        sampleBtn.textContent = 'load sample';
+        sampleBtn.addEventListener('click', () => {
+          adminImportDraft = ADMIN_IMPORT_TEMPLATE;
+          importTextarea.value = adminImportDraft;
+        });
+        const importBtn = document.createElement('button');
+        importBtn.className = 'btn btn-approve';
+        importBtn.textContent = 'import posts';
+        importBtn.addEventListener('click', async () => {
+          importMsg.innerHTML = '';
+          importBtn.disabled = true;
+          importBtn.textContent = 'importing...';
+          try {
+            const parsed = JSON.parse(importTextarea.value || '[]');
+            const { data } = await adminCall(adminImportPostsFn, {
+              status: adminImportStatus,
+              posts: parsed,
+            });
+            adminImportDraft = '';
+            adminSelectedIds.clear();
+            adminFilter = data.status;
+            setAdminFlash('ok', `imported ${data.count} posts to ${data.status}.`);
+            renderPendingQueue(el);
+          } catch (err) {
+            console.error(err);
+            showMsg(importMsg, 'err', err.message || 'import failed.');
+            importBtn.disabled = false;
+            importBtn.textContent = 'import posts';
+          }
+        });
+        importControls.appendChild(importStatusLabel);
+        importControls.appendChild(importStatusSelect);
+        importControls.appendChild(sampleBtn);
+        importControls.appendChild(importBtn);
+        importPanel.appendChild(importHeading);
+        importPanel.appendChild(importCopy);
+        importPanel.appendChild(importTextarea);
+        importPanel.appendChild(importControls);
+        const importFinePrint = document.createElement('div');
+        importFinePrint.className = 'micro-copy';
+        importFinePrint.textContent = 'Expected keys: title, category, companyName, companyWebsite, locationState, locationRegion, compensation, description, contact, remoteFriendly. You can also use company, company_url, state, region, city, salary, and applyUrl.';
+        importPanel.appendChild(importFinePrint);
+        importPanel.appendChild(importMsg);
+        el.appendChild(importPanel);
 
         const tabs = document.createElement('div');
         tabs.style.cssText = 'display:flex;gap:12px;margin-bottom:18px;font-size:11px;';
         ['pending','approved','rejected','expired'].forEach(s => {
           const t = document.createElement('button');
           t.className = 'page-btn' + (adminFilter === s ? ' active' : '');
-          t.textContent = s;
-          t.addEventListener('click', () => { adminFilter = s; renderPendingQueue(el); });
+          t.textContent = `${s} (${counts?.[s] ?? 0})`;
+          t.addEventListener('click', () => {
+            adminFilter = s;
+            adminSelectedIds.clear();
+            renderPendingQueue(el);
+          });
           tabs.appendChild(t);
         });
         el.appendChild(tabs);
 
-        if (snap.empty) {
+        if (adminFlash) {
+          showMsg(el, adminFlash.type, adminFlash.text);
+          adminFlash = null;
+        }
+
+        if (adminSelectedIds.size > 0) {
+          const bulkBar = document.createElement('div');
+          bulkBar.className = 'admin-quick-actions';
+          const bulkActions = [];
+          if (adminFilter === 'pending') bulkActions.push(['approve selected', 'approve'], ['reject selected', 'reject']);
+          if (adminFilter === 'approved') bulkActions.push(['expire selected', 'expire']);
+          if (adminFilter === 'rejected' || adminFilter === 'expired') bulkActions.push(['re-open selected', 'reopen']);
+          bulkActions.push(['delete selected', 'delete']);
+
+          bulkActions.forEach(([label, action]) => {
+            const btn = document.createElement('button');
+            btn.className = action === 'delete' ? 'btn btn-reject' : 'btn btn-approve';
+            btn.textContent = label;
+            btn.addEventListener('click', async () => {
+              btn.disabled = true;
+              btn.textContent = 'working...';
+              try {
+                await adminCall(adminBulkUpdatePostsFn, {
+                  postIds: [...adminSelectedIds],
+                  action,
+                });
+                const count = adminSelectedIds.size;
+                adminSelectedIds.clear();
+                setAdminFlash('ok', `${label.replace(' selected', '')} (${count}).`);
+                renderPendingQueue(el);
+              } catch (err) {
+                if (handleAdminError(err, el)) return;
+                btn.disabled = false;
+                btn.textContent = label;
+                setAdminFlash('err', err.message || 'bulk action failed.');
+                renderPendingQueue(el);
+              }
+            });
+            bulkBar.appendChild(btn);
+          });
+
+          el.appendChild(bulkBar);
+        }
+
+        if (visiblePosts.length === 0) {
           const empty = document.createElement('div');
-          empty.className = 'empty';
-          empty.textContent = `no ${adminFilter} posts.`;
+          empty.className = 'empty mini-panel';
+          empty.innerHTML = adminSearchQuery
+            ? `<div class="mini-panel-title">no matches in ${escHtml(adminFilter)}</div><div class="mini-panel-copy">Try a different queue filter or search term.</div>`
+            : `<div class="mini-panel-title">no ${escHtml(adminFilter)} posts</div><div class="mini-panel-copy">This queue is clear for now.</div>`;
           el.appendChild(empty);
           return;
         }
 
-        snap.docs.forEach(d => {
-          const p = d.data();
-          const date = p.createdAt?.toDate
-            ? p.createdAt.toDate().toLocaleDateString('en-US',
+        visiblePosts.forEach(p => {
+          const date = p.createdAt
+            ? new Date(p.createdAt).toLocaleDateString('en-US',
                 { year: 'numeric', month: 'short', day: 'numeric' })
             : 'unknown date';
 
           const card = document.createElement('div');
           card.className = 'admin-card';
 
+          const check = document.createElement('input');
+          check.type = 'checkbox';
+          check.className = 'admin-check';
+          check.checked = adminSelectedIds.has(p.id);
+          check.addEventListener('change', () => {
+            if (check.checked) adminSelectedIds.add(p.id);
+            else adminSelectedIds.delete(p.id);
+            renderPendingQueue(el);
+          });
+          card.appendChild(check);
+
           const titleEl = document.createElement('div');
           titleEl.className = 'admin-card-title';
-          const badge = document.createElement('span');
-          badge.className = `badge badge-${p.type === 'need' ? 'need' : 'offer'}`;
-          badge.textContent = p.type === 'need' ? 'have a job' : 'need a job';
-          titleEl.appendChild(badge);
+          if (p.type && p.type !== 'need') {
+            const badge = document.createElement('span');
+            badge.className = 'badge badge-offer';
+            badge.textContent = 'legacy profile';
+            titleEl.appendChild(badge);
+          }
           titleEl.appendChild(document.createTextNode(p.title || ''));
 
           if (contactCount[p.contact] > 1) {
@@ -1626,6 +2530,8 @@
           const metaEl = document.createElement('div');
           metaEl.className = 'admin-card-meta';
           metaEl.innerHTML =
+            `<span class="meta-label">company</span>${escHtml(p.companyName || 'n/a')}<br>` +
+            (p.companyWebsite ? `<span class="meta-label">site</span><a href="${escHtml(p.companyWebsite)}" target="_blank" rel="noopener noreferrer">${escHtml(formatCompanyLink(p))}</a><br>` : '') +
             `<span class="meta-label">category</span>${escHtml(p.category)}<br>` +
             `<span class="meta-label">location</span>${escHtml(formatLocation(p))}<br>` +
             `<span class="meta-label">comp</span>${escHtml(p.compensation)}<br>` +
@@ -1643,46 +2549,65 @@
             card.appendChild(desc);
           }
 
+          if (Array.isArray(p.reviewFlags) && p.reviewFlags.length) {
+            const flagList = document.createElement('div');
+            flagList.className = 'admin-flag-list';
+            p.reviewFlags.forEach(flag => {
+              const span = document.createElement('span');
+              span.className = 'admin-flag';
+              span.textContent = flag;
+              flagList.appendChild(span);
+            });
+            card.appendChild(flagList);
+          }
+
+          if (p.moderationNotes) {
+            const note = document.createElement('div');
+            note.className = 'admin-note';
+            note.textContent = `notes: ${p.moderationNotes}`;
+            card.appendChild(note);
+          }
+
           const actions = document.createElement('div');
           actions.className = 'admin-actions';
 
           // ── Approve (pending only) ──────────────────────────────────────
           if (adminFilter === 'pending') {
-            const approveBtn = makeStatusBtn('approve', 'approved', d.id, card, el);
+            const approveBtn = makeStatusBtn('approve', 'approved', p.id, card, el);
             actions.appendChild(approveBtn);
           }
 
           // ── Reject (pending only) ───────────────────────────────────────
           if (adminFilter === 'pending') {
-            const rejectBtn = makeStatusBtn('reject', 'rejected', d.id, card, el);
+            const rejectBtn = makeStatusBtn('reject', 'rejected', p.id, card, el);
             actions.appendChild(rejectBtn);
           }
 
           // ── Expire (approved only) ──────────────────────────────────────
           if (adminFilter === 'approved') {
-            const expireBtn = makeStatusBtn('expire', 'expired', d.id, card, el);
+            const expireBtn = makeStatusBtn('expire', 'expired', p.id, card, el);
             actions.appendChild(expireBtn);
           }
 
           // ── Re-open (rejected + expired only) ──────────────────────────
           if (adminFilter === 'rejected' || adminFilter === 'expired') {
-            const reopenBtn = makeStatusBtn('re-open', 'pending', d.id, card, el);
+            const reopenBtn = makeStatusBtn('re-open', 'pending', p.id, card, el);
             actions.appendChild(reopenBtn);
           }
 
           // ── Edit (approved only) ────────────────────────────────────────
-          if (adminFilter === 'approved') {
+          if (adminFilter === 'pending' || adminFilter === 'approved' || adminFilter === 'rejected' || adminFilter === 'expired') {
             const editBtn = document.createElement('button');
             editBtn.className = 'btn btn-approve';
             editBtn.textContent = 'edit';
-            editBtn.addEventListener('click', () => renderEditForm(card, d.id, p));
+            editBtn.addEventListener('click', () => renderEditForm(card, p.id, p));
             actions.appendChild(editBtn);
           }
 
           // ── Featured toggle (approved only) ─────────────────────────────
           if (adminFilter === 'approved') {
             const now = new Date();
-            const isFeatured = p.featured && p.featuredUntil?.toDate?.() > now;
+            const isFeatured = p.featured && p.featuredUntil && p.featuredUntil > now.getTime();
             const featBtn = document.createElement('button');
             featBtn.className = 'btn btn-approve';
             featBtn.textContent = isFeatured ? 'unfeature' : 'feature';
@@ -1690,15 +2615,22 @@
               featBtn.disabled = true;
               try {
                 if (isFeatured) {
-                  await updateDoc(doc(db, 'posts', d.id), { featured: false, featuredUntil: null });
+                  await adminCall(adminUpdatePostFn, {
+                    postId: p.id,
+                    updates: { featured: false, featuredUntil: null }
+                  });
                 } else {
                   const until = new Date();
                   until.setDate(until.getDate() + 7);
-                  await updateDoc(doc(db, 'posts', d.id), { featured: true, featuredUntil: until });
+                  await adminCall(adminUpdatePostFn, {
+                    postId: p.id,
+                    updates: { featured: true, featuredUntil: until.getTime() }
+                  });
                 }
+                setAdminFlash('ok', `${isFeatured ? 'removed featured status' : 'featured post'}: ${p.title}`);
                 renderPendingQueue(el);
               } catch (err) {
-                console.error(err);
+                if (handleAdminError(err, el)) return;
                 featBtn.disabled = false;
               }
             });
@@ -1713,10 +2645,14 @@
             urgBtn.addEventListener('click', async () => {
               urgBtn.disabled = true;
               try {
-                await updateDoc(doc(db, 'posts', d.id), { urgent: !p.urgent });
+                await adminCall(adminUpdatePostFn, {
+                  postId: p.id,
+                  updates: { urgent: !p.urgent }
+                });
+                setAdminFlash('ok', `${p.urgent ? 'removed urgent flag' : 'marked urgent'}: ${p.title}`);
                 renderPendingQueue(el);
               } catch (err) {
-                console.error(err);
+                if (handleAdminError(err, el)) return;
                 urgBtn.disabled = false;
               }
             });
@@ -1733,18 +2669,12 @@
             delBtn.disabled = true;
             delBtn.textContent = 'deleting...';
             try {
-              await deleteDoc(doc(db, 'posts', d.id));
-              card.remove();
-              const remaining = el.querySelectorAll('.admin-card');
-              if (remaining.length === 0) {
-                const empty = document.createElement('div');
-                empty.className = 'empty';
-                empty.textContent = `no ${adminFilter} posts.`;
-                el.appendChild(empty);
-                heading.textContent = `// admin — ${adminFilter} (0)`;
-              }
+              await adminCall(adminDeletePostFn, { postId: p.id });
+              adminSelectedIds.delete(p.id);
+              setAdminFlash('ok', `deleted: ${p.title}`);
+              renderPendingQueue(el);
             } catch (err) {
-              console.error(err);
+              if (handleAdminError(err, el)) return;
               delBtn.disabled = false;
               delBtn.textContent = 'delete';
             }
@@ -1755,7 +2685,7 @@
           el.appendChild(card);
         });
       } catch (err) {
-        console.error(err);
+        if (handleAdminError(err, el)) return;
         el.textContent = `error loading queue: ${err.message}`;
       }
     }
@@ -1763,7 +2693,7 @@
     render(); // initial render — must be after all view functions
   </script>
   <footer class="site-footer">
-    holler.works is a community job and skills board for the Appalachian region. Buyers and sellers of tech services connect directly. Posting is free. Optional paid upgrades: featured placement (7 days) — $10 · urgent badge — $5. Payments processed by Stripe. All sales final; no refunds once a listing goes live. Contact: hey@holler.works
+    The goal of holler.works is to make it easier to find real tech and tech-adjacent work tied to Appalachia. Compensation is required on every listing. Posting is free during rollout. Daily alerts are available from the board view. Contact: hey@holler.works
   </footer>
 </body>
 </html>
