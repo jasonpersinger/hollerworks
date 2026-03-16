@@ -175,6 +175,8 @@
     .share-btn:hover { color: var(--rust); }
     .share-copy { font-size: 11px; }
     .site-footer { padding: 24px 36px; font-size: 10px; color: #333; line-height: 1.8; border-top: 1px solid #161616; }
+    .site-footer p { margin: 0 0 10px; }
+    .site-footer p:last-child { margin-bottom: 0; }
     .site-footer a { color: #333; text-decoration: underline; }
     .menu-btn { background: none; border: none; color: var(--rust); font-size: 20px; cursor: pointer; padding: 4px; line-height: 1; }
     .post-btn-sm { width: auto; padding: 5px 10px; font-size: 11px; }
@@ -2693,7 +2695,10 @@
     render(); // initial render — must be after all view functions
   </script>
   <footer class="site-footer">
-    The goal of holler.works is to make it easier to find real tech and tech-adjacent work tied to Appalachia. Compensation is required on every listing. Posting is free during rollout. Daily alerts are available from the board view. Contact: hey@holler.works
+    <p>The goal of holler.works is to make it easier to find real tech and tech-adjacent work tied to Appalachia.</p>
+    <p>Compensation is required on every listing.</p>
+    <p>Posting is free during rollout.</p>
+    <p>Contact: <a href="mailto:hey@holler.works">hey@holler.works</a></p>
   </footer>
 </body>
 </html>
