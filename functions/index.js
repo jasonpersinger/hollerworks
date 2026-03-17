@@ -292,9 +292,53 @@ function renderContactLink(post) {
     return `<a href="mailto:${escapeHtml(post.contact)}">${escapeHtml(post.contact)}</a>`;
   }
   if (isLikelyHttpUrl(post.contact)) {
-    return `<a href="${escapeHtml(post.contact)}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.contact)}</a>`;
+    return `<a href="${escapeHtml(post.contact)}" target="_blank" rel="noopener noreferrer">apply on company site</a>`;
   }
   return escapeHtml(post.contact);
+}
+
+function renderRichDescriptionHtml(text) {
+  if (!text) return '';
+
+  const lines = String(text).replace(/\r/g, '').split('\n');
+  const blocks = [];
+  let paragraphParts = [];
+  let listItems = [];
+
+  const flushParagraph = () => {
+    if (!paragraphParts.length) return;
+    blocks.push(`<p>${escapeHtml(paragraphParts.join(' '))}</p>`);
+    paragraphParts = [];
+  };
+
+  const flushList = () => {
+    if (!listItems.length) return;
+    blocks.push(`<ul>${listItems.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`);
+    listItems = [];
+  };
+
+  lines.forEach(rawLine => {
+    const line = rawLine.trim();
+    if (!line) {
+      flushParagraph();
+      flushList();
+      return;
+    }
+
+    const bulletMatch = line.match(/^(?:[-*•]|\d+\.)\s+(.+)$/);
+    if (bulletMatch) {
+      flushParagraph();
+      listItems.push(bulletMatch[1].trim());
+      return;
+    }
+
+    flushList();
+    paragraphParts.push(line);
+  });
+
+  flushParagraph();
+  flushList();
+  return blocks.join('');
 }
 
 function buildJobPostingSchema(post, postId) {
@@ -437,8 +481,21 @@ function renderShell({ title, description, canonicalPath, content, robots = 'ind
       margin: 24px 0;
       padding-top: 18px;
       border-top: 1px solid #1e1e1e;
-      white-space: pre-wrap;
       color: var(--lgray);
+      line-height: 1.9;
+    }
+    .description p {
+      margin: 0 0 14px;
+    }
+    .description p:last-child {
+      margin-bottom: 0;
+    }
+    .description ul {
+      margin: 0 0 14px 20px;
+      padding: 0;
+    }
+    .description li {
+      margin-bottom: 8px;
     }
     .footer-link {
       margin-top: 28px;
@@ -468,10 +525,10 @@ function renderPostPageHtml(postId, post) {
     <h1 class="title">${escapeHtml(post.title)}</h1>
     <div class="meta">${renderMetaRows(post)}</div>
     <div class="notice">Reviewed by a human before publishing. Approved listings expire after 28 days unless refreshed.</div>
-    ${post.description ? `<div class="description">${escapeHtml(post.description)}</div>` : ''}
+    ${post.description ? `<div class="description">${renderRichDescriptionHtml(post.description)}</div>` : ''}
     <div class="notice">
       ${post.companyName ? `<div><span class="meta-label">company</span>${escapeHtml(post.companyName)}</div>` : ''}
-      ${post.companyWebsite ? `<div><span class="meta-label">site</span><a href="${escapeHtml(post.companyWebsite)}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.companyWebsite)}</a></div>` : ''}
+      ${post.companyWebsite ? `<div><span class="meta-label">site</span><a href="${escapeHtml(post.companyWebsite)}" target="_blank" rel="noopener noreferrer">${escapeHtml(new URL(post.companyWebsite).hostname.replace(/^www\./, ''))}</a></div>` : ''}
       ${post.companyLinkedIn ? `<div><span class="meta-label">profile</span><a href="${escapeHtml(post.companyLinkedIn)}" target="_blank" rel="noopener noreferrer">company profile</a></div>` : ''}
       <span class="meta-label">contact</span>${renderContactLink(post)}
     </div>
@@ -530,6 +587,23 @@ function normalizeHttpUrl(value, fieldName, options = {}) {
   }
 
   return parsed.toString();
+}
+
+function normalizeInlineText(value) {
+  return String(value || '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizeDescriptionText(value) {
+  return String(value || '')
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .split('\n')
+    .map(line => line.replace(/[ \t]+$/g, '').trim())
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
 }
 
 function getEmailDomain(value) {
@@ -708,17 +782,17 @@ function normalizeImportedPost(data, { status }) {
   }
 
   const type = String(readImportValue(data, ['type'], 'need')).trim().toLowerCase();
-  const title = String(readImportValue(data, ['title', 'role'], '')).trim();
+  const title = normalizeInlineText(readImportValue(data, ['title', 'role'], ''));
   const category = String(readImportValue(data, ['category'], '')).trim();
-  const companyName = String(readImportValue(data, ['companyName', 'company', 'company_name'], '')).trim();
+  const companyName = normalizeInlineText(readImportValue(data, ['companyName', 'company', 'company_name'], ''));
   const companyWebsiteInput = String(readImportValue(data, ['companyWebsite', 'companySite', 'company_url', 'companyUrl', 'website'], '')).trim();
   const companyLinkedInInput = String(readImportValue(data, ['companyLinkedIn', 'companyLinkedin', 'linkedin'], '')).trim();
   const locationState = String(readImportValue(data, ['locationState', 'state'], '')).trim();
   const locationRegion = String(readImportValue(data, ['locationRegion', 'region'], '')).trim();
-  const locationCity = String(readImportValue(data, ['locationCity', 'city'], '')).trim();
-  const locationNotes = String(readImportValue(data, ['locationNotes', 'notes', 'location_notes'], '')).trim();
-  const compensation = String(readImportValue(data, ['compensation', 'comp', 'salary'], '')).trim();
-  const description = String(readImportValue(data, ['description', 'desc', 'body'], '')).trim();
+  const locationCity = normalizeInlineText(readImportValue(data, ['locationCity', 'city'], ''));
+  const locationNotes = normalizeInlineText(readImportValue(data, ['locationNotes', 'notes', 'location_notes'], ''));
+  const compensation = normalizeInlineText(readImportValue(data, ['compensation', 'comp', 'salary'], ''));
+  const description = normalizeDescriptionText(readImportValue(data, ['description', 'desc', 'body'], ''));
   const rawContact = String(readImportValue(data, ['contact', 'applyUrl', 'applyURL', 'apply_url', 'url'], '')).trim();
   const remoteFriendly = readImportBoolean(data, ['remoteFriendly', 'remote', 'remote_friendly']);
   const companyWebsite = companyWebsiteInput
@@ -958,17 +1032,17 @@ function normalizeSubmission(data) {
 
   const now = Date.now();
   const type = typeof data.type === 'string' ? data.type.trim() : '';
-  const title = typeof data.title === 'string' ? data.title.trim() : '';
+  const title = typeof data.title === 'string' ? normalizeInlineText(data.title) : '';
   const category = typeof data.category === 'string' ? data.category.trim() : '';
-  const companyName = typeof data.companyName === 'string' ? data.companyName.trim() : '';
+  const companyName = typeof data.companyName === 'string' ? normalizeInlineText(data.companyName) : '';
   const companyWebsiteInput = typeof data.companyWebsite === 'string' ? data.companyWebsite.trim() : '';
   const companyLinkedInInput = typeof data.companyLinkedIn === 'string' ? data.companyLinkedIn.trim() : '';
   const locationState = typeof data.locationState === 'string' ? data.locationState.trim() : '';
   const locationRegion = typeof data.locationRegion === 'string' ? data.locationRegion.trim() : '';
-  const locationCity = typeof data.locationCity === 'string' ? data.locationCity.trim() : '';
-  const locationNotes = typeof data.locationNotes === 'string' ? data.locationNotes.trim() : '';
-  const compensation = typeof data.compensation === 'string' ? data.compensation.trim() : '';
-  const description = typeof data.description === 'string' ? data.description.trim() : '';
+  const locationCity = typeof data.locationCity === 'string' ? normalizeInlineText(data.locationCity) : '';
+  const locationNotes = typeof data.locationNotes === 'string' ? normalizeInlineText(data.locationNotes) : '';
+  const compensation = typeof data.compensation === 'string' ? normalizeInlineText(data.compensation) : '';
+  const description = typeof data.description === 'string' ? normalizeDescriptionText(data.description) : '';
   const rawContact = typeof data.contact === 'string' ? data.contact.trim() : '';
   const website = typeof data.website === 'string' ? data.website.trim() : '';
   const formStartedAt = Number(data.formStartedAt);
@@ -1171,13 +1245,13 @@ function normalizeAdminUpdates(updates) {
         if (typeof value !== 'string' || !value.trim() || value.trim().length > 80) {
           throw new HttpsError('invalid-argument', 'Title must be 1-80 characters.');
         }
-        normalized.title = value.trim();
+        normalized.title = normalizeInlineText(value);
         break;
       case 'companyName':
         if (value !== null && (typeof value !== 'string' || !value.trim() || value.trim().length > 80)) {
           throw new HttpsError('invalid-argument', 'Company name must be 1-80 characters.');
         }
-        normalized.companyName = typeof value === 'string' ? value.trim() : null;
+        normalized.companyName = typeof value === 'string' ? normalizeInlineText(value) : null;
         break;
       case 'companyWebsite':
       case 'companyLinkedIn':
@@ -1190,7 +1264,7 @@ function normalizeAdminUpdates(updates) {
         if (typeof value !== 'string' || value.length > MAX_DESCRIPTION_LENGTH) {
           throw new HttpsError('invalid-argument', `Description must be 0-${MAX_DESCRIPTION_LENGTH} characters.`);
         }
-        normalized.description = value.trim();
+        normalized.description = normalizeDescriptionText(value);
         break;
       case 'moderationNotes':
         if (value !== null && typeof value !== 'string') {
@@ -1206,7 +1280,7 @@ function normalizeAdminUpdates(updates) {
         if (value !== null && typeof value !== 'string') {
           throw new HttpsError('invalid-argument', `${key} must be a string or null.`);
         }
-        normalized[key] = typeof value === 'string' ? value.trim() : null;
+        normalized[key] = typeof value === 'string' ? normalizeInlineText(value) : null;
         break;
       case 'contact':
         if (value !== null && typeof value !== 'string') {
