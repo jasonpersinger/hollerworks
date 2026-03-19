@@ -1,0 +1,25 @@
+[
+  {
+    "type": "need",
+    "title": "Client Services Analyst",
+    "category": "IT & Support",
+    "companyName": "Marshall University",
+    "companyWebsite": "https://www.marshall.edu/",
+    "locationState": "West Virginia",
+    "locationRegion": "Southern WV",
+    "locationCity": "Huntington",
+    "compensation": "$44,918-$58,393",
+    "description": "Must be able to perform all essential job duties as outlined in the job description. Required Qualifications: Education Bachelor’s degree required, preferably in information systems, computer technology or related field. Experience At least 3 years of experience working in client services or a service desk role. Preferred Qualifications: Familiarity with higher education IT environments and challenges. Familiarity with service desk software and ticketing systems. Excellent communication and interpersonal abilities, with an emphasis on customer service. Strong analytical, troubleshooting, and problem-solving skills. Strong documentation and customer service skills; ability to train users with varying levels of technical comfort. Ability to work both independently and collaboratively within a team. Experience in supporting time-sensitive, high-stakes events with professionalism and composure. Experience providing technical support in healthcare simulation, or A/V-integrated environments. Hands-on experience supporting Intellegent Video Systems ( IVS ) and/or Elevate Health LearningSpace (or comparable clinical skills/ OSCE capture platforms). Experience supporting OSCEs, simulation labs, standardized patient programs, or clinical skills curriculum workflows. Familiarity with identity and access management concepts (roles/permissions), video storage/retention practices, and basic networking concepts relevant to A/V systems. (i.e. Echo360, Panopto, Kaltura etc.)",
+    "contact": "https://marshall.peopleadmin.com/postings/31354",
+    "remoteFriendly": false,
+    "sourceUrl": "https://marshall.peopleadmin.com/postings/31354",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Marshall University Tech Slice"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-03-18T20:39:51.626Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-vt-config.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-vt-run.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-vt-run-report.json",
+  "rawCount": 0,
+  "outputCount": 0,
+  "sources": [
+    {
+      "name": "Virginia Tech Tech Slice",
+      "type": "virginia-tech",
+      "ok": false,
+      "error": "page.content: Target page, context or browser has been closed"
+    }
+  ],
+  "accepted": [],
+  "rejected": []
+}

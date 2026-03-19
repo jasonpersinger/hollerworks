@@ -1,0 +1,52 @@
+[
+  {
+    "type": "need",
+    "title": "Senior AI Platform Engineer",
+    "category": "DevOps & Cloud",
+    "companyName": "Lirio",
+    "companyWebsite": "https://lirio.co/",
+    "locationState": "Tennessee",
+    "locationRegion": "East Tennessee",
+    "locationCity": "Remote",
+    "compensation": "$165,000 - $185,000 / year",
+    "description": "Position Summary The Senior AI Platform Engineer is responsible for architecting, building, and maintaining the agentic software execution layer within Lirio’s Precision Nudging Platform . This position bridges the gap between MLOps and autonomous AI orchestration by engineering the workflows for AI agents to operate securely and reliabl y . Key components of this role are AI workflow design , managing and optimizing the AI infrastructure and life cycle, assuring interoperability with Lirio Platform systems and client agents, and safety/governance of implemented AI systems. The Senior AI Platform Engineer will collaborate in a cross-functional team that includes platform , cloud , security and machine learning research engi neers , as well as system architects . Essential Duties & Responsibilities Agent Orchestration & Workflow Design Design and implement infrastructure to support LLM-based autonomous agents capable of multi-step reasoning, planning, and task execution. Build and manage directed workflows using state machines and tools to coordinate complex AI-human handoffs. Lead the architectural design and technical implementation of interoperability standards that enable seamless communication between autonomous agents and diverse software ecosystems AI Infrastructure & Lifecycle Architect and maintain cloud-native platforms that support end-to-end AI workflows, from model experimentation to high-availability production deployment.",
+    "contact": "https://boards.greenhouse.io/lirio/jobs/7649081003",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.launchtn.org/companies/lirio/jobs/70420256-senior-ai-platform-engineer#content",
+    "seedScore": 82,
+    "seedNotes": [
+      "source weight +12",
+      "remote-friendly +15",
+      "category match +20 (DevOps & Cloud)",
+      "tech signal +15",
+      "include keyword +15",
+      "remote location text +5"
+    ],
+    "seedSource": "Launch Tennessee Job Board"
+  },
+  {
+    "type": "need",
+    "title": "Senior AI Development Platform Engineer",
+    "category": "DevOps & Cloud",
+    "companyName": "Lirio",
+    "companyWebsite": "https://lirio.co/",
+    "locationState": "Tennessee",
+    "locationRegion": "East Tennessee",
+    "locationCity": "Remote",
+    "compensation": "$165,000 - $185,000 / year",
+    "description": "Security awareness: Understanding of secure software delivery practices, including code scanning, dependency management, access controls, and audit trail requirements in the context of AI-generated code. Bias toward rapid, iterative delivery: This role needs to produce working developer platform capabilities fast, shipping in weeks, learning from real usage, and improving continuously. We're looking for someone who builds momentum by delivering early wins, not someone who designs a complete system on paper before starting. Experience in healthcare technology or another heavily regulated industry. Familiarity with multi-model AI routing, model benchmarking, or model evaluation frameworks preferred. Experience with infrastructure as code (Terraform), containerization (Docker, Kubernetes/AKS), and cloud platforms (Azure preferred). Demonstrated ability to lead platform adoption and drive organizational change across engineering teams. Technical writing ability. This role produces documentation, guides, and standards that the entire team uses.",
+    "contact": "https://boards.greenhouse.io/lirio/jobs/7643845003",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.launchtn.org/companies/lirio/jobs/70420247-senior-ai-development-platform-engineer#content",
+    "seedScore": 82,
+    "seedNotes": [
+      "source weight +12",
+      "remote-friendly +15",
+      "category match +20 (DevOps & Cloud)",
+      "tech signal +15",
+      "include keyword +15",
+      "remote location text +5"
+    ],
+    "seedSource": "Launch Tennessee Job Board"
+  }
+]

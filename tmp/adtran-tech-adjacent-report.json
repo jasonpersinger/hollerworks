@@ -1,0 +1,614 @@
+{
+  "generatedAt": "2026-03-18T20:48:29.575Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/adtran-tech-adjacent-config.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/adtran-tech-adjacent.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/adtran-tech-adjacent-report.json",
+  "rawCount": 85,
+  "outputCount": 0,
+  "sources": [
+    {
+      "name": "Adtran Alabama Tech Adjacent",
+      "type": "workday",
+      "rawJobs": 85,
+      "ok": true
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "title": "Sr. Director Global Facilities & Site Operations",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -32
+    },
+    {
+      "title": "Sales Manager Government APAC– Time & Sync / PNT Solutions",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Singapore | Delhi\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Manager, South East Asia (Time & Sync / PNT Solutions)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Singapore, Republic of Singapore | Kuala Lumpur, Malaysia\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Services Student",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "AR Intern",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "System Architecture Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Atlanta, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "AI Technical Intern",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "AP Intern",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "1st Shift Operations Supervisor",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -32
+    },
+    {
+      "title": "Project Finance & Operations Specialist",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "(Junior) Solutions Engineer (m/w/d)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Munich, Germany | Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Automation Engineer (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany | Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Student (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Munich, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Services Project Manager",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Solutions Consultant Edge Cloud",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Manager EE",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Material Handler I",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -32
+    },
+    {
+      "title": "FPGA Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Dallas, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "(Senior) Human Resources Generalist (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Berlin, Germany | Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer (TypeScript/Python/AWS)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Manager Cloud Providers & Strategic Partnerships",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Compensation is required.",
+      "score": 83
+    },
+    {
+      "title": "Senior Engineer Advanced Technology (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Berlin, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II (Frontend)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Inside Sales Representative",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Test Engineer Intern",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Process Engineering Technician",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Senior Optics Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Ottawa, ON\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Student (System Integration Test)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Internal Auditor",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Test Engineer - Linux Admin",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Technical Intern",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Project Manager (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembler II",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Sales Account Manager (M/W/D) DACH",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Munich, Germany | Germany, Home Office | Berlin, Germany | Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Global Collections",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Customer Success Manager",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Compensation is required.",
+      "score": 83
+    },
+    {
+      "title": "Production Supervisor",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Intern",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Atlanta, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Schülerpraktikum",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Production Technician",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Saint-Blaise, Switzerland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Production Technician",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Saint-Blaise, Switzerland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Project Manager",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Gdynia, Poland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Ra’anana, Israel\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Dual Course of Studies – Practical Information Technologies (M/F/D) // Duales Studium – Bachelor of Engineering, Praktische Informatik (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Accounts Receivable Specialist",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "(Senior) Business Development Manager DACH/OSA",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Munich, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Design Engineer (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Systems Consultant OSA",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Delhi, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Solutions Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Stockholm 2\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Dual Course of Studies (M/F/D) // Duales Studium (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Assembler II",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Software Quality Assurance Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Mechanics Engineer (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Accountant General Ledger",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Dual Course of Studies - International Business Administration (M/F/D) // Duales Studium - Bachelor of Arts, International Business Administration (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Co- Op",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Pricing Analyst",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Sr. Software Engineer (Firmware)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Atlanta, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Director Engineering - Subscriber Solutions",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "NPI-LCE Test Engineer (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany | Shenzhen, China\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Line Manager Oscilloquartz - Defense Vertical",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Dallas, TX | Adtran Holdings Ltd - Israel | Paris, France | Meiningen, Germany | Berlin, Germany | Munich, Germany | Adtran United Kingdom\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "CAD System Administrator",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Dual Course of Studies - Electrical Engineering and Information Technology (M/F/D) // Duales Studium – Bachelor of Science, Elektrotechnik und Informationstechnik (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Dual Course of Studies - Business Information Technology (M/F/D) // Duales Studium – Bachelor of Science, Wirtschaftsinformatik (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Dual Course of Studies - Mechanical Engineering (M/F/D) // Duales Studium – Bachelor of Engineering, Maschinenbau (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Dual Course of Studies – Bachelor of Science, Industrial Engineering Technical Sales/Digital Industry / Duales Studium – Bachelor of Science, Wirtschaftsingenieurwesen Technischer Vertrieb/Digitale Industrie (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Dual Course of Studies – Industrial Engineering Technical Sales/Digital Industry (M/F/D) // Duales Studium – Bachelor of Science, Wirtschaftsingenieurwesen Technischer Vertrieb/Digitale Industrie (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Apprenticeship - Warehouse Logistics Expert (M/F/D) // Ausbildung - Fachkraft für Lagerlogistik (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Apprenticeship - IT Systems Electronics Technician (M/F/D) // Ausbildung – IT-Systemelektroniker (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Dual Course of Studies - Construction (M/F/D) // Duales Studium – Bachelor of Engineering, Konstruktion (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Apprenticeship - Electronics Technician for Devices and Systems (M/F/D) // Ausbildung - Elektroniker für Geräte und Systeme (M/W/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software/Firmware Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Expert Services Engineer Customer New Product Introduction",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Solder Repair Operator",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 48
+    },
+    {
+      "title": "Software Development Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Advanced Software Engineer",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Director Business Development Optical",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Dallas, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager System Consultant OSA",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Dallas, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Graduand (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "NPI-LCE Test Engineer, Sr.",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Ottawa, ON\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Project Manager",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 63
+    },
+    {
+      "title": "Laboratory Engineer Advanced Technology (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineer Advanced Technology (M/F/D)",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"Meiningen, Germany\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Contractor",
+      "companyName": "Adtran",
+      "sourceName": "Adtran Alabama Tech Adjacent",
+      "reason": "Location \"GMBH Berlin\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

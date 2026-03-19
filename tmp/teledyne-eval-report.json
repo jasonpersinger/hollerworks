@@ -1,0 +1,1419 @@
+{
+  "generatedAt": "2026-03-18T18:19:30.322Z",
+  "configPath": "/dev/fd/63",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/teledyne-eval.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/teledyne-eval-report.json",
+  "rawCount": 200,
+  "outputCount": 0,
+  "sources": [
+    {
+      "name": "Teledyne Huntsville Software",
+      "type": "workday",
+      "rawJobs": 200,
+      "ok": true
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "title": "Manufacturing/Process Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Buyer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Acton, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Quality Inspector",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Portsmouth, NH (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Pack and Prep Operator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Milpitas, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Business Excellence",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales/Business Development Manager/Director",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Field\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Design Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Systems Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Equipment Repair Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lincoln, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Garland, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Custom Assembly Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Montgomeryville, PA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Miamisburg, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Proposal Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Mountain View, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Cost Accountant",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY) | US - Mountain View, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Test Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Income Tax Accounting",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Thousand Oaks, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Designer/Drafter",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Electrical Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - City of Industry, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Maintenance Mechanic",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Chestnut Ridge, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electronic Design Engineer IV",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - North Falmouth, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "HR Business Partner (TEMPORARY - Maternity leave)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Spain- Sevilla (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electronics Technician (RF)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Newark, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Test Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Service Desk Technician (Contingent)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Cybersecurity Analyst",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 64
+    },
+    {
+      "title": "Proposal Price Analyst",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembly & Test Operator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Lincoln\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembly & Test Operator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Lincoln\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembly & Test Operator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Lincoln\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Accounting Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF Power Amplifier Design Engineering Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF& Microwave Engineering Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Designer/Drafter",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Software AI SME",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 64
+    },
+    {
+      "title": "NHRC Software Engineering Internship",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Product Marketing Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Chestnut Ridge, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "QA Technician – Mechanical and SMT",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Chestnut Ridge, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Environmental Health & Safety Specialist",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Thousand Oaks, CA (TDY) | US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Equipment Maintenance Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Equipment Maintenance Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Payload Operations Safety Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 44
+    },
+    {
+      "title": "Payload Operations Safety Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 44
+    },
+    {
+      "title": "Spécialiste des opérations /Formateur (Jour)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Bromont, QC (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Jurisdiction & Classification Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Elkridge, MD | US - Billerica, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Embedded Software Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Tucson, AZ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales and Support Assistant - East Asia",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"China - Field\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Material Quote Specialist",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Process Engineer/Scientist/Tech - Shift Support",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Edmonton, AB\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Computer Vision Engineer - Visual Target Tracking",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Orem, UT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Supply Chain Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lincoln, NE | US - San Diego, CA - CS | US - Mason, OH (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Facility Security Officer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Billerica, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Application Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"India - Pune\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Stockroom and Production Control Clerk",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Poway, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Field Service Support Technician - TapTone",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - North Falmouth, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Marketing Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"France - Grenoble\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer Co-Op",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Chestnut Ridge, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "2nd Shift Material Handler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Portsmouth, NH (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Uncrewed Systems Service Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - North Falmouth, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Component Inspection Specialist (2nd shift)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Field Service Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "CNC Machinist Second Shift",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Portsmouth, NH (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Quality Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Torrance, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Wafer Backside Processing Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Semiconductor Wafer Processing Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Billerica, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Process Quality Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Support Analyst",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Englewood, CO (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Material Planner",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Supervisor",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Hawthorne, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Regional Sales Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"France - Grenoble\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Certification Design Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - El Segundo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Jr. Materials Planner",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Linux System Administrator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 64
+    },
+    {
+      "title": "ServiceNow Developer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Mask Data Preparation Engineer/Professional",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Bromont, QC (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Garland, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Innkjøper",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Norway - Honefoss\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Purchaser",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Norway - Honefoss\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Production Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Norway - Honefoss\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Quality Assurance Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Redlands, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Integration Engineer/Scientist",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Edmonton, AB\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Manufacturing Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Mountain View, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. RF Design Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Mountain View, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF & Microwave Power Amplifier Design Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF & Microwave Power Amplifier Product Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Engineering Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Hawthorne, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machinist",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Hawthorne, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Material Handler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Enterprise Manufacturing Applications Analyst",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Production Planner, Lens Assembly",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Billerica, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Material Planner",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Exton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Production Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Financial Systems Developer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Buyer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Exton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Trade Compliance Director- Aerospace & Electronics Segment",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Torrance, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IT Technical Specialist",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Cognos Administrator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "AI Solution Analyst",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Americas Sales Manager (Remote)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Field - Georgia\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembly Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Salem, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Field Applications Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Englewood, CO (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Engineer - NPI",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Waterloo, ON\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembly Manufacturing Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Detector Test Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Systems Engineering Intern",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Mechanical Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Manufacturing Program Manger",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Mechanical Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Solder Technician (2nd Shift)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Research Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Durham, NC (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Temp Buyer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Thousand Oaks, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Shipley\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Yield Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Display Specialist, Human Factors",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Payload Rack Officer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Payload Rack Officer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Software Developer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 79
+    },
+    {
+      "title": "Linux System Administrator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 64
+    },
+    {
+      "title": "Material Handler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Ancaster, ON\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Quality Assurance Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Portsmouth, NH (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Coordinator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Portsmouth, NH (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Buyer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Newbury\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Intern",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Lincoln\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Lincoln\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Financial Analyst",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Mountain View, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Equipment Maintenance Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Cryocooler Production Technician - Second Shift",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Development Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 79
+    },
+    {
+      "title": "Operations Support Specialist",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Bozeman, MT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "AI Program Manager-Sales & Marketing",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "AI Solutions Architect-Customer Experience",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Quality Documentation Specialist",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Process Engineering Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Mountain View, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Office Coordinator - Manufacturing Operations (Part Time)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Milpitas, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer (Intern)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Targets, Test, and Evaluation Senior Program Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Production Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Lincoln\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Commercial Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Uxbridge\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Responsable régional de Service H/F",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"France - Field\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Service Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Singapore (Frontech Centre)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Wilsonville, OR\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Embedded Linux Engineer (US Citizenship/Green Card Required)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Orem, UT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Mechanical Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Orem, UT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Inspector",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Facilities Maintenance Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Knoxville, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Laser Optical Electrical Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Bozeman, MT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "MM/PP SAP System Analyst",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Chelmsford (TDY) | UK - Fareham\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Ingénieur Electronique – Spécialiste Hardware et Firmware (H/F)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"France - Arras\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Metrology Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Operator, Production Equipment - 1 Casting",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Redlands, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Manager - Teledyne Labs OEM Pumps",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - State College, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Research Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Field - Pennsylvania\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Contracts Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Chelmsford (TDY) | France - Grenoble\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Buyer/Planner III",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Houston, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Houston, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Commis Réception et Expédition",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Bromont, QC (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IR Detector Packing Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Goleta, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Optical Test Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Billerica, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Reliability Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - El Segundo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF Electrical Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Inventory Clerk (Weekend Shift)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Inventory Clerk",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Daytona Beach, FL (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lab Equipment Control Diagnostics and Repair",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Midland, MI - CS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Technician (Orlando, FL)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Orlando, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Quality Manager – Hybrid Microelectronics (MIL PRF 38534)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Portsmouth, NH (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembly & Test Operator",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Lincoln\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Sales Manager- Americas",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Field - California | US - Field - North Carolina\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Pipefitter/Plumber",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Midland, MI - CS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Shipley\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Equipment Repair Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Power Supply Repair Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manufacturing Test Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Engineering Intern",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Rancho Cordova, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Shipping Clerk",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Hawthorne, CA (TDY)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Procurement / Planning Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Elkridge, MD\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Marketing Videographer & Photographer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lincoln, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Material Handler - Packing/Shipping",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Newark, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electronics/ Electro-Mech Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Woodridge, IL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Sweden - Täby\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Production Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Aberdeen\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Production Technician",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"UK - Alton\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electronic Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electronic Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electronic Assembler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Material Handler",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Lewisburg, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Shipping & Order Officer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Singapore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Specialist III",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Waterloo, ON\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electronics Designer",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Waterloo, ON\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Design Specialist - Software (III)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"Canada - Waterloo, ON\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Quality Inspector (2nd Shift)",
+      "companyName": "Teledyne Brown Engineering",
+      "sourceName": "Teledyne Huntsville Software",
+      "reason": "Location \"US - Camarillo, CA\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "generatedAt": "2026-03-17T11:56:13.359Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.marshall-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-marshall.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-marshall-report.json",
+  "rawCount": 26,
+  "outputCount": 1,
+  "sources": [
+    {
+      "name": "Marshall University Tech Slice",
+      "type": "peopleadmin",
+      "rawJobs": 26,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Client Services Analyst",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "score": 66,
+      "category": "IT & Support"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Landscape Worker",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Office Administrator",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Special Events Coordinator",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Coordinator Student Support Services",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Campus Service Worker",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Landscape Worker",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Residential Case Manager",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Campus Service Worker (4 positions available)",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Landscape Worker",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -64
+    },
+    {
+      "title": "HVAC Shop Manager",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Records Coordinator",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Carpenter",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 36
+    },
+    {
+      "title": "Director of Philanthropy",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Location \"OTHR - Other Off-Campus Location\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "HVAC Tech I/II - (Multiple positions available)",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Administrative Assistant — Advancement Services and Development",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Location \"OTHR - Other Off-Campus Location\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assistant Director of Alumni Relations",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Location \"OTHR - Other Off-Campus Location\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Painter",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Assistant Director of Olympic Equipment",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 36
+    },
+    {
+      "title": "Administrative Assistant",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 36
+    },
+    {
+      "title": "Campus Police Officer",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 36
+    },
+    {
+      "title": "Assistant Supervisor Campus Services",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Senior Associate Athletic Director Internal Operations / CFO",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 36
+    },
+    {
+      "title": "Administrative Assistant",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Controls Technician",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Administrative Assistant",
+      "companyName": "Marshall University",
+      "sourceName": "Marshall University Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 51
+    }
+  ]
+}

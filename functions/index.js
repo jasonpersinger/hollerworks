@@ -41,7 +41,7 @@ const CATEGORIES = new Set([
   'Other Tech-Adjacent',
 ]);
 const LOCATIONS = {
-  Alabama: ['Northeast Alabama', 'Northern Alabama'],
+  Alabama: ['Northeast Alabama', 'Northern Alabama', 'Central Alabama'],
   Georgia: ['North Georgia', 'Northwest Georgia', 'Northeast Georgia'],
   Kentucky: ['Eastern Kentucky', 'Southeast Kentucky'],
   Maryland: ['Western Maryland'],
@@ -677,11 +677,32 @@ function serializeAnalyticsDoc(dayKey, snap) {
   };
 }
 
+function computeRate(numerator, denominator) {
+  const top = Number(numerator || 0);
+  const bottom = Number(denominator || 0);
+  if (!bottom) return 0;
+  return Math.round((top / bottom) * 1000) / 10;
+}
+
+function serializePostAnalytics(postId, data = {}, post = null) {
+  return {
+    postId,
+    title: post?.title || '',
+    companyName: post?.companyName || '',
+    status: post?.status || '',
+    postViews: Number(data.postViews || 0),
+    applyClicks: Number(data.applyClicks || 0),
+    applyRate: computeRate(data.applyClicks || 0, data.postViews || 0),
+    approvedAt: toMillis(post?.approvedAt || post?.createdAt),
+  };
+}
+
 async function loadAnalyticsSummary(db, days = 7) {
   const dayKeys = getRecentAnalyticsKeys(days);
-  const snaps = await Promise.all(
-    dayKeys.map(dayKey => db.collection('analyticsDaily').doc(dayKey).get())
-  );
+  const [snaps, postAnalyticsSnap] = await Promise.all([
+    Promise.all(dayKeys.map(dayKey => db.collection('analyticsDaily').doc(dayKey).get())),
+    db.collection('analyticsPosts').get(),
+  ]);
   const daily = dayKeys.map((dayKey, index) => serializeAnalyticsDoc(dayKey, snaps[index]));
   const totals = daily.reduce((acc, row) => ({
     boardViews: acc.boardViews + row.boardViews,
@@ -697,7 +718,43 @@ async function loadAnalyticsSummary(db, days = 7) {
     submitSuccesses: 0,
   });
 
-  return { daily, totals };
+  const topPostIds = postAnalyticsSnap.docs
+    .map(doc => ({
+      postId: doc.id,
+      postViews: Number(doc.data()?.postViews || 0),
+      applyClicks: Number(doc.data()?.applyClicks || 0),
+    }))
+    .filter(row => row.postViews > 0 || row.applyClicks > 0)
+    .sort((left, right) => (
+      right.applyClicks - left.applyClicks
+      || right.postViews - left.postViews
+    ))
+    .slice(0, 8)
+    .map(row => row.postId);
+
+  const topPostSnaps = topPostIds.length
+    ? await db.getAll(...topPostIds.map(postId => db.collection('posts').doc(postId)))
+    : [];
+
+  const postById = new Map(topPostSnaps.map(snap => [snap.id, snap.exists ? snap.data() : null]));
+  const topPosts = postAnalyticsSnap.docs
+    .filter(doc => topPostIds.includes(doc.id))
+    .map(doc => serializePostAnalytics(doc.id, doc.data(), postById.get(doc.id)))
+    .sort((left, right) => (
+      right.applyClicks - left.applyClicks
+      || right.postViews - left.postViews
+      || ((right.approvedAt || 0) - (left.approvedAt || 0))
+    ));
+
+  const funnel = {
+    postViewsPerBoardView: computeRate(totals.postViews, totals.boardViews),
+    appliesPerPostView: computeRate(totals.applyClicks, totals.postViews),
+    appliesPerBoardView: computeRate(totals.applyClicks, totals.boardViews),
+    alertsPerBoardView: computeRate(totals.alertSignups, totals.boardViews),
+    submissionsPerBoardView: computeRate(totals.submitSuccesses, totals.boardViews),
+  };
+
+  return { daily, totals, funnel, topPosts };
 }
 
 async function recordAnalyticsEvent(db, eventName, postId = null) {

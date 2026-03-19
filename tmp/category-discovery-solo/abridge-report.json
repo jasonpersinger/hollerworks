@@ -1,0 +1,461 @@
+{
+  "generatedAt": "2026-03-18T20:40:55.846Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/abridge-pittsburgh-slice.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/abridge.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/abridge-report.json",
+  "rawCount": 63,
+  "outputCount": 3,
+  "sources": [
+    {
+      "name": "Abridge Pittsburgh Slice",
+      "type": "ashby",
+      "rawJobs": 63,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Senior Full Stack Engineer, Integrations",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "score": 88,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Strategic Partnerships Technical Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "score": 88,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Engineering Manager, Federal",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "score": 88,
+      "category": "Software & Dev"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Machine Learning Scientist (All Levels)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer (All Levels)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Mobile Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Product Management - AI/ML, Core Product",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior/Staff Application Security Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Quality Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"San Francisco-Onsite | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Implementation Manager - Strategic Accounts",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinical Success Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinical Success Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"CHI Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, SRE",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "GL Accounting Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Scientist",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assistant General Counsel- Privacy",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Machine Learning Infrastructure Engineer- Model Inference",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, GenAI",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | San Francisco-Onsite | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Enterprise Security",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior GTM Recruiter",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Manager - Core Product Experiences",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "ML Tech Lead Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Operations Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Gen AI Platform",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Brand Designer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "University Recruiting Program Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager, Model Inference",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff IT Automation Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager, SRE",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Manager, Data Platform",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior/Staff Threat Detection Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinical Success Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -17 below threshold 35.",
+      "score": -17
+    },
+    {
+      "title": "Clinical Success Director - Nursing",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Head of People Operations",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Implementation Director - Nursing",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Senior/Staff Infrastructure Security Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Payer Business Development - NYC",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Payer Business Development Lead NYC",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Corporate Counsel - Commercial",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "PhD Research Intern (Measurement and Evaluation)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Data Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Clinician Science",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinician Scientist",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"San Francisco-Onsite | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Federal Government Affairs (Washington, DC.)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Technical Recruiter",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Lead, Life Sciences (New Products)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Enterprise Development Representative (EDR, Key Accounts)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "GTM Finance & Strategy Lead",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager, Federal",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Manager, Payer Products",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Research Scientist (Measurement and Evaluation)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Physical Security & Life Safety",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IT Support Team Lead",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior IT Systems Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Life Sciences Business Development",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Revenue Enablement Lead",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Implementation Director, Enterprise & Commercial Accounts",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"CHI Office | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Implementation, Enterprise and Commercial",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -37 below threshold 35.",
+      "score": -37
+    },
+    {
+      "title": "Senior Manager, Enterprise Security",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

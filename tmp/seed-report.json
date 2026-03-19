@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-03-16T21:24:24.595Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.fixture.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-import.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-report.json",
+  "rawCount": 3,
+  "sources": [
+    {
+      "name": "Sample Fixture",
+      "type": "json-file",
+      "rawJobs": 3,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Frontend Engineer",
+      "companyName": "Mountain Software Co.",
+      "sourceName": "Sample Fixture",
+      "score": 110,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Technical Writer",
+      "companyName": "Mountain Software Co.",
+      "sourceName": "Sample Fixture",
+      "score": 110,
+      "category": "Technical Writing & Docs"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Registered Nurse",
+      "companyName": "Mountain Software Co.",
+      "sourceName": "Sample Fixture",
+      "reason": "Score -35 below threshold 35.",
+      "score": -35
+    }
+  ]
+}

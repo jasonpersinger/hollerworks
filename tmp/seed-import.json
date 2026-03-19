@@ -1,0 +1,51 @@
+[
+  {
+    "type": "need",
+    "title": "Frontend Engineer",
+    "category": "Software & Dev",
+    "companyName": "Mountain Software Co.",
+    "companyWebsite": "https://mountainsoftware.example/",
+    "locationState": "West Virginia",
+    "locationRegion": "Northern WV",
+    "locationCity": "Morgantown",
+    "compensation": "$95k-$120k per year",
+    "description": "Build UI for a regional software product. Remote-friendly and based in Morgantown. Salary range: $95k-$120k per year.",
+    "contact": "https://mountainsoftware.example/jobs/frontend-engineer",
+    "remoteFriendly": true,
+    "sourceUrl": "https://mountainsoftware.example/jobs/frontend-engineer",
+    "seedScore": 110,
+    "seedNotes": [
+      "source weight +20",
+      "Appalachia tie +25",
+      "remote-friendly +15",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Sample Fixture"
+  },
+  {
+    "type": "need",
+    "title": "Technical Writer",
+    "category": "Technical Writing & Docs",
+    "companyName": "Mountain Software Co.",
+    "companyWebsite": "https://mountainsoftware.example/",
+    "locationState": "West Virginia",
+    "locationRegion": "Northern WV",
+    "compensation": "$80k-$96k",
+    "description": "Own API docs, help center content, and release notes for a developer platform. Compensation: $80k-$96k.",
+    "contact": "https://mountainsoftware.example/jobs/technical-writer",
+    "remoteFriendly": true,
+    "sourceUrl": "https://mountainsoftware.example/jobs/technical-writer",
+    "seedScore": 110,
+    "seedNotes": [
+      "source weight +20",
+      "Appalachia tie +25",
+      "remote-friendly +15",
+      "category match +20 (Technical Writing & Docs)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Sample Fixture"
+  }
+]

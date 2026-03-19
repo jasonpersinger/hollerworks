@@ -1,0 +1,105 @@
+{
+  "sources": [
+    {
+      "name": "Virginia Tech Tech Slice",
+      "type": "virginia-tech",
+      "searchUrl": "https://jobs.apply.vt.edu/jobs/search",
+      "companyName": "Virginia Tech",
+      "companyWebsite": "https://www.vt.edu",
+      "sourceWeight": 18,
+      "maxAccepted": 20,
+      "maxPages": 2,
+      "maxDetailJobs": 12,
+      "searchParams": {
+        "block_uid": "1291ddfe3d520b77f2893d82fe9eb850",
+        "block_index": "0",
+        "page_row_uid": "68dee7be3317ace5e5c42fb51f3a920b",
+        "page_row_index": "1",
+        "page_version_uid": "308e2e1bd367c76aced18ea1cef85972",
+        "search_categories": ""
+      },
+      "categoryFilters": [
+        {
+          "name": "Information Systems / Technology",
+          "value": "3c1b6a423b6ee41c8f5d5908a7e4b53f"
+        },
+        {
+          "name": "Data Analytics / Security",
+          "value": "1f67f3ca88a8ae9944cf993bd0737925"
+        },
+        {
+          "name": "Engineering",
+          "value": "8c4cea2324090289715c4435b2dbc2bd"
+        },
+        {
+          "name": "Program/Project Management",
+          "value": "63eedf5fd9a78d4ae08f0d82b58651b5"
+        }
+      ],
+      "allowedLocationPatterns": [
+        "Blacksburg, Virginia",
+        "Roanoke, Virginia",
+        "Fully Remote, Virginia",
+        "Hybrid, Virginia"
+      ],
+      "locationRules": [
+        {
+          "match": "Blacksburg, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Blacksburg"
+        },
+        {
+          "match": "Roanoke, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Roanoke",
+          "locationNotes": "Regional Virginia inclusion via Roanoke"
+        },
+        {
+          "match": "Fully Remote, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Remote",
+          "locationNotes": "Remote role from Virginia Tech",
+          "remoteFriendly": true
+        },
+        {
+          "match": "Hybrid, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Remote",
+          "locationNotes": "Hybrid Virginia Tech role",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "integration",
+        "application",
+        "software",
+        "data",
+        "security",
+        "support",
+        "systems",
+        "technology",
+        "it",
+        "analytics"
+      ],
+      "excludeKeywords": [
+        "audiovisual",
+        "av technician",
+        "faculty",
+        "postdoctoral",
+        "part-time",
+        "administrative assistant",
+        "director of marketing",
+        "creative media",
+        "customer service agent",
+        "custodial",
+        "temporary assignments"
+      ]
+    }
+  ]
+}

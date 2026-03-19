@@ -1,0 +1,59 @@
+<h2>Salamander footer — bright species colors</h2>
+<p class="subtitle">Each salamander is a different color, like real species. The dots variant needs a note — see below.</p>
+
+<style>
+  .footer-preview {
+    background: #0e0e0e;
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    padding: 24px 32px 12px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin: 20px 0 8px;
+  }
+  .footer-preview img {
+    width: 52px;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+  }
+
+  /* Recolor formula: brightness(0) invert(1) sepia(1) hue-rotate(X) saturate(N) */
+  .sal-yellow  { filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(25deg) saturate(12); }
+  .sal-red     { filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(325deg) saturate(10); }
+  .sal-blue    { filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(190deg) saturate(8); }
+  .sal-green   { filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(85deg) saturate(8); }
+  .sal-orange  { filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(5deg) saturate(10); }
+  .sal-purple  { filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(245deg) saturate(8); }
+  .sal-teal    { filter: brightness(0) saturate(100%) invert(1) sepia(1) hue-rotate(145deg) saturate(8); }
+  .sal-black   { filter: brightness(0) saturate(0%); }
+
+  .note {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: #555;
+    border-left: 2px solid #2a2a2a;
+    padding: 8px 12px;
+    margin: 12px 0 0;
+    line-height: 1.7;
+  }
+  .note span { color: #C1440E; }
+</style>
+
+<p class="label">Live preview — how they'd look across the bottom of the page</p>
+
+<div class="footer-preview">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-yellow" alt="yellow">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-red" alt="red">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-blue" alt="blue">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-green" alt="green">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-orange" alt="orange">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-purple" alt="purple">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-teal" alt="teal">
+  <img src="https://hollerworks.netlify.app/assets/logo.png" class="sal-black" alt="black">
+</div>
+
+<div class="note">
+  <span>Note on dots:</span> The black-with-yellow-dots look (fire salamander style) can't be done with CSS filters alone on a solid PNG — it would need either a separate spotted asset or an SVG version of the logo. Happy to make an SVG version that supports spot patterns if you want that one in the mix.
+</div>

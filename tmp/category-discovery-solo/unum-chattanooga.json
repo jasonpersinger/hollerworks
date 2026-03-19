@@ -1,0 +1,136 @@
+{
+  "sources": [
+    {
+      "name": "Unum Chattanooga",
+      "type": "workday",
+      "pageUrl": "https://unum.wd1.myworkdayjobs.com/External",
+      "apiBaseUrl": "https://unum.wd1.myworkdayjobs.com/wday/cxs/unum/External",
+      "companyName": "Unum",
+      "companyWebsite": "https://www.unum.com",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "requestLimit": 20,
+      "requestOffsets": [
+        0,
+        20,
+        40,
+        60
+      ],
+      "requestDelayMs": 200,
+      "allowedLocationPatterns": [
+        "Chattanooga, Tennessee",
+        "Chattanooga-Tennessee",
+        "Home Worker - US",
+        "Home Worker",
+        "US Remote",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Chattanooga, Tennessee",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Chattanooga"
+        },
+        {
+          "match": "Chattanooga-Tennessee",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Chattanooga"
+        },
+        {
+          "match": "Home Worker - US",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "Home Worker",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "US Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "software",
+        "data",
+        "analytics",
+        "security",
+        "business intelligence",
+        "cloud",
+        "architect",
+        "platform",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "systems administrator",
+        "support engineer",
+        "service desk",
+        "application analyst",
+        "project manager",
+        "scrum"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "developer",
+        "software",
+        "data",
+        "analytics",
+        "business intelligence",
+        "security",
+        "access management",
+        "iam",
+        "cloud",
+        "architect",
+        "platform",
+        "technical writer",
+        "documentation",
+        "systems administrator",
+        "support engineer",
+        "service desk",
+        "application analyst",
+        "project manager",
+        "scrum"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "claims",
+        "nurse",
+        "underwriter",
+        "broker",
+        "sales",
+        "marketing",
+        "finance",
+        "counsel",
+        "attorney",
+        "actuarial",
+        "real estate",
+        "hr business partner",
+        "client development",
+        "benefit advisor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-03-17T17:52:04.685Z",
+  "manifestPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/discovery-manifest.json",
+  "targetCount": 15,
+  "batchCount": 3,
+  "targetReached": false,
+  "entries": [
+    {
+      "label": "Academic Atom Discovery",
+      "config": "scripts/seed-jobs/sources.academic-atom-discovery.json",
+      "sourceNames": [],
+      "outputCount": 2,
+      "acceptedIntoBatch": 2,
+      "rawCount": 373,
+      "sourceCount": 5,
+      "acceptedCount": 2,
+      "rejectedCount": 371
+    },
+    {
+      "label": "Academic PageUp Prototype",
+      "config": "scripts/seed-jobs/sources.radford-eval.json",
+      "sourceNames": [],
+      "outputCount": 0,
+      "acceptedIntoBatch": 0,
+      "rawCount": 0,
+      "sourceCount": 1,
+      "acceptedCount": 0,
+      "rejectedCount": 0
+    },
+    {
+      "label": "WCU Search Prototype",
+      "config": "scripts/seed-jobs/sources.wcu-eval.json",
+      "sourceNames": [],
+      "outputCount": 1,
+      "acceptedIntoBatch": 1,
+      "rawCount": 30,
+      "sourceCount": 1,
+      "acceptedCount": 1,
+      "rejectedCount": 29
+    },
+    {
+      "label": "Gather AI Startup Discovery",
+      "config": "scripts/seed-jobs/sources.startups-greenhouse-eval.json",
+      "sourceNames": [
+        "Gather AI Pittsburgh"
+      ],
+      "outputCount": 0,
+      "acceptedIntoBatch": 0,
+      "rawCount": 23,
+      "sourceCount": 1,
+      "acceptedCount": 0,
+      "rejectedCount": 23
+    },
+    {
+      "label": "Jetpack Startup Discovery",
+      "config": "scripts/seed-jobs/sources.jetpack-eval.json",
+      "sourceNames": [],
+      "outputCount": 0,
+      "acceptedIntoBatch": 0,
+      "rawCount": 0,
+      "sourceCount": 1,
+      "acceptedCount": 0,
+      "rejectedCount": 0
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "sources": [
+    {
+      "name": "Radford Tech Slice",
+      "type": "pageup",
+      "searchUrl": "https://jobs.radford.edu/jobs/search",
+      "companyName": "Radford University",
+      "companyWebsite": "https://www.radford.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "searchParams": {},
+      "allowedLocationPatterns": [
+        "Radford City - Main Campus",
+        "Radford, Virginia",
+        "Roanoke, Virginia"
+      ],
+      "locationRules": [
+        {
+          "match": "Radford City - Main Campus",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Radford"
+        },
+        {
+          "match": "Radford, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Radford"
+        },
+        {
+          "match": "Roanoke, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southside Virginia",
+          "locationCity": "Roanoke",
+          "locationNotes": "Regional Appalachian inclusion"
+        }
+      ],
+      "includeKeywords": [
+        "system administrator",
+        "software",
+        "technology",
+        "systems",
+        "web",
+        "application",
+        "security",
+        "data",
+        "sql",
+        "cognos",
+        "administrator"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "system administrator",
+        "software",
+        "technology",
+        "systems",
+        "web",
+        "application",
+        "security",
+        "data",
+        "sql",
+        "cognos",
+        "administrator"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "assistant professor",
+        "adjunct",
+        "nursing",
+        "music",
+        "dietetic",
+        "anthropological",
+        "housing",
+        "resident director",
+        "grant accountant",
+        "executive asst",
+        "finance",
+        "faculty"
+      ],
+      "excludeKeywords": [
+        "assistant professor",
+        "adjunct",
+        "nursing",
+        "music",
+        "dietetic",
+        "anthropological",
+        "housing",
+        "resident director",
+        "grant accountant",
+        "executive asst",
+        "finance",
+        "faculty"
+      ]
+    }
+  ]
+}

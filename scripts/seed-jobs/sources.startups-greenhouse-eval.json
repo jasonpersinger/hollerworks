@@ -1,0 +1,125 @@
+{
+  "sources": [
+    {
+      "name": "BlastPoint Pittsburgh",
+      "type": "greenhouse",
+      "boardToken": "blastpoint",
+      "companyName": "BlastPoint",
+      "companyWebsite": "https://blastpoint.com",
+      "sourceWeight": 12,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "Pittsburgh, PA",
+        "Remote",
+        "Remote - US"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh startup"
+        },
+        {
+          "match": "Remote - US",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh startup"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "data engineer",
+        "devops",
+        "data",
+        "platform",
+        "cloud",
+        "software",
+        "technical"
+      ],
+      "excludeKeywords": [
+        "vp of engineering",
+        "account executive",
+        "sales",
+        "marketing",
+        "finance",
+        "operations"
+      ]
+    },
+    {
+      "name": "Gather AI Pittsburgh",
+      "type": "greenhouse",
+      "boardToken": "gatherai",
+      "companyName": "Gather AI",
+      "companyWebsite": "https://www.gather.ai",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "allowedLocationPatterns": [
+        "Pittsburgh, PA",
+        "Pittsburgh, PA; Open to Remote (US)",
+        "Open to Remote (USA); Pittsburgh, PA",
+        "Pittsburgh, PA - USA"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, PA; Open to Remote (US)",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote-eligible role from Pittsburgh startup"
+        },
+        {
+          "match": "Open to Remote (USA); Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote-eligible role from Pittsburgh startup"
+        },
+        {
+          "match": "Pittsburgh, PA - USA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "machine learning",
+        "platform",
+        "mobile",
+        "implementation engineer",
+        "qa",
+        "data",
+        "technical"
+      ],
+      "excludeKeywords": [
+        "accounting",
+        "market development",
+        "channel manager",
+        "business development",
+        "sales",
+        "operations manager",
+        "director of cloud engineering india",
+        "distributed systems architect"
+      ]
+    }
+  ]
+}

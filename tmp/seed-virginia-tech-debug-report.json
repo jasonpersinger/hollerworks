@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-03-17T10:42:18.500Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.virginia-tech-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-virginia-tech-debug.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-virginia-tech-debug-report.json",
+  "rawCount": 12,
+  "outputCount": 7,
+  "sources": [
+    {
+      "name": "Virginia Tech Tech Slice",
+      "type": "virginia-tech",
+      "rawJobs": 12,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "AV Technician (Part-Time)",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 68,
+      "category": "IT & Support"
+    },
+    {
+      "title": "Evening Audiovisual Systems Technician",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 83,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "End User Support Specialist",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 68,
+      "category": "IT & Support"
+    },
+    {
+      "title": "Research Software Engineer, AI/ML",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 68,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Enterprise Web Application Developer",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": -12,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Enterprise Integration Developer",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 83,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Postdoctoral Associate",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": -32,
+      "category": "Cybersecurity"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Desktop Technician",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Compensation is required.",
+      "score": 68
+    },
+    {
+      "title": "Research Faculty Open Rank, Intelligence Community Portfolio",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Location \"Arlington, Virginia, United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Compensation is required.",
+      "score": 68
+    },
+    {
+      "title": "Information Technology Support Temporary Assignments",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Compensation is required.",
+      "score": -132
+    },
+    {
+      "title": "Research Assistant Professor, Research Associate Professor or Research Professor",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Location \"Arlington, Virginia, United States\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

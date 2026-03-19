@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "name": "Dick's Sporting Goods Technology",
+      "type": "json-file",
+      "file": "./dicks-tech-discovery.json",
+      "companyName": "Dick's Sporting Goods",
+      "companyWebsite": "https://www.dickssportinggoods.com",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "includeKeywords": [
+        "engineer",
+        "software",
+        "data",
+        "analytics",
+        "product",
+        "security",
+        "architect",
+        "designer",
+        "program manager",
+        "systems"
+      ],
+      "excludeKeywords": [
+        "store",
+        "retail associate",
+        "cashier",
+        "warehouse",
+        "golf instructor"
+      ]
+    }
+  ]
+}

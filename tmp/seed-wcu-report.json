@@ -1,0 +1,230 @@
+{
+  "generatedAt": "2026-03-17T12:09:12.873Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.wcu-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-wcu.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-wcu-report.json",
+  "rawCount": 30,
+  "outputCount": 1,
+  "sources": [
+    {
+      "name": "Western Carolina Tech Slice",
+      "type": "peopleadmin",
+      "rawJobs": 30,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Grant Program Manager - #T00444",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "score": 66,
+      "category": "Product & Project"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Facilities Renovation Coordinator - #220857",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -114
+    },
+    {
+      "title": "Assistant Director for Continuing Education & Summer Programs - #142279",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Assistant Professor - Counseling - #000809",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Warehouse Manager - #003204",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -114
+    },
+    {
+      "title": "Adjunct-Biology",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Marketing Specialist - #251066",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -114
+    },
+    {
+      "title": "Director of Creative Media - #210832",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Fac Maint Tech - Mech Trds - #003054",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Assistant Director for Annual Giving - #202876",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Assistant Athletic Trainer - #261104",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -114
+    },
+    {
+      "title": "Assistant Athletic Trainer - #261103",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -114
+    },
+    {
+      "title": "Student Health Counselor - #001369 & #001370",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -99
+    },
+    {
+      "title": "High Voltage Distribution Specialist - #005110",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Adjunct Faculty - Communication Disorders",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Fac Maint Tech- Mech Trades (HVAC - Day) - #221812, #221811",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -14
+    },
+    {
+      "title": "Housekeeper (2nd Shift) - #123149 & #003453",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Instructor - Anthropology - #261102",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Administrative Support Associate - #001165",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Housekeeper - #003443",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Teaching Assistant Professor - General Psychology - #261100",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Assistant Painter #T00942",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Corporate Sponsorships - #005331",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Assistant Professor - Marketing - #000173",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Housekeeping - Summer Employment, Residential Living (T00942)",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Temporary Administrative Assistant (T00974)",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Development - #002237, #182773",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Senior Project Engineer - #261098",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -114
+    },
+    {
+      "title": "Psychologist - #225413",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Embedded College Specialist - CAS - #182789",
+      "companyName": "Western Carolina University",
+      "sourceName": "Western Carolina Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    }
+  ]
+}

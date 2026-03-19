@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "name": "Western Carolina Tech Slice",
+      "type": "peopleadmin",
+      "searchUrl": "https://jobs.wcu.edu/postings/search",
+      "companyName": "Western Carolina University",
+      "companyWebsite": "https://www.wcu.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "maxPages": 1,
+      "searchParams": {
+        "utf8": "✓",
+        "query": "",
+        "commit": "Search"
+      },
+      "allowedLocationPatterns": [
+        "Cullowhee, NC",
+        "Cullowhee"
+      ],
+      "locationRules": [
+        {
+          "match": "Cullowhee, NC",
+          "locationState": "North Carolina",
+          "locationRegion": "Western NC",
+          "locationCity": "Cullowhee"
+        },
+        {
+          "match": "Cullowhee",
+          "locationState": "North Carolina",
+          "locationRegion": "Western NC",
+          "locationCity": "Cullowhee"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "systems",
+        "technology",
+        "software",
+        "web",
+        "application",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "engineering",
+        "systems",
+        "technology",
+        "software",
+        "web",
+        "application",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "facilities",
+        "warehouse",
+        "housekeeper",
+        "assistant professor",
+        "adjunct",
+        "marketing",
+        "athletic trainer",
+        "counselor",
+        "administrative support",
+        "development",
+        "sponsorships",
+        "psychologist",
+        "continuing education"
+      ],
+      "excludeKeywords": [
+        "facilities",
+        "warehouse",
+        "housekeeper",
+        "assistant professor",
+        "adjunct",
+        "marketing",
+        "athletic trainer",
+        "counselor",
+        "administrative support",
+        "development",
+        "sponsorships",
+        "psychologist"
+      ]
+    }
+  ]
+}

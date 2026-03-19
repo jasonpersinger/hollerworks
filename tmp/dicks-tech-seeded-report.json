@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-03-18T00:37:13.813Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/dicks-tech-discovery-config.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/dicks-tech-seeded.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/dicks-tech-seeded-report.json",
+  "rawCount": 25,
+  "outputCount": 8,
+  "sources": [
+    {
+      "name": "Dick's Sporting Goods Technology",
+      "type": "json-file",
+      "rawJobs": 25,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Lead Software Engineer - Merchandising Technology (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineer - Navigation & Search UI (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Lead Software Engineer - Salesforce, DICK's Media (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sr. Software Engineer - Search (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sr. Manager, Information Security Risk Management (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Software Engineer - External Communications (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineer - Omni Tooling & Visibility (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Group Product Manager - Ecommerce Purchase Journey (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Solution Architect - Inventory & Merchandising (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Technical Writing & Docs"
+    },
+    {
+      "title": "Sr. Systems Engineer - GRC Platforms (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 64,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Engineering Manager - Merchandising Technology (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Manager of Analytics - Merchandising (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Engineering Manager – Product Development & Vertical Brands (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer II - Payments (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Lead Data Scientist, Search (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Senior Product Manager, DICK'S Media (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Engineering Manager - MarTech (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineer - Mobile iOS (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Program Manager (Enterprise Data & Intelligence Platforms / Teammate)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "score": 84,
+      "category": "Product & Project"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Senior Data Engineer - Athlete (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "reason": "Score -16 below threshold 35.",
+      "score": -16
+    },
+    {
+      "title": "Principal Product Designer - Loyalty & Credit (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "reason": "Score -96 below threshold 35.",
+      "score": -96
+    },
+    {
+      "title": "Senior Product Manager - Distribution / Fulfillment (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "reason": "Score -16 below threshold 35.",
+      "score": -16
+    },
+    {
+      "title": "Group Product Manager - Data Science & Machine Learning (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "reason": "Score -16 below threshold 35.",
+      "score": -16
+    },
+    {
+      "title": "Lead Analytics Engineer (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Product Manager, Athlete Identity Data & Analytics (REMOTE)",
+      "companyName": "Dick's Sporting Goods",
+      "sourceName": "Dick's Sporting Goods Technology",
+      "reason": "Score -16 below threshold 35.",
+      "score": -16
+    }
+  ]
+}

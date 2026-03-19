@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-03-17T13:50:08.586Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.jetpack-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-jetpack.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-jetpack-report.json",
+  "rawCount": 0,
+  "outputCount": 0,
+  "sources": [
+    {
+      "name": "Jetpack Workflow Pittsburgh",
+      "type": "workable",
+      "rawJobs": 0,
+      "ok": true
+    }
+  ],
+  "accepted": [],
+  "rejected": []
+}

@@ -1,0 +1,66 @@
+{
+  "sources": [
+    {
+      "name": "Radiance Huntsville Software",
+      "type": "workday",
+      "pageUrl": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External",
+      "apiBaseUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External",
+      "companyName": "Radiance Technologies",
+      "companyWebsite": "https://www.radiancetech.com",
+      "sourceWeight": 14,
+      "maxAccepted": 10,
+      "requestOffsets": [0, 20, 40, 60],
+      "requestDelayMs": 150,
+      "allowedLocationPatterns": [
+        "Huntsville, AL"
+      ],
+      "locationRules": [
+        {
+          "match": "Huntsville",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        }
+      ],
+      "includeKeywords": [
+        "software",
+        "site reliability",
+        "sre",
+        "quality assurance",
+        "qa",
+        "cloud",
+        "architect",
+        "reverse engineer",
+        "test engineer",
+        "vulnerability"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "software",
+        "site reliability",
+        "sre",
+        "quality assurance",
+        "qa",
+        "cloud",
+        "architect",
+        "reverse engineer",
+        "test engineer",
+        "vulnerability"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "manager",
+        "management",
+        "director",
+        "customer success",
+        "sales",
+        "mechanical",
+        "optical",
+        "radar",
+        "rf specialist",
+        "program integrator",
+        "analyst",
+        "scientist",
+        "intern"
+      ]
+    }
+  ]
+}

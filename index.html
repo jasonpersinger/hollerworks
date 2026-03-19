@@ -69,7 +69,7 @@
     .rail-link.active::before { color: var(--rust); }
     .post-btn { display: block; border: 1px solid var(--rust); color: var(--rust); padding: 7px 12px; font-family: inherit; font-size: 12px; cursor: pointer; background: transparent; text-align: center; width: 100%; }
     .post-btn:hover { background: var(--rust); color: var(--black); }
-    .post-row { display: block; border-bottom: 1px solid #161616; padding: 10px 8px; cursor: pointer; color: inherit; text-decoration: none; }
+    .post-row { display: block; border-bottom: 1px solid #2a2a2a; padding: 10px 8px; cursor: pointer; color: inherit; text-decoration: none; }
     .post-row:hover { background: #111; text-decoration: none; }
     .post-row:focus-visible,
     .menu-btn:focus-visible,
@@ -207,7 +207,9 @@
     @keyframes pulse-blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
     .system-status { font-size: 10px; color: #555; margin-bottom: 12px; border-bottom: 1px solid #222; padding-bottom: 6px; letter-spacing: 0.05em; }
 
-    .company-placeholder { width: 24px; height: 24px; background: #222; border: 1px solid #333; color: var(--brown); font-size: 10px; display: flex; align-items: center; justify-content: center; margin-right: 8px; flex-shrink: 0; }
+    .preview-section { margin-top: 32px; border: 1px solid #222; background: #0a0a0a; padding: 20px; display: none; }
+    .preview-label { color: var(--rust); font-size: 11px; text-transform: uppercase; margin-bottom: 12px; border-bottom: 1px solid #222; padding-bottom: 4px; letter-spacing: 0.1em; }
+
     .direct-badge { color: var(--brown); border: 1px solid var(--brown); font-size: 9px; padding: 0 4px; margin-left: 6px; text-transform: uppercase; }
     .post-header-row { display: flex; align-items: center; margin-bottom: 4px; }
 
@@ -303,14 +305,6 @@
     function getStateAbbr(stateName) {
       if (!stateName) return '';
       return STATE_CODES[stateName] || stateName.slice(0, 2).toUpperCase();
-    }
-    function renderPlaceholder(name) {
-      if (!name) return null;
-      const initials = name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
-      const div = document.createElement('div');
-      div.className = 'company-placeholder';
-      div.textContent = initials;
-      return div;
     }
 
     // ── CONFIG ────────────────────────────────────────────────────────────
@@ -772,12 +766,14 @@
 
         // Fetch and update category counts
         try {
-          const { facets } = await searchIndex.search('', { facets: ['category'], hitsPerPage: 0 });
+          const { facets, nbHits } = await searchIndex.search('', { facets: ['category'], hitsPerPage: 0 });
           const counts = facets.category || {};
           CATEGORIES.forEach(cat => {
             const span = document.getElementById(`count-${cat}`);
             if (span) span.textContent = `(${counts[cat] || 0})`;
           });
+          // Update total count in pulse element
+          pulseEl.innerHTML = `<span class="pulse"></span>SYSTEM_PULSE: OK // LAST_SYNC: ${pulseTime} // TOTAL_POSTS: ${nbHits}`;
         } catch (err) {
           console.warn('Could not fetch category counts', err);
         }
@@ -1006,7 +1002,13 @@
         const snap    = await getDocs(q);
         const docs    = snap.docs;
         const hasNext = docs.length > PAGE_SIZE;
-        const posts   = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
+        let posts     = hasNext ? docs.slice(0, PAGE_SIZE) : docs;
+
+        // Shuffle posts if on home page (no filters active)
+        const isHome = !state.cat && !state.remote && !state.locationState && !state.locationRegion;
+        if (isHome) {
+          posts = [...posts].sort(() => Math.random() - 0.5);
+        }
 
         if (hasNext) state.pageCursors[state.page] = posts[posts.length - 1];
 
@@ -1113,24 +1115,18 @@
           row.dataset.id = hit.objectID;
           row.href = `/post/${hit.objectID}`;
 
-          const headerRow = document.createElement('div');
-          headerRow.className = 'post-header-row';
-          const placeholder = renderPlaceholder(hit.companyName);
-          if (placeholder) headerRow.appendChild(placeholder);
-
           if (hit.companyName) {
             const company = document.createElement('div');
             company.className = 'company-line';
             company.textContent = hit.companyName;
-            headerRow.appendChild(company);
+            row.appendChild(company);
             if (hit.companyWebsite) {
               const companyChip = document.createElement('div');
               companyChip.className = 'company-chip';
               companyChip.textContent = formatCompanyLink(hit);
-              headerRow.appendChild(companyChip);
+              row.appendChild(companyChip);
             }
           }
-          row.appendChild(headerRow);
 
           const title = document.createElement('div');
           title.className = 'post-title';
@@ -1195,12 +1191,15 @@
       }
     }
 
-    function appendPostRow(fragment, d, isFeatured) {
-      const p   = d.data();
+    function renderPostRow(container, p, isFeatured, id) {
       const row = document.createElement('a');
       row.className = 'post-row' + (isFeatured ? ' post-row-featured' : '') + (p.urgent ? ' post-row-urgent' : '');
-      row.dataset.id = d.id;
-      row.href = `/post/${d.id}`;
+      if (id) {
+        row.dataset.id = id;
+        row.href = `/post/${id}`;
+      } else {
+        row.style.cursor = 'default';
+      }
 
       if (isFeatured) {
         const fl = document.createElement('div');
@@ -1209,24 +1208,18 @@
         row.appendChild(fl);
       }
 
-      const headerRow = document.createElement('div');
-      headerRow.className = 'post-header-row';
-      const placeholder = renderPlaceholder(p.companyName);
-      if (placeholder) headerRow.appendChild(placeholder);
-
       if (p.companyName) {
         const company = document.createElement('div');
         company.className = 'company-line';
         company.textContent = p.companyName;
-        headerRow.appendChild(company);
+        row.appendChild(company);
         if (p.companyWebsite) {
           const companyChip = document.createElement('div');
           companyChip.className = 'company-chip';
           companyChip.textContent = formatCompanyLink(p);
-          headerRow.appendChild(companyChip);
+          row.appendChild(companyChip);
         }
       }
-      row.appendChild(headerRow);
 
       const title = document.createElement('div');
       title.className = 'post-title';
@@ -1284,12 +1277,18 @@
         row.appendChild(summaryEl);
       }
       row.appendChild(meta);
-      row.addEventListener('click', e => {
-        if (!shouldHandleClientNavigation(e)) return;
-        e.preventDefault();
-        navigate(`/post/${d.id}`);
-      });
-      fragment.appendChild(row);
+      if (id) {
+        row.addEventListener('click', e => {
+          if (!shouldHandleClientNavigation(e)) return;
+          e.preventDefault();
+          navigate(`/post/${id}`);
+        });
+      }
+      container.appendChild(row);
+    }
+
+    function appendPostRow(fragment, d, isFeatured) {
+      renderPostRow(fragment, d.data(), isFeatured, d.id);
     }
 
     // ── Post Detail ───────────────────────────────────────────────────────
@@ -1775,7 +1774,13 @@
         <div class="form-group">
           <label class="radio-label"><input type="checkbox" id="f-remote"> remote-friendly</label>
         </div>
-        <button type="submit" class="submit-btn" id="submitBtn">submit post</button>`;
+        <button type="button" class="btn btn-approve" id="previewBtn" style="margin-right:12px; padding:10px 20px;">preview listing</button>
+        <button type="submit" class="submit-btn" id="submitBtn">submit post</button>
+        <div id="previewSection" class="preview-section">
+          <div class="preview-label">// listing_preview</div>
+          <div id="previewContainer"></div>
+          <p class="micro-copy" style="margin-top:16px;">This is how your post will appear in the main feed. Our moderators may make minor formatting adjustments before approval.</p>
+        </div>`;
 
       el.appendChild(heading);
       el.appendChild(msgEl);
@@ -1839,6 +1844,44 @@
       };
 
       waitForTurnstile();
+
+      const previewBtn = form.querySelector('#previewBtn');
+      const previewSection = form.querySelector('#previewSection');
+      const previewContainer = form.querySelector('#previewContainer');
+
+      previewBtn.addEventListener('click', () => {
+        const title = form.querySelector('#f-title').value.trim();
+        const cat = form.querySelector('#f-cat').value;
+        const companyName = companyInput.value.trim();
+        const companyWebsite = companySiteInput.value.trim();
+        const locState = form.querySelector('#f-loc-state').value;
+        const locRegion = form.querySelector('#f-loc-region').value;
+        const locCity = form.querySelector('#f-loc-city').value;
+        const comp = form.querySelector('#f-comp').value.trim();
+        const desc = form.querySelector('#f-desc').value.trim();
+        const contact = form.querySelector('#f-contact').value.trim();
+        const remoteFriendly = form.querySelector('#f-remote').checked;
+
+        const p = {
+          title: title || 'Job Title Placeholder',
+          category: cat || 'Category',
+          companyName: companyName || 'Company Name',
+          companyWebsite: companyWebsite,
+          locationState: locState,
+          locationRegion: locRegion,
+          locationCity: locCity,
+          compensation: comp || 'Comp details',
+          description: desc,
+          contact: contact,
+          remoteFriendly: remoteFriendly,
+          createdAt: { toDate: () => new Date() }
+        };
+
+        previewContainer.innerHTML = '';
+        renderPostRow(previewContainer, p, false, null);
+        previewSection.style.display = 'block';
+        previewSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
 
       stateSel.addEventListener('change', () => {
         const st = stateSel.value;

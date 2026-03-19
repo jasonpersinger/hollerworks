@@ -1,0 +1,5561 @@
+{
+  "generatedAt": "2026-03-17T17:06:57.887Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.appalachia-starters.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-starters-with-skild.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-starters-with-skild-report.json",
+  "rawCount": 783,
+  "outputCount": 60,
+  "sources": [
+    {
+      "name": "Duolingo Pittsburgh",
+      "type": "greenhouse",
+      "rawJobs": 83,
+      "ok": true
+    },
+    {
+      "name": "Aurora Innovation Pittsburgh",
+      "type": "greenhouse",
+      "rawJobs": 203,
+      "ok": true
+    },
+    {
+      "name": "Toast Appalachia Slice",
+      "type": "greenhouse",
+      "rawJobs": 310,
+      "ok": true
+    },
+    {
+      "name": "Gecko Robotics Pittsburgh",
+      "type": "ashby",
+      "rawJobs": 21,
+      "ok": true
+    },
+    {
+      "name": "Lirio Appalachia Slice",
+      "type": "greenhouse",
+      "rawJobs": 6,
+      "ok": true
+    },
+    {
+      "name": "Built Technologies Regional Slice",
+      "type": "greenhouse",
+      "rawJobs": 11,
+      "ok": true
+    },
+    {
+      "name": "Fleetio Birmingham Slice",
+      "type": "greenhouse",
+      "rawJobs": 25,
+      "ok": true
+    },
+    {
+      "name": "BlastPoint Pittsburgh",
+      "type": "greenhouse",
+      "rawJobs": 3,
+      "ok": true
+    },
+    {
+      "name": "Skild AI Pittsburgh Slice",
+      "type": "greenhouse",
+      "rawJobs": 47,
+      "ok": true
+    },
+    {
+      "name": "Abridge Pittsburgh Slice",
+      "type": "ashby",
+      "rawJobs": 62,
+      "ok": true
+    },
+    {
+      "name": "Virginia Tech Tech Slice",
+      "type": "virginia-tech",
+      "rawJobs": 12,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "AI Research Engineer, New PhD Graduate",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Director of Product Design",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Director of Product Management, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Platform Engineer II",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 83,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Android Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior iOS Software Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 83,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Platform Engineering Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Product Design Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Senior Product Manager, Learning",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Product Manager, Score",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Scaling Operations Program Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Software Engineer, Backend",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Enterprise Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Product Designer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Staff Product Manager, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Staff Technical Program Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 83,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Cadence PCB Librarian",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Embedded Software Engineer, Vehicle Controls",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Engineer II, Manufacturing Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Hardware Technician",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Technical Writing & Docs"
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Machine Learning Engineering TL, Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Program Manager, Development Testing Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Quality Engineer II",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Security Engineering Technical Lead Manager (TLM)- Aurora Enterprise Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Business Analyst, Workforce Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Senior Cloud Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Senior Fullstack Software Engineer, Map Creation Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Manager, Technical Services & IT Support",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "IT & Support"
+    },
+    {
+      "title": "Senior Product Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Sales Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Senior Software Engineer, Autonomy Simulation Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineer - Compute",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineering Manager - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Staff TLM, Performance Engineering & Optimization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Systems Test Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Senior Technical Program Manager, OEM Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Training Program Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Service Engineering Technician",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Autonomy Controls",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Functional Architecture",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer I - Data Platform",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer II, Controls Data & Simulation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer II, Test Drive",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Map Orchestration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Mapping",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, MLDE Labels Platform",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Vehicle Platform Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Client Platform Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Staff Functional Safety Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Staff Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Staff Safety Systems Engineer, Fleet Services",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer - Autonomy Frameworks",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer - Onboard Runtime",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer, Platform Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Staff Software Engineer - Vehicle Data Management",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Supplier Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Staff Technical Program Manager, Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Staff Technical Program Manager, Vehicle Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Systems and Safety Engineer, Autonomy Sensing",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Systems Test Engineer II",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "System Test Engineer, Sensing Subsystem Test",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Tech Lead- Fleet Intelligence",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Technical Lead Engineering Manager, Autonomy Integration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Training & Development Operations Specialist (LMS Admin)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Senior Robotics Software Engineer | Manipulation",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "score": 66,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Data Engineer | Power",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Staff Product Designer | Power Generation Mission",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "score": 66,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Lead, Software Quality Assurance- Contract-to-Hire",
+      "companyName": "Lirio",
+      "sourceName": "Lirio Appalachia Slice",
+      "score": 84,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Senior AI Development Platform Engineer",
+      "companyName": "Lirio",
+      "sourceName": "Lirio Appalachia Slice",
+      "score": 84,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior AI Platform Engineer",
+      "companyName": "Lirio",
+      "sourceName": "Lirio Appalachia Slice",
+      "score": 84,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior System Reliability Engineer",
+      "companyName": "Lirio",
+      "sourceName": "Lirio Appalachia Slice",
+      "score": 84,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Sr Cloud Engineer (Contract-to-Hire)",
+      "companyName": "Lirio",
+      "sourceName": "Lirio Appalachia Slice",
+      "score": 84,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Director of Product & Design, SaaS Products",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Design & UX"
+    },
+    {
+      "title": "GTM Engineer",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Machine Learning Operations Engineer",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Staff Mobile Engineer",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "DevOps Manager",
+      "companyName": "BlastPoint",
+      "sourceName": "BlastPoint Pittsburgh",
+      "score": 82,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Deep Learning Manipulation Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 81,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Firmware/ Embedded Systems Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 81,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Machine Learning Engineer, Reinforcement Learning",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Product Security Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Research Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Research Scientist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Robotics Engineer, Manipulation",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Robotics Software Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineer, Infrastructure",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Software Engineer, AI Inference",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Software Engineer, AI Training and Infrastructure",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 81,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Full Stack Engineer, Integrations",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "score": 88,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Strategic Partnerships Technical Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "score": 88,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Engineering Manager, Federal",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "score": 88,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "End User Support Specialist",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 68,
+      "category": "IT & Support"
+    },
+    {
+      "title": "Research Software Engineer, AI/ML",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 68,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Enterprise Web Application Developer",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Enterprise Integration Developer",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "score": 83,
+      "category": "Software & Dev"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "AI Research Engineer, New PhD Graduate",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assistant Controller",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Business Development and Partnerships Lead, LATAM",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - Mexico City\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Country Marketing Associate",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Beijing, China\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Country Marketing Manager, Turkey",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - Turkey\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Internal Communications",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Internal Communications",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -27 below threshold 35.",
+      "score": -27
+    },
+    {
+      "title": "Director of Learning Design, Language Learning",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "Director of Product Design",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Product Management, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, People Business Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Engineering Director",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Group Product Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Group Product Manager, Duolingo English Test",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 68
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Detroit, MI\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "Head of Duolingo Academy (Leadership Development)",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Duolingo Academy (Leadership Development)",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Chess",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Chess",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Math",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Math",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Regional Marketing Manager, MENA",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - Dubai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote – Los Angeles, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote – San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Android Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Android Engineer, App Builds",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Community Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Community Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Community Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Content Producer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, Creative Marketing",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, Creative Marketing",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Engineering Manager, New Initiatives",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Executive Assistant",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Gameplay Programmer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior iOS Engineer, App Builds",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior iOS Engineer, Application Stability & Performance",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior iOS Software Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Marketing Manager, DET, India",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Beijing, China\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Design Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, In-App Purchases",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Learning",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Score",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Social Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Scaling Operations Program Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Backend",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Chess",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Senior University Recruiter",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Social Content Creator, Intern",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Scientist, Forecasting in Monetization",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Enterprise Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff iOS Engineer, App Builds",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Manager, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "3D Technical Director",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Behavior Planning Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Cadence PCB Librarian",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Cadence PCB Librarian",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Bozeman, Montana\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electrical Engineer II",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Executive Assistant",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Executive Assistant",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -110 below threshold 35.",
+      "score": -110
+    },
+    {
+      "title": "Fleet Operations Technician I",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "FP&A Analyst (Procurement & Systems)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Graphics Pipeline Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Hardware Engineering Intern, LiDar (MS or PhD)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Join Aurora's CDL Truck Driver Community!",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Midland, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machine Learning Engineering TL, Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machine Learning Engineer, Models and Validation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Command Center Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, HIL Platform Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Public Affairs & Policy Campaigns",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -95 below threshold 35.",
+      "score": -95
+    },
+    {
+      "title": "Principal, People Business Partner",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -30 below threshold 35.",
+      "score": -30
+    },
+    {
+      "title": "Principal, People Business Partner",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -10 below threshold 35.",
+      "score": -10
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Operations Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager, People Team",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager, People Team",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -15 below threshold 35.",
+      "score": -15
+    },
+    {
+      "title": "Program Manager, People Team",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Quality Engineer II",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Remote Assist Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -15 below threshold 35.",
+      "score": -15
+    },
+    {
+      "title": "Security Engineering Technical Lead Manager (TLM)- Aurora Enterprise Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Security Engineering Technical Lead Manager (TLM)- Aurora Enterprise Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Brand Marketing Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Business Analyst, Workforce Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Business Analyst, Workforce Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Cloud Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Cloud Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Electrical Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Fullstack Software Engineer, Map Creation Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Hardware Validation Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Incident Commander",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, People Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -110 below threshold 35.",
+      "score": -110
+    },
+    {
+      "title": "Senior Manager, People Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, People Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Technical Services & IT Support",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Technical Services & IT Support",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Mechanical Design Engineer - Sensor Cleaning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior NPI Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Bozeman, Montana\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Photonics Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Sales Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Sales Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Detroit, Michigan\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Sales Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer - Compute",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineering Manager - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineering Manager - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Localization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Rendering and Sensor Simulation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Visualization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff - TLM Electrical Engineering - HPE",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff TLM, Performance Engineering & Optimization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Vehicle Hardware Verification and Validation Engineer Lead",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager, IT / Enterprise Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager, Software Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager, Software Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Training Program Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Autonomy Controls",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Behavior Simulation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Calibration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I, Visualization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Map Health and Validation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Louisville, Colorado\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Map Health and Validation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Mapping",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Mapping",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, MLDE Labels Platform",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Planner Architecture",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Filmmaker, Post-production focus",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -110 below threshold 35.",
+      "score": -110
+    },
+    {
+      "title": "Staff Client Platform Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Analyst, People Analytics",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Analyst, People Analytics",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Embedded Linux Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Engineer / Architect, Enterprise AI Solutions",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Functional Safety Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Bozeman, Montana\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff NPI Test Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Opto-Mechanical Designer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Program Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Safety Systems Engineer, Fleet Services",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Security Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Signal Integrity Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Autonomy Frameworks",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Autonomy Frameworks",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Calibration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Continuous Learning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Continuous Learning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Onboard Runtime",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Online Maps",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Platform Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Vehicle Data Management",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Supplier Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Lead Manager (TLM), IT Systems Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Lead Manager (TLM), IT Systems Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Product & Program Manager - Architecture & Fallback Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Product & Program Manager, Architecture & Fallback Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Program Manager - HW NPI",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Program Manager, Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Program Manager, Vehicle Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Strategic Account Executive",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Systems and Safety Engineer, Autonomy Sensing",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tactical Development Truck Operator - CDL A",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Houston, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tactical Development Truck Operator- CDL A",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tech Lead- Fleet Intelligence",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Lead Engineering Manager, Autonomy Integration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Operations Manager - Vehicle Reliability Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Program Manager - Vehicle Hardware V&V",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Training & Development Operations Specialist (LMS Admin)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations & Maintenance Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Laredo, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations & Maintenance Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Midland, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Phoenix, Arizona\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 70
+    },
+    {
+      "title": "Truck Operations Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Midland, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Houston, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Vehicle Operations Lead",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Palmer, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "AI Architect - People Products",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Analyst II, Payments Pricing & Operations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote- USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Associate Counsel, Privacy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bedford, Indiana Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bedford, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Columbus, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Philadelphia, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cincinnati, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cleveland, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Miami, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tampa, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Orlando, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dallas, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Antonio, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Austin, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jersey City, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jacksonville, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Houston, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Houston, TX Strategic Cuisines Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Houston, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Diego, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Vietnamese Strategic Cuisines Account Executive- Central",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bloomington, Indiana Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bloomington, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Manager, CBG",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Representative - Retail",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Compliance Manager, Consumer Protection & AI",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Credit Risk Senior Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Customer Care Specialist - xtraChef",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Omaha, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Customer Success Manager II, Payroll",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Design Lead, New Ventures",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US-remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Care Analytics",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, FinTech Counsel",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Corporate Engineering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Talent Acquisition Operations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New York, New York\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director - People Operations, Shared Services",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai, TamilNadu, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Talent Acquisition Operations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "District Manager, SMB - Atlanta, GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Atlanta, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "District Manager, SMB- Eastern North Carolina",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Raleigh, NC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "District Manager, SMB - Michigan/Indiana",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Grand Rapids, MI\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Ellettsville, Indiana Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Ellettsville, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager II, Supply Chain",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Equity Analyst -Stock Plan Administrator",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Account Executive, SMB- Mountain West",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Denver, CO\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Account Executive, SMB - Philadelphia, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Philadelphia, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex (Mid Atlantic Region) Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Washington, DC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Strategic Cuisine Territory Account Executive (Spanish/Bilingual), South Central, USA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Oklahoma City, OK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Strategic Cuisine Territory Account Executive (Spanish/Bilingual), West Coast, USA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Florida Flex Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Orlando, Florida\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Forward Deployment Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Fraud Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Frontend Engineer II",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Integration Engineer, People Products",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Jacksonville, FL Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jacksonville, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lakeland, FL Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lakeland, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Las Vegas, NV District Manager, SMB",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Las Vegas, NV\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead, Credit Risk Analytics & AI Enablement",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead Risk Analyst - Commercial Risk Analyst Underwriting",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead Salesforce Developer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Customer Care - Employee Cloud Payroll",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Omaha, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Customer Care (International)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Customer Success - Payroll",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Device Testing and Automation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager II, Software Engineering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Integration Partnerships",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Software Engineering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, US Payroll Operations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Marketing Manager, SEO & Organic Growth",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Marketing Services Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote,US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "MBA Product Manager Intern",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "NetSuite Administrator",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "North Jersey, NJ Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"North Jersey, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Consultant I, Emerging Markets - Spanish Speaking",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Consultant I, Guest - Emerging Markets - Mandarin Speaking",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Consultant I, POS - Emerging Markets - Mandarin Speaking",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Technical Consultant III",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Technical Consultant Manager, Mid-Market",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Paid Acquisition Lead, Consumer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA OR San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "PeopleHub Partner",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Omaha, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "PeopleHub Partner",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "People Hub Specialist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Performance Creative Strategist & Copywriter, Demand Generation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote- USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Philadelphia, PA Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Philadelphia, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Phoenix, AZ Strategic Cuisines Account Executive - Bilingual Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Phoenix, AZ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Pittsburgh, PA Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Score -70 below threshold 35.",
+      "score": -70
+    },
+    {
+      "title": "Principal - Credit Risk Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US-Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Customer Success Analyst - AI and Advanced Customer Analytics",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Fraud Analyst-Payments & Onboarding (Data Science)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US-Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Product Manager, Agent Platform",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"East Coast, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Product Manager, Enterprise Systems",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Product Manager, Voice AI",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer - Payments, Fraud & Risk",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer, Toast IQ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Workday Architect, Benefits & Absence",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Workday Architect, Talent & Compensation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Workday PAT Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Counsel, Commerce",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Counsel, Commerce",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Designer, Guest",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Lead, Toast Partner Ecosystem",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Manager, Employee Compensation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager - FinTech",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Queens, NY Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Queens, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Retail Account Executive - Augusta GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Augusta GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales District Manager, Retail - New Orleans, LA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Orleans, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales District Manager, Retail - Phoenix, AZ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Phoenix, AZ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales District Manager, Toast Retail",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Diego, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Analyst, Investor Relations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New York City, New York\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Analyst, Model Risk Management",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Atlassian Admin",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Backend Engineer - Enterprise Financial Systems",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Collections Support Specialist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Compliance Manager, Fintech Banking Products",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Corporate Security Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Corporate Security Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Consumer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Scientist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Scientist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore , Karnataka , India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, International Partnerships",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"London, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, Software Engineering - Payments, Fraud & Risk",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Full Stack Engineer, Help Center",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Fullstack Engineer, New Ventures",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Hardware Program Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Taipei City, Taiwan\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior HRIS Analyst - Workday - Benefits Module",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior HRIS Analyst - Workday Payroll and Time Tracking Module",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Data Science and Machine Learning",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Disaster Recovery & Business Continuity",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Pricing Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote- USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Revenue Accounting",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Netsuite Developer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"London, England, United Kingdom\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote-Canada\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Core Payments",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Hardware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Networking Platform",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Revenue Accountant",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Salesforce Developer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Android",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Android",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Costa Mesa, California, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Android - Retail",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer (Backend), Menus",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer (Backend), Payments",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Care Experience",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, Canada\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer (Frontend), Menus",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer - Full Stack",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai, TN, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Full Stack - Fintech",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineering Manager, Toast Web Platform and Product Led Growth",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer - Modern Dining",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Retail",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Supply Chain",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer- Third Party Ordering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical R&D Operations Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote or Hybrid, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Silver Spring, MD Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Silver Spring, MD\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I (Fullstack), Employee Lifecycle Management",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Delivery Services",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I (Mobile), MyToast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I - Timekeeping",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Workday Analyst, HCM",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Scientist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff IAM Engineer, Sailpoint",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA or Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, AI & Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Android",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer (Android), Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Guest CRM",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Guest Engagement",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Retail Payments",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Toast Tables",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US or Boston, MA (Hybrid)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff System Engineer, Zuora Billing",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Zuora Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tax Operations Specialist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive - Cleveland West, OH",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cleveland, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive (Mandarin), Strategic Cuisines -LA North",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"El Paso, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Clovis, NM\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Santa Fe, NM\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"ABQ, NM\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Allentown, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Allentown, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Austin: San Antonio (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Marcos, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Austin: San Antonio (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Braunfels, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Bellevue, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bellevue, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Bethlehem, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bethlehem, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Binghamton, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Binghamton, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Buffalo, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Buffalo, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Burlington, VT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Burlington, VT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Burlington, VT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Montpelier, VT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Central New England",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Springfield, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Central New England",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Framingham, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Central New England",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Worcester, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Charleston, SC",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Charleston, SC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Charlotte, NC",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Charlotte, NC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Cincinnati, OH",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cincinnati, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Coastal Connecticut",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fairfield, Connecticut\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Colorado Springs, CO",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Colorado Springs, CO\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Columbus, GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Columbus, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Daytona, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Daytona, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Deltona, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Deltona, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Dover, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dover, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Doylestown, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Doylestown, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - East CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Haven, CT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - East CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Eastern Connecticut\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - East Stroudsburg, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"East Stroudsburg, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Greenville, SC",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Greenville, SC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Jackson, MS",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jackson, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Kansas City, MO",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Kansas City, MO\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lafayette, LA/Beaumont, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lafayette, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lafayette, LA/Beaumont, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Beaumont, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lancaster, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lancaster, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Las Vegas, NV",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Las Vegas, NV\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lewes/Rehoboth Beach, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lewes, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lititz, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lititz, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Memphis, TN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Memphis, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Memphis, TN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Memphis, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dallas, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Irving, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fort Worth, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Arlington, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Middletown, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Middletown, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Minneapolis, MN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Montgomery, AL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Montgomery, AL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Mount Joy, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Mount Joy, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Newark, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Newark, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - New Hope, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Hope, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Newton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Newton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - North Atlanta, GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Marietta, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Olympia, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Olympia, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Palm Coast, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Palm Coast, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Reading, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Reading, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Richmond, VA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Richmond, VA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Rochester, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Rochester, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Sanford, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sanford, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Savannah GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Savannah, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Scranton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Scranton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Seaford, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seaford, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Seattle, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Shreveport, LA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Shreveport, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Sioux Falls, SD",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sioux Falls, SD\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Smyrna, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Smyrna, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Southampton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Southampton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - South Texas",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"McAllen, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - South Texas",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Corpus Christi, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - South Texas",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Brownsville, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - St. Augustine, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"St. Augustine, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Stockton, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sacramento, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Brentwood, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Livermore, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Atwater, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Modesto, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tracy, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stroudsburg, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Stroudsburg, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Tacoma, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tacoma, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Trenton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Trenton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Tyler, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tyler, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - West Reading, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"West Reading, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Wilmington, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Wilmington, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Wyomissing, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Wyomissing, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Baton Rouge, LA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Baton Rouge, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Benicia, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Benicia, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Cleveland, OH",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cleveland, Ohio\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB- Eugene, OR",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Eugene, OR\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - Fairfield/Bridgeport, CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fairfield, CT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Fort Wayne, IN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fort Wayne, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Joliet, IL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Joliet, IL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Las Vegas, NV",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Las Vegas, NV\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - Manhattan (FiDi), NYC",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Manhattan, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Napa Valley, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Napa Valley, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - Newton, MA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Newton, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Oahu, HI",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Oahu, HI\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Olympia, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Olympia, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Orange County, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Orange County, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB- Portland, OR",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Portland, OR\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Red Bank, NJ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Red Bank, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Rochester, New York",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Rochester, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Sacramento, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sacramento, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Salem, OR",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Salem, OR\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Salt Lake City, UT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Salt Lake City, UT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - San Antonio, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Antonio, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - San Francisco, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Toms River, NJ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Toms River, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Twin Cities Metro, MN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"North Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Ventura, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Ventura, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - Waterbury, CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Waterbury, CT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - White Plains, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"White Plains, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive (Spanish), Strategic Cuisines -LA Valley",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive (Spanish), Strategic Cuisines - San Diego, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Diego, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Vice President of Retail Marketing",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Diego, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Zuora Admin",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Zuora Administrator",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"New York City | Washington, D.C. | Boston\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Forward Deployed Engineer | Team Lead, Government",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"Washington, D.C.\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Forward Deployed Engineer | Middle East",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"Abu Dhabi\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Data Analytics Engineer",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"New York City\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "NDT Advanced Services Operator | Commercial",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 66
+    },
+    {
+      "title": "NDT Advanced Services Operator | Middle East",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"Abu Dhabi\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Controller",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Score 31 below threshold 35.",
+      "score": 31
+    },
+    {
+      "title": "NDT Advanced Services Operator | Government",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 66
+    },
+    {
+      "title": "Product Strategist | Middle East",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"Abu Dhabi\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Recruiter",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"New York City\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer | Infrastructure",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"New York City | Boston\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robot Field Operator",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 66
+    },
+    {
+      "title": "Product Security Engineer",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"New York City | Washington, D.C. | Boston\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Forward Deployed Engineer | Middle East - New Graduate",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"Abu Dhabi\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "API Inspector",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 66
+    },
+    {
+      "title": "Software Engineer | Government",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location \"Boston | New York City\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Aerospace Solutions Advisor, SME",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Location state/region must match the Holler location map.",
+      "score": 1
+    },
+    {
+      "title": "Sales Manager",
+      "companyName": "Gecko Robotics",
+      "sourceName": "Gecko Robotics Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 46
+    },
+    {
+      "title": "Solutions Architect (Contract to Hire)",
+      "companyName": "Lirio",
+      "sourceName": "Lirio Appalachia Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Client Support Representative",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Location \"Nashville (Hybrid)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Enterprise Account Executive - OGC",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Score -18 below threshold 35.",
+      "score": -18
+    },
+    {
+      "title": "Event Marketing Manager",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Location \"Nashville (Hybrid)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Strategic Banking Partnerships (Fractional)",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Compensation is required.",
+      "score": -33
+    },
+    {
+      "title": "Principal, Marketplace Services",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Score -98 below threshold 35.",
+      "score": -98
+    },
+    {
+      "title": "Principal Solutions Consultant - CRE Deal Management",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Score -98 below threshold 35.",
+      "score": -98
+    },
+    {
+      "title": "Sr. Business Quality Assurance Analyst - Argentina",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Location \"Mendoza, Argentina\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Account Executive, Mid-Market",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Account Executive, Public Sector",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Account Executive, SMB",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "AI & Automation Analyst",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Director of Marketing Operations",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Director of Product Management, FleetOS",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Engineering Manager, Fleet Enablement",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "GTM Onboarding Manager",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Head of Product Strategy & GTM - Auto Integrate",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Inbound Sales Development Representative",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Outbound Sales Development Manager",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -46
+    },
+    {
+      "title": "Outbound Sales Development Representative",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Public Sector Outbound Sales Development Representative",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Regional Sales Manager, Mid-Market",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -66
+    },
+    {
+      "title": "Regional Sales Manager, SMB",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -66
+    },
+    {
+      "title": "Revenue Operations Manager, Expansion and Retention",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Senior Analytics Engineer - Auto Integrate",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Analytics Engineer - Fleetio",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Engineering Manager, Platform",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Manager, Competitive Intelligence",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Senior Product Manager - Auto Integrate",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Senior Software Engineer, Integrations",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Software Engineer, Strategic Reporting & Tools",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Solutions Consultant",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "VP, Product Marketing",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Senior Data Engineer",
+      "companyName": "BlastPoint",
+      "sourceName": "BlastPoint Pittsburgh",
+      "reason": "Score -18 below threshold 35.",
+      "score": -18
+    },
+    {
+      "title": "VP of Engineering",
+      "companyName": "BlastPoint",
+      "sourceName": "BlastPoint Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -38
+    },
+    {
+      "title": "Cinematography Intern (Product Videography & Social Media)",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Computer Vision AI & ML Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Data Collection Operations Supervisor",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Compensation is required.",
+      "score": -34
+    },
+    {
+      "title": "Data Collection Operations Supervisor",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Deployment Operations Specialist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electrical Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Embedded Security Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Full Stack Developer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Hardware Engineer - Bengaluru",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IT Generalist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Lead Industrial Designer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Score -34 below threshold 35.",
+      "score": -34
+    },
+    {
+      "title": "Manufacturing Design Engineer (NPI & Robotics)",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Design Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechatronics Technician",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Physics Simulation Scientist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "React Native Developer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Research Engineer, Post-training & Deployment",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robotics Engineer, Deployment & Testing - Bengaluru",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robotics Manipulation & Controls Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robotics Technician",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Robot Operator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Robot Operator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robot Operator - India",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Accountant",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Master Annotator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Simulation Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Social Media Intern",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Animator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Animator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Animator Intern",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Product Manager - Data Annotation & Labelling",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Program Manager – AI/ML",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Program Manager - Data Operations",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "UI/UX Designer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "UX/UI Designer – Fleet Command & Robot Management",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machine Learning Scientist (All Levels)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer (All Levels)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Mobile Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Product Management - AI/ML, Core Product",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior/Staff Application Security Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Quality Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"San Francisco-Onsite | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Implementation Manager - Strategic Accounts",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinical Success Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinical Success Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"CHI Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, SRE",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "GL Accounting Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Scientist",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assistant General Counsel- Privacy",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Machine Learning Infrastructure Engineer- Model Inference",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, GenAI",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | San Francisco-Onsite | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior GTM Recruiter",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Manager - Core Product Experiences",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "ML Tech Lead Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Operations Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Gen AI Platform",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Brand Designer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "University Recruiting Program Manager",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager, GenAI Platform",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff IT Automation Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager, SRE",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Product Design - Core Product",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Manager, Data Platform",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior/Staff Threat Detection Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinical Success Director",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -17 below threshold 35.",
+      "score": -17
+    },
+    {
+      "title": "Clinical Success Director - Nursing",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Head of People Operations",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Implementation Director - Nursing",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Senior/Staff Infrastructure Security Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Payer Business Development - NYC",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Payer Business Development Lead NYC",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Corporate Counsel - Commercial",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "PhD Research Intern (Measurement and Evaluation)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Data Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Clinician Science",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Clinician Scientist",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"San Francisco-Onsite | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Federal Government Affairs (Washington, DC.)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Technical Recruiter",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Lead, Life Sciences (New Products)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Enterprise Development Representative (EDR, Key Accounts)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "GTM Finance & Strategy Lead",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager, Federal",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Manager, Payer Products",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office | NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Research Scientist (Measurement and Evaluation)",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Physical Security & Life Safety",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IT Support Team Lead",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior IT Systems Engineer",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Life Sciences Business Development",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"NYC Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Revenue Enablement Lead",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Implementation Director, Enterprise & Commercial Accounts",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Location \"CHI Office | SF Office\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Implementation, Enterprise and Commercial",
+      "companyName": "Abridge",
+      "sourceName": "Abridge Pittsburgh Slice",
+      "reason": "Score -37 below threshold 35.",
+      "score": -37
+    },
+    {
+      "title": "Evening Audiovisual Systems Technician",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Score -17 below threshold 35.",
+      "score": -17
+    },
+    {
+      "title": "Postdoctoral Associate",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "AV Technician (Part-Time)",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "Desktop Technician",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Compensation is required.",
+      "score": 68
+    },
+    {
+      "title": "Research Faculty Open Rank, Intelligence Community Portfolio",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Location \"Arlington, Virginia, United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Compensation is required.",
+      "score": 68
+    },
+    {
+      "title": "Information Technology Support Temporary Assignments",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Compensation is required.",
+      "score": -112
+    },
+    {
+      "title": "Research Assistant Professor, Research Associate Professor or Research Professor",
+      "companyName": "Virginia Tech",
+      "sourceName": "Virginia Tech Tech Slice",
+      "reason": "Location \"Arlington, Virginia, United States\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

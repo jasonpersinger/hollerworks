@@ -1,0 +1,93 @@
+[
+  {
+    "type": "need",
+    "title": "Software Architect",
+    "category": "Software & Dev",
+    "companyName": "Radiance Technologies",
+    "companyWebsite": "https://www.radiancetech.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$100,000 - $130,000",
+    "description": "Continuously learns and applies industry best practices on modern software delivery practices. Collaborates with cross-functional teams to accomplish project and product objectives. Required Qualifications: 5&#43; years’ experience as a software architect and/or software engineer Bachelor’s Degree in Computer Science, Computer Engineering, or related technical field Knowledge of object-oriented programming languages, including Golang, Java, C&#43;&#43;, or Python Strong Communication and Organizational Skills US Citizenship Must have or be able to obtain a Top Secret Clearence Desired Qualifications Experience with system modeling and software architecting using MBSE Experience with C4 modeling using Structurizr Familiarity with Architecture Decision Records (ADR)",
+    "contact": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Beavercreek-OH/Software-Architect_HR102048-1",
+    "remoteFriendly": false,
+    "sourceUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External/job/Beavercreek-OH/Software-Architect_HR102048-1",
+    "seedScore": 64,
+    "seedNotes": [
+      "source weight +14",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radiance Huntsville Software"
+  },
+  {
+    "type": "need",
+    "title": "Quality Assurance (QA) Automation Engineer",
+    "category": "QA & Testing",
+    "companyName": "Radiance Technologies",
+    "companyWebsite": "https://www.radiancetech.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$75,000 - $135,000",
+    "description": "Stay up to date with new testing tools and test strategies Required Qualifications: 2&#43; years of experience in developing automated testcases in at least one programming language Proven work experience in software quality assurance Strong understanding of functional, regression, integration, and end-to-end testing Bachelor’s degree in computer science, information science, or related technical field Strong Communication and Organizational Skills US Citizenship Must have or be able to obtain a Top Secret Clearence Desired Qualifications Proficiency in Go, Java, Python, JavaScript, C#, or Perl for writing efficient, reusable test scripts Expertise in Selenium WebDriver, Playwright, Cypress, TestRail, or TestNG Ability to test APIs using Postman and automate through Newman Familiarity with Jenkins, GitHub Actions, and Docker for integrating tests into pipelines Proficiency in Git Basic to intermediate SQL skills to verify data integrity Experience with BDD tools like Cucumber",
+    "contact": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Beavercreek-OH/Quality-Assurance--QA--Automation-Engineer_HR102053",
+    "remoteFriendly": false,
+    "sourceUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External/job/Beavercreek-OH/Quality-Assurance--QA--Automation-Engineer_HR102053",
+    "seedScore": 64,
+    "seedNotes": [
+      "source weight +14",
+      "category match +20 (QA & Testing)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radiance Huntsville Software"
+  },
+  {
+    "type": "need",
+    "title": "Site Reliability Engineer (SRE)",
+    "category": "Other Tech-Adjacent",
+    "companyName": "Radiance Technologies",
+    "companyWebsite": "https://www.radiancetech.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$75,000 - $100,000",
+    "description": "At Radiance our SREs own the reliability of systems they don't write - defining what &#34;reliable enough&#34; means from the user’s perspective, instrumenting and measuring against those targets, and building the tooling and runbooks that make failure recoverable. They partner with dev teams pushing operational quality upstream before code ships, and they lead the resolution in production when things go wrong. SREs are comfortable debugging distributed systems, resolving incidents, and translating findings into lasting reliability improvements. Day to day responsibilities fall into four categories: Incident Response, Toil Reduction, Reliability Evaluations, Platform Enablement Required Qualifications: 1&#43; years of experience in Operations, Sys Admin, DevOps, or Software engineering Bachelor’s Degree in CS, Computer Engineering, or related technical field US Citizenship & must have or be able to obtain a Top Secret Clearence Systems thinking – understanding how systems fail together, blast radius, and more Observability Fundamentals – not just the 3 signals, but knowing why and how to use telemetry to optimize services and engineering quality of life Basic software engineering – building automation & non-trivial APIs, git workflows, effectively engaging in code reviews Linux/networking fundamentals Strong Communication, Collaboration, and Organizational Skills Specialty Skills: (1 or more)",
+    "contact": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Beavercreek-OH/Site-Reliability-Engineer--SRE-_HR102054",
+    "remoteFriendly": true,
+    "sourceUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External/job/Beavercreek-OH/Site-Reliability-Engineer--SRE-_HR102054",
+    "seedScore": 59,
+    "seedNotes": [
+      "source weight +14",
+      "remote-friendly +15",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radiance Huntsville Software"
+  },
+  {
+    "type": "need",
+    "title": "Senior Site Reliability Engineer",
+    "category": "Other Tech-Adjacent",
+    "companyName": "Radiance Technologies",
+    "companyWebsite": "https://www.radiancetech.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$90,000 - $135,000",
+    "description": "The Senior SRE roles at Radiance own the reliability of systems they don't write. They bring the experience to spend most of their time preventing fires rather than fighting them. They remain in the on-call rotation and are effective incident responders, but their primary contribution is the foundational work that raises the reliability floor for everyone. Working primarily with: Kubernetes infrastructure, GitOps patterns, progressive delivery, rollback automation, capacity planning, and disaster recovery (DR) strategy. Our Senior SREs are less focused on keeping platforms running and more focused on resilience and reliability outcomes - building the internal capability that lets SREs and dev teams ship with confidence. Their success is measured by the same standard, at a higher bar: most of their time is in planned, high-leverage work. Required Qualifications: 3--7&#43; years of experience in Operations, Sys Admin, DevOps, or Software engineering Bachelor’s Degree in CS, Computer Engineering, or related technical field US Citizenship & Must have or be able to obtain a Top Secret Clearence Systems thinking – understanding how systems fail together, blast radius, and more Observability Fundamentals – not just the 3 signals, but knowing why and how to use telemetry to optimize services and engineering quality of life Software engineering – building automation & non-trivial APIs, git workflows, leading code reviews",
+    "contact": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Beavercreek-OH/Senior-Site-Reliability-Engineer_HR102049",
+    "remoteFriendly": false,
+    "sourceUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External/job/Beavercreek-OH/Senior-Site-Reliability-Engineer_HR102049",
+    "seedScore": 44,
+    "seedNotes": [
+      "source weight +14",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radiance Huntsville Software"
+  }
+]

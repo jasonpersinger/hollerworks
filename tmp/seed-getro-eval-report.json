@@ -1,0 +1,306 @@
+{
+  "generatedAt": "2026-03-17T01:32:38.616Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.getro-evaluation.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-getro-eval.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-getro-eval-report.json",
+  "rawCount": 40,
+  "outputCount": 2,
+  "sources": [
+    {
+      "name": "KnoxTech Job Board",
+      "type": "getro",
+      "rawJobs": 20,
+      "ok": true
+    },
+    {
+      "name": "Launch Tennessee Job Board",
+      "type": "getro",
+      "rawJobs": 20,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Senior AI Platform Engineer",
+      "companyName": "Lirio",
+      "sourceName": "Launch Tennessee Job Board",
+      "score": 82,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior AI Development Platform Engineer",
+      "companyName": "Lirio",
+      "sourceName": "Launch Tennessee Job Board",
+      "score": 82,
+      "category": "DevOps & Cloud"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Electrical CADD Designer III",
+      "companyName": "Oak Ridge National Laboratory",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": 60
+    },
+    {
+      "title": "Controls Systems Designer",
+      "companyName": "Oak Ridge National Laboratory",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": 60
+    },
+    {
+      "title": "Digital Communications Specialist",
+      "companyName": "Oak Ridge National Laboratory",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": 60
+    },
+    {
+      "title": "Manager, Category - General Merchandise",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Score -140 below threshold 35.",
+      "score": -140
+    },
+    {
+      "title": "Sr Manager, Learning",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -40
+    },
+    {
+      "title": "Representative, Guest Services",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -140
+    },
+    {
+      "title": "Project Manager, Operations Excellence",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": 60
+    },
+    {
+      "title": "Counsel, Technology",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": 75
+    },
+    {
+      "title": "Specialist II, Internal Communications",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -140
+    },
+    {
+      "title": "Analyst II, Retail Technology",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -20
+    },
+    {
+      "title": "Administrative Assistant",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -140
+    },
+    {
+      "title": "Specialist, Workers' Compensation",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -140
+    },
+    {
+      "title": "Sr Project Manager, Construction Development",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Score -20 below threshold 35.",
+      "score": -20
+    },
+    {
+      "title": "Principal Project Manager, Construction Development",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -20
+    },
+    {
+      "title": "Subway Cashier",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Score -150 below threshold 35.",
+      "score": -150
+    },
+    {
+      "title": "Manager, Category - Facility Revenue",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -120
+    },
+    {
+      "title": "Cashier",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Score -150 below threshold 35.",
+      "score": -150
+    },
+    {
+      "title": "Coffee Attendant",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Score -70 below threshold 35.",
+      "score": -70
+    },
+    {
+      "title": "Deli Baker",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Score -70 below threshold 35.",
+      "score": -70
+    },
+    {
+      "title": "Accountant, Fuel Accounting",
+      "companyName": "Pilot Flying J",
+      "sourceName": "KnoxTech Job Board",
+      "reason": "Compensation is required.",
+      "score": -40
+    },
+    {
+      "title": "Manager, Care Management",
+      "companyName": "Utilize Health",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"Nashville, TN, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Development Representative",
+      "companyName": "Healing Innovations",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Associate (entry-level)",
+      "companyName": "Arcs Aviation",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"Cookeville, TN, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Manager",
+      "companyName": "Pilot",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"San Francisco, CA, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Manager",
+      "companyName": "YouScience",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"american fork, ut, usa\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Interoperability Specialist",
+      "companyName": "Angel Eye Health",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager of Strategy and Operations, Biosimilars",
+      "companyName": "Thyme Care",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Compensation is required.",
+      "score": 52
+    },
+    {
+      "title": "Intern - Inclusion & Engagement",
+      "companyName": "Med+Proctor",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"Fort Wayne, IN, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Intern - Marketing - Communications",
+      "companyName": "Med+Proctor",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"Fort Wayne, IN, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Claims Consultant - Hospital/Excess Professional Liability",
+      "companyName": "Med+Proctor",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Associate Underwriter Analyst",
+      "companyName": "Med+Proctor",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"Fort Wayne, IN, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Intern - Finance - Operations",
+      "companyName": "Med+Proctor",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"Fort Wayne, IN, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Underwriter - Senior Care",
+      "companyName": "Med+Proctor",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Location \"United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Product & Design, SaaS Products",
+      "companyName": "Built Technologies",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Score -18 below threshold 35.",
+      "score": -18
+    },
+    {
+      "title": "Head of Commercial Operations",
+      "companyName": "Thyme Care",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Compensation is required.",
+      "score": 32
+    },
+    {
+      "title": "After Hours Nurse Practitioner",
+      "companyName": "Thyme Care",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Compensation is required.",
+      "score": -68
+    },
+    {
+      "title": "Oncology Nurse Navigator (11:30AM - 8:00PM EST)",
+      "companyName": "Thyme Care",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Compensation is required.",
+      "score": -68
+    },
+    {
+      "title": "Social Work Team Lead",
+      "companyName": "Thyme Care",
+      "sourceName": "Launch Tennessee Job Board",
+      "reason": "Compensation is required.",
+      "score": -68
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "type": "need",
+    "title": "Enterprise Integration Developer",
+    "category": "Software & Dev",
+    "companyName": "Virginia Tech",
+    "companyWebsite": "https://www.vt.edu/",
+    "locationState": "Virginia",
+    "locationRegion": "Southwest Virginia",
+    "locationCity": "Blacksburg",
+    "compensation": "$85,000 - $95,000",
+    "description": "● Handle multiple assignments simultaneously and collaborate with colleagues. Required Qualifications: ● Master’s degree in Computer Science, Information Technology, Business, or a related field, or a combination of education, training, and experience that equates to a Master's degree. ● Demonstrated experience in developing custom solutions using the Boomi integration platform across the full SDLC, including requirements gathering, business analysis, development, troubleshooting, testing, and implementation of integrations leveraging APIs. ● Demonstrated knowledge of modern integration design patterns and anti-patterns. ● Demonstrated understanding of API security best practices. ● Demonstrated knowledge of REST and SOAP web services, XML, and JSON. ● Experience with Relational Database Management Systems and SQL. ● Strong analytical and problem-solving skills. ● Ability to work as part of a cross-functional team with clear verbal and written communication skills. ● Boomi Associate Integration Developer certification. Preferred Qualifications: ● Experience working with Huron Research Suite ● Experience with Git and automated CI/CD pipelines. ● Experience with business processes and applications supporting Higher Education. ● Experience working with Ellucian Banner systems. ● Boomi Professional Integration Developer certification or better. ● Strong, self-motivated desire to learn and apply new ideas and technologies to meet ever-evolving use cases under minimal supervision.",
+    "contact": "https://jobs.apply.vt.edu/jobs/enterprise-integration-developer-blacksburg-virginia-united-states-hybrid-fully-remote",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.apply.vt.edu/jobs/enterprise-integration-developer-blacksburg-virginia-united-states-hybrid-fully-remote",
+    "seedScore": 83,
+    "seedNotes": [
+      "source weight +18",
+      "remote-friendly +15",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Virginia Tech Tech Slice"
+  },
+  {
+    "type": "need",
+    "title": "End User Support Specialist",
+    "category": "IT & Support",
+    "companyName": "Virginia Tech",
+    "companyWebsite": "https://www.vt.edu/",
+    "locationState": "Virginia",
+    "locationRegion": "Southwest Virginia",
+    "locationCity": "Blacksburg",
+    "compensation": "$48,000 - $52,000",
+    "description": "Serve as a technical expert and administrative IT support helping to create a strong information technology foundation for the President, Executive Vice President and Chief Operating Officer, and Executive VP and Provost senior management areas. Provides technical support including installing, maintaining, troubleshooting, and upgrading desktops, laptops, printers, peripherals, mobile devices and projection computer hardware and software, for supported offices. Assists with designing automated computer installation processes to reduce install times. Performs troubleshooting efforts for major hardware or software problems and works with vendors to return defective products for service. Provides polite, professional, courteous customer service to users. Responds to user needs via phone calls, tickets, and emails. Deals with confidential and sensitive information in an appropriate manner and in accordance with university policies and procedures. In addition, the End User Support Specialist gathers and manages information needed for maintenance of departmental system documentation and inventory databases. Performs other IT related work as assigned. Required Qualifications: A bachelor’s degree in Business Information Technology, Computer Science or a related field or related equivalent experience Experience with computer system administration tools such as BigFix, Microsoft Intune, Microsoft SCCM, etc",
+    "contact": "https://jobs.apply.vt.edu/jobs/end-user-support-specialist-blacksburg-virginia-united-states",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.apply.vt.edu/jobs/end-user-support-specialist-blacksburg-virginia-united-states",
+    "seedScore": 68,
+    "seedNotes": [
+      "source weight +18",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Virginia Tech Tech Slice"
+  },
+  {
+    "type": "need",
+    "title": "Research Software Engineer, AI/ML",
+    "category": "Data & AI",
+    "companyName": "Virginia Tech",
+    "companyWebsite": "https://www.vt.edu/",
+    "locationState": "Virginia",
+    "locationRegion": "Southwest Virginia",
+    "locationCity": "Blacksburg",
+    "compensation": "$110,000 - $130,000",
+    "description": "Please note: Sponsorship is not available for this position. This is a hybrid position that will require onsite work each week. Required Qualifications: Master's degree in Computer Science, Computer Engineering, or closely related field required, or bachelor's degree and extensive, progressive experience Demonstrated experience deploying and managing Large Language Models in production environments Demonstrated experience with machine learning frameworks such as PyTorch or Transformers for model development and deployment Demonstrated experience with GPU computing in high-performance computing environments Demonstrated professional experience with Linux system administration Preferred Qualifications: Experience with containerization technologies for scalable ML workload deployment Experience designing and developing RESTful APIs or web services for AI/ML tools and platforms Experience with LLM inference serving frameworks such as vLLM, SGLang, or llama.cpp for high-throughput, low-latency model deployment Experience with CI/CD pipelines using git or similar version control workflows for automated testing and deployment Experience with observability and monitoring tools (Grafana, Prometheus) for production systems Overtime Status Exempt: Not eligible for overtime Appointment Type Regular",
+    "contact": "https://jobs.apply.vt.edu/jobs/research-software-engineer-ai-ml-blacksburg-virginia-united-states-hybrid",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.apply.vt.edu/jobs/research-software-engineer-ai-ml-blacksburg-virginia-united-states-hybrid",
+    "seedScore": 68,
+    "seedNotes": [
+      "source weight +18",
+      "category match +20 (Data & AI)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Virginia Tech Tech Slice"
+  },
+  {
+    "type": "need",
+    "title": "Enterprise Web Application Developer",
+    "category": "Software & Dev",
+    "companyName": "Virginia Tech",
+    "companyWebsite": "https://www.vt.edu/",
+    "locationState": "Virginia",
+    "locationRegion": "Southwest Virginia",
+    "locationCity": "Blacksburg",
+    "compensation": "$75,000–$85,000,",
+    "description": "The position requires developing a deep understanding of the web based Mobile Integrated Data Acquisition System (MIDAS) and how it integrates with other elements of the NFI program. You will collaborate with both technical and non technical team members to troubleshoot system issues, improve long standing enterprise components, and implement solutions that ensure reliability, usability, and long term sustainability across the NFI system. Required Qualifications: A bachelor’s degree in a computing related field such as Computer Science, Computer Engineering, Information Technology, Software Engineering, or Web Development. The successful candidate will demonstrate technical proficiency needed to maintain and enhance the MIDAS enterprise web application, including Core Enterprise Development Skills • Proficiency in Java, including writing, maintaining, and troubleshooting production level code • Experience with J2EE/enterprise Java, such as servlets, enterprise components, and server-side Java applications • Web development experience including HTML, CSS, JavaScript, and JSP based interfaces • Experience creating, maintaining, or refactoring Jakarta Server Pages (JSP) Architecture & System Integration • Understanding of enterprise web application architecture, including front end to Java based back-end integration • Familiarity with enterprise application servers, such as JBoss • Ability to diagnose and troubleshoot full web stack issues, from interface to server components",
+    "contact": "https://jobs.apply.vt.edu/jobs/enterprise-web-application-developer-blackstone-virginia-united-states-blacksburg",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.apply.vt.edu/jobs/enterprise-web-application-developer-blackstone-virginia-united-states-blacksburg",
+    "seedScore": 68,
+    "seedNotes": [
+      "source weight +18",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Virginia Tech Tech Slice"
+  }
+]

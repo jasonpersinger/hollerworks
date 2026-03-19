@@ -1,0 +1,90 @@
+{
+  "sources": [
+    {
+      "name": "Fleetio Birmingham Slice",
+      "type": "greenhouse",
+      "boardToken": "fleetio",
+      "companyName": "Fleetio",
+      "companyWebsite": "https://www.fleetio.com",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "allowedLocationPatterns": [
+        "Remote",
+        "Remote - USA",
+        "Remote - USA, CAN, MEX",
+        "Birmingham, AL"
+      ],
+      "locationRules": [
+        {
+          "match": "Remote",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham-based company"
+        },
+        {
+          "match": "Remote - USA",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham-based company"
+        },
+        {
+          "match": "Remote - USA, CAN, MEX",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham-based company"
+        },
+        {
+          "match": "Birmingham, AL",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Birmingham"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "software",
+        "analytics",
+        "automation",
+        "product",
+        "platform",
+        "technical",
+        "data",
+        "security",
+        "devops",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "customer success engineer",
+        "technical account",
+        "implementation",
+        "systems administrator",
+        "support engineer",
+        "application analyst",
+        "project manager",
+        "scrum",
+        "seo",
+        "growth",
+        "lifecycle",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "account executive",
+        "sales development representative",
+        "business development representative",
+        "field marketing",
+        "brand marketing",
+        "competitive intelligence",
+        "onboarding manager",
+        "public sector",
+        "head of"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+<h2>Salamander footer — color approaches</h2>
+<p class="subtitle">Each row shows a different palette applied to the same logo. Pick the vibe you want.</p>
+
+<style>
+  .footer-strip {
+    background: #0e0e0e;
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    padding: 18px 28px 10px;
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    margin-bottom: 6px;
+    overflow: hidden;
+  }
+  .footer-strip img {
+    width: 48px;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+  }
+  .sal { display: flex; flex-direction: column; align-items: center; }
+  .sal img { margin-bottom: -2px; }
+
+  /* A — brand palette only */
+  .a1 { filter: none; } /* original rust */
+  .a2 { filter: brightness(0) saturate(100%) invert(28%) sepia(18%) saturate(600%) hue-rotate(10deg) brightness(0.7); } /* dark brown */
+  .a3 { filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) brightness(0.9); } /* gray */
+  .a4 { filter: brightness(0) saturate(100%) invert(45%) sepia(22%) saturate(500%) hue-rotate(15deg) brightness(0.85); } /* mid brown */
+  .a5 { filter: brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(0%) brightness(0.85); } /* light gray */
+
+  /* B — earthy appalachian */
+  .b1 { filter: brightness(0) saturate(100%) invert(55%) sepia(60%) saturate(400%) hue-rotate(60deg) brightness(0.75); } /* mossy green */
+  .b2 { filter: none; } /* rust */
+  .b3 { filter: brightness(0) saturate(100%) invert(50%) sepia(40%) saturate(500%) hue-rotate(30deg) brightness(0.8); } /* amber/ochre */
+  .b4 { filter: brightness(0) saturate(100%) invert(40%) sepia(25%) saturate(600%) hue-rotate(80deg) brightness(0.65); } /* deep forest */
+  .b5 { filter: brightness(0) saturate(100%) invert(35%) sepia(18%) saturate(400%) hue-rotate(15deg) brightness(0.7); } /* dark earth */
+
+  /* C — rust monochrome fade */
+  .c1 { filter: brightness(1.2) saturate(1.2); }
+  .c2 { filter: brightness(0.9) saturate(0.9); }
+  .c3 { filter: brightness(0.7) saturate(0.7); }
+  .c4 { filter: brightness(0.5) saturate(0.5); }
+  .c5 { filter: brightness(0.3) saturate(0.3); }
+
+  .palette-label {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-left: 4px;
+  }
+  .palette-desc {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: #555;
+    margin-top: 6px;
+    padding-left: 4px;
+  }
+  .option .content { padding: 12px 0 4px; }
+</style>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Brand palette</h3>
+      <p>Rust, browns, grays — strictly on-brand</p>
+      <div class="footer-strip">
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="a1" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="a2" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="a3" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="a4" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="a5" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Appalachian earthy</h3>
+      <p>Mossy greens, amber, rust, deep forest — regional nature palette</p>
+      <div class="footer-strip">
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="b1" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="b2" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="b3" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="b4" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="b5" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Rust fade</h3>
+      <p>All rust, but fading from bright to almost-black — subtle, elegant</p>
+      <div class="footer-strip">
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="c1" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="c2" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="c3" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="c4" alt=""></div>
+        <div class="sal"><img src="https://hollerworks.netlify.app/assets/logo.png" class="c5" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+</div>

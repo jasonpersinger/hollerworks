@@ -1,0 +1,117 @@
+[
+  {
+    "type": "need",
+    "title": "Software Engineers–Hardware Emulation (Associate, Experienced, Senior)",
+    "category": "Software & Dev",
+    "companyName": "Boeing",
+    "companyWebsite": "https://www.boeing.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$160,650 - $217,350",
+    "description": "Job Description At Boeing, we innovate and collaborate to make the world a better place. We’re committed to fostering an environment for every teammate that’s welcoming, respectful and inclusive, with great opportunity for professional growth. Find your future with us. The Boeing Company is seeking Software Engineers (Associate, Experienced, Senior) in Huntsville, AL to join the Patriot Advanced Capability 3 (PAC-3) team and Advanced Design and Prototype Solutions (ADaPS) organization in Huntsville, AL supporting development of test equipment software, hardware/software integration activities, and validation testing of the PAC-3 seeker. The position is part of the Boeing Defense, Space & Security (BDS) business organization. Join Us. Build the Future. The PAC-3 is designed to intercept tactical, short- and medium-range ballistic missiles, cruise missiles, and air-breathing threats. The software engineer will join a team developing and testing . complex test equipment for the PAC-3 capacity, development, and production programs. This role will have emphasis on understanding and enhancing testing of the next generation missile defense. The work entails requirements development, software development, integration with hardware, test development, execution, and troubleshooting production issues. ADaPS (an organization of over 100 software engineers) supports programs across the entire portfolio of Boeing products including Space Launch System (SLS), Integrated Air Missile Defense efforts including PAC-3, and a variety of weapons, aircraft, and space programs across the Boeing Enterprise.",
+    "contact": "https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS/job/USA---Huntsville-AL/Software-Engineers-Hardware-Emulation--Associate--Experienced--Senior-_JR2026497732-3/apply",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.boeing.com/job/huntsville/software-engineers-hardware-emulation-associate-experienced-senior/185/92068848576",
+    "seedScore": 64,
+    "seedNotes": [
+      "source weight +14",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Boeing Huntsville Software"
+  },
+  {
+    "type": "need",
+    "title": "Entry-Level Systems Engineer",
+    "category": "Other Tech-Adjacent",
+    "companyName": "Boeing",
+    "companyWebsite": "https://www.boeing.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$73,950 - $100,050",
+    "description": "On the Command, Control, Battle Management, and Communications (C2BMC) National Team , you’ll help evolve the integrating element that links sensors and weapons and synchronizes operations to deliver a layered defense across all phases of flight. Our teams are currently hiring a broad range of Entry-Level Systems Engineers in the following disciplines Systems Architecture, Requirements and Interfaces Systems Integration, Verification, & Validation Modeling and Simulation Position Responsibilities Depending on your assignment, you will contribute across mission assessment, architecture, requirements, Model-based Systems Engineering (MBSE), integration, and test – often with direct collaboration across Boeing, industry partners, and government stakeholders. Help define and evolve the MDA/C2BMC system architecture Develop and maintain requirements and architecture artifacts (including interface definitions) to support missile defense capabilities Support architecture and requirements trade studies to recommend options that improve mission performance, cost/schedule, and technical feasibility Support improving the requirements management engine: planning, organizing, implementing, and monitoring of requirements processes and tools (including traceability, change control, and quality) Support program-level risks/issues/opportunities tracking and technology readiness assessments as they relate to architecture and requirements decisions",
+    "contact": "https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS/job/USA---Huntsville-AL/Entry-Level-Systems-Engineer_JR2026498620-1/apply",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.boeing.com/job/huntsville/entry-level-systems-engineer/185/92218285344",
+    "seedScore": 59,
+    "seedNotes": [
+      "source weight +14",
+      "remote-friendly +15",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Boeing Huntsville Software"
+  },
+  {
+    "type": "need",
+    "title": "Associate Systems Engineer",
+    "category": "Other Tech-Adjacent",
+    "companyName": "Boeing",
+    "companyWebsite": "https://www.boeing.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$91,800 - $124,200",
+    "description": "On the Command, Control, Battle Management, and Communications (C2BMC) National Team , you’ll help evolve the integrating element that links sensors and weapons and synchronizes operations to deliver a layered defense across all phases of flight. Our teams are currently hiring a broad range of Associate Systems Engineers in the following disciplines Systems Architecture, Requirements and Interfaces Systems Integration, Verification, & Validation Modeling and Simulation Position Responsibilities Depending on your assignment, you will contribute across mission assessment, architecture, requirements, Model-based Systems Engineering (MBSE), integration, and test – often with direct collaboration across Boeing, industry partners, and government stakeholders. Help define and evolve the MDA/C2BMC system architecture. Develop and maintain requirements and architecture artifacts (including interface definitions) to support missile defense capabilities. Run and support architecture and requirements trade studies to recommend options that improve mission performance, cost/schedule, and technical feasibility. Own and improve the requirements management engine: planning, organizing, implementing, and monitoring of requirements processes and tools (including traceability, change control, and quality). Support program-level risks/issues/opportunities tracking and technology readiness assessments as they relate to architecture and requirements decisions.",
+    "contact": "https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS/job/USA---Huntsville-AL/Associate-Systems-Engineer_JR2026498638-1/apply",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.boeing.com/job/huntsville/associate-systems-engineer/185/92218285520",
+    "seedScore": 59,
+    "seedNotes": [
+      "source weight +14",
+      "remote-friendly +15",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Boeing Huntsville Software"
+  },
+  {
+    "type": "need",
+    "title": "Systems Engineer (Senior or Principal)",
+    "category": "Other Tech-Adjacent",
+    "companyName": "Boeing",
+    "companyWebsite": "https://www.boeing.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$197,200 - $266,800",
+    "description": "Job Description At Boeing, we innovate and collaborate to make the world a better place. We’re committed to fostering an environment for every teammate that’s welcoming, respectful and inclusive, with great opportunity for professional growth. Find your future with us. Lead the engineering that makes missile defense real. Boeing’s Phantom Works Missile Defense National Teams are hiring Systems Engineers to work Huntsville, AL at the intersection of mission outcomes, architecture, analysis, integration, and test. On the Boeing-led Systems Engineering and Integration (SE&I) National Team , you’ll help the Missile Defense Agency (MDA) shape system-level concepts, architectures, requirements, and assessments that drive incremental upgrades to America’s Missile Defense System. On the Command, Control, Battle Management, and Communications (C2BMC) National Team , you’ll help evolve the integrating element that links sensors and weapons and synchronizes operations to deliver a layered defense across all phases of flight. Our teams are currently hiring a broad range of Senior (Level 5-6) Systems Engineers in the following disciplines Systems Architecture, Requirements and Interfaces Systems Integration, Verification, & Validation Modeling and Simulation Position Responsibilities Depending on your assignment, you will contribute across mission assessment, architecture, requirements, Model-based Systems Engineering (MBSE), integration, and test – often with direct collaboration across Boeing, industry partners, and government stakeholders.",
+    "contact": "https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS/job/USA---Huntsville-AL/Systems-Engineer--Senior-or-Principal-_JR2026498661-1/apply",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.boeing.com/job/huntsville/systems-engineer-senior-or-principal/185/92218285728",
+    "seedScore": 59,
+    "seedNotes": [
+      "source weight +14",
+      "remote-friendly +15",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Boeing Huntsville Software"
+  },
+  {
+    "type": "need",
+    "title": "Systems Engineer (Experienced or Lead)",
+    "category": "Other Tech-Adjacent",
+    "companyName": "Boeing",
+    "companyWebsite": "https://www.boeing.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$136,850 - $185,150",
+    "description": "Job Description At Boeing, we innovate and collaborate to make the world a better place. We’re committed to fostering an environment for every teammate that’s welcoming, respectful and inclusive, with great opportunity for professional growth. Find your future with us. Build the system-of-systems that protects the homeland. Boeing’s Phantom Works Missile Defense National Teams are hiring Systems Engineers to work at Huntsville, AL at the intersection of mission outcomes, architecture, analysis, integration, and test. On the Boeing-led Systems Engineering and Integration (SE&I) National Team , you’ll help the Missile Defense Agency (MDA) shape system-level concepts, architectures, requirements, and assessments that drive incremental upgrades to America’s Missile Defense System. On the Command, Control, Battle Management, and Communications (C2BMC) National Team , you’ll help evolve the integrating element that links sensors and weapons and synchronizes operations to deliver a layered defense across all phases of flight. Our teams are currently hiring a broad range of Experienced and Lead Systems Engineers in the following disciplines Systems Architecture, Requirements and Interfaces Systems Integration, Verification, & Validation Modeling and Simulation Position Responsibilities Depending on your assignment, you will contribute across mission assessment, architecture, requirements, Model-based Systems Engineering (MBSE), integration, and test – often with direct collaboration across Boeing, industry partners, and government stakeholders.",
+    "contact": "https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS/job/USA---Huntsville-AL/Systems-Engineer--Experienced-or-Lead-_JR2026498658-2/apply",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.boeing.com/job/huntsville/systems-engineer-experienced-or-lead/185/92218285648",
+    "seedScore": 59,
+    "seedNotes": [
+      "source weight +14",
+      "remote-friendly +15",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Boeing Huntsville Software"
+  }
+]

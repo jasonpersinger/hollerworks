@@ -1,0 +1,73 @@
+[
+  {
+    "type": "need",
+    "title": "Customer Success Analyst",
+    "category": "Sales & Customer Success",
+    "companyName": "Radiance Technologies",
+    "companyWebsite": "https://www.radiancetech.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$75,000 - $110,000",
+    "description": "Collaborate with product teams to improve features based on user data and refine internal customer success workflows. Required Qualifications: Bachelor’s degree in data analytics, business administration, marketing, or related fields Ability to analyze customer data, track metrics (e.g., churn rate, usage statistics), and provide actionable insights. Strong communication, problem-solving, and relationship-building skills are critical for managing client relationships and reducing churn US Citizenship Must have or be able to obtain a Top Secret Clearence Desired Qualifications Previous experience in a client-facing role, such as customer success, consulting, or account management Familiarity with CRM systems (EspoCRM), project management tools, or data visualization software (e.g., SQL, Excel). Certifications : Certified Customer Success Management Professional (CCSMP)",
+    "contact": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Beavercreek-OH/Customer-Success-Analyst_HR102047",
+    "remoteFriendly": true,
+    "sourceUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External/job/Beavercreek-OH/Customer-Success-Analyst_HR102047",
+    "seedScore": 79,
+    "seedNotes": [
+      "source weight +14",
+      "remote-friendly +15",
+      "category match +20 (Sales & Customer Success)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radiance Huntsville Tech Adjacent"
+  },
+  {
+    "type": "need",
+    "title": "Customer Success Engineer",
+    "category": "Sales & Customer Success",
+    "companyName": "Radiance Technologies",
+    "companyWebsite": "https://www.radiancetech.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$90,000 - $125,000",
+    "description": "Salary Range: $90,000 - $125,000 Radiance is looking for a customer success engineer to act as a technical partner for customers, ensuring successful product implementation, adoption, and troubleshooting to maximize value. Someone who can blend customer service with technical expertise to manage onboarding, resolve technical issues, provide training, and act as a bridge between users and internal engineering teams. Primary Duties Diagnose complex technical issues and act as an escalation point for support teams. Educate customers on best practices, new features, and optimization strategies. Act as the voice of the customer, relaying feedback to product and engineering teams to improve the user experience. Build strong, trust-based relationships with clients to drive long-term loyalty and satisfaction Typical daily activities would include Conducting product demos for users or stakeholders. Analyzing logs to troubleshoot API failures. Meeting with customers to review usage data and success metrics. Documenting product bugs and feature requests for developers Required Qualification s 3-5&#43; years of experience in technical support, sales engineering, or account management role Bachelor’s degree in computer science, information technology, engineering, or related technical field Ability to explain complex technical concepts to non-technical stakeholders, strong active listening, and relationship-building skills.",
+    "contact": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Beavercreek-OH/Customer-Success-Engineer_HR102050",
+    "remoteFriendly": true,
+    "sourceUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External/job/Beavercreek-OH/Customer-Success-Engineer_HR102050",
+    "seedScore": 79,
+    "seedNotes": [
+      "source weight +14",
+      "remote-friendly +15",
+      "category match +20 (Sales & Customer Success)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radiance Huntsville Tech Adjacent"
+  },
+  {
+    "type": "need",
+    "title": "Solutions Engineer",
+    "category": "Sales & Customer Success",
+    "companyName": "Radiance Technologies",
+    "companyWebsite": "https://www.radiancetech.com/",
+    "locationState": "Alabama",
+    "locationRegion": "Northern Alabama",
+    "locationCity": "Huntsville",
+    "compensation": "$125,000 - $175,000",
+    "description": "Bridge the gap between customers and internal development teams by feeding user requirements and technical feedback back to developers. Required Qualifications: 5&#43; years of experience in customer-facing, pre-sales, or technical implementation role Bachelor’s degree in computer science, information technology, engineering, or related technical field Strong knowledge of software, APIs, integrations, and network systems Ability to explain complex technical concepts to non-technical stakeholders US Citizenship Must have or be able to obtain a Top Secret Clearence Desired Qualifications Previous project development and leadership positions Proficiency using REST APIs, data structures, and a strong understanding of system architecture Basic programming/scripting knowledge to customize demos and perform troubleshooting Understanding of the SaaS sales cycle and value-based selling Experience delivering technical demos",
+    "contact": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Beavercreek-OH/Solutions-Engineer_HR102052",
+    "remoteFriendly": false,
+    "sourceUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External/job/Beavercreek-OH/Solutions-Engineer_HR102052",
+    "seedScore": 64,
+    "seedNotes": [
+      "source weight +14",
+      "category match +20 (Sales & Customer Success)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radiance Huntsville Tech Adjacent"
+  }
+]

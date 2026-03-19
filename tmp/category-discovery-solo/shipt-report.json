@@ -1,0 +1,132 @@
+{
+  "generatedAt": "2026-03-18T20:40:55.837Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/shipt-birmingham.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/shipt.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/shipt-report.json",
+  "rawCount": 16,
+  "outputCount": 6,
+  "sources": [
+    {
+      "name": "Shipt Birmingham",
+      "type": "workday",
+      "rawJobs": 16,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Staff Application Security Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 79,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Principal Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 79,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 79,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Product Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 84,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Product Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 84,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Engineering Manager – Fullstack Mobile",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 84,
+      "category": "Software & Dev"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Program Manager, Privacy, Cybersecurity, and AI Governance",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"CA San Francisco | Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior FP&A Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Compensation is required.",
+      "score": 79
+    },
+    {
+      "title": "Senior Manager, Marketing Performance",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 84
+    },
+    {
+      "title": "Senior FP&A Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 79
+    },
+    {
+      "title": "Associate Corporate Counsel, Employment",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"CA San Francisco\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Retail Media Analyst",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 84
+    },
+    {
+      "title": "Director of Engineering",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Workforce Management",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Corporate Counsel, Privacy & AI",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

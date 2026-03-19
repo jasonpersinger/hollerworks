@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "name": "Aurora Innovation Pittsburgh",
+      "type": "greenhouse",
+      "boardToken": "aurorainnovation",
+      "companyName": "Aurora",
+      "companyWebsite": "https://aurora.tech",
+      "sourceWeight": 20,
+      "maxAccepted": 20,
+      "allowedLocationPatterns": [
+        "Pittsburgh, Pennsylvania"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, Pennsylvania",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "software",
+        "machine learning",
+        "it",
+        "security",
+        "systems",
+        "cloud",
+        "product",
+        "design",
+        "program manager",
+        "technical program manager",
+        "scrum",
+        "agile",
+        "technical writer",
+        "documentation",
+        "analyst"
+      ],
+      "excludeKeywords": [
+        "people team",
+        "remote assist specialist",
+        "public affairs",
+        "executive assistant",
+        "filmmaker"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1378 @@
+{
+  "generatedAt": "2026-03-18T20:40:44.968Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/aurora-innovation-pittsburgh.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/aurora.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/aurora-report.json",
+  "rawCount": 194,
+  "outputCount": 10,
+  "sources": [
+    {
+      "name": "Aurora Innovation Pittsburgh",
+      "type": "greenhouse",
+      "rawJobs": 194,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Cadence PCB Librarian",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Embedded Software Engineer, Vehicle Controls",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Engineer II, Manufacturing Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Hardware Technician",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Technical Writing & Docs"
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Machine Learning Engineering TL, Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Program Manager, Development Testing Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Quality Engineer II",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Security Engineering Technical Lead Manager (TLM)- Aurora Enterprise Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Cloud Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Senior Fullstack Software Engineer, Map Creation Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Manager, Technical Services & IT Support",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "IT & Support"
+    },
+    {
+      "title": "Senior Product Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Software Engineer, Autonomy Simulation Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineer - Compute",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineering Manager - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Staff TLM, Performance Engineering & Optimization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Systems Test Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Senior Technical Program Manager, OEM Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Training Program Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Service Engineering Technician",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Autonomy Controls",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Functional Architecture",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer I - Data Platform",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer II, Controls Data & Simulation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer II, Test Drive",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Map Orchestration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Mapping",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, MLDE Labels Platform",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer, Vehicle Platform Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Client Platform Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Staff Functional Safety Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 50,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Staff Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Staff Safety Systems Engineer, Fleet Services",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 65,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer - Autonomy Frameworks",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer - Onboard Runtime",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer, Platform Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Staff Software Engineer - Vehicle Data Management",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Supplier Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Staff Technical Program Manager, Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Staff Technical Program Manager, Vehicle Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Strategic Account Executive",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Systems and Safety Engineer, Autonomy Sensing",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 50,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "System Test Engineer, Sensing Subsystem Test",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 70,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Tech Lead- Fleet Intelligence",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Technical Lead Engineering Manager, Autonomy Integration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Training & Development Operations Specialist (LMS Admin)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "score": 85,
+      "category": "Data & AI"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "3D Technical Director",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Behavior Planning Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Cadence PCB Librarian",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Bozeman, Montana\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Cadence PCB Librarian",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electrical Engineer II",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Executive Assistant",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Executive Assistant",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -110 below threshold 35.",
+      "score": -110
+    },
+    {
+      "title": "Fleet Operations Technician I",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "FP&A Analyst (Procurement & Systems)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Graphics Pipeline Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Hardware Engineering Intern, LiDar (MS or PhD)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Identity Access Management Architect",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Join Aurora's CDL Truck Driver Community!",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Midland, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machine Learning Engineering TL, Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machine Learning Engineer, Models and Validation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Command Center Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, HIL Platform Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Public Affairs & Policy Campaigns",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -95 below threshold 35.",
+      "score": -95
+    },
+    {
+      "title": "Principal, People Business Partner",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -30 below threshold 35.",
+      "score": -30
+    },
+    {
+      "title": "Principal, People Business Partner",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -10 below threshold 35.",
+      "score": -10
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Talent Management & Workforce Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Operations Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager, People Team",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -15 below threshold 35.",
+      "score": -15
+    },
+    {
+      "title": "Program Manager, People Team",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager, People Team",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Quality Engineer II",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Remote Assist Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -15 below threshold 35.",
+      "score": -15
+    },
+    {
+      "title": "Security Engineering Technical Lead Manager (TLM)- Aurora Enterprise Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Security Engineering Technical Lead Manager (TLM)- Aurora Enterprise Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Brand Marketing Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Business Analyst, Workforce Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Cloud Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Cloud Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Commercial & Operations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Electrical Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Fullstack Software Engineer, Map Creation Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Hardware Validation Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Incident Commander",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, People Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -110 below threshold 35.",
+      "score": -110
+    },
+    {
+      "title": "Senior Manager, People Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, People Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Technical Services & IT Support",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Technical Services & IT Support",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Mechanical Design Engineer - Sensor Cleaning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior NPI Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Bozeman, Montana\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Photonics Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Security Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer - Compute",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineering Manager - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineering Manager - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Localization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Rendering and Sensor Simulation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Visualization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Tech Lead - Dispatching & Partner Integrations",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff TLM, Performance Engineering & Optimization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Staff Vehicle Hardware Verification and Validation Engineer Lead",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager, IT / Enterprise Systems",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager, Software Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager, Software Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Training Program Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Autonomy Controls",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Behavior Simulation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Calibration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I, Visualization",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Map Health and Validation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Louisville, Colorado\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Map Health and Validation",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Mapping",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Mapping",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, MLDE Labels Platform",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer, Planner Architecture",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Filmmaker, Post-production focus",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Score -110 below threshold 35.",
+      "score": -110
+    },
+    {
+      "title": "Staff Client Platform Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Analyst, People Analytics",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Analyst, People Analytics",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Embedded Linux Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Engineer / Architect, Enterprise AI Solutions",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Functional Safety Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Bozeman, Montana\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Global Supply Manager",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff NPI Test Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Opto-Mechanical Designer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer, Aurora Ops Experience",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Safety Systems Engineer, Fleet Services",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Signal Integrity Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Autonomy Frameworks",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Autonomy Frameworks",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Behavior Planning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Calibration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Continuous Learning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Continuous Learning",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Onboard Runtime",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Online Maps",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Platform Infrastructure",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Vehicle Data Management",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Supplier Quality Engineer",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Lead Manager (TLM), IT Systems Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Lead Manager (TLM), IT Systems Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Product & Program Manager - Architecture & Fallback Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Product & Program Manager, Architecture & Fallback Strategy",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Program Manager - HW NPI",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Program Manager, Security",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Technical Program Manager, Vehicle Programs",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Strategic Account Executive",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Detroit, Michigan\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Strategic Account Executive",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Strategic Account Executive",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Seattle, Washington\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Systems and Safety Engineer, Autonomy Sensing",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tactical Development Truck Operator - CDL A",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Houston, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tactical Development Truck Operator- CDL A",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tech Lead- Fleet Intelligence",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Lead Engineering Manager, Autonomy Integration",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Operations Manager - Vehicle Reliability Engineering",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Program Manager - Vehicle Hardware V&V",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Mountain View, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Training & Development Operations Specialist (LMS Admin)",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Dallas, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations & Maintenance Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Midland, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations & Maintenance Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Laredo, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Phoenix, Arizona\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Midland, Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Truck Operations Specialist",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 70
+    },
+    {
+      "title": "Vehicle Operations Lead",
+      "companyName": "Aurora",
+      "sourceName": "Aurora Innovation Pittsburgh",
+      "reason": "Location \"Palmer, Texas\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

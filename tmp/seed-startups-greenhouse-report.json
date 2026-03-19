@@ -1,0 +1,208 @@
+{
+  "generatedAt": "2026-03-17T14:33:14.136Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.startups-greenhouse-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-startups-greenhouse.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-startups-greenhouse-report.json",
+  "rawCount": 26,
+  "outputCount": 1,
+  "sources": [
+    {
+      "name": "BlastPoint Pittsburgh",
+      "type": "greenhouse",
+      "rawJobs": 3,
+      "ok": true
+    },
+    {
+      "name": "Gather AI Pittsburgh",
+      "type": "greenhouse",
+      "rawJobs": 23,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "DevOps Manager",
+      "companyName": "BlastPoint",
+      "sourceName": "BlastPoint Pittsburgh",
+      "score": 82,
+      "category": "DevOps & Cloud"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Senior Data Engineer",
+      "companyName": "BlastPoint",
+      "sourceName": "BlastPoint Pittsburgh",
+      "reason": "Score -18 below threshold 35.",
+      "score": -18
+    },
+    {
+      "title": "VP of Engineering",
+      "companyName": "BlastPoint",
+      "sourceName": "BlastPoint Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -38
+    },
+    {
+      "title": "Accounting Manager",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -36
+    },
+    {
+      "title": "Director of Cloud Engineering",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Hyderabad; Open to Remote (India)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Machine Learning",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -1
+    },
+    {
+      "title": "Distributed Systems Architect",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Remote, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Hardware / Software QA Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 79
+    },
+    {
+      "title": "Implementation Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Market Development Representative",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mobile Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 64
+    },
+    {
+      "title": "Physical AI Channel Manager",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Remote - United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Platform Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -1
+    },
+    {
+      "title": "Principal Machine Learning Scientist",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -1
+    },
+    {
+      "title": "Principal Robotics Systems Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Robotics Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Senior Engineer, iOS",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Hyderabad, Telangana, India; Open to Remote (India)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Machine Learning Engineer (Ops)",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Hyderabad, Telangana, India; Open to Remote (India)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior QA Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"India - Hyderabad\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Solutions Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Remote - United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Database Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Hyderabad, Telangana, India; Open to Remote (India)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Robotics Engineer - Perception",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Staff Robotics Engineer - State Estimation",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Staff Systems Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Strategic Finance Manager",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Engineer",
+      "companyName": "Gather AI",
+      "sourceName": "Gather AI Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 79
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "generatedAt": "2026-03-17T16:08:42.946Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.skild-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-skild.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-skild-report.json",
+  "rawCount": 47,
+  "outputCount": 12,
+  "sources": [
+    {
+      "name": "Skild AI Pittsburgh Slice",
+      "type": "greenhouse",
+      "rawJobs": 47,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Deep Learning Manipulation Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 81,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Firmware/ Embedded Systems Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 81,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Machine Learning Engineer, Reinforcement Learning",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Product Security Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Research Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Research Scientist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Robotics Engineer, Manipulation",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Robotics Software Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Software Engineer, Infrastructure",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Software Engineer, AI Inference",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 66,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Software Engineer, AI Training and Infrastructure",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "score": 81,
+      "category": "DevOps & Cloud"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Cinematography Intern (Product Videography & Social Media)",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Computer Vision AI & ML Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Data Collection Operations Supervisor",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Compensation is required.",
+      "score": -34
+    },
+    {
+      "title": "Data Collection Operations Supervisor",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Deployment Operations Specialist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electrical Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Embedded Security Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Full Stack Developer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Hardware Engineer - Bengaluru",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IT Generalist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Lead Industrial Designer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Score -34 below threshold 35.",
+      "score": -34
+    },
+    {
+      "title": "Manufacturing Design Engineer (NPI & Robotics)",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Design Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechatronics Technician",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Physics Simulation Scientist",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "React Native Developer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Research Engineer, Post-training & Deployment",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robotics Engineer, Deployment & Testing - Bengaluru",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robotics Manipulation & Controls Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robotics Technician",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Robot Operator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Robot Operator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Robot Operator - India",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Accountant",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Master Annotator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Simulation Engineer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Social Media Intern",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Animator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Animator",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Animator Intern",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Product Manager - Data Annotation & Labelling",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Program Manager – AI/ML",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technical Program Manager - Data Operations",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "UI/UX Designer",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "UX/UI Designer – Fleet Command & Robot Management",
+      "companyName": "Skild AI",
+      "sourceName": "Skild AI Pittsburgh Slice",
+      "reason": "Location \"San Mateo\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

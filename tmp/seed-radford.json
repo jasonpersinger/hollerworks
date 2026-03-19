@@ -1,0 +1,25 @@
+[
+  {
+    "type": "need",
+    "title": "Manager, System Administrator & Front End Operations",
+    "category": "IT & Support",
+    "companyName": "Radford University",
+    "companyWebsite": "https://www.radford.edu/",
+    "locationState": "Virginia",
+    "locationRegion": "Southwest Virginia",
+    "locationCity": "Radford",
+    "compensation": "$66,700 - $84,000,",
+    "description": "This position will serve as the Asset Works AiM software administrator, billing manager and manager of work control administration. The position is responsible for ensuring the integrity of data within the Facilities Management (AiM) system. Responsibilities include: technical and functional support of the AiM system, development and generation of reports, utilizing BIRT, IBM Cognos, SQL, etc. for requests using available database systems, and daily management of the work control team. These duties include: prioritization of customized workflows, communication with stakeholders, analysis of Facilities billing processes and practices, provide technical solutions that improve departmental effectiveness and efficiency using knowledge and understanding of Facilities & budgetary practices, and a clear understanding of systems capabilities, customer impacts, data relationships, and database table structures. Integration of information between AiM, Banner ERP, and ArcGIS. Review and troubleshoot reports to determine accuracy of data and for proper functionality. Position manages system enhancements and quality standards of AiM, and is responsible for ensuring compliance with relevant State and University policies and procedures. Coordinates all end-user testing as new releases, upgrades or enhancements are implemented, while following University and State guidelines and procedures, research, plan, implement, and thoroughly test and evaluate system modifications, upgrades, and enhancements. The AiM system is used by Facilities Management for customer requests, work order processing, purchase orders, departmental billing and space management. Responsibilities include configuration, maintenance, upgrades, report development and generation, monthly billing as well as other technical and functional support of the AiM system. Participates in strategic planning and data analysis to assist in determining future needs and enhancements and develops workflows for the new ReADY request software and assists with technical support of other IT systems used by Facilities.",
+    "contact": "https://jobs.radford.edu/jobs/manager-system-administrator-front-end-operations-radford-virginia-united-states",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.radford.edu/jobs/manager-system-administrator-front-end-operations-radford-virginia-united-states",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radford Tech Slice"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-03-18T00:37:29.632Z",
+  "sources": {
+    "workdayCount": 13,
+    "dicksCount": 8,
+    "combinedCount": 21,
+    "dedupedCount": 21
+  },
+  "companies": [
+    "Shipt",
+    "Unum",
+    "Dick's Sporting Goods"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "sources": [
+    {
+      "name": "Abridge Pittsburgh Slice",
+      "type": "ashby",
+      "jobBoardName": "Abridge",
+      "companyName": "Abridge",
+      "companyWebsite": "https://www.abridge.com",
+      "sourceWeight": 18,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "PGH Office",
+        "United States - Remote",
+        "Remote - Tier 1",
+        "Remote - Tier 2",
+        "Remote - Tier 3"
+      ],
+      "locationRules": [
+        {
+          "match": "PGH Office",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "United States - Remote",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        },
+        {
+          "match": "Remote - Tier 1",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        },
+        {
+          "match": "Remote - Tier 2",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        },
+        {
+          "match": "Remote - Tier 3",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "machine learning",
+        "product",
+        "design",
+        "security",
+        "data",
+        "sre",
+        "platform",
+        "it",
+        "quality",
+        "technical writer",
+        "documentation",
+        "developer relations",
+        "knowledge base",
+        "help center",
+        "customer success engineer",
+        "technical account",
+        "implementation",
+        "support engineer",
+        "systems administrator",
+        "technical program manager",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "business development",
+        "government affairs",
+        "enterprise development representative",
+        "recruiter",
+        "people operations",
+        "legal",
+        "clinical success director",
+        "implementation director",
+        "director of implementation",
+        "implementation manager",
+        "revenue enablement",
+        "counsel",
+        "finance"
+      ]
+    }
+  ]
+}

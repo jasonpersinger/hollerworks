@@ -1,0 +1,5 @@
+{"type":"server-started","port":63608,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:63608","screen_dir":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/346674-1773341182"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/346674-1773341182/vibe.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/346674-1773341182/salamander-style.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/346674-1773341182/salamander-v2.html"}
+{"type":"server-stopped","reason":"idle timeout"}

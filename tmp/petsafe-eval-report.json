@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-03-18T16:29:38.049Z",
+  "configPath": "/dev/fd/63",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/petsafe-eval.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/petsafe-eval-report.json",
+  "rawCount": 22,
+  "outputCount": 0,
+  "sources": [
+    {
+      "name": "PetSafe Knoxville",
+      "type": "workday",
+      "rawJobs": 22,
+      "ok": true
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "title": "Lead Pet Solutions Technician",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"Columbus, OH-Invisible Fence Brand\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Digital Commerce and Performance & Insights Analyst",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Compensation is required.",
+      "score": 82
+    },
+    {
+      "title": "Payroll/HR Specialist",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 62
+    },
+    {
+      "title": "Email & Campaign Marketing Specialist",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 47
+    },
+    {
+      "title": "National Accounts Manager",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 82
+    },
+    {
+      "title": "Sr National Account Manager (Walmart)",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 62
+    },
+    {
+      "title": "Risk Management Specialist",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 42
+    },
+    {
+      "title": "Sr Engineering Technician",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 62
+    },
+    {
+      "title": "Electronic Technician",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 62
+    },
+    {
+      "title": "Technician",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"Harrisburg, PA-Invisible Fence Brand\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Pet Solutions Technician",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"Minnesota-Invisible Fence Brand\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Data Engineer III",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Compensation is required.",
+      "score": 62
+    },
+    {
+      "title": "Pet Consultant",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"Raleigh, NC-Invisible Fence Brand\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IFB Customer Sales and Support Specialist",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 62
+    },
+    {
+      "title": "Branch Manager",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"Pittsburgh, PA-Invisible Fence Brand\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Pet Consultant",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Brand Manager",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 62
+    },
+    {
+      "title": "Technician",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 47
+    },
+    {
+      "title": "Technician- Knoxville",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 47
+    },
+    {
+      "title": "Pet Solutions Technician",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Technician- Columbus/Dayton Ohio",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"Columbus, OH-Invisible Fence Brand\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Pet Trainer",
+      "companyName": "Radio Systems Corp (PetSafe)",
+      "sourceName": "PetSafe Knoxville",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

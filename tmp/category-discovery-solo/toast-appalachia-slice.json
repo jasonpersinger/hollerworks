@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "name": "Toast Appalachia Slice",
+      "type": "greenhouse",
+      "boardToken": "toast",
+      "companyName": "Toast",
+      "companyWebsite": "https://pos.toasttab.com",
+      "sourceWeight": 10,
+      "maxAccepted": 10,
+      "allowedLocationPatterns": [
+        "Pittsburgh, PA"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "customer success",
+        "customer success engineer",
+        "implementation",
+        "implementation consultant",
+        "support",
+        "analyst",
+        "design",
+        "product",
+        "engineer",
+        "manager",
+        "solutions engineer",
+        "sales engineer",
+        "solutions consultant",
+        "technical account",
+        "customer onboarding",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "content strategist",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "account executive",
+        "territory account executive",
+        "business development representative",
+        "sales development representative"
+      ]
+    }
+  ]
+}

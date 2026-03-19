@@ -1,0 +1,615 @@
+{
+  "generatedAt": "2026-03-18T20:40:44.968Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/duolingo-pittsburgh.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/duolingo.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/duolingo-report.json",
+  "rawCount": 85,
+  "outputCount": 10,
+  "sources": [
+    {
+      "name": "Duolingo Pittsburgh",
+      "type": "greenhouse",
+      "rawJobs": 85,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "AI Research Engineer, New PhD Graduate",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Director of Product Design",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Director of Product Management, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Platform Engineer II",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 83,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Android Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Engineering Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior iOS Software Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 83,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Platform Engineering Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Product Design Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Senior Product Manager, Learning",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Product Manager, Score",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Scaling Operations Program Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Software Engineer, Backend",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Enterprise Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Product Designer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Design & UX"
+    },
+    {
+      "title": "Staff Product Manager, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 68,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Staff Technical Program Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "score": 83,
+      "category": "Product & Project"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "AI Research Engineer, New PhD Graduate",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Assistant Controller",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Business Development and Partnerships Lead, LATAM",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - Mexico City\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Country Marketing Associate",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Beijing, China\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Country Marketing Manager, Turkey",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - Turkey\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Internal Communications",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -27 below threshold 35.",
+      "score": -27
+    },
+    {
+      "title": "Director of Internal Communications",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Learning Design, Language Learning",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "Director of Product Design",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Product Management, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, People Business Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Engineering Director",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Group Product Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Group Product Manager, Duolingo English Test",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Compensation is required.",
+      "score": 68
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Detroit, MI\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of DTC, Commerce",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Duolingo Academy (Leadership Development)",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Duolingo Academy (Leadership Development)",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -32 below threshold 35.",
+      "score": -32
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Chess",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Chess",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Math",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Marketing Manager, Duolingo Math",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Regional Marketing Manager, MENA",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - Dubai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote – Los Angeles, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote – San Francisco, California\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Account Executive",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Android Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Android Engineer, App Builds",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Community Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Community Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Community Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Content Producer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, Creative Marketing",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, Creative Marketing",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Engineering Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Engineering Manager, New Initiatives",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Executive Assistant",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Gameplay Programmer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior iOS Engineer, App Builds",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior iOS Engineer, Application Stability & Performance",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior iOS Software Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Marketing Manager, DET, India",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Remote - India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Beijing, China\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"London, England\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Design Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, In-App Purchases",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Learning",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Score",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Social Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Scaling Operations Program Manager",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Backend",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Chess",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Senior University Recruiter",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    },
+    {
+      "title": "Social Content Creator, Intern",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Scientist, Forecasting in Monetization",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Enterprise Engineer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff iOS Engineer, App Builds",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Designer",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Product Manager, Growth",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Talent Attraction Partner",
+      "companyName": "Duolingo",
+      "sourceName": "Duolingo Pittsburgh",
+      "reason": "Score -12 below threshold 35.",
+      "score": -12
+    }
+  ]
+}

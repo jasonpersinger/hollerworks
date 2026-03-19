@@ -1,0 +1,2217 @@
+{
+  "generatedAt": "2026-03-18T20:40:45.037Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/toast-appalachia-slice.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/toast.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/toast-report.json",
+  "rawCount": 314,
+  "outputCount": 0,
+  "sources": [
+    {
+      "name": "Toast Appalachia Slice",
+      "type": "greenhouse",
+      "rawJobs": 314,
+      "ok": true
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "title": "AI Architect - People Products",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "AI Data Strategist - Customer Success",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Associate Counsel, Privacy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Associate Director, Product Design - Go To Market Experiences",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US-Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bedford, Indiana Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bedford, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Philadelphia, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Houston, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Antonio, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Columbus, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cincinnati, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cleveland, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Miami, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tampa, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Austin, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Orlando, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jersey City, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dallas, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Business Development Representative (Mandarin)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jacksonville, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Houston, TX Strategic Cuisines Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Houston, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Diego, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Mandarin Strategic Cuisines Flex Account Executive - West Coast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bilingual Vietnamese Strategic Cuisines Account Executive- Central",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Texas\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bloomington, Indiana Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bloomington, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Manager, CBG",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Business Development Representative - Retail",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Candidate Experience Specialist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Compliance Manager, Consumer Protection & AI",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Credit Risk Senior Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Customer Care Specialist - xtraChef",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Omaha, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Customer Success Manager II, Payroll",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Customer Success Manager II, SMB - On Demand",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Design Lead, New Ventures",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US-remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Care Analytics",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA, New York, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, FinTech Counsel",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Corporate Engineering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Fintech Compliance",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director of Talent Acquisition Operations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New York, New York\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director - People Operations, Shared Services",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai, TamilNadu, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, Talent Acquisition Operations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "District Manager, SMB- Eastern North Carolina",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Raleigh, NC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "District Manager, SMB - Michigan/Indiana",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Grand Rapids, MI\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Ellettsville, Indiana Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Ellettsville, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Engineering Manager II, Supply Chain",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Equity Analyst -Stock Plan Administrator",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Account Executive, SMB- Mountain West",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Denver, CO\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Account Executive, SMB - Philadelphia, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Philadelphia, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Strategic Cuisine Territory Account Executive (Spanish/Bilingual), South Central, USA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Oklahoma City, OK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Flex Strategic Cuisine Territory Account Executive (Spanish/Bilingual), West Coast, USA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Florida Flex Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Orlando, Florida\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Forward Deployment Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Integration Engineer, People Products",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Jacksonville, FL Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jacksonville, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Las Vegas, NV District Manager, SMB",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Las Vegas, NV\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead, Credit Risk Analytics & AI Enablement",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead Risk Analyst - Commercial Risk Analyst Underwriting",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead Salesforce Developer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Customer Care - Employee Cloud Payroll",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Omaha, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Customer Care (International)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Customer Success - Payroll",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Device Testing and Automation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager II, Software Engineering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Software Engineering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, Solutions Engineering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager, US Payroll Operations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Marketing Manager, SEO & Organic Growth",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Marketing Services Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote,US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "MBA Product Manager Intern",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "NetSuite Administrator",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "North Jersey, NJ Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"North Jersey, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Consultant I, Emerging Markets - Spanish Speaking",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Consultant I, Guest - Emerging Markets - Mandarin Speaking",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Consultant I, POS - Emerging Markets - Mandarin Speaking",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Support Consultant I - Logistics",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Technical Consultant III",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Onboarding Technical Consultant Manager, Mid-Market",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Paid Acquisition Lead, Consumer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA OR San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "PeopleHub Partner",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Omaha, NE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "PeopleHub Partner",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "People Hub Specialist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Performance Creative Strategist & Copywriter, Demand Generation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote- USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Philadelphia, PA Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Philadelphia, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Phoenix, AZ Strategic Cuisines Account Executive - Bilingual Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Phoenix, AZ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Pittsburgh, PA Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Score -70 below threshold 35.",
+      "score": -70
+    },
+    {
+      "title": "Principal - Credit Risk Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US-Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Customer Success Analyst - AI and Advanced Customer Analytics",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Fraud Analyst-Payments & Onboarding (Data Science)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US-Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Product Manager, Agent Platform",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"East Coast, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Product Manager, Enterprise Systems",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Product Manager, Voice AI",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer - Payments, Fraud & Risk",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Software Engineer, Toast IQ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Workday Architect, Benefits & Absence",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal Workday Architect, Talent & Compensation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Principal, Workday PAT Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, United States\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Counsel, Commerce",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Designer, Guest",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Lead, Toast Partner Ecosystem",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Product Manager, Employee Compensation",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Manager - FinTech",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Queens, NY Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Queens, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Retail Account Executive - Augusta GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Augusta GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales District Manager, Retail - New Orleans, LA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Orleans, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales District Manager, Retail - Phoenix, AZ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Phoenix, AZ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Analyst, Investor Relations",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New York City, New York\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Analyst, Model Risk Management",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Associate, Digital Upsell",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote- USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Atlassian Admin",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Backend Engineer - Enterprise Financial Systems",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Compliance Manager, Fintech Banking Products",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Corporate Security Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Corporate Security Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Customer Care Tech Specialist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Analyst, Consumer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Scientist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore , Karnataka , India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Data Scientist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, International Partnerships",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"London, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Director, Software Engineering - Payments, Fraud & Risk",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Full Stack Engineer, Help Center",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Fullstack Engineer, New Ventures",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Hardware Program Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Taipei City, Taiwan\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior HRIS Analyst - Workday - Benefits Module",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior HRIS Analyst - Workday Payroll and Time Tracking Module",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Data Science and Machine Learning",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Disaster Recovery & Business Continuity",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Pricing Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote- USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Revenue Accounting",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Netsuite Developer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bengaluru, Karnataka, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Analyst",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"London, England, United Kingdom\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Designer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote-Canada\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Core Payments",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Hardware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Product Manager, Networking Platform",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Revenue Accountant",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Salesforce Developer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Android",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Costa Mesa, California, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Android",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Android - Retail",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer (Backend), Menus",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer (Backend), Payments",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Care Experience",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, Canada\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer (Frontend), Menus",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"US (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer - Full Stack",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai, TN, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer,Full Stack",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Full Stack - Fintech",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, GTM and AI Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineering Manager, Toast Web Platform and Product Led Growth",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer - Modern Dining",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Retail",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer, Supply Chain",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer- Third Party Ordering",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical Program Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Technical R&D Operations Manager",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote or Hybrid, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Zuora Administrator",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Silver Spring, MD Territory Account Executive",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Silver Spring, MD\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I (Fullstack), Employee Lifecycle Management",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Delivery Services",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer II, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I (Mobile), MyToast",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer I - Timekeeping",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Workday Analyst, HCM",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Data Scientist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff IAM Engineer, Sailpoint",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Boston, MA or Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, AI & Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Android",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer (Android), Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Canada (remote)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Enterprise",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, GTM and AI Strategy",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Guest CRM",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Guest Engagement",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer - Retail Payments",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dublin, Ireland\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Software Engineer, Toast Tables",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, US or Boston, MA (Hybrid)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff System Engineer, Zuora Billing",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Zuora Engineer",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tax Operations Specialist",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Chennai\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Tech TA Partner (Contractor)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Remote - USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive - Cleveland West, OH",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cleveland, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive (Mandarin), Strategic Cuisines -LA North",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Santa Fe, NM\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Clovis, NM\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"ABQ, NM\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - ABQ, NM (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"El Paso, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Allentown, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Allentown, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Austin: San Antonio (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Braunfels, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Austin: San Antonio (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Marcos, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Bellevue, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bellevue, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Bethlehem, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bethlehem, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Binghamton, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Binghamton, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Buffalo, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Buffalo, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Burlington, VT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Burlington, VT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Burlington, VT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Montpelier, VT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Central New England",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Worcester, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Central New England",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Springfield, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Central New England",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Framingham, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Charleston, SC",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Charleston, SC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Charlotte, NC",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Charlotte, NC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Cincinnati, OH",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cincinnati, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Coastal Connecticut",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fairfield, Connecticut\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Colorado Springs, CO",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Colorado Springs, CO\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Columbus, GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Columbus, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Daytona, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Daytona, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Deltona, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Deltona, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Dover, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dover, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Doylestown, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Doylestown, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - East CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Eastern Connecticut\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - East CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Haven, CT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - East Stroudsburg, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"East Stroudsburg, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Greenville, SC",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Greenville, SC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Jackson, MS",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Jackson, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Kansas City, MO",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Kansas City, MO\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lafayette, LA/Beaumont, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lafayette, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lafayette, LA/Beaumont, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Beaumont, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lancaster, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lancaster, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Las Vegas, NV",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Las Vegas, NV\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lewes/Rehoboth Beach, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lewes, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Lititz, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Lititz, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Memphis, TN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Memphis, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Memphis, TN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Memphis, TN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fort Worth, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Dallas, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Irving, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Metro Dallas South (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Arlington, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Middletown, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Middletown, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Minneapolis, MN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Montgomery, AL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Montgomery, AL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Mount Joy, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Mount Joy, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Newark, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Newark, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - New Hope, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"New Hope, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Newton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Newton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - North Atlanta, GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Marietta, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Olympia, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Olympia, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Palm Coast, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Palm Coast, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Reading, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Reading, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Richmond, VA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Richmond, VA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Rochester, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Rochester, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Sanford, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sanford, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Savannah GA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Savannah, GA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Scranton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Scranton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Seaford, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seaford, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Seattle, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Shreveport, LA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Shreveport, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Sioux Falls, SD",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sioux Falls, SD\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Smyrna, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Smyrna, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Southampton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Southampton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - South Texas (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"McAllen, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - South Texas (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Corpus Christi, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - South Texas (Spanish/Bilingual)",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Brownsville, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - St. Augustine, FL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"St. Augustine, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Stockton, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Brentwood, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Livermore, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Atwater, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sacramento, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Modesto, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stockton/Modesto, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tracy, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Stroudsburg, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Stroudsburg, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Tacoma, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tacoma, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Trenton, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Trenton, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Tyler, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Tyler, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - West Reading, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"West Reading, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Wilmington, Delaware",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Wilmington, Delaware\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, Retail - Wyomissing, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Wyomissing, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Baton Rouge, LA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Baton Rouge, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Benicia, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Benicia, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Cleveland, OH",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Cleveland, Ohio\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB- Eugene, OR",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Eugene, OR\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - Fairfield/Bridgeport, CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fairfield, CT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Fort Wayne, IN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Fort Wayne, IN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Greater Philadelphia, PA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Philadelphia, PA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Joliet, IL",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Joliet, IL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Las Vegas, NV",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Las Vegas, NV\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Napa Valley, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Napa Valley, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - Newton, MA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Newton, MA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Oahu, HI",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Oahu, HI\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Olympia, WA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Olympia, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Orange County, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Orange County, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB- Portland, OR",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Portland, OR\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Red Bank, NJ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Red Bank, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Rochester, New York",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Rochester, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Sacramento, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Sacramento, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Salem, OR",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Salem, OR\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Salt Lake City, UT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Salt Lake City, UT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - San Antonio, TX",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Antonio, TX\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - San Francisco, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Toms River, NJ",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Toms River, NJ\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Twin Cities Metro, MN",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"North Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive, SMB - Ventura, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Ventura, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - Waterbury, CT",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Waterbury, CT\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive , SMB - White Plains, NY",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"White Plains, NY\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive (Spanish), Strategic Cuisines -LA Valley",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Account Executive (Spanish), Strategic Cuisines - San Diego, CA",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Diego, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Los Angeles, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Diego, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "West Coast - Inside Strategic Cuisines Account Executive - Spanish",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Seattle, WA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Zuora Admin",
+      "companyName": "Toast",
+      "sourceName": "Toast Appalachia Slice",
+      "reason": "Location \"Bangalore, India\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

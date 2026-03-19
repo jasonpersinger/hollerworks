@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holler.works UI Concepts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --black: #0e0e0e;
+            --rust: #f28927;
+            --brown: #39803e;
+            --gray: #aaaaaa;
+            --lgray: #cccccc;
+        }
+        body {
+            background: var(--black);
+            color: var(--gray);
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 { color: var(--lgray); border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 30px; font-size: 1.2rem; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px; }
+        .concept-card { border: 1px solid #222; padding: 20px; background: #111; position: relative; }
+        .concept-title { color: var(--rust); font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        .concept-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--brown); margin-bottom: 5px; }
+        
+        /* Mockup Elements */
+        .mock-sidebar { width: 180px; border-right: 1px solid #222; padding: 10px; font-size: 12px; }
+        .mock-link { color: var(--gray); margin-bottom: 5px; cursor: pointer; }
+        .mock-link span { color: var(--brown); font-size: 10px; }
+        .mock-post { border-bottom: 1px solid #161616; padding: 10px 0; font-size: 13px; }
+        .mock-title { color: var(--lgray); }
+        .mock-title::before { content: '> '; color: var(--rust); }
+        .mock-badge { font-size: 9px; padding: 1px 4px; border: 1px solid; margin-left: 5px; vertical-align: middle; }
+        .badge-verified { color: var(--brown); border-color: var(--brown); }
+        .badge-region { color: var(--rust); border-color: var(--rust); }
+        
+        .pulse { display: inline-block; width: 6px; height: 6px; background: var(--brown); border-radius: 50%; margin-right: 5px; animation: blink 2s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+
+        .recommendation { position: absolute; top: -10px; right: 20px; background: var(--rust); color: black; font-size: 10px; padding: 2px 8px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HOLLER.WORKS // Proposed UI Enhancements</h1>
+        
+        <div class="grid">
+            <!-- Approach 1 -->
+            <div class="concept-card">
+                <div class="recommendation">RECOMMENDED</div>
+                <div class="concept-label">Approach 1</div>
+                <div class="concept-title"><i class="fa-solid fa-terminal"></i> The Active Terminal</div>
+                <p style="font-size: 12px; margin-bottom: 20px;">Emphasizes that the board is "alive" and curated.</p>
+                
+                <div style="border: 1px solid #333; padding: 10px; background: #0e0e0e;">
+                    <div style="font-size: 10px; color: #666; margin-bottom: 10px; border-bottom: 1px solid #222; padding-bottom: 5px;">
+                        <span class="pulse"></span> SYSTEM_PULSE: OK // LAST_SYNC: 4m_ago
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <div class="mock-sidebar">
+                            <div class="concept-label">Categories</div>
+                            <div class="mock-link">dev <span>(14)</span></div>
+                            <div class="mock-link">design <span>(3)</span></div>
+                            <div class="mock-link">support <span>(8)</span></div>
+                        </div>
+                        <div style="flex: 1;">
+                            <div class="mock-post">
+                                <div class="mock-title">Senior Rust Engineer</div>
+                                <div style="font-size: 10px; color: #555;">Mountain Software // 2h ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach 2 -->
+            <div class="concept-card">
+                <div class="concept-label">Approach 2</div>
+                <div class="concept-title"><i class="fa-solid fa-shield-halved"></i> High-Trust Directory</div>
+                <p style="font-size: 12px; margin-bottom: 20px;">Focuses on the quality and moderation of listings.</p>
+                
+                <div style="border: 1px solid #333; padding: 10px; background: #0e0e0e;">
+                    <div class="mock-post">
+                        <div class="mock-title">Product Designer <span class="mock-badge badge-verified">HUMAN_REVIEWED</span></div>
+                        <div style="font-size: 10px; color: #555;">Asheville Labs // $90k+</div>
+                        <div style="margin-top: 5px;"><a href="#" style="color: var(--rust); font-size: 10px; text-decoration: underline;">[Quick Apply: Direct Email]</a></div>
+                    </div>
+                    <div class="mock-post">
+                        <div class="mock-title">IT Support Lead <span class="mock-badge badge-verified">HUMAN_REVIEWED</span></div>
+                        <div style="font-size: 10px; color: #555;">Harlan Tech // $60k+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach 3 -->
+            <div class="concept-card" style="grid-column: span 2;">
+                <div class="concept-label">Approach 3</div>
+                <div class="concept-title"><i class="fa-solid fa-map-location-dot"></i> Regional Hub</div>
+                <p style="font-size: 12px; margin-bottom: 20px;">Makes discovery by region instantaneous.</p>
+                
+                <div style="border: 1px solid #333; padding: 10px; background: #0e0e0e; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #222; padding: 8px;">
+                        <div>
+                            <span style="color: var(--brown); font-size: 10px;">[WV - MORGANTOWN]</span>
+                            <div class="mock-title" style="display: inline-block; margin-left: 10px;">Full-Stack Developer</div>
+                        </div>
+                        <div style="font-size: 10px;">$100k-$130k</div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #222; padding: 8px;">
+                        <div>
+                            <span style="color: var(--brown); font-size: 10px;">[VA - ROANOKE]</span>
+                            <div class="mock-title" style="display: inline-block; margin-left: 10px;">Cloud Architect</div>
+                        </div>
+                        <div style="font-size: 10px;">$140k+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

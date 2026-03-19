@@ -1,0 +1,71 @@
+[
+  {
+    "type": "need",
+    "title": "Financial Aid IT Business Systems Analyst II",
+    "category": "IT & Support",
+    "companyName": "Appalachian State University",
+    "companyWebsite": "https://www.appstate.edu/",
+    "locationState": "North Carolina",
+    "locationRegion": "High Country",
+    "locationCity": "Boone",
+    "compensation": "$60,000 - $66,072",
+    "description": "Information Primary Purpose The primary purpose of the Office of Student Financial Aid and University Scholarships is to aid students and families in securing the financial resources necessary to attend college. The major activities of this unit include accurately and effectively aiding students, assisting with the completing of required applications, and ensuring students meet eligibility guidelines for various financial aid programs, evaluating all requests for eligibility, and administering all scholarships, grants, loans, and student work programs that are available to students at Appalachian State University. The Office is also responsible for the University’s compliance with federal and state regulations and reporting which are required to maintain our continued funding. The primary purpose of this position is to ensure the Office of Student Financial Aid and University Scholarships has systems and processes in place to effectively manage the reporting, packaging, updating, and communicating of all of the federal, state, institutional, and external funds awarded and received to assist students in paying for college. All processes and systems must remain compliant with Federal, State, NCAA , and Institutional regulations/laws. The purpose is to participate as a member of the critical team that manages the technology needed to ensure financial aid and scholarships can make awards in a streamlined and efficient way, communicate those awards consistently and effectively, and report on funds used to make those awards to help remain in compliance and within University’s budgetary limitations.",
+    "contact": "https://appstate.peopleadmin.com/postings/53524",
+    "remoteFriendly": false,
+    "sourceUrl": "https://appstate.peopleadmin.com/postings/53524",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Appalachian State Atom Slice"
+  },
+  {
+    "type": "need",
+    "title": "Client Services Analyst",
+    "category": "IT & Support",
+    "companyName": "Marshall University",
+    "companyWebsite": "https://www.marshall.edu/",
+    "locationState": "West Virginia",
+    "locationRegion": "Southern WV",
+    "locationCity": "Huntington",
+    "compensation": "$44,918-$58,393",
+    "description": "Must be able to perform all essential job duties as outlined in the job description. Required Qualifications: Education Bachelor’s degree required, preferably in information systems, computer technology or related field. Experience At least 3 years of experience working in client services or a service desk role. Preferred Qualifications: Familiarity with higher education IT environments and challenges. Familiarity with service desk software and ticketing systems. Excellent communication and interpersonal abilities, with an emphasis on customer service. Strong analytical, troubleshooting, and problem-solving skills. Strong documentation and customer service skills; ability to train users with varying levels of technical comfort. Ability to work both independently and collaboratively within a team. Experience in supporting time-sensitive, high-stakes events with professionalism and composure. Experience providing technical support in healthcare simulation, or A/V-integrated environments. Hands-on experience supporting Intellegent Video Systems ( IVS ) and/or Elevate Health LearningSpace (or comparable clinical skills/ OSCE capture platforms). Experience supporting OSCEs, simulation labs, standardized patient programs, or clinical skills curriculum workflows. Familiarity with identity and access management concepts (roles/permissions), video storage/retention practices, and basic networking concepts relevant to A/V systems. (i.e. Echo360, Panopto, Kaltura etc.)",
+    "contact": "https://marshall.peopleadmin.com/postings/31354",
+    "remoteFriendly": false,
+    "sourceUrl": "https://marshall.peopleadmin.com/postings/31354",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Marshall Atom Slice"
+  },
+  {
+    "type": "need",
+    "title": "Grant Program Manager - #T00444",
+    "category": "Product & Project",
+    "companyName": "Western Carolina University",
+    "companyWebsite": "https://www.wcu.edu/",
+    "locationState": "North Carolina",
+    "locationRegion": "Western NC",
+    "locationCity": "Cullowhee",
+    "compensation": "$227 - $7218",
+    "description": "Log In /Create Account Grant Program Manager - #T00444 Bookmark this Posting Print Preview Apply for this Job Please see Special Instructions for more details. Applicants must apply online in order to be considered. This position is supported by external grant funding and is temporary in nature. Continued employment is dependent upon funding availability and the duration of the project. Please include a cover letter, resume, and a list of references (with complete contact information). Qualified applicants will be contacted by the department directly if selected for interview. Posting Details Posting Information Posting Number temp hourly1225P Quick Link for Internal Postings Classification Title Working Title Department School of Engineering & Technology",
+    "contact": "https://jobs.wcu.edu/postings/33285",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.wcu.edu/postings/33285",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (Product & Project)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Western Carolina Tech Slice"
+  }
+]

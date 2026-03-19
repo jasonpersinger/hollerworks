@@ -1,0 +1,80 @@
+[
+  {
+    "type": "need",
+    "title": "Senior Full Stack Engineer, Integrations",
+    "category": "Software & Dev",
+    "companyName": "Abridge",
+    "companyWebsite": "https://www.abridge.com/",
+    "locationState": "Pennsylvania",
+    "locationRegion": "Western PA",
+    "locationCity": "Remote",
+    "locationNotes": "Remote role from Pittsburgh-based company",
+    "compensation": "$210.8K - $248K",
+    "description": "We’re looking for Senior Integrations Engineers to join our growing team! This role is instrumental in supporting our expansion in our hyper growth phase. You’ll play a key role in designing, building, and scaling our integrations powering our product. You’ll work alongside our engineers, implementation specialists, support, and product managers to build real-time and batch data integrations with our partners and clients. WHAT YOU’LL DO: Build robust healthcare integrations without compromising security, privacy, or quality. These integrations will leverage technology standards using REST-like APIs, healthcare standards such as FHIR, and other third-party APIs. Scale up our business by designing, building, and supporting our integrations and infrastructure Collaborate closely with our health system customers to deploy, troubleshoot, and support integrations. Be comfortable engaging with external partners and stakeholders. Enhance existing systems to add new functionality, and to improve performance, stability, quality, and security Advocate for high standards; make quality-of-life improvements to the codebase; add documentation and share knowledge; and help limit the growth of technical debt Build deep user empathy and maintain a user-centric mindset Communicate regularly and effectively within and on behalf of our cross-functional product delivery teams. You’ll work with other disciplines, including design, product, machine learning, and infrastructure, and will have opportunities to learn from and contribute to projects across the company",
+    "contact": "https://jobs.ashbyhq.com/Abridge/7a28a84b-6756-4fe6-8af9-501fc8772a62",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.ashbyhq.com/Abridge/7a28a84b-6756-4fe6-8af9-501fc8772a62",
+    "seedScore": 88,
+    "seedNotes": [
+      "source weight +18",
+      "remote-friendly +15",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15",
+      "remote location text +5"
+    ],
+    "seedSource": "Abridge Pittsburgh Slice"
+  },
+  {
+    "type": "need",
+    "title": "Strategic Partnerships Technical Director",
+    "category": "Software & Dev",
+    "companyName": "Abridge",
+    "companyWebsite": "https://www.abridge.com/",
+    "locationState": "Pennsylvania",
+    "locationRegion": "Western PA",
+    "locationCity": "Remote",
+    "locationNotes": "Remote role from Pittsburgh-based company",
+    "compensation": "$145K - $195K",
+    "description": "This role exists to support Abridge’s continued growth in product capabilities and platform footprint across multiple EHR ecosystems. In this role, you will bring structure, speed, and technical clarity to how Abridge designs and evaluates Epic/EHR workflows. By partnering closely with Product, Engineering, and Implementation teams, you will help ensure integrations feel native, predictable, and high-quality across systems—enabling faster execution, stronger alignment, and sustained trust with health system and EHR partners. WHAT YOU’LL DO: EHR Integration Strategy & Workflow Leadership Partner with Product Managers to define and evolve Abridge’s cross-product integration strategy in Epic and other EHRs. Guide the design of end-to-end workflows into and out of EHR systems, ensuring integrations are intuitive and complete for our clinicians users. Partner with product and clients to develop best practices and build credibility. Serve as the escalation point for complex EHR workflow questions and integration-dependent product decisions, outlining recommendations and tradeoffs. Technical Feasibility & API Guidance Support PMs and Engineering by evaluating EHR APIs, vendor services, and integration mechanisms, advising on feasibility, constraints, and optimal pathways. Help teams anticipate integration risks early, reducing rework, iteration cycles, and downstream delivery delays. Track EHR platform changes, releases, and dependencies to maintain shared clarity on technical constraints and opportunities.",
+    "contact": "https://jobs.ashbyhq.com/Abridge/48d6814f-9393-4a95-947b-bdea9eb101c0",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.ashbyhq.com/Abridge/48d6814f-9393-4a95-947b-bdea9eb101c0",
+    "seedScore": 88,
+    "seedNotes": [
+      "source weight +18",
+      "remote-friendly +15",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15",
+      "remote location text +5"
+    ],
+    "seedSource": "Abridge Pittsburgh Slice"
+  },
+  {
+    "type": "need",
+    "title": "Engineering Manager, Federal",
+    "category": "Software & Dev",
+    "companyName": "Abridge",
+    "companyWebsite": "https://www.abridge.com/",
+    "locationState": "Pennsylvania",
+    "locationRegion": "Western PA",
+    "locationCity": "Remote",
+    "locationNotes": "Remote role from Pittsburgh-based company",
+    "compensation": "$185K - $230K",
+    "description": "Our generative AI-powered products are bringing joy back to the practice of medicine, and we’re looking for an Engineering Manager to lead our team in building Federal government-ready capabilities and features. You’ll guide a group of US-based, full-stack software engineers working on both frontend and backend development, primarily in Typescript, React, NextJS, and Node. Your team will work toward meeting and maintaining a high bar for security and compliance requirements, which are heavily influenced by federal government regulations and requirements. A strong focus on robust architecture, secure deployment, and secure technical operations is a must. WHAT YOU’LL DO: People Management: Recruit, retain, and mentor engineers with full-stack expertise; experience engineering in high sensitivity, federal environments is a huge plus. Provide regular feedback; create opportunities for career growth; and foster a culture of collaboration and excellence. Project Management: Work closely with stakeholders such as product managers and customers to plan, execute, and support multiple projects simultaneously. You will be responsible for the engineering process in the team and the output of the team. Technical Leadership: Help set business context for the team and apply your knowledge of business and software engineering to guide architectural discussions; anticipate and resolve technical challenges; and advocate for technology projects. In close partnership with Abridge's Security Organization, anticipate and resolve technical challenges arising from government regulations and requirements, managing sensitive data, and managing technical operations within the bounds of federal requirements.",
+    "contact": "https://jobs.ashbyhq.com/Abridge/230e3372-a806-4ec8-9767-f46034a4ad4e",
+    "remoteFriendly": true,
+    "sourceUrl": "https://jobs.ashbyhq.com/Abridge/230e3372-a806-4ec8-9767-f46034a4ad4e",
+    "seedScore": 88,
+    "seedNotes": [
+      "source weight +18",
+      "remote-friendly +15",
+      "category match +20 (Software & Dev)",
+      "tech signal +15",
+      "include keyword +15",
+      "remote location text +5"
+    ],
+    "seedSource": "Abridge Pittsburgh Slice"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "sources": [
+    {
+      "name": "Jetpack Workflow Pittsburgh",
+      "type": "workable",
+      "accountName": "jetpack-workflow",
+      "companyName": "Jetpack Workflow",
+      "companyWebsite": "https://jetpackworkflow.com",
+      "sourceWeight": 10,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "Remote",
+        "Pittsburgh"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh startup"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "product",
+        "data",
+        "design",
+        "qa",
+        "technical",
+        "support"
+      ],
+      "excludeKeywords": [
+        "sales",
+        "marketing",
+        "finance",
+        "controller",
+        "people operations",
+        "account executive"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "sources": [
+    {
+      "name": "Shipt Birmingham",
+      "type": "workday",
+      "pageUrl": "https://shipt.wd1.myworkdayjobs.com/Shipt_External",
+      "apiBaseUrl": "https://shipt.wd1.myworkdayjobs.com/wday/cxs/shipt/Shipt_External",
+      "companyName": "Shipt",
+      "companyWebsite": "https://www.shipt.com",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "requestLimit": 20,
+      "requestOffsets": [0],
+      "requestDelayMs": 200,
+      "allowedLocationPatterns": [
+        "Birmingham, AL",
+        "US Remote",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Birmingham, AL",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Birmingham"
+        },
+        {
+          "match": "US Remote",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham startup"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham startup"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "security",
+        "data",
+        "application",
+        "product manager",
+        "software",
+        "analytics",
+        "business intelligence"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "security",
+        "data",
+        "analytics",
+        "business intelligence",
+        "product manager",
+        "application"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "finance",
+        "marketing",
+        "counsel",
+        "workforce",
+        "retail media",
+        "account",
+        "broker",
+        "claims"
+      ]
+    },
+    {
+      "name": "Unum Chattanooga",
+      "type": "workday",
+      "pageUrl": "https://unum.wd1.myworkdayjobs.com/External",
+      "apiBaseUrl": "https://unum.wd1.myworkdayjobs.com/wday/cxs/unum/External",
+      "companyName": "Unum",
+      "companyWebsite": "https://www.unum.com",
+      "sourceWeight": 14,
+      "maxAccepted": 12,
+      "requestLimit": 20,
+      "requestOffsets": [0, 20, 40, 60],
+      "requestDelayMs": 200,
+      "allowedLocationPatterns": [
+        "Chattanooga, Tennessee",
+        "Chattanooga-Tennessee",
+        "Home Worker - US",
+        "Home Worker",
+        "US Remote",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Chattanooga, Tennessee",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Chattanooga"
+        },
+        {
+          "match": "Chattanooga-Tennessee",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Chattanooga"
+        },
+        {
+          "match": "Home Worker - US",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "Home Worker",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "US Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "software",
+        "data",
+        "analytics",
+        "security",
+        "business intelligence",
+        "cloud",
+        "architect",
+        "platform"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "developer",
+        "software",
+        "data",
+        "analytics",
+        "business intelligence",
+        "security",
+        "access management",
+        "iam",
+        "cloud",
+        "architect",
+        "platform"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "claims",
+        "nurse",
+        "underwriter",
+        "broker",
+        "sales",
+        "marketing",
+        "finance",
+        "counsel",
+        "attorney",
+        "actuarial",
+        "real estate",
+        "hr business partner",
+        "client development",
+        "benefit advisor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "generatedAt": "2026-03-17T12:10:32.275Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.radford-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-radford.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-radford-report.json",
+  "rawCount": 35,
+  "outputCount": 1,
+  "sources": [
+    {
+      "name": "Radford Tech Slice",
+      "type": "pageup",
+      "rawJobs": 35,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Manager, System Administrator & Front End Operations",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "score": 66,
+      "category": "IT & Support"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "<img src=\"",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Program Coordinator, Deaf and Hard of Hearing (DHH) program / Instructor, Special Purpose",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -129
+    },
+    {
+      "title": "Instructor/Assistant Professor (FTT) - Director of Music Education",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -129
+    },
+    {
+      "title": "Adjunct - Lab Assistant/Co-Instructor for various Physical Therapy courses",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"Roanoke\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Grant Accountant",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -114
+    },
+    {
+      "title": "Executive Asst/FOIA Analyst",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -129
+    },
+    {
+      "title": "Assistant Professor - Nursing",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -84
+    },
+    {
+      "title": "Director of Research Integrity and Compliance and Research Integrity Officer",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Program Director/Faculty of Nutrition and Dietetics",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Financial Operations Technician",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Assistant Professor - Nursing",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"Roanoke\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Instructor, Special Purpose - Nursing",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"Roanoke\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Adjunct Faculty - Health and Human Performance",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -84
+    },
+    {
+      "title": "Teaching Faculty, FTT -Department of Anthropological Sciences",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -84
+    },
+    {
+      "title": "Adjunct Faculty - Criminal Justice",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -84
+    },
+    {
+      "title": "Special Purpose Faculty, Full-time Temporary-- Biology Roanoke, VA",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"Roanoke\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Special Purpose Faculty - Finance",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Manager, Housing Assignments",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Resident Director",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Business Technology Analyst, Finance",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Assistant Director, Student Philanthropy and Engagement",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Assistant Director, Admissions",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Assistant Vice President, Radford Online",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -19
+    },
+    {
+      "title": "Assistant Vice President, Health Sciences",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"Roanoke\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Special Purpose Faculty / Program Director, Applied Biotechnology Program",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"Roanoke\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Housekeeping Worker",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 51
+    },
+    {
+      "title": "Part Time Front Office Assistant",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 31
+    },
+    {
+      "title": "Adjunct Faculty--Biology Roanoke, VA",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"Roanoke\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Part-time Simulation Educator – Co-Coordinator",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 31
+    },
+    {
+      "title": "Academic Advisor",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -34
+    },
+    {
+      "title": "1",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "2",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "3",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "4",
+      "companyName": "Radford University",
+      "sourceName": "Radford Tech Slice",
+      "reason": "Location \"n/a\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

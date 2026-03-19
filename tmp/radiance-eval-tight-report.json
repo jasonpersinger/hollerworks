@@ -1,0 +1,510 @@
+{
+  "generatedAt": "2026-03-18T18:27:22.233Z",
+  "configPath": "/dev/fd/63",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/radiance-eval-tight.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/radiance-eval-tight-report.json",
+  "rawCount": 70,
+  "outputCount": 4,
+  "sources": [
+    {
+      "name": "Radiance Huntsville Software",
+      "type": "workday",
+      "rawJobs": 70,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Site Reliability Engineer (SRE)",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "score": 59,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Software Architect",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Quality Assurance (QA) Automation Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "score": 64,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Senior Site Reliability Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "score": 44,
+      "category": "Other Tech-Adjacent"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Scrum Master",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Scrum Master",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Scrum Master",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Release Manager",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Customer Success Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 79
+    },
+    {
+      "title": "Solutions Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Customer Success Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Vulnerability Researcher",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC FME\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Junior Model Based Systems Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Modeling, Analytics, & Simulation Sciences (MASS) Engineer Intern",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"MI - Home\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Modeling and Simulation Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Mechanical Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Vulnerability Researcher",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC FME\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Junior Vulnerability Researcher",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC FME\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "RF Signature Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "OPIR Extractions Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "AI/ML Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "AI/ML Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Platform Technical Lead",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Springfield, VA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Platform Technical Lead",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"MO - St. Louis - NCE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Electrical Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Cloud Infrastructure Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"All Remote Locations\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Radar Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bathymetric Imagery Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Stennis Space Center, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Bathymetric Imagery Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Stennis Space Center, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Cloud Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Aberdeen Proving Ground, MD\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Software Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Stennis Space Center, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Stennis Space Center, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Software Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Stennis Space Center, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead Software Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Stennis Space Center, MS\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Digital Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Model Based Systems Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Systems Architect",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Microelectronics Laboratory Manager",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Ruston, LA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Modeling & Simulation Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Eglin AFB, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Modeling & Simulation Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Eglin AFB, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead Optical Systems Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 29
+    },
+    {
+      "title": "All Source Network Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Test Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Compensation is required.",
+      "score": 64
+    },
+    {
+      "title": "C4ISR Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "DE Test & Instrumentation Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Modernized Baseline Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Senior Operations Research Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Eglin AFB, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Operations Research Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Eglin AFB, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Junior Operations Research Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Eglin AFB, FL\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Research Scientist",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Radio Frequency (RF) Systems Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 44
+    },
+    {
+      "title": "RF Specialist",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Senior Radar Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Senior Reverse Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Compensation is required.",
+      "score": 64
+    },
+    {
+      "title": "Senior Program Integrator (CUAS)",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Senior Modeling & Simulation Architect",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Compensation is required.",
+      "score": 64
+    },
+    {
+      "title": "Model Based Systems Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Model Based Systems Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Model Based Systems Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "OPIR Scientist",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IPT Lead Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "All-Source Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Beavercreek, OH\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Digital Network Exploitation Analyst",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "OPIR Scientist",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Charlottesville, VA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Reverse Engineer",
+      "companyName": "Radiance Technologies",
+      "sourceName": "Radiance Huntsville Software",
+      "reason": "Location \"Wright-Patt AFB, OH - NASIC FME\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

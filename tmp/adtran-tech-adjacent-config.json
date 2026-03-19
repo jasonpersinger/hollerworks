@@ -1,0 +1,72 @@
+{
+  "sources": [
+    {
+      "name": "Adtran Alabama Tech Adjacent",
+      "type": "workday",
+      "pageUrl": "https://adtran.wd3.myworkdayjobs.com/ADTRAN",
+      "apiBaseUrl": "https://adtran.wd3.myworkdayjobs.com/wday/cxs/adtran/ADTRAN",
+      "companyName": "Adtran",
+      "companyWebsite": "https://www.adtran.com",
+      "sourceWeight": 13,
+      "maxAccepted": 10,
+      "requestOffsets": [0, 20, 40, 60, 80],
+      "requestDelayMs": 150,
+      "allowedLocationPatterns": [
+        "Adtran Huntsville HQ",
+        "Remote - Alabama"
+      ],
+      "locationRules": [
+        {
+          "match": "Adtran Huntsville HQ",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        },
+        {
+          "match": "Remote - Alabama",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role with Alabama location"
+        }
+      ],
+      "includeKeywords": [
+        "customer success",
+        "solutions engineer",
+        "solutions consultant",
+        "technical account",
+        "strategic partnerships",
+        "partner",
+        "implementation",
+        "technical writer",
+        "documentation",
+        "marketing operations",
+        "product marketing"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "customer success",
+        "solutions engineer",
+        "solutions consultant",
+        "technical account",
+        "strategic partnerships",
+        "partner",
+        "implementation",
+        "technical writer",
+        "documentation",
+        "marketing operations",
+        "product marketing"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "inside sales",
+        "sales representative",
+        "account executive",
+        "director",
+        "intern",
+        "student",
+        "facilities",
+        "finance"
+      ]
+    }
+  ]
+}

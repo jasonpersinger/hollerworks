@@ -1,0 +1,586 @@
+{
+  "generatedAt": "2026-03-17T18:17:09.213Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.workday-discovery.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-workday-discovery.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-workday-discovery-report.json",
+  "rawCount": 80,
+  "outputCount": 13,
+  "sources": [
+    {
+      "name": "Shipt Birmingham",
+      "type": "workday",
+      "rawJobs": 16,
+      "ok": true
+    },
+    {
+      "name": "Unum Chattanooga",
+      "type": "workday",
+      "rawJobs": 64,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Staff Application Security Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 79,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Principal Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 79,
+      "category": "DevOps & Cloud"
+    },
+    {
+      "title": "Senior Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 79,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Product Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 84,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Product Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 84,
+      "category": "Product & Project"
+    },
+    {
+      "title": "Senior Engineering Manager – Fullstack Mobile",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "score": 84,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer II - SQL Server & SSIS experience required",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Growth Analytics - Senior Business Intelligence Analyst",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "score": 64,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Business Intelligence Analyst I",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "score": 64,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Software Engineer, Payments and Tax integration",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Identity & Access Management Security Analyst II",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "score": 64,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Senior Software Engineer (JAVA & FINEOS)",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sr. Mainframe Database Administrator (IMS)",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "score": 79,
+      "category": "Data & AI"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Program Manager, Privacy, Cybersecurity, and AI Governance",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"CA San Francisco | Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior FP&A Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Staff Engineer",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Compensation is required.",
+      "score": 79
+    },
+    {
+      "title": "Senior Manager, Marketing Performance",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 84
+    },
+    {
+      "title": "Senior FP&A Manager",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 79
+    },
+    {
+      "title": "Associate Corporate Counsel, Employment",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"CA San Francisco\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Retail Media Analyst",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 84
+    },
+    {
+      "title": "Director of Engineering",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"Minneapolis, MN\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Manager, Workforce Management",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Corporate Counsel, Privacy & AI",
+      "companyName": "Shipt",
+      "sourceName": "Shipt Birmingham",
+      "reason": "Location \"San Francisco, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Client Development Specialist",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Boston, Massachusetts, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Regional Broker Manager, Colonial Life - Chicago/St. Louis",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Chicago, Illinois, USA | St. Louis, Missouri, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Regional Broker Manager, Colonial Life, Oregon/Idaho/Montana, Washington/Alaska",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Portland, Oregon, USA | Seattle, Washington, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Actuarial Reporting Manager",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"London | Dorking, Surrey, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Customer Benefit Advisor I (On-Site) - Columbia",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Columbia, South Carolina, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Sales Trainer - Indiana",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Indianapolis, Indiana, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Core Sales Representative",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 69
+    },
+    {
+      "title": "Director of CX",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Carlow, Carlow, IRE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Core Sales Rep - Philadelphia",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Wayne, Pennsylvania, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Director, HR Business Partner Technology- DTO",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -31
+    },
+    {
+      "title": "AVP Real Estate Management",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Client Experience Representative I",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Columbia, South Carolina, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Small Business Sales Director - Dallas",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Plano, Texas, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Small Business Sales Director - Phoenix",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Phoenix, Arizona, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Web Performance and Optimisation Specialist",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Dorking, Surrey, UK | Basingstoke, Hampshire, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Associate Actuary (ASA), Actuarial Development Program",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Manager, Network Development",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Portland, Maine, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Trainee Claims Assessor",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Dorking, Surrey, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Actuarial Assistant, Actuarial Development Program",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -16
+    },
+    {
+      "title": "IT Delivery Manager",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Carlow, Carlow, IRE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Underwriter",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -31
+    },
+    {
+      "title": "Underwriting Consultant",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -31
+    },
+    {
+      "title": "Product Security Engineer II",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Carlow, Carlow, IRE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sourcing Specialist",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -31
+    },
+    {
+      "title": "Director, AI/ML Transformation",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Customer Service Specialist",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Basingstoke, Hampshire, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Growth Activation Consultant",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Senior Actuarial Manager, Capital",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"London | Dorking, Surrey, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Senior Investment Analyst Commercial Mortgage Loan",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Portland, Maine, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "IT Delivery Manager - CLA Products",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -16
+    },
+    {
+      "title": "Snr Product Business Analyst",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Carlow, Carlow, IRE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Investment Officer Commercial Mortgage Loans",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Clinical Consultant",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -31
+    },
+    {
+      "title": "Trainee Claims Assessor",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Basingstoke, Hampshire, UK\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Regional Broker Manager, Colonial Life, Mississippi/Louisiana",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Baton Rouge, Louisiana, USA | Ridgeland, Mississippi, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Manager Financial Analysis",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Customer Benefit Advisor I (On-Site)- Chattanooga",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -31
+    },
+    {
+      "title": "Product Security Engineer",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Carlow, Carlow, IRE\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Medical Consultant- Psychiatrist",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 4
+    },
+    {
+      "title": "Senior Accountant",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -16
+    },
+    {
+      "title": "Leave and Disability Claims Roles",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -46
+    },
+    {
+      "title": "Sales Consultant Associate- Portland, ME",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Portland, Maine, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Consultant Associate- Maryland",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Columbia, Maryland, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Consultant Associate- Chicago",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Chicago, Illinois, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Consultant Associate- Dallas",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Plano, Texas, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Consultant Associate- Atlanta",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Atlanta, Georgia, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sales Consultant Associate- Phoenix",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Phoenix, Arizona, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Territory Sales Manager",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Garden City, New York, USA | Union, New Jersey, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Investment Analyst II - Commercial Mortgage Loans",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -16
+    },
+    {
+      "title": "Benefit Specialist Trainee",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Portland, Maine, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Accounting & Finance Development Program Associate",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Unum Scholar Intern - Chattanooga, TN",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Unum Scholar Intern - Columbia, SC",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Columbia, South Carolina, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Unum Scholar Intern- Portland, ME",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Portland, Maine, USA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sr. Wellbeing Consultant",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -16
+    },
+    {
+      "title": "Professional Development Program Associate",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Customer Benefit Advisor I (On-Site)- Baton Rouge",
+      "companyName": "Unum",
+      "sourceName": "Unum Chattanooga",
+      "reason": "Location \"Baton Rouge, Louisiana, USA\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

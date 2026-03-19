@@ -1,0 +1,28 @@
+[
+  {
+    "type": "need",
+    "title": "DevOps Manager",
+    "category": "DevOps & Cloud",
+    "companyName": "BlastPoint",
+    "companyWebsite": "https://blastpoint.com/",
+    "locationState": "Pennsylvania",
+    "locationRegion": "Western PA",
+    "locationCity": "Remote",
+    "locationNotes": "Remote role from Pittsburgh startup",
+    "compensation": "$140K-170K",
+    "description": "&nbsp; DevOps Manager Remote, US-only Salary Range: $140K-170K Job Description Ensure high availability, fault tolerance, and scalability of cloud services Optimize performance and cost efficiency across AWS environments Security, Compliance &amp; SOC 2 Readiness : We are seeking a DevOps Manager who thrives in a player/coach role—leading a small team while also making hands-on contributions at a senior engineering level as needed. This role requires a strong background in cloud infrastructure, site reliability engineering (SRE), CI/CD, and information security. You’ll work closely with our engineering teams to optimize deployments, enhance system reliability, and ensure the security and scalability of our cloud infrastructure. Primary duties for this position include Leadership &amp; Team Management Lead and mentor a small team of DevOps engineers, fostering a culture of innovation, collaboration, and accountability Balance hands-on contributions with strategic leadership, leading by example to ensure smooth execution of DevOps initiatives Cloud Infrastructure &amp; Automation Design, deploy, and maintain BlastPoint’s AWS-based infrastructure using Terraform Own the SOC 2 certification and compliance monitoring process Implement security best practices, including IAM policies, encryption, vulnerability management, and incident response. CI/CD &amp; Deployment Automation Enhance and maintain CI/CD pipelines using GitHub Actions to improve developer productivity and deployment speed",
+    "contact": "https://job-boards.greenhouse.io/blastpoint/jobs/5059344007",
+    "remoteFriendly": true,
+    "sourceUrl": "https://job-boards.greenhouse.io/blastpoint/jobs/5059344007",
+    "seedScore": 82,
+    "seedNotes": [
+      "source weight +12",
+      "remote-friendly +15",
+      "category match +20 (DevOps & Cloud)",
+      "tech signal +15",
+      "include keyword +15",
+      "remote location text +5"
+    ],
+    "seedSource": "BlastPoint Pittsburgh"
+  }
+]

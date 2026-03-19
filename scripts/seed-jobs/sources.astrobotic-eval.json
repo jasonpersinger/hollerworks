@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "name": "Astrobotic Pittsburgh Slice",
+      "type": "primepay-recruit",
+      "accountName": "astrobotic-technology-inc",
+      "companyName": "Astrobotic",
+      "companyWebsite": "https://www.astrobotic.com",
+      "sourceWeight": 15,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "Pittsburgh, PA",
+        "Pittsburgh \\(Hybrid\\), PA"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh \\(Hybrid\\), PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "remoteFriendly": true,
+          "locationNotes": "Hybrid role in Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "systems",
+        "mechanical",
+        "reliability",
+        "safety",
+        "software",
+        "electrical",
+        "technical"
+      ],
+      "excludeKeywords": [
+        "test engineer",
+        "finance",
+        "marketing",
+        "sales"
+      ]
+    }
+  ]
+}

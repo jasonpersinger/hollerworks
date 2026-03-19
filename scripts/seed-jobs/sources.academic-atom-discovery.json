@@ -1,0 +1,437 @@
+{
+  "sources": [
+    {
+      "name": "Appalachian State Atom Slice",
+      "type": "peopleadmin-atom",
+      "atomUrl": "https://appstate.peopleadmin.com/postings/all_jobs.atom",
+      "companyName": "Appalachian State University",
+      "companyWebsite": "https://www.appstate.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "Boone, North Carolina",
+        "Boone"
+      ],
+      "locationRules": [
+        {
+          "match": "Boone, North Carolina",
+          "locationState": "North Carolina",
+          "locationRegion": "High Country",
+          "locationCity": "Boone"
+        },
+        {
+          "match": "Boone",
+          "locationState": "North Carolina",
+          "locationRegion": "High Country",
+          "locationCity": "Boone"
+        }
+      ],
+      "includeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it",
+        "business systems",
+        "applications"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it",
+        "business systems",
+        "applications",
+        "information technology"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "professor",
+        "faculty",
+        "lecturer",
+        "practitioner",
+        "theatre",
+        "political science",
+        "health care management",
+        "interior design",
+        "design history",
+        "building sciences",
+        "economics",
+        "advisor",
+        "residence life",
+        "housekeeper",
+        "teaching assistant professor",
+        "counselor",
+        "coordinator",
+        "admissions",
+        "facilities",
+        "custodial",
+        "grounds"
+      ],
+      "excludeKeywords": [
+        "professor",
+        "faculty",
+        "lecturer",
+        "practitioner",
+        "theatre",
+        "political science",
+        "health care management",
+        "interior design",
+        "design history",
+        "building sciences",
+        "economics",
+        "housekeeper",
+        "advisor",
+        "residence life",
+        "teaching assistant professor",
+        "facilities",
+        "custodial",
+        "grounds"
+      ]
+    },
+    {
+      "name": "Marshall Atom Slice",
+      "type": "peopleadmin-atom",
+      "atomUrl": "https://marshall.peopleadmin.com/postings/all_jobs.atom",
+      "companyName": "Marshall University",
+      "companyWebsite": "https://www.marshall.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "MU - Marshall University",
+        "MUSOM - Marshall University School of Medicine",
+        "Huntington",
+        "South Charleston",
+        "Beckley",
+        "Point Pleasant",
+        "Teays Valley",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "MU - Marshall University",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "MUSOM - Marshall University School of Medicine",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "Huntington",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "Beckley",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Beckley"
+        },
+        {
+          "match": "South Charleston",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "South Charleston"
+        },
+        {
+          "match": "Teays Valley",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Teays Valley"
+        },
+        {
+          "match": "Point Pleasant",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Point Pleasant"
+        },
+        {
+          "match": "Remote",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Remote",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "service desk",
+        "client services"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "information technology",
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "client services",
+        "service desk",
+        "web",
+        "application",
+        "security",
+        "network"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "records coordinator",
+        "professor",
+        "administrative assistant",
+        "special events",
+        "student support",
+        "campus service worker",
+        "residential",
+        "philanthropy",
+        "alumni",
+        "landscape",
+        "office administrator",
+        "carpenter",
+        "hvac",
+        "painter",
+        "athletic",
+        "olympic",
+        "campus police",
+        "controls technician",
+        "assistant professor",
+        "graduate assistant"
+      ],
+      "excludeKeywords": [
+        "landscape",
+        "campus service worker",
+        "residential",
+        "special events",
+        "office administrator",
+        "student support",
+        "custodial",
+        "grounds"
+      ]
+    },
+    {
+      "name": "WCU Atom Slice",
+      "type": "peopleadmin-atom",
+      "atomUrl": "https://jobs.wcu.edu/postings/all_jobs.atom",
+      "companyName": "Western Carolina University",
+      "companyWebsite": "https://www.wcu.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "Cullowhee, NC",
+        "Cullowhee"
+      ],
+      "locationRules": [
+        {
+          "match": "Cullowhee, NC",
+          "locationState": "North Carolina",
+          "locationRegion": "Western NC",
+          "locationCity": "Cullowhee"
+        },
+        {
+          "match": "Cullowhee",
+          "locationState": "North Carolina",
+          "locationRegion": "Western NC",
+          "locationCity": "Cullowhee"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "systems",
+        "technology",
+        "software",
+        "web",
+        "application",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "engineering",
+        "systems",
+        "technology",
+        "software",
+        "web",
+        "application",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "facilities",
+        "warehouse",
+        "housekeeper",
+        "grant",
+        "assistant professor",
+        "adjunct",
+        "marketing",
+        "athletic trainer",
+        "counselor",
+        "administrative support",
+        "development",
+        "sponsorships",
+        "psychologist"
+      ],
+      "excludeKeywords": [
+        "facilities",
+        "warehouse",
+        "housekeeper",
+        "grant",
+        "assistant professor",
+        "adjunct",
+        "marketing",
+        "athletic trainer",
+        "counselor",
+        "administrative support",
+        "development",
+        "sponsorships",
+        "psychologist"
+      ]
+    },
+    {
+      "name": "Morehead Atom Slice",
+      "type": "peopleadmin-atom",
+      "atomUrl": "https://moreheadstate.peopleadmin.com/postings/all_jobs.atom",
+      "companyName": "Morehead State University",
+      "companyWebsite": "https://www.moreheadstate.edu",
+      "sourceWeight": 14,
+      "maxAccepted": 4,
+      "allowedLocationPatterns": [
+        "Morehead, KY",
+        "Morehead"
+      ],
+      "locationRules": [
+        {
+          "match": "Morehead, KY",
+          "locationState": "Kentucky",
+          "locationRegion": "Eastern Kentucky",
+          "locationCity": "Morehead"
+        },
+        {
+          "match": "Morehead",
+          "locationState": "Kentucky",
+          "locationRegion": "Eastern Kentucky",
+          "locationCity": "Morehead"
+        }
+      ],
+      "includeKeywords": [
+        "information systems",
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "information systems",
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "chair",
+        "police",
+        "business manager",
+        "instructor",
+        "assistant professor",
+        "counselor",
+        "coordinator",
+        "technician",
+        "building services"
+      ],
+      "excludeKeywords": [
+        "chair",
+        "police",
+        "business manager",
+        "instructor",
+        "assistant professor",
+        "counselor",
+        "coordinator",
+        "building services"
+      ]
+    },
+    {
+      "name": "Auburn Atom Slice",
+      "type": "peopleadmin-atom",
+      "atomUrl": "https://www.auemployment.com/postings/all_jobs.atom",
+      "companyName": "Auburn University",
+      "companyWebsite": "https://www.auburn.edu",
+      "sourceWeight": 14,
+      "maxAccepted": 4,
+      "allowedLocationPatterns": [
+        "Auburn, AL",
+        "Auburn"
+      ],
+      "locationRules": [
+        {
+          "match": "Auburn, AL",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Auburn"
+        },
+        {
+          "match": "Auburn",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Auburn"
+        }
+      ],
+      "includeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "assistant professor",
+        "lecturer",
+        "coordinator",
+        "advisor",
+        "custodial"
+      ],
+      "excludeKeywords": [
+        "assistant professor",
+        "lecturer",
+        "coordinator",
+        "advisor",
+        "custodial"
+      ]
+    }
+  ]
+}

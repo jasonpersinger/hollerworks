@@ -29,7 +29,6 @@ All changes in `index.html`. Netlify is already configured with `/* → index.ht
 | Back link in `renderPost()` error branch | `href="/"` instead of `href="#/"` |
 | Back link in `renderPost()` success branch | `href="/"` instead of `href="#/"` |
 | Back link in submit success view | `href="/"` instead of `href="#/"` (in the DOM-built backLink element) |
-| Back link in admin view | `href="/"` instead of `href="#/"` |
 
 Board URLs change from `/#/?filter=need` to `/?filter=need`. Post URLs change from `/#/post/abc` to `/post/abc`.
 

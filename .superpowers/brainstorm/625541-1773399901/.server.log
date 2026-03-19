@@ -1,0 +1,17 @@
+{"type":"server-started","port":57128,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:57128","screen_dir":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-colors.html"}
+{"source":"user-event","type":"click","text":"B\n    \n      Appalachian earthy\n      Mossy greens, amber, rust, deep forest — regional nature palette","choice":"b","id":null,"timestamp":1773400063964}
+{"source":"user-event","type":"click","text":"C\n    \n      Rust fade\n      All rust, but fading from bright to almost-black — subtle, elegant","choice":"c","id":null,"timestamp":1773400064983}
+{"source":"user-event","type":"click","text":"B\n    \n      Appalachian earthy\n      Mossy greens, amber, rust, deep forest — regional nature palette","choice":"b","id":null,"timestamp":1773400066108}
+{"source":"user-event","type":"click","text":"A\n    \n      Brand palette\n      Rust, browns, grays — strictly on-brand","choice":"a","id":null,"timestamp":1773400066744}
+{"source":"user-event","type":"click","text":"B\n    \n      Appalachian earthy\n      Mossy greens, amber, rust, deep forest — regional nature palette","choice":"b","id":null,"timestamp":1773400067388}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-bright.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-bright2.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-colors2.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-blended.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-final.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-v2.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-v3.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-v4.html"}
+{"type":"screen-added","file":"/home/jason/Desktop/HOLLERWORKS/.superpowers/brainstorm/625541-1773399901/salamander-v5.html"}
+{"type":"server-stopped","reason":"idle timeout"}

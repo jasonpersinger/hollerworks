@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "name": "Duolingo Pittsburgh",
+      "type": "greenhouse",
+      "boardToken": "duolingo",
+      "companyName": "Duolingo",
+      "companyWebsite": "https://www.duolingo.com",
+      "sourceWeight": 18,
+      "maxAccepted": 15,
+      "allowedLocationPatterns": [
+        "Pittsburgh, PA"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "data",
+        "design",
+        "product",
+        "analytics",
+        "research",
+        "writer",
+        "docs",
+        "technical writer",
+        "documentation",
+        "developer relations",
+        "api writer",
+        "knowledge base",
+        "help center",
+        "content strategist",
+        "seo",
+        "growth",
+        "marketing operations",
+        "security",
+        "it"
+      ],
+      "excludeKeywords": [
+        "chef",
+        "facilities",
+        "custodian",
+        "head of dtc",
+        "head of duolingo academy",
+        "learning design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "sources": [
+    {
+      "name": "KnoxTech Job Board",
+      "type": "getro",
+      "boardUrl": "https://jobs.knoxtech.org/jobs",
+      "sourceWeight": 10,
+      "maxAccepted": 8,
+      "allowedLocationPatterns": [
+        "Knoxville, TN",
+        "Oak Ridge, TN",
+        "Greeneville, TN",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Knoxville, TN",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Knoxville"
+        },
+        {
+          "match": "Oak Ridge, TN",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Oak Ridge"
+        },
+        {
+          "match": "Greeneville, TN",
+          "locationState": "Tennessee",
+          "locationRegion": "Tri-Cities",
+          "locationCity": "Greeneville"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "design",
+        "technology",
+        "technical",
+        "analyst",
+        "project manager",
+        "product",
+        "data",
+        "security",
+        "systems"
+      ],
+      "excludeKeywords": [
+        "cashier",
+        "coffee attendant",
+        "deli baker",
+        "guest services",
+        "workers' compensation",
+        "administrative assistant",
+        "general merchandise",
+        "facility revenue",
+        "internal communications"
+      ]
+    },
+    {
+      "name": "Launch Tennessee Job Board",
+      "type": "getro",
+      "boardUrl": "https://jobs.launchtn.org/jobs",
+      "sourceWeight": 12,
+      "maxAccepted": 4,
+      "allowedLocationPatterns": [
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "product",
+        "design",
+        "data",
+        "technical",
+        "platform",
+        "ai",
+        "machine learning",
+        "interoperability"
+      ],
+      "excludeKeywords": [
+        "nurse",
+        "care management",
+        "social work",
+        "underwriter",
+        "finance",
+        "marketing",
+        "sales development representative",
+        "territory manager",
+        "business associate",
+        "intern"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+COMPANY,APPTIE,APPTIE_STATUS,APPTIE_AUDIT_NOTE,CAREERS URL,ATS,SOURCE_FILES
+Adtran,Huntsville HQ,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.adtran.com/en/about-us/careers,ICIMS,appalachia_tech_companies.csv
+Advanced Logic Industries,Blacksburg/Roanoke,regional,"Blacksburg is in ARC Appalachia, and Roanoke is being treated as an intentional regional Appalachian inclusion for HOLLER.WORKS even though it is outside ARC county boundaries.",https://www.ali-inc.com/careers,Custom,appalachia_tech_companies.csv
+Ansys,Canonsburg PA HQ,strong,"Canonsburg is in Washington County, Pennsylvania, which ARC lists as Appalachian.",https://www.ansys.com/careers,Workday,appalachian-tech-companies.csv
+Appalachian Power (AEP),Charleston WV HQ,strong,"Charleston is in Kanawha County, West Virginia; all of West Virginia is within ARC.",https://www.appalachianpower.com/company/careers,,appalachian-tech-companies.csv
+Astrobotic,Pittsburgh HQ,strong,"Pittsburgh is in Allegheny County, Pennsylvania, which ARC lists as Appalachian.",https://www.astrobotic.com/careers,Lever,appalachia_tech_companies.csv
+Aurora Innovation,Pittsburgh HQ,strong,"Pittsburgh is in Allegheny County, Pennsylvania, which ARC lists as Appalachian.",https://aurora.tech/careers,Greenhouse,appalachia_tech_companies.csv; appalachian-tech-companies.csv
+BAE Systems,Binghamton NY hub,strong,"Binghamton is in Broome County, New York, which ARC lists as Appalachian.",https://jobs.baesystems.com/,Taleo,appalachian-tech-companies.csv
+Boeing,Huntsville AL hub,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://jobs.boeing.com/,Taleo,appalachian-tech-companies.csv
+Carilion Clinic,Roanoke VA HQ,regional,Roanoke is being treated as an intentional regional Appalachian inclusion for HOLLER.WORKS even though it is outside ARC county boundaries.,https://www.carilionclinic.org/careers,,appalachian-tech-companies.csv
+Dick's Sporting Goods (Tech),Pittsburgh PA HQ,strong,"Pittsburgh is in Allegheny County, Pennsylvania, which ARC lists as Appalachian.",https://careers.dickssportinggoods.com/,Workday,appalachian-tech-companies.csv
+Duolingo,Pittsburgh HQ,strong,"Pittsburgh is in Allegheny County, Pennsylvania, which ARC lists as Appalachian.",https://careers.duolingo.com/,Greenhouse,appalachia_tech_companies.csv; appalachian-tech-companies.csv
+Dynetics (Leidos),Huntsville HQ,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.dynetics.com/careers,Workday,appalachia_tech_companies.csv
+Ecobot,Asheville HQ,strong,"Asheville is in Buncombe County, North Carolina, which ARC lists as Appalachian.",https://ecobotapp.com/careers,Breezy,appalachia_tech_companies.csv
+Firefli,Roanoke HQ,regional,Roanoke is being treated as an intentional regional Appalachian inclusion for HOLLER.WORKS even though it is outside ARC county boundaries.,https://firefli.com/careers,Custom,appalachia_tech_companies.csv
+Fleetio,Birmingham HQ,strong,"Birmingham is in Jefferson County, Alabama, which ARC lists as Appalachian.",https://www.fleetio.com/careers,Greenhouse,appalachia_tech_companies.csv
+Frontier Communications,Charleston WV hub,strong,"Charleston is in Kanawha County, West Virginia; all of West Virginia is within ARC.",https://jobs.frontier.com/,Workday,appalachian-tech-companies.csv
+Gecko Robotics,Pittsburgh HQ,strong,"Pittsburgh is in Allegheny County, Pennsylvania, which ARC lists as Appalachian.",https://www.geckorobotics.com/careers,Greenhouse,appalachia_tech_companies.csv
+IBM (Binghamton),Binghamton NY base,strong,"Binghamton is in Broome County, New York, which ARC lists as Appalachian.",https://www.ibm.com/employment/,Workday,appalachian-tech-companies.csv
+Iconic Air,Morgantown HQ,strong,"Morgantown is in Monongalia County, West Virginia; all of West Virginia is within ARC.",https://www.iconicair.io/careers,Ashby,appalachia_tech_companies.csv
+Intuitive Research & Technology,Huntsville AL HQ,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.irt-corp.com/careers/,,appalachian-tech-companies.csv
+Jacobs Engineering,Huntsville AL hub,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://careers.jacobs.com/,Workday,appalachian-tech-companies.csv
+Kennametal,Latrobe PA HQ,strong,"Latrobe is in Westmoreland County, Pennsylvania, which ARC lists as Appalachian.",https://www.kennametal.com/en/about/careers.html,SAP SuccessFactors,appalachian-tech-companies.csv
+Leidos,Huntsville AL hub,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://careers.leidos.com/,Workday,appalachian-tech-companies.csv
+Lockheed Martin,Huntsville AL hub,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.lockheedmartin.com/en-us/careers.html,Workday,appalachian-tech-companies.csv
+MSA Safety,Cranberry Twp PA HQ,strong,"Cranberry Township is in Butler County, Pennsylvania, which ARC lists as Appalachian.",https://www.msasafety.com/en/about-msa/careers/job-openings,Workday,appalachian-tech-companies.csv
+NextGen Federal Systems,Morgantown HQ,strong,"Morgantown is in Monongalia County, West Virginia; all of West Virginia is within ARC.",https://nextgenfed.com/careers,ADP,appalachia_tech_companies.csv
+Northrop Grumman,Huntsville AL hub,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.northropgrumman.com/careers/,Workday,appalachian-tech-companies.csv
+Oak Ridge National Laboratory,Oak Ridge TN,strong,"Oak Ridge is in Anderson County, Tennessee, which ARC lists as Appalachian.",https://jobs.ornl.gov/,,appalachian-tech-companies.csv
+Parsons Corporation,Huntsville AL hub,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://careers.parsons.com/,Taleo,appalachian-tech-companies.csv
+Pilot Company,Knoxville TN HQ,strong,"Knoxville is in Knox County, Tennessee, which ARC lists as Appalachian.",https://pilotflyingj.com/careers/,iCIMS,appalachian-tech-companies.csv
+Radiance Technologies,Huntsville AL HQ,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.radiancetech.com/careers/,,appalachian-tech-companies.csv
+Radio Systems Corp (PetSafe),Knoxville HQ,strong,"Knoxville is in Knox County, Tennessee, which ARC lists as Appalachian.",https://www.petsafe.com/about-us/careers/,Workday,appalachia_tech_companies.csv
+Radio Systems Corporation,Knoxville TN HQ,strong,"Knoxville is in Knox County, Tennessee, which ARC lists as Appalachian.",https://www.radiosystemscorp.com/careers/,,appalachian-tech-companies.csv
+SAIC,Huntsville AL hub,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.saic.com/careers,Workday,appalachian-tech-companies.csv
+Shipt,Birmingham HQ,strong,"Birmingham is in Jefferson County, Alabama, which ARC lists as Appalachian.",https://www.shipt.com/careers,Workday,appalachia_tech_companies.csv
+Teledyne Brown Engineering,Huntsville AL HQ,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.teledyne.com/en-us/careers,Workday,appalachian-tech-companies.csv
+Tennessee Valley Authority,Knoxville TN HQ,strong,"Knoxville is in Knox County, Tennessee, which ARC lists as Appalachian.",https://www.tva.com/about-tva/careers,Taleo,appalachian-tech-companies.csv
+Torch Technologies,Huntsville AL HQ,strong,"Huntsville is in Madison County, Alabama, which ARC lists as Appalachian.",https://www.torchtech.com/careers/,,appalachian-tech-companies.csv
+Unum Group,Chattanooga TN HQ,strong,"Chattanooga is in Hamilton County, Tennessee, which ARC lists as Appalachian.",https://www.unum.com/about/careers,Workday,appalachian-tech-companies.csv
+Volkswagen Group of America IT,Chattanooga TN hub,strong,"Chattanooga is in Hamilton County, Tennessee, which ARC lists as Appalachian.",https://www.vw.com/en/models/vw-careers.html,,appalachian-tech-companies.csv
+WVU Medicine,Morgantown WV,strong,"Morgantown is in Monongalia County, West Virginia; all of West Virginia is within ARC.",https://careers.wvumedicine.org/,,appalachian-tech-companies.csv
+Warner Bros. Discovery,Knoxville Hub,strong,"Knoxville is in Knox County, Tennessee, which ARC lists as Appalachian.",https://careers.wbd.com/,Workday,appalachia_tech_companies.csv

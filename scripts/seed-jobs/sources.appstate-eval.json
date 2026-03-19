@@ -1,0 +1,95 @@
+{
+  "sources": [
+    {
+      "name": "Appalachian State Tech Slice",
+      "type": "peopleadmin",
+      "searchUrl": "https://appstate.peopleadmin.com/postings/search",
+      "companyName": "Appalachian State University",
+      "companyWebsite": "https://www.appstate.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 8,
+      "maxPages": 1,
+      "searchParams": {
+        "utf8": "✓",
+        "query": "",
+        "commit": "Search"
+      },
+      "allowedLocationPatterns": [
+        "Boone, North Carolina",
+        "Boone"
+      ],
+      "locationRules": [
+        {
+          "match": "Boone, North Carolina",
+          "locationState": "North Carolina",
+          "locationRegion": "High Country",
+          "locationCity": "Boone"
+        },
+        {
+          "match": "Boone",
+          "locationState": "North Carolina",
+          "locationRegion": "High Country",
+          "locationCity": "Boone"
+        }
+      ],
+      "includeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it",
+        "business systems",
+        "applications"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it",
+        "business systems",
+        "applications",
+        "information technology"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "lecturer",
+        "practitioner",
+        "interior design",
+        "design history",
+        "building sciences",
+        "economics",
+        "advisor",
+        "residence life",
+        "housekeeper",
+        "teaching assistant professor",
+        "counselor",
+        "coordinator",
+        "admissions",
+        "facilities",
+        "custodial",
+        "grounds"
+      ],
+      "excludeKeywords": [
+        "lecturer",
+        "practitioner",
+        "interior design",
+        "design history",
+        "building sciences",
+        "economics",
+        "housekeeper",
+        "advisor",
+        "residence life",
+        "teaching assistant professor",
+        "facilities",
+        "custodial",
+        "grounds"
+      ]
+    }
+  ]
+}

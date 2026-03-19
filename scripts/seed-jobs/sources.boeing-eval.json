@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "name": "Boeing Huntsville Software",
+      "type": "talentbrew",
+      "searchUrl": "https://jobs.boeing.com/search-jobs/Huntsville,AL",
+      "companyName": "Boeing",
+      "companyWebsite": "https://www.boeing.com",
+      "sourceWeight": 14,
+      "maxPages": 1,
+      "maxAccepted": 10,
+      "allowedLocationPatterns": [
+        "Huntsville"
+      ],
+      "locationRules": [
+        {
+          "match": "Huntsville",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        }
+      ],
+      "includeKeywords": [
+        "software",
+        "systems engineer",
+        "test engineer",
+        "cyber",
+        "data"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "software",
+        "systems engineer",
+        "test engineer",
+        "cyber",
+        "data"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "manager",
+        "manufacturing",
+        "liaison",
+        "business development",
+        "product review",
+        "electrical design",
+        "entry-level manufacturing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-03-18T20:40:45.027Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/built-technologies-regional-slice.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/built.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/built-report.json",
+  "rawCount": 11,
+  "outputCount": 4,
+  "sources": [
+    {
+      "name": "Built Technologies Regional Slice",
+      "type": "greenhouse",
+      "rawJobs": 11,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Director of Product & Design, SaaS Products",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Design & UX"
+    },
+    {
+      "title": "GTM Engineer",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Senior Machine Learning Operations Engineer",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Data & AI"
+    },
+    {
+      "title": "Staff Mobile Engineer",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "score": 82,
+      "category": "Software & Dev"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Client Support Representative",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Location \"Nashville (Hybrid)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Enterprise Account Executive - OGC",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Score -18 below threshold 35.",
+      "score": -18
+    },
+    {
+      "title": "Event Marketing Manager",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Location \"Nashville (Hybrid)\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Head of Strategic Banking Partnerships (Fractional)",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Compensation is required.",
+      "score": -33
+    },
+    {
+      "title": "Principal, Marketplace Services",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Score -98 below threshold 35.",
+      "score": -98
+    },
+    {
+      "title": "Principal Solutions Consultant - CRE Deal Management",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Score 2 below threshold 35.",
+      "score": 2
+    },
+    {
+      "title": "Sr. Business Quality Assurance Analyst - Argentina",
+      "companyName": "Built Technologies",
+      "sourceName": "Built Technologies Regional Slice",
+      "reason": "Location \"Mendoza, Argentina\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "fixture-1",
+    "title": "Frontend Engineer",
+    "description": "Build UI for a regional software product. Remote-friendly and based in Morgantown. Salary range: $95k-$120k per year.",
+    "applyUrl": "https://mountainsoftware.example/jobs/frontend-engineer",
+    "location": "Morgantown, WV",
+    "salary": "$95k-$120k per year",
+    "remote": true
+  },
+  {
+    "id": "fixture-2",
+    "title": "Technical Writer",
+    "description": "Own API docs, help center content, and release notes for a developer platform. Compensation: $80k-$96k.",
+    "applyUrl": "https://mountainsoftware.example/jobs/technical-writer",
+    "location": "Remote",
+    "salary": "$80k-$96k",
+    "remote": true
+  },
+  {
+    "id": "fixture-3",
+    "title": "Registered Nurse",
+    "description": "Hospital floor role in Charleston. $38/hour.",
+    "applyUrl": "https://mountainsoftware.example/jobs/rn",
+    "location": "Charleston, WV",
+    "salary": "$38/hour"
+  }
+]

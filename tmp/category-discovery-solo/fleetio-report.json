@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-03-18T20:40:45.033Z",
+  "configPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/fleetio-birmingham-slice.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/fleetio.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/category-discovery-solo/fleetio-report.json",
+  "rawCount": 24,
+  "outputCount": 0,
+  "sources": [
+    {
+      "name": "Fleetio Birmingham Slice",
+      "type": "greenhouse",
+      "rawJobs": 24,
+      "ok": true
+    }
+  ],
+  "accepted": [],
+  "rejected": [
+    {
+      "title": "Account Executive, Mid-Market",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Account Executive, Public Sector",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Account Executive, SMB",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "AI & Automation Analyst",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Director of Marketing Operations",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Director of Product Management, FleetOS",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Engineering Manager, Fleet Enablement",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "GTM Onboarding Manager",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Head of Product Strategy & GTM - Auto Integrate",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Inbound Sales Development Representative",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Outbound Sales Development Manager",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 69
+    },
+    {
+      "title": "Outbound Sales Development Representative",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Public Sector Outbound Sales Development Representative",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Regional Sales Manager, Mid-Market",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -66
+    },
+    {
+      "title": "Regional Sales Manager, SMB",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -66
+    },
+    {
+      "title": "Revenue Operations Manager, Expansion and Retention",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Analytics Engineer - Auto Integrate",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Engineering Manager, Platform",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Manager, Competitive Intelligence",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": -16
+    },
+    {
+      "title": "Senior Product Manager - Auto Integrate",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Software Engineer, Integrations",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Senior Software Engineer, Strategic Reporting & Tools",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "Solutions Consultant",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    },
+    {
+      "title": "VP, Product Marketing",
+      "companyName": "Fleetio",
+      "sourceName": "Fleetio Birmingham Slice",
+      "reason": "Compensation is required.",
+      "score": 84
+    }
+  ]
+}

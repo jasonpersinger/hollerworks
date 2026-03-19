@@ -1,0 +1,25 @@
+[
+  {
+    "type": "need",
+    "title": "Financial Aid IT Business Systems Analyst II",
+    "category": "IT & Support",
+    "companyName": "Appalachian State University",
+    "companyWebsite": "https://www.appstate.edu/",
+    "locationState": "North Carolina",
+    "locationRegion": "High Country",
+    "locationCity": "Boone",
+    "compensation": "$60,000 - $66,072",
+    "description": "Information Primary Purpose The primary purpose of the Office of Student Financial Aid and University Scholarships is to aid students and families in securing the financial resources necessary to attend college. The major activities of this unit include accurately and effectively aiding students, assisting with the completing of required applications, and ensuring students meet eligibility guidelines for various financial aid programs, evaluating all requests for eligibility, and administering all scholarships, grants, loans, and student work programs that are available to students at Appalachian State University. The Office is also responsible for the University’s compliance with federal and state regulations and reporting which are required to maintain our continued funding. The primary purpose of this position is to ensure the Office of Student Financial Aid and University Scholarships has systems and processes in place to effectively manage the reporting, packaging, updating, and communicating of all of the federal, state, institutional, and external funds awarded and received to assist students in paying for college. All processes and systems must remain compliant with Federal, State, NCAA , and Institutional regulations/laws. The purpose is to participate as a member of the critical team that manages the technology needed to ensure financial aid and scholarships can make awards in a streamlined and efficient way, communicate those awards consistently and effectively, and report on funds used to make those awards to help remain in compliance and within University’s budgetary limitations.",
+    "contact": "https://appstate.peopleadmin.com/postings/53524",
+    "remoteFriendly": false,
+    "sourceUrl": "https://appstate.peopleadmin.com/postings/53524",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Appalachian State Tech Slice"
+  }
+]

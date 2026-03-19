@@ -1,0 +1,1161 @@
+{
+  "sources": [
+    {
+      "name": "Duolingo Pittsburgh",
+      "type": "greenhouse",
+      "boardToken": "duolingo",
+      "companyName": "Duolingo",
+      "companyWebsite": "https://www.duolingo.com",
+      "sourceWeight": 18,
+      "maxAccepted": 15,
+      "allowedLocationPatterns": ["Pittsburgh, PA"],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "data",
+        "design",
+        "product",
+        "analytics",
+        "research",
+        "writer",
+        "docs",
+        "technical writer",
+        "documentation",
+        "developer relations",
+        "api writer",
+        "knowledge base",
+        "help center",
+        "content strategist",
+        "seo",
+        "growth",
+        "marketing operations",
+        "security",
+        "it"
+      ],
+      "excludeKeywords": [
+        "chef",
+        "facilities",
+        "custodian",
+        "head of dtc",
+        "head of duolingo academy",
+        "learning design"
+      ]
+    },
+    {
+      "name": "Aurora Innovation Pittsburgh",
+      "type": "greenhouse",
+      "boardToken": "aurorainnovation",
+      "companyName": "Aurora",
+      "companyWebsite": "https://aurora.tech",
+      "sourceWeight": 20,
+      "maxAccepted": 20,
+      "allowedLocationPatterns": ["Pittsburgh, Pennsylvania"],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, Pennsylvania",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "software",
+        "machine learning",
+        "it",
+        "security",
+        "systems",
+        "cloud",
+        "product",
+        "design",
+        "program manager",
+        "technical program manager",
+        "scrum",
+        "agile",
+        "technical writer",
+        "documentation",
+        "analyst"
+      ],
+      "excludeKeywords": [
+        "people team",
+        "remote assist specialist",
+        "public affairs",
+        "executive assistant",
+        "filmmaker"
+      ]
+    },
+    {
+      "name": "Toast Appalachia Slice",
+      "type": "greenhouse",
+      "boardToken": "toast",
+      "companyName": "Toast",
+      "companyWebsite": "https://pos.toasttab.com",
+      "sourceWeight": 10,
+      "maxAccepted": 10,
+      "allowedLocationPatterns": ["Pittsburgh, PA"],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "customer success",
+        "customer success engineer",
+        "implementation",
+        "implementation consultant",
+        "support",
+        "analyst",
+        "design",
+        "product",
+        "engineer",
+        "manager",
+        "solutions engineer",
+        "sales engineer",
+        "solutions consultant",
+        "technical account",
+        "customer onboarding",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "content strategist",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "account executive",
+        "territory account executive",
+        "business development representative",
+        "sales development representative"
+      ]
+    },
+    {
+      "name": "Gecko Robotics Pittsburgh",
+      "type": "ashby",
+      "jobBoardName": "gecko-robotics",
+      "companyName": "Gecko Robotics",
+      "companyWebsite": "https://www.geckorobotics.com",
+      "sourceWeight": 16,
+      "maxAccepted": 12,
+      "allowedLocationPatterns": ["Pittsburgh", "Remote"],
+      "locationRules": [
+        {
+          "match": "Pittsburgh",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "software",
+        "security",
+        "data",
+        "forward deployed",
+        "product",
+        "technical program manager",
+        "machine learning",
+        "devops",
+        "platform"
+      ],
+      "excludeKeywords": [
+        "recruiter",
+        "executive assistant",
+        "public affairs",
+        "communications"
+      ]
+    },
+    {
+      "name": "Lirio Appalachia Slice",
+      "type": "greenhouse",
+      "boardToken": "lirio",
+      "companyName": "Lirio",
+      "companyWebsite": "https://lirio.co",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "allowedLocationPatterns": ["Remote"],
+      "locationRules": [
+        {
+          "match": "Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "platform",
+        "cloud",
+        "ai",
+        "machine learning",
+        "security",
+        "technical",
+        "software",
+        "qa"
+      ],
+      "excludeKeywords": [
+        "recruiter",
+        "marketing",
+        "sales"
+      ]
+    },
+    {
+      "name": "Built Technologies Regional Slice",
+      "type": "greenhouse",
+      "boardToken": "getbuilt",
+      "companyName": "Built Technologies",
+      "companyWebsite": "https://getbuilt.com",
+      "sourceWeight": 12,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": ["Remote - USA", "Nashville, TN \\(Hybrid\\) or Remote"],
+      "locationRules": [
+        {
+          "match": "Remote - USA",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Regional Tennessee inclusion"
+        },
+        {
+          "match": "Nashville, TN \\(Hybrid\\) or Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Regional Tennessee inclusion"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "mobile",
+        "machine learning",
+        "product",
+        "design",
+        "quality assurance",
+        "qa",
+        "support",
+        "technical",
+        "solutions engineer",
+        "technical account",
+        "implementation",
+        "customer success",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "systems administrator",
+        "support engineer",
+        "application analyst",
+        "project manager",
+        "scrum",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "account executive",
+        "event marketing",
+        "banking partnerships",
+        "marketplace services",
+        "sales development representative",
+        "business development representative",
+        "fractional",
+        "argentina"
+      ]
+    },
+    {
+      "name": "Fleetio Birmingham Slice",
+      "type": "greenhouse",
+      "boardToken": "fleetio",
+      "companyName": "Fleetio",
+      "companyWebsite": "https://www.fleetio.com",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "allowedLocationPatterns": [
+        "Remote",
+        "Remote - USA",
+        "Remote - USA, CAN, MEX",
+        "Birmingham, AL"
+      ],
+      "locationRules": [
+        {
+          "match": "Remote",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham-based company"
+        },
+        {
+          "match": "Remote - USA",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham-based company"
+        },
+        {
+          "match": "Remote - USA, CAN, MEX",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham-based company"
+        },
+        {
+          "match": "Birmingham, AL",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Birmingham"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "software",
+        "analytics",
+        "automation",
+        "product",
+        "platform",
+        "technical",
+        "data",
+        "security",
+        "devops",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "customer success engineer",
+        "technical account",
+        "implementation",
+        "systems administrator",
+        "support engineer",
+        "application analyst",
+        "project manager",
+        "scrum",
+        "seo",
+        "growth",
+        "lifecycle",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "account executive",
+        "sales development representative",
+        "business development representative",
+        "field marketing",
+        "brand marketing",
+        "competitive intelligence",
+        "onboarding manager",
+        "public sector",
+        "head of"
+      ]
+    },
+    {
+      "name": "BlastPoint Pittsburgh",
+      "type": "greenhouse",
+      "boardToken": "blastpoint",
+      "companyName": "BlastPoint",
+      "companyWebsite": "https://blastpoint.com",
+      "sourceWeight": 12,
+      "maxAccepted": 4,
+      "allowedLocationPatterns": ["Pittsburgh, PA", "Remote", "Remote - US"],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh startup"
+        },
+        {
+          "match": "Remote - US",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh startup"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "devops",
+        "data engineer",
+        "data",
+        "platform",
+        "cloud",
+        "software",
+        "technical"
+      ],
+      "excludeKeywords": [
+        "vp of engineering",
+        "account executive",
+        "sales",
+        "marketing",
+        "finance",
+        "operations"
+      ]
+    },
+    {
+      "name": "Skild AI Pittsburgh Slice",
+      "type": "greenhouse",
+      "boardToken": "skildai-careers",
+      "companyName": "Skild AI",
+      "companyWebsite": "https://www.skild.ai",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "Pittsburgh",
+        "Pittsburgh, PA",
+        "Pittsburgh, San Mateo",
+        "San Mateo, Pittsburgh",
+        "Pittsburgh, San Francisco",
+        "Pittsburgh, San Francisco, Bengaluru",
+        " Pittsburgh, San Francisco, Bengaluru"
+      ],
+      "locationRules": [
+        {
+          "match": "^Pittsburgh$",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, San Mateo",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": "San Mateo, Pittsburgh",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, San Francisco",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, San Francisco, Bengaluru",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": " Pittsburgh, San Francisco, Bengaluru",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        }
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "generalist",
+        "electrical engineer",
+        "operator",
+        "technician"
+      ],
+      "includeKeywords": [
+        "engineer",
+        "machine learning",
+        "robotics",
+        "software",
+        "embedded",
+        "firmware",
+        "security",
+        "research",
+        "infrastructure"
+      ],
+      "excludeKeywords": [
+        "videography",
+        "social media",
+        "operations supervisor",
+        "deployment operations",
+        "industrial designer",
+        "product marketing",
+        "recruiter"
+      ]
+    },
+    {
+      "name": "Astrobotic Pittsburgh Slice",
+      "type": "primepay-recruit",
+      "accountName": "astrobotic-technology-inc",
+      "companyName": "Astrobotic",
+      "companyWebsite": "https://www.astrobotic.com",
+      "sourceWeight": 15,
+      "maxAccepted": 3,
+      "allowedLocationPatterns": [
+        "Pittsburgh, PA",
+        "Pittsburgh \\(Hybrid\\), PA"
+      ],
+      "locationRules": [
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh \\(Hybrid\\), PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "remoteFriendly": true,
+          "locationNotes": "Hybrid role in Pittsburgh"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "systems",
+        "mechanical",
+        "reliability",
+        "safety",
+        "software",
+        "electrical",
+        "technical"
+      ],
+      "excludeKeywords": [
+        "test engineer",
+        "finance",
+        "marketing",
+        "sales"
+      ]
+    },
+    {
+      "name": "Shipt Birmingham",
+      "type": "workday",
+      "pageUrl": "https://shipt.wd1.myworkdayjobs.com/Shipt_External",
+      "apiBaseUrl": "https://shipt.wd1.myworkdayjobs.com/wday/cxs/shipt/Shipt_External",
+      "companyName": "Shipt",
+      "companyWebsite": "https://www.shipt.com",
+      "sourceWeight": 14,
+      "maxAccepted": 6,
+      "requestLimit": 20,
+      "requestOffsets": [0],
+      "requestDelayMs": 200,
+      "allowedLocationPatterns": [
+        "Birmingham, AL",
+        "US Remote",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Birmingham, AL",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Birmingham"
+        },
+        {
+          "match": "US Remote",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham startup"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Alabama",
+          "locationRegion": "Central Alabama",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Birmingham startup"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "security",
+        "data",
+        "application",
+        "product manager",
+        "project manager",
+        "technical program manager",
+        "scrum",
+        "software",
+        "analytics",
+        "business intelligence",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "technical account",
+        "customer success",
+        "implementation",
+        "systems administrator",
+        "support engineer",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "security",
+        "data",
+        "analytics",
+        "business intelligence",
+        "product manager",
+        "application",
+        "project manager",
+        "technical program manager",
+        "technical writer",
+        "documentation",
+        "technical account",
+        "customer success",
+        "implementation",
+        "systems administrator",
+        "support engineer",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "finance",
+        "counsel",
+        "workforce",
+        "retail media",
+        "account executive",
+        "field marketing",
+        "broker",
+        "claims"
+      ]
+    },
+    {
+      "name": "Unum Chattanooga",
+      "type": "workday",
+      "pageUrl": "https://unum.wd1.myworkdayjobs.com/External",
+      "apiBaseUrl": "https://unum.wd1.myworkdayjobs.com/wday/cxs/unum/External",
+      "companyName": "Unum",
+      "companyWebsite": "https://www.unum.com",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "requestLimit": 20,
+      "requestOffsets": [0, 20, 40, 60],
+      "requestDelayMs": 200,
+      "allowedLocationPatterns": [
+        "Chattanooga, Tennessee",
+        "Chattanooga-Tennessee",
+        "Home Worker - US",
+        "Home Worker",
+        "US Remote",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Chattanooga, Tennessee",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Chattanooga"
+        },
+        {
+          "match": "Chattanooga-Tennessee",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Chattanooga"
+        },
+        {
+          "match": "Home Worker - US",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "Home Worker",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "US Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        },
+        {
+          "match": "Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "Southeast Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Chattanooga employer"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "software",
+        "data",
+        "analytics",
+        "security",
+        "business intelligence",
+        "cloud",
+        "architect",
+        "platform",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "systems administrator",
+        "support engineer",
+        "service desk",
+        "application analyst",
+        "project manager",
+        "scrum"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "developer",
+        "software",
+        "data",
+        "analytics",
+        "business intelligence",
+        "security",
+        "access management",
+        "iam",
+        "cloud",
+        "architect",
+        "platform",
+        "technical writer",
+        "documentation",
+        "systems administrator",
+        "support engineer",
+        "service desk",
+        "application analyst",
+        "project manager",
+        "scrum"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "claims",
+        "nurse",
+        "underwriter",
+        "broker",
+        "sales",
+        "marketing",
+        "finance",
+        "counsel",
+        "attorney",
+        "actuarial",
+        "real estate",
+        "hr business partner",
+        "client development",
+        "benefit advisor"
+      ]
+    },
+    {
+      "name": "Dick's Sporting Goods Technology",
+      "type": "dicks-jobs",
+      "searchUrl": "https://www.dickssportinggoods.jobs/jobs/?filter%5Bcategory%5D%5B%5D=Technology",
+      "companyName": "Dick's Sporting Goods",
+      "companyWebsite": "https://www.dickssportinggoods.com",
+      "sourceWeight": 14,
+      "maxAccepted": 8,
+      "maxPages": 3,
+      "requestDelayMs": 150,
+      "allowedLocationPatterns": [
+        "Remote",
+        "Pittsburgh, PA",
+        "Pittsburgh, Pennsylvania",
+        "Coraopolis, PA",
+        "Coraopolis, Pennsylvania"
+      ],
+      "locationRules": [
+        {
+          "match": "Remote",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh employer"
+        },
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, Pennsylvania",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Coraopolis, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Coraopolis"
+        },
+        {
+          "match": "Coraopolis, Pennsylvania",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Coraopolis"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "software",
+        "product",
+        "security",
+        "data",
+        "analytics",
+        "architect",
+        "manager"
+      ],
+      "excludeKeywords": [
+        "store",
+        "warehouse",
+        "retail associate",
+        "sales associate",
+        "cashier",
+        "distribution"
+      ]
+    },
+    {
+      "name": "Boeing Huntsville Software",
+      "type": "talentbrew",
+      "searchUrl": "https://jobs.boeing.com/search-jobs/Huntsville,AL",
+      "companyName": "Boeing",
+      "companyWebsite": "https://www.boeing.com",
+      "sourceWeight": 14,
+      "maxPages": 1,
+      "maxAccepted": 5,
+      "allowedLocationPatterns": [
+        "Huntsville"
+      ],
+      "locationRules": [
+        {
+          "match": "Huntsville",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        }
+      ],
+      "includeKeywords": [
+        "software",
+        "systems engineer",
+        "test engineer",
+        "cyber",
+        "data"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "software",
+        "systems engineer",
+        "test engineer",
+        "cyber",
+        "data"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "manager",
+        "manufacturing",
+        "liaison",
+        "business development",
+        "product review",
+        "electrical design",
+        "entry-level manufacturing"
+      ]
+    },
+    {
+      "name": "Northrop Grumman Huntsville Software",
+      "type": "pcs",
+      "pageUrl": "https://jobs.northropgrumman.com/careers",
+      "apiBaseUrl": "https://jobs.northropgrumman.com/api/pcsx",
+      "domain": "ngc.com",
+      "query": "software",
+      "location": "Huntsville, AL, United States",
+      "companyName": "Northrop Grumman",
+      "companyWebsite": "https://www.northropgrumman.com",
+      "sourceWeight": 14,
+      "maxAccepted": 6,
+      "dedupeByTitleLocation": true,
+      "requestStarts": [0, 10, 20, 30],
+      "requestDelayMs": 150,
+      "allowedLocationPatterns": [
+        "Huntsville, AL, US",
+        "United States-Alabama-Huntsville",
+        "B041 Huntsville - 110 Wynn Dr NW"
+      ],
+      "locationRules": [
+        {
+          "match": "Huntsville",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        }
+      ],
+      "includeKeywords": [
+        "software",
+        "engineer",
+        "embedded",
+        "devops",
+        "developer",
+        "python",
+        "c++",
+        "java"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "software",
+        "engineer",
+        "embedded",
+        "devops",
+        "developer"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "project management",
+        "product owner",
+        "manager",
+        "management",
+        "supply chain",
+        "mechanic",
+        "stock clerk",
+        "manufacturing",
+        "electrical",
+        "cost estimating"
+      ]
+    },
+    {
+      "name": "Abridge Pittsburgh Slice",
+      "type": "ashby",
+      "jobBoardName": "Abridge",
+      "companyName": "Abridge",
+      "companyWebsite": "https://www.abridge.com",
+      "sourceWeight": 18,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "PGH Office",
+        "United States - Remote",
+        "Remote - Tier 1",
+        "Remote - Tier 2",
+        "Remote - Tier 3"
+      ],
+      "locationRules": [
+        {
+          "match": "PGH Office",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "United States - Remote",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        },
+        {
+          "match": "Remote - Tier 1",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        },
+        {
+          "match": "Remote - Tier 2",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        },
+        {
+          "match": "Remote - Tier 3",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Remote role from Pittsburgh-based company"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "machine learning",
+        "product",
+        "design",
+        "security",
+        "data",
+        "sre",
+        "platform",
+        "it",
+        "quality",
+        "technical writer",
+        "documentation",
+        "developer relations",
+        "knowledge base",
+        "help center",
+        "customer success engineer",
+        "technical account",
+        "implementation",
+        "support engineer",
+        "systems administrator",
+        "technical program manager",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "business development",
+        "government affairs",
+        "enterprise development representative",
+        "recruiter",
+        "people operations",
+        "legal",
+        "clinical success director",
+        "implementation director",
+        "director of implementation",
+        "implementation manager",
+        "revenue enablement",
+        "counsel",
+        "finance"
+      ]
+    },
+    {
+      "name": "Virginia Tech Tech Slice",
+      "type": "virginia-tech",
+      "searchUrl": "https://jobs.apply.vt.edu/jobs/search",
+      "companyName": "Virginia Tech",
+      "companyWebsite": "https://www.vt.edu",
+      "sourceWeight": 18,
+      "maxAccepted": 4,
+      "maxPages": 2,
+      "maxDetailJobs": 12,
+      "searchParams": {
+        "block_uid": "1291ddfe3d520b77f2893d82fe9eb850",
+        "block_index": "0",
+        "page_row_uid": "68dee7be3317ace5e5c42fb51f3a920b",
+        "page_row_index": "1",
+        "page_version_uid": "308e2e1bd367c76aced18ea1cef85972",
+        "search_categories": ""
+      },
+      "categoryFilters": [
+        {
+          "name": "Information Systems / Technology",
+          "value": "3c1b6a423b6ee41c8f5d5908a7e4b53f"
+        },
+        {
+          "name": "Data Analytics / Security",
+          "value": "1f67f3ca88a8ae9944cf993bd0737925"
+        },
+        {
+          "name": "Engineering",
+          "value": "8c4cea2324090289715c4435b2dbc2bd"
+        },
+        {
+          "name": "Program/Project Management",
+          "value": "63eedf5fd9a78d4ae08f0d82b58651b5"
+        }
+      ],
+      "allowedLocationPatterns": [
+        "Blacksburg, Virginia",
+        "Roanoke, Virginia",
+        "Fully Remote, Virginia",
+        "Hybrid, Virginia"
+      ],
+      "locationRules": [
+        {
+          "match": "Blacksburg, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Blacksburg"
+        },
+        {
+          "match": "Roanoke, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Roanoke",
+          "locationNotes": "Regional Virginia inclusion via Roanoke"
+        },
+        {
+          "match": "Fully Remote, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Remote",
+          "locationNotes": "Remote role from Virginia Tech",
+          "remoteFriendly": true
+        },
+        {
+          "match": "Hybrid, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Remote",
+          "locationNotes": "Hybrid Virginia Tech role",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "developer",
+        "integration",
+        "application",
+        "software",
+        "data",
+        "security",
+        "support",
+        "systems",
+        "technology",
+        "it",
+        "analytics",
+        "technical writer",
+        "documentation",
+        "help center",
+        "service desk",
+        "systems administrator",
+        "application analyst",
+        "business systems analyst",
+        "project manager",
+        "scrum"
+      ],
+      "excludeKeywords": [
+        "audiovisual",
+        "av technician",
+        "faculty",
+        "postdoctoral",
+        "part-time",
+        "administrative assistant",
+        "director of marketing",
+        "creative media",
+        "customer service agent",
+        "custodial",
+        "temporary assignments"
+      ]
+    }
+  ]
+}

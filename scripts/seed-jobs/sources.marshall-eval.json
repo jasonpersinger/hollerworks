@@ -1,0 +1,139 @@
+{
+  "sources": [
+    {
+      "name": "Marshall University Tech Slice",
+      "type": "peopleadmin",
+      "searchUrl": "https://marshall.peopleadmin.com/postings/search",
+      "companyName": "Marshall University",
+      "companyWebsite": "https://www.marshall.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 12,
+      "maxPages": 1,
+      "searchParams": {
+        "utf8": "✓",
+        "query": "",
+        "query_v0_posted_at_date": "",
+        "query_position_type_id[]": [
+          "1",
+          "2"
+        ],
+        "commit": "Search"
+      },
+      "allowedLocationPatterns": [
+        "MU - Marshall University",
+        "MUSOM - Marshall University School of Medicine",
+        "Huntington",
+        "South Charleston",
+        "Beckley",
+        "Point Pleasant",
+        "Teays Valley",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "MU - Marshall University",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "MUSOM - Marshall University School of Medicine",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "Huntington",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "Beckley",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Beckley"
+        },
+        {
+          "match": "South Charleston",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "South Charleston"
+        },
+        {
+          "match": "Teays Valley",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Teays Valley"
+        },
+        {
+          "match": "Point Pleasant",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Point Pleasant"
+        },
+        {
+          "match": "Remote",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Remote",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "service desk",
+        "client services"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "information technology",
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "client services",
+        "service desk",
+        "web",
+        "application",
+        "security",
+        "network"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "records coordinator",
+        "administrative assistant",
+        "special events",
+        "student support",
+        "campus service worker",
+        "residential",
+        "philanthropy",
+        "alumni",
+        "landscape",
+        "office administrator",
+        "carpenter",
+        "hvac",
+        "painter",
+        "athletic",
+        "olympic",
+        "campus police",
+        "controls technician"
+      ],
+      "excludeKeywords": [
+        "landscape",
+        "campus service worker",
+        "residential",
+        "special events",
+        "office administrator",
+        "student support",
+        "custodial",
+        "grounds"
+      ]
+    }
+  ]
+}

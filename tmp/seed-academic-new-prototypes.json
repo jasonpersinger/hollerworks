@@ -1,0 +1,71 @@
+[
+  {
+    "type": "need",
+    "title": "Client Services Analyst",
+    "category": "IT & Support",
+    "companyName": "Marshall University",
+    "companyWebsite": "https://www.marshall.edu/",
+    "locationState": "West Virginia",
+    "locationRegion": "Southern WV",
+    "locationCity": "Huntington",
+    "compensation": "$44,918-$58,393",
+    "description": "Must be able to perform all essential job duties as outlined in the job description. Required Qualifications: Education Bachelor\u2019s degree required, preferably in information systems, computer technology or related field. Experience At least 3 years of experience working in client services or a service desk role. Preferred Qualifications: Familiarity with higher education IT environments and challenges. Familiarity with service desk software and ticketing systems. Excellent communication and interpersonal abilities, with an emphasis on customer service. Strong analytical, troubleshooting, and problem-solving skills. Strong documentation and customer service skills; ability to train users with varying levels of technical comfort. Ability to work both independently and collaboratively within a team. Experience in supporting time-sensitive, high-stakes events with professionalism and composure. Experience providing technical support in healthcare simulation, or A/V-integrated environments. Hands-on experience supporting Intellegent Video Systems ( IVS ) and/or Elevate Health LearningSpace (or comparable clinical skills/ OSCE capture platforms). Experience supporting OSCEs, simulation labs, standardized patient programs, or clinical skills curriculum workflows. Familiarity with identity and access management concepts (roles/permissions), video storage/retention practices, and basic networking concepts relevant to A/V systems. (i.e. Echo360, Panopto, Kaltura etc.)",
+    "contact": "https://marshall.peopleadmin.com/postings/31354",
+    "remoteFriendly": false,
+    "sourceUrl": "https://marshall.peopleadmin.com/postings/31354",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Marshall University Tech Slice"
+  },
+  {
+    "type": "need",
+    "title": "Financial Aid IT Business Systems Analyst II",
+    "category": "IT & Support",
+    "companyName": "Appalachian State University",
+    "companyWebsite": "https://www.appstate.edu/",
+    "locationState": "North Carolina",
+    "locationRegion": "High Country",
+    "locationCity": "Boone",
+    "compensation": "$60,000 - $66,072",
+    "description": "Information Primary Purpose The primary purpose of the Office of Student Financial Aid and University Scholarships is to aid students and families in securing the financial resources necessary to attend college. The major activities of this unit include accurately and effectively aiding students, assisting with the completing of required applications, and ensuring students meet eligibility guidelines for various financial aid programs, evaluating all requests for eligibility, and administering all scholarships, grants, loans, and student work programs that are available to students at Appalachian State University. The Office is also responsible for the University\u2019s compliance with federal and state regulations and reporting which are required to maintain our continued funding. The primary purpose of this position is to ensure the Office of Student Financial Aid and University Scholarships has systems and processes in place to effectively manage the reporting, packaging, updating, and communicating of all of the federal, state, institutional, and external funds awarded and received to assist students in paying for college. All processes and systems must remain compliant with Federal, State, NCAA , and Institutional regulations/laws. The purpose is to participate as a member of the critical team that manages the technology needed to ensure financial aid and scholarships can make awards in a streamlined and efficient way, communicate those awards consistently and effectively, and report on funds used to make those awards to help remain in compliance and within University\u2019s budgetary limitations.",
+    "contact": "https://appstate.peopleadmin.com/postings/53524",
+    "remoteFriendly": false,
+    "sourceUrl": "https://appstate.peopleadmin.com/postings/53524",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Appalachian State Tech Slice"
+  },
+  {
+    "type": "need",
+    "title": "Manager, System Administrator & Front End Operations",
+    "category": "IT & Support",
+    "companyName": "Radford University",
+    "companyWebsite": "https://www.radford.edu/",
+    "locationState": "Virginia",
+    "locationRegion": "Southwest Virginia",
+    "locationCity": "Radford",
+    "compensation": "$66,700 - $84,000,",
+    "description": "This position will serve as the Asset Works AiM software administrator, billing manager and manager of work control administration. The position is responsible for ensuring the integrity of data within the Facilities Management (AiM) system. Responsibilities include: technical and functional support of the AiM system, development and generation of reports, utilizing BIRT, IBM Cognos, SQL, etc. for requests using available database systems, and daily management of the work control team. These duties include: prioritization of customized workflows, communication with stakeholders, analysis of Facilities billing processes and practices, provide technical solutions that improve departmental effectiveness and efficiency using knowledge and understanding of Facilities & budgetary practices, and a clear understanding of systems capabilities, customer impacts, data relationships, and database table structures. Integration of information between AiM, Banner ERP, and ArcGIS. Review and troubleshoot reports to determine accuracy of data and for proper functionality. Position manages system enhancements and quality standards of AiM, and is responsible for ensuring compliance with relevant State and University policies and procedures. Coordinates all end-user testing as new releases, upgrades or enhancements are implemented, while following University and State guidelines and procedures, research, plan, implement, and thoroughly test and evaluate system modifications, upgrades, and enhancements. The AiM system is used by Facilities Management for customer requests, work order processing, purchase orders, departmental billing and space management. Responsibilities include configuration, maintenance, upgrades, report development and generation, monthly billing as well as other technical and functional support of the AiM system. Participates in strategic planning and data analysis to assist in determining future needs and enhancements and develops workflows for the new ReADY request software and assists with technical support of other IT systems used by Facilities.",
+    "contact": "https://jobs.radford.edu/jobs/manager-system-administrator-front-end-operations-radford-virginia-united-states",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.radford.edu/jobs/manager-system-administrator-front-end-operations-radford-virginia-united-states",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (IT & Support)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Radford Tech Slice"
+  }
+]

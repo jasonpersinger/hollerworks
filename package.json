@@ -3,6 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "analytics:report": "node scripts/analytics/report.js",
+    "seed:discover": "node scripts/seed-jobs/discovery-batch.js",
+    "seed:import": "node scripts/seed-jobs/import-batch.js",
+    "seed:jobs": "node scripts/seed-jobs/cli.js",
     "test:smoke": "playwright test",
     "test:smoke:headed": "playwright test --headed"
   },

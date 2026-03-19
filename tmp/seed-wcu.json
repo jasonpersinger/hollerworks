@@ -1,0 +1,25 @@
+[
+  {
+    "type": "need",
+    "title": "Grant Program Manager - #T00444",
+    "category": "Product & Project",
+    "companyName": "Western Carolina University",
+    "companyWebsite": "https://www.wcu.edu/",
+    "locationState": "North Carolina",
+    "locationRegion": "Western NC",
+    "locationCity": "Cullowhee",
+    "compensation": "$227 - $7218",
+    "description": "Log In /Create Account Grant Program Manager - #T00444 Bookmark this Posting Print Preview Apply for this Job Please see Special Instructions for more details. Applicants must apply online in order to be considered. This position is supported by external grant funding and is temporary in nature. Continued employment is dependent upon funding availability and the duration of the project. Please include a cover letter, resume, and a list of references (with complete contact information). Qualified applicants will be contacted by the department directly if selected for interview. Posting Details Posting Information Posting Number temp hourly1225P Quick Link for Internal Postings Classification Title Working Title Department School of Engineering & Technology",
+    "contact": "https://jobs.wcu.edu/postings/33285",
+    "remoteFriendly": false,
+    "sourceUrl": "https://jobs.wcu.edu/postings/33285",
+    "seedScore": 66,
+    "seedNotes": [
+      "source weight +16",
+      "category match +20 (Product & Project)",
+      "tech signal +15",
+      "include keyword +15"
+    ],
+    "seedSource": "Western Carolina Tech Slice"
+  }
+]

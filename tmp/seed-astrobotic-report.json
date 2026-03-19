@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-03-17T17:29:11.465Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.astrobotic-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-astrobotic.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-astrobotic-report.json",
+  "rawCount": 7,
+  "outputCount": 3,
+  "sources": [
+    {
+      "name": "Astrobotic Pittsburgh Slice",
+      "type": "primepay-recruit",
+      "rawJobs": 7,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Lead Systems Engineer",
+      "companyName": "Astrobotic",
+      "sourceName": "Astrobotic Pittsburgh Slice",
+      "score": 60,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Reliability, Maintainability, and Safety Engineer",
+      "companyName": "Astrobotic",
+      "sourceName": "Astrobotic Pittsburgh Slice",
+      "score": 60,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Senior Mechanical Engineer",
+      "companyName": "Astrobotic",
+      "sourceName": "Astrobotic Pittsburgh Slice",
+      "score": 60,
+      "category": "Other Tech-Adjacent"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Component Test Engineer",
+      "companyName": "Astrobotic",
+      "sourceName": "Astrobotic Pittsburgh Slice",
+      "reason": "Location \"Mojave, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Telemetry Test Engineer",
+      "companyName": "Astrobotic",
+      "sourceName": "Astrobotic Pittsburgh Slice",
+      "reason": "Location \"Mojave, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Lead Systems Engineer",
+      "companyName": "Astrobotic",
+      "sourceName": "Astrobotic Pittsburgh Slice",
+      "reason": "Location \"Mojave, CA\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Structures Engineer",
+      "companyName": "Astrobotic",
+      "sourceName": "Astrobotic Pittsburgh Slice",
+      "reason": "Location \"Mojave (Hybrid), CA\" did not match allowed patterns.",
+      "score": 0
+    }
+  ]
+}

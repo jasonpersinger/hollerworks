@@ -1,0 +1,230 @@
+{
+  "generatedAt": "2026-03-17T12:01:12.835Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.appstate-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/seed-appstate.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/seed-appstate-report.json",
+  "rawCount": 30,
+  "outputCount": 1,
+  "sources": [
+    {
+      "name": "Appalachian State Tech Slice",
+      "type": "peopleadmin",
+      "rawJobs": 30,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Financial Aid IT Business Systems Analyst II",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "score": 66,
+      "category": "IT & Support"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Academic Advisor",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": -54
+    },
+    {
+      "title": "Exercise and Wellness Coordinator",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 31
+    },
+    {
+      "title": "Assistant Director, School Certifying Official",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 46
+    },
+    {
+      "title": "Teaching Assistant Professor of Biological Anthropology",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -84
+    },
+    {
+      "title": "Temporary Housekeeper (1st Shift) Hickory",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Location \"Hickory, NC Position Number N10310\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "General Business Counselor (multiple vacancies)",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Location \"Hickory, NC Faculty Rank No Provide Rank N/A Position Number 091511\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Coordinator for Residence Life: Building Supervisor",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Residence Hall Manager",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 46
+    },
+    {
+      "title": "Coordinator of Supplemental Instruction",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 46
+    },
+    {
+      "title": "Lecturer in Building Sciences, Building Science (Multiple Vacancies)",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Post-Doctoral / Post-Master's Resident",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 31
+    },
+    {
+      "title": "Lecturer in the Department of Economics",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -64
+    },
+    {
+      "title": "Health Sciences Librarian",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 16 below threshold 35.",
+      "score": 16
+    },
+    {
+      "title": "Clinical Instructor/Assistant Professor in Nursing",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 16 below threshold 35.",
+      "score": 16
+    },
+    {
+      "title": "Business Librarian",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 16 below threshold 35.",
+      "score": 16
+    },
+    {
+      "title": "Environmental Affairs Manager",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Occupational Safety Manager",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 66
+    },
+    {
+      "title": "Assistant Athletic Trainer (Temporary)",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 16
+    },
+    {
+      "title": "Assistant Director Disability Resources",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 31 below threshold 35.",
+      "score": 31
+    },
+    {
+      "title": "College Life Resource Coordinator/Lecturer",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -54
+    },
+    {
+      "title": "Access Consultant: Boone Campus",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 31 below threshold 35.",
+      "score": 31
+    },
+    {
+      "title": "Lecturer in Design History - Online",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Lecturer / Teaching Assistant Professor of Japanese",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -84
+    },
+    {
+      "title": "Practitioner in Residence in Building Sciences - Construction Management (Multiple Vacancies)",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -49
+    },
+    {
+      "title": "Practitioner in Residence- Interior Design",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -34
+    },
+    {
+      "title": "Teaching Assistant Professor of Philosophy",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": -84
+    },
+    {
+      "title": "Assistant Professor of Music Industry Studies and Voice",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 16 below threshold 35.",
+      "score": 16
+    },
+    {
+      "title": "Tenure-Track Associate Professor in Criminal Justice",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 16 below threshold 35.",
+      "score": 16
+    },
+    {
+      "title": "Non-Tenure Track Teaching Position in Criminal Justice",
+      "companyName": "Appalachian State University",
+      "sourceName": "Appalachian State Tech Slice",
+      "reason": "Score 31 below threshold 35.",
+      "score": 31
+    }
+  ]
+}

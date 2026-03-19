@@ -1,0 +1,35 @@
+{
+  "targetCount": 15,
+  "minScore": 35,
+  "limit": 20,
+  "entries": [
+    {
+      "label": "Academic Atom Discovery",
+      "config": "scripts/seed-jobs/sources.academic-atom-discovery.json",
+      "limit": 20
+    },
+    {
+      "label": "Academic PageUp Prototype",
+      "config": "scripts/seed-jobs/sources.radford-eval.json",
+      "limit": 10
+    },
+    {
+      "label": "WCU Search Prototype",
+      "config": "scripts/seed-jobs/sources.wcu-eval.json",
+      "limit": 10
+    },
+    {
+      "label": "Gather AI Startup Discovery",
+      "config": "scripts/seed-jobs/sources.startups-greenhouse-eval.json",
+      "sourceNames": [
+        "Gather AI Pittsburgh"
+      ],
+      "limit": 10
+    },
+    {
+      "label": "Jetpack Startup Discovery",
+      "config": "scripts/seed-jobs/sources.jetpack-eval.json",
+      "limit": 10
+    }
+  ]
+}

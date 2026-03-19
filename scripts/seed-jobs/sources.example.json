@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "name": "Sample Fixture",
+      "type": "json-file",
+      "file": "fixtures/sample-source.json",
+      "companyName": "Mountain Software Co.",
+      "companyWebsite": "https://mountainsoftware.example",
+      "locationState": "West Virginia",
+      "locationRegion": "Northern WV",
+      "sourceWeight": 20,
+      "includeKeywords": ["engineer", "designer", "data", "docs"]
+    },
+    {
+      "name": "Example Greenhouse Source",
+      "type": "greenhouse",
+      "boardToken": "replace-me",
+      "companyName": "Example Employer",
+      "companyWebsite": "https://example.com",
+      "locationState": "Kentucky",
+      "locationRegion": "Eastern Kentucky",
+      "sourceWeight": 15,
+      "includeKeywords": ["remote", "engineer", "developer"]
+    },
+    {
+      "name": "Example Lever Source",
+      "type": "lever",
+      "accountName": "replace-me",
+      "companyName": "Example Employer",
+      "companyWebsite": "https://example.com",
+      "locationState": "Tennessee",
+      "locationRegion": "East Tennessee",
+      "sourceWeight": 15
+    }
+  ]
+}

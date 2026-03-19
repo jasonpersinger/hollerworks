@@ -1,0 +1,67 @@
+{
+  "sources": [
+    {
+      "name": "Northrop Grumman Huntsville Software",
+      "type": "pcs",
+      "pageUrl": "https://jobs.northropgrumman.com/careers",
+      "apiBaseUrl": "https://jobs.northropgrumman.com/api/pcsx",
+      "domain": "ngc.com",
+      "query": "software",
+      "location": "Huntsville, AL, United States",
+      "companyName": "Northrop Grumman",
+      "companyWebsite": "https://www.northropgrumman.com",
+      "sourceWeight": 14,
+      "maxAccepted": 6,
+      "dedupeByTitleLocation": true,
+      "requestStarts": [
+        0,
+        10,
+        20,
+        30
+      ],
+      "requestDelayMs": 150,
+      "allowedLocationPatterns": [
+        "Huntsville, AL, US",
+        "United States-Alabama-Huntsville",
+        "B041 Huntsville - 110 Wynn Dr NW"
+      ],
+      "locationRules": [
+        {
+          "match": "Huntsville",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        }
+      ],
+      "includeKeywords": [
+        "software",
+        "engineer",
+        "embedded",
+        "devops",
+        "developer",
+        "python",
+        "c++",
+        "java"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "software",
+        "engineer",
+        "embedded",
+        "devops",
+        "developer"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "project management",
+        "product owner",
+        "manager",
+        "management",
+        "supply chain",
+        "mechanic",
+        "stock clerk",
+        "manufacturing",
+        "electrical",
+        "cost estimating"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "generatedAt": "2026-03-18T17:29:58.227Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.northrop-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/northrop-eval.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/northrop-eval-report.json",
+  "rawCount": 40,
+  "outputCount": 12,
+  "sources": [
+    {
+      "name": "Northrop Grumman Huntsville Software",
+      "type": "pcs",
+      "rawJobs": 40,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Sentinel Associate Software Test Engineer/ Software Test Engineer - 17784*",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Embedded Software Engineer / Principal Engineer Embedded Software *",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Embedded Software Engineer / Principal Engineer Embedded Software *",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Principal Software Engineer/ Sr Principal Software Engineer - 17871",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "GFC Software Team Product Owner - Level 4",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Manager Software Engineering 2 - 17943",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer - Level 3 or 4",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Cyber Software Engineer - Level 5",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Software Engineering Department Manager 3 - 16587",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer - Level 3",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer - Level 3",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Sr. Principal Software Systems Engineer 15378",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 44,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Sentinel Sr Principal Software Systems Engineer – 15182*",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 44,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Sentinel Principal Software Systems Engineer – 15365",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 44,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Software Engineer 3 - Mission Inf",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer 4",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Test Engineer - Level 2 or 3",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Software Engineering Manager 2",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Sr Principal Software Test Engineer - 17790",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Software Engineering Manager 1",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Sr Principal Software Systems Engineer - 15789",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 44,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Software Engineer 3",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer 3/4",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Sr Principal Embedded Software Engineer - 17793*",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Software Engineer Architect 2/3-17792",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Engineer Embedded Software-17568",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Embedded Software Engineer 2/3",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sr Principal Engineer Software – BM/SRM (26-080)",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sentinel Principal Software Engineer - 14280",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Staff Software Engineer - GWS",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sr Principal Engineer Software Quality - 17880*",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer / Developer 3",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sr Principal Engineer Embedded Software- 17567",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Sr. Principal Software Engineer - GWS",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Software Engineer - Level 4",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Principal/Sr. Principal Software Engineer",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "reason": "Location \"Bellevue, NE, US | United States-Nebraska-Bellevue\" did not match allowed patterns.",
+      "score": 0
+    },
+    {
+      "title": "Sentinel Embedded Software Engineer / Principal EmbeddedSoftware Engineer - 17791",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "reason": "Title must be 6-80 characters.",
+      "score": 64
+    },
+    {
+      "title": "Principal/ Sr Principal Software Engineer - 17863",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "reason": "Compensation is required.",
+      "score": 64
+    },
+    {
+      "title": "SDS Division Software Operations and Integration Manager 2 (16689)",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "reason": "Score -16 below threshold 35.",
+      "score": -16
+    },
+    {
+      "title": "Sr Principal Systems Software Analyst – Systems SW Engr (26-104)",
+      "companyName": "Northrop Grumman",
+      "sourceName": "Northrop Grumman Huntsville Software",
+      "reason": "Score -16 below threshold 35.",
+      "score": -16
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "sources": [
+    {
+      "name": "Built Technologies Regional Slice",
+      "type": "greenhouse",
+      "boardToken": "getbuilt",
+      "companyName": "Built Technologies",
+      "companyWebsite": "https://getbuilt.com",
+      "sourceWeight": 12,
+      "maxAccepted": 6,
+      "allowedLocationPatterns": [
+        "Remote - USA",
+        "Nashville, TN \\(Hybrid\\) or Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "Remote - USA",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Regional Tennessee inclusion"
+        },
+        {
+          "match": "Nashville, TN \\(Hybrid\\) or Remote",
+          "locationState": "Tennessee",
+          "locationRegion": "East Tennessee",
+          "locationCity": "Remote",
+          "remoteFriendly": true,
+          "locationNotes": "Regional Tennessee inclusion"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "mobile",
+        "machine learning",
+        "product",
+        "design",
+        "quality assurance",
+        "qa",
+        "support",
+        "technical",
+        "solutions engineer",
+        "technical account",
+        "implementation",
+        "customer success",
+        "technical writer",
+        "documentation",
+        "knowledge base",
+        "help center",
+        "systems administrator",
+        "support engineer",
+        "application analyst",
+        "project manager",
+        "scrum",
+        "seo",
+        "growth",
+        "marketing operations"
+      ],
+      "excludeKeywords": [
+        "account executive",
+        "event marketing",
+        "banking partnerships",
+        "marketplace services",
+        "sales development representative",
+        "business development representative",
+        "fractional",
+        "argentina"
+      ]
+    }
+  ]
+}

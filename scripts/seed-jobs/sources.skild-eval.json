@@ -1,0 +1,97 @@
+{
+  "sources": [
+    {
+      "name": "Skild AI Pittsburgh Slice",
+      "type": "greenhouse",
+      "boardToken": "skildai-careers",
+      "companyName": "Skild AI",
+      "companyWebsite": "https://www.skild.ai",
+      "sourceWeight": 16,
+      "maxAccepted": 12,
+      "allowedLocationPatterns": [
+        "Pittsburgh",
+        "Pittsburgh, PA",
+        "Pittsburgh, San Mateo",
+        "San Mateo, Pittsburgh",
+        "Pittsburgh, San Francisco",
+        "Pittsburgh, San Francisco, Bengaluru",
+        " Pittsburgh, San Francisco, Bengaluru"
+      ],
+      "locationRules": [
+        {
+          "match": "^Pittsburgh$",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, PA",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, San Mateo",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": "San Mateo, Pittsburgh",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, San Francisco",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": "Pittsburgh, San Francisco, Bengaluru",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        },
+        {
+          "match": " Pittsburgh, San Francisco, Bengaluru",
+          "locationState": "Pennsylvania",
+          "locationRegion": "Western PA",
+          "locationCity": "Pittsburgh",
+          "locationNotes": "Multi-site role including Pittsburgh"
+        }
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "generalist",
+        "electrical engineer",
+        "operator",
+        "technician"
+      ],
+      "includeKeywords": [
+        "engineer",
+        "machine learning",
+        "robotics",
+        "software",
+        "embedded",
+        "firmware",
+        "electrical",
+        "security",
+        "it"
+      ],
+      "excludeKeywords": [
+        "videography",
+        "social media",
+        "operations supervisor",
+        "deployment operations",
+        "industrial designer",
+        "product marketing",
+        "recruiter"
+      ]
+    }
+  ]
+}

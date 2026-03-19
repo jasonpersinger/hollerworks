@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-03-18T19:25:13.453Z",
+  "configPath": "/home/jason/HOLLERWORKS/scripts/seed-jobs/sources.boeing-eval.json",
+  "outPath": "/home/jason/HOLLERWORKS/tmp/boeing-eval.json",
+  "reportPath": "/home/jason/HOLLERWORKS/tmp/boeing-eval-report.json",
+  "rawCount": 15,
+  "outputCount": 5,
+  "sources": [
+    {
+      "name": "Boeing Huntsville Software",
+      "type": "talentbrew",
+      "rawJobs": 15,
+      "ok": true
+    }
+  ],
+  "accepted": [
+    {
+      "title": "Software Engineers–Hardware Emulation (Associate, Experienced, Senior)",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "score": 64,
+      "category": "Software & Dev"
+    },
+    {
+      "title": "Entry-Level Systems Engineer",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "score": 59,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Associate Systems Engineer",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "score": 59,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Systems Engineer (Senior or Principal)",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "score": 59,
+      "category": "Other Tech-Adjacent"
+    },
+    {
+      "title": "Systems Engineer (Experienced or Lead)",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "score": 59,
+      "category": "Other Tech-Adjacent"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "Chief Engineer - Patriot Advanced Capability (PAC-3)",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Experienced Product Review Engineer (Liaison Engineering - B/C Shift) - Patriot Advanced Capability-3 (PAC-3)",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Experienced Product Review Engineer (Liaison Engineering - C Shift) - Patriot Advanced Capability-3 (PAC-3)",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Industrial Engineer (Associate, Experienced or Lead) - Patriot Advanced Capability-3",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "Entry Level Manufacturing Planner - Shift A",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    },
+    {
+      "title": "System Design and Integration Specialist (Senior or Lead)",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "First Line Electrical Engineering Manager",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 29
+    },
+    {
+      "title": "Mid-Level Quality Engineer",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Electrical Design and Test Engineer",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department matched excluded source keywords.",
+      "score": 64
+    },
+    {
+      "title": "Business Development Manager",
+      "companyName": "Boeing",
+      "sourceName": "Boeing Huntsville Software",
+      "reason": "Title/department did not match required source keywords.",
+      "score": 49
+    }
+  ]
+}

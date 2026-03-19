@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "name": "Sample Fixture",
+      "type": "json-file",
+      "file": "fixtures/sample-source.json",
+      "companyName": "Mountain Software Co.",
+      "companyWebsite": "https://mountainsoftware.example",
+      "locationState": "West Virginia",
+      "locationRegion": "Northern WV",
+      "sourceWeight": 20,
+      "includeKeywords": ["engineer", "designer", "data", "docs"]
+    }
+  ]
+}
