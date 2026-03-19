@@ -64,6 +64,7 @@
     .rail-link::before { content: '> '; color: #4a7c4e; }
     .rail-link:hover { color: var(--rust); }
     .rail-link:hover::before { color: var(--rust); }
+    .rail-link span { color: var(--brown); font-size: 10px; margin-left: 6px; opacity: 0.8; }
     .rail-link.active { color: var(--rust); }
     .rail-link.active::before { color: var(--rust); }
     .post-btn { display: block; border: 1px solid var(--rust); color: var(--rust); padding: 7px 12px; font-family: inherit; font-size: 12px; cursor: pointer; background: transparent; text-align: center; width: 100%; }
@@ -200,6 +201,9 @@
     .admin-flag { border: 1px solid #2a2a2a; color: var(--rust); font-size: 10px; padding: 2px 6px; text-transform: lowercase; }
     .admin-note { margin-top: 10px; padding-top: 10px; border-top: 1px solid #1e1e1e; color: #777; font-size: 11px; line-height: 1.8; }
     .admin-quick-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .pulse { display: inline-block; width: 6px; height: 6px; background: var(--brown); border-radius: 50%; margin-right: 8px; animation: pulse-blink 2s infinite; }
+    @keyframes pulse-blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+    .system-status { font-size: 10px; color: #555; margin-bottom: 12px; border-bottom: 1px solid #1e1e1e; padding-bottom: 6px; letter-spacing: 0.05em; }
     #mobile-header { display: none; }
     #drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65); z-index: 150; }
     @media (max-width: 600px) {
@@ -243,18 +247,18 @@
       <div class="rail-section">
         <img src="assets/icon-mountain.png" alt="" class="rail-mountain">
         <div class="rail-label">category</div>
-        <button class="rail-link" data-cat="Software &amp; Dev">dev</button>
-        <button class="rail-link" data-cat="IT &amp; Support">IT &amp; support</button>
-        <button class="rail-link" data-cat="Data &amp; AI">data &amp; AI</button>
-        <button class="rail-link" data-cat="Design &amp; UX">design &amp; UX</button>
-        <button class="rail-link" data-cat="Product &amp; Project">product</button>
-        <button class="rail-link" data-cat="DevOps &amp; Cloud">devops</button>
-        <button class="rail-link" data-cat="Cybersecurity">security</button>
-        <button class="rail-link" data-cat="QA &amp; Testing">QA</button>
-        <button class="rail-link" data-cat="Sales &amp; Customer Success">sales</button>
-        <button class="rail-link" data-cat="Marketing &amp; Content">marketing</button>
-        <button class="rail-link" data-cat="Technical Writing &amp; Docs">docs</button>
-        <button class="rail-link" data-cat="Other Tech-Adjacent">other</button>
+        <button class="rail-link" data-cat="Software &amp; Dev">dev <span id="count-Software &amp; Dev">(0)</span></button>
+        <button class="rail-link" data-cat="IT &amp; Support">IT &amp; support <span id="count-IT &amp; Support">(0)</span></button>
+        <button class="rail-link" data-cat="Data &amp; AI">data &amp; AI <span id="count-Data &amp; AI">(0)</span></button>
+        <button class="rail-link" data-cat="Design &amp; UX">design &amp; UX <span id="count-Design &amp; UX">(0)</span></button>
+        <button class="rail-link" data-cat="Product &amp; Project">product <span id="count-Product &amp; Project">(0)</span></button>
+        <button class="rail-link" data-cat="DevOps &amp; Cloud">devops <span id="count-DevOps &amp; Cloud">(0)</span></button>
+        <button class="rail-link" data-cat="Cybersecurity">security <span id="count-Cybersecurity">(0)</span></button>
+        <button class="rail-link" data-cat="QA &amp; Testing">QA <span id="count-QA &amp; Testing">(0)</span></button>
+        <button class="rail-link" data-cat="Sales &amp; Customer Success">sales <span id="count-Sales &amp; Customer Success">(0)</span></button>
+        <button class="rail-link" data-cat="Marketing &amp; Content">marketing <span id="count-Marketing &amp; Content">(0)</span></button>
+        <button class="rail-link" data-cat="Technical Writing &amp; Docs">docs <span id="count-Technical Writing &amp; Docs">(0)</span></button>
+        <button class="rail-link" data-cat="Other Tech-Adjacent">other <span id="count-Other Tech-Adjacent">(0)</span></button>
       </div>
       <div class="rail-socials">
         <a href="https://x.com/holler_works" target="_blank" rel="noopener noreferrer" class="social-link" title="X / Twitter" aria-label="Visit holler.works on X"><i class="fa-brands fa-x-twitter"></i></a>
@@ -725,6 +729,25 @@
     async function renderBoard(el) {
       try {
         el.textContent = '';
+
+        const pulseParts = new Date().toString().split(' ');
+        const pulseTime  = `${pulseParts[0]} ${pulseParts[1]} ${pulseParts[2]} ${pulseParts[4]} ${pulseParts[3]}`;
+        const pulseEl    = document.createElement('div');
+        pulseEl.className = 'system-status';
+        pulseEl.innerHTML = `<span class="pulse"></span>SYSTEM_PULSE: OK // LAST_SYNC: ${pulseTime}`;
+        el.appendChild(pulseEl);
+
+        // Fetch and update category counts
+        try {
+          const { facets } = await searchIndex.search('', { facets: ['category'], hitsPerPage: 0 });
+          const counts = facets.category || {};
+          CATEGORIES.forEach(cat => {
+            const span = document.getElementById(`count-${cat}`);
+            if (span) span.textContent = `(${counts[cat] || 0})`;
+          });
+        } catch (err) {
+          console.warn('Could not fetch category counts', err);
+        }
 
         const boardGrid = document.createElement('section');
         boardGrid.className = 'board-grid';
@@ -1560,7 +1583,7 @@
     ];
 
     const LOCATIONS = {
-      'Alabama':        ['Northeast Alabama', 'Northern Alabama'],
+      'Alabama':        ['Northeast Alabama', 'Northern Alabama', 'Central Alabama'],
       'Georgia':        ['North Georgia', 'Northwest Georgia', 'Northeast Georgia'],
       'Kentucky':       ['Eastern Kentucky', 'Southeast Kentucky'],
       'Maryland':       ['Western Maryland'],
@@ -1576,7 +1599,7 @@
     };
 
     const LOCATION_CITIES = {
-      'Alabama':        ['Anniston', 'Gadsden', 'Huntsville'],
+      'Alabama':        ['Anniston', 'Birmingham', 'Gadsden', 'Huntsville'],
       'Georgia':        ['Rome'],
       'Kentucky':       ['Ashland'],
       'Maryland':       ['Cumberland'],
@@ -2376,8 +2399,35 @@
             <div class="mini-panel-copy">Each row shows board views / post views / apply clicks.</div>
             <div class="mini-panel-rows">${dailyRows || '<div class="mini-panel-copy">no analytics recorded yet.</div>'}</div>`;
 
+          const funnelPanel = document.createElement('div');
+          funnelPanel.className = 'mini-panel';
+          funnelPanel.innerHTML = `
+            <div class="mini-panel-title">traffic funnel, last 7d</div>
+            <div class="mini-panel-rows">
+              <div class="mini-panel-row"><span>post views per board view</span><strong>${dashboard.analytics?.funnel?.postViewsPerBoardView || 0}%</strong></div>
+              <div class="mini-panel-row"><span>apply clicks per post view</span><strong>${dashboard.analytics?.funnel?.appliesPerPostView || 0}%</strong></div>
+              <div class="mini-panel-row"><span>apply clicks per board view</span><strong>${dashboard.analytics?.funnel?.appliesPerBoardView || 0}%</strong></div>
+              <div class="mini-panel-row"><span>alert signups per board view</span><strong>${dashboard.analytics?.funnel?.alertsPerBoardView || 0}%</strong></div>
+              <div class="mini-panel-row"><span>submissions per board view</span><strong>${dashboard.analytics?.funnel?.submissionsPerBoardView || 0}%</strong></div>
+            </div>`;
+
+          const topPostsPanel = document.createElement('div');
+          topPostsPanel.className = 'mini-panel';
+          const topPostRows = (dashboard.analytics?.topPosts || []).slice(0, 5).map(post => `
+            <div class="mini-panel-row" style="align-items:flex-start;">
+              <span style="max-width:70%;">${escHtml(post.title || 'untitled')}${post.companyName ? `<br><small style="color:#666;">${escHtml(post.companyName)}</small>` : ''}</span>
+              <strong style="text-align:right;">${post.postViews || 0} / ${post.applyClicks || 0}<br><small style="color:#666;">${post.applyRate || 0}%</small></strong>
+            </div>
+          `).join('');
+          topPostsPanel.innerHTML = `
+            <div class="mini-panel-title">top posts, all time</div>
+            <div class="mini-panel-copy">Each row shows post views / apply clicks / apply rate.</div>
+            <div class="mini-panel-rows">${topPostRows || '<div class="mini-panel-copy">no post analytics recorded yet.</div>'}</div>`;
+
           dashboardGrid.appendChild(metricsPanel);
           dashboardGrid.appendChild(dailyPanel);
+          dashboardGrid.appendChild(funnelPanel);
+          dashboardGrid.appendChild(topPostsPanel);
           el.appendChild(dashboardGrid);
         }
 
