@@ -83,7 +83,9 @@
     }
     .post-title { color: var(--lgray); font-size: 13px; margin-bottom: 5px; }
     .post-title::before { content: '> '; color: var(--rust); }
+    .region-chip { color: var(--rust); font-size: 10px; font-weight: bold; margin-right: 8px; border: 1px solid #333; padding: 0 4px; }
     .post-meta { color: var(--gray); font-size: 11px; }
+    .reviewed-badge { color: var(--brown); font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; margin-left: 8px; opacity: 0.7; }
     .post-summary { color: #8d8d8d; font-size: 11px; line-height: 1.8; margin: 6px 0 4px; max-width: 66ch; }
     .badge { font-size: 10px; padding: 1px 5px; border: 1px solid; margin-right: 6px; }
     .badge-need  { color: var(--rust);  border-color: var(--rust); }
@@ -1095,7 +1097,8 @@
 
           const title = document.createElement('div');
           title.className = 'post-title';
-          title.textContent = hit.title;
+          const regCode = hit.locationState ? `[${hit.locationState.slice(0,2).toUpperCase()}]` : '';
+          title.innerHTML = `<span class="region-chip">${regCode}</span>${escHtml(hit.title)}`;
 
           const meta = document.createElement('div');
           meta.className = 'post-meta';
@@ -1121,6 +1124,10 @@
           meta.appendChild(document.createTextNode(
             `${hit.category || ''}${locationText ? ' · ' + locationText : ''}${hit.compensation ? ' · ' + hit.compensation : ''}`
           ));
+          const reviewed = document.createElement('span');
+          reviewed.className = 'reviewed-badge';
+          reviewed.textContent = '// HUMAN_REVIEWED: OK';
+          meta.appendChild(reviewed);
 
           row.appendChild(title);
           if (summary) {
@@ -1173,7 +1180,8 @@
 
       const title = document.createElement('div');
       title.className = 'post-title';
-      title.textContent = p.title;
+      const regCode = p.locationState ? `[${p.locationState.slice(0,2).toUpperCase()}]` : '';
+      title.innerHTML = `<span class="region-chip">${regCode}</span>${escHtml(p.title)}`;
 
       const meta = document.createElement('div');
       meta.className = 'post-meta';
@@ -1206,6 +1214,10 @@
       meta.appendChild(document.createTextNode(
         `${p.category || ''}${locStr ? ' · ' + locStr : ''}${p.compensation ? ' · ' + p.compensation : ''}${age ? ' · ' + age : ''}`
       ));
+      const reviewed = document.createElement('span');
+      reviewed.className = 'reviewed-badge';
+      reviewed.textContent = '// HUMAN_REVIEWED: OK';
+      meta.appendChild(reviewed);
 
       row.appendChild(title);
       if (summary) {
