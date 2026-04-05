@@ -97,7 +97,6 @@ function buildMarkdown(snapshot) {
     `- apply clicks per post view: ${Number(funnel.appliesPerPostView || 0)}%`,
     `- apply clicks per board view: ${Number(funnel.appliesPerBoardView || 0)}%`,
     `- alert signups per board view: ${Number(funnel.alertsPerBoardView || 0)}%`,
-    `- submissions per board view: ${Number(funnel.submissionsPerBoardView || 0)}%`,
     '',
     '## Daily Activity',
     '',

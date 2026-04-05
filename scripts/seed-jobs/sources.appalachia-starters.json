@@ -1156,6 +1156,528 @@
         "custodial",
         "temporary assignments"
       ]
+    },
+    {
+      "name": "Radiance Huntsville Software",
+      "type": "workday",
+      "pageUrl": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External",
+      "apiBaseUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External",
+      "companyName": "Radiance Technologies",
+      "companyWebsite": "https://www.radiancetech.com",
+      "sourceWeight": 14,
+      "maxAccepted": 10,
+      "requestOffsets": [0, 20, 40, 60],
+      "requestDelayMs": 150,
+      "allowedLocationPatterns": [
+        "Huntsville, AL"
+      ],
+      "locationRules": [
+        {
+          "match": "Huntsville",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        }
+      ],
+      "includeKeywords": [
+        "software",
+        "site reliability",
+        "sre",
+        "quality assurance",
+        "qa",
+        "cloud",
+        "architect",
+        "reverse engineer",
+        "test engineer",
+        "vulnerability"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "software",
+        "site reliability",
+        "sre",
+        "quality assurance",
+        "qa",
+        "cloud",
+        "architect",
+        "reverse engineer",
+        "test engineer",
+        "vulnerability"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "manager",
+        "management",
+        "director",
+        "customer success",
+        "sales",
+        "mechanical",
+        "optical",
+        "radar",
+        "rf specialist",
+        "program integrator",
+        "analyst",
+        "scientist",
+        "intern"
+      ]
+    },
+    {
+      "name": "Appalachian State Tech Slice",
+      "type": "peopleadmin",
+      "searchUrl": "https://appstate.peopleadmin.com/postings/search",
+      "companyName": "Appalachian State University",
+      "companyWebsite": "https://www.appstate.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 8,
+      "maxPages": 1,
+      "searchParams": {
+        "utf8": "✓",
+        "query": "",
+        "commit": "Search"
+      },
+      "allowedLocationPatterns": [
+        "Boone, North Carolina",
+        "Boone"
+      ],
+      "locationRules": [
+        {
+          "match": "Boone, North Carolina",
+          "locationState": "North Carolina",
+          "locationRegion": "High Country",
+          "locationCity": "Boone"
+        },
+        {
+          "match": "Boone",
+          "locationState": "North Carolina",
+          "locationRegion": "High Country",
+          "locationCity": "Boone"
+        }
+      ],
+      "includeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it",
+        "business systems",
+        "applications"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "it",
+        "business systems",
+        "applications",
+        "information technology"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "lecturer",
+        "practitioner",
+        "interior design",
+        "design history",
+        "building sciences",
+        "economics",
+        "advisor",
+        "residence life",
+        "housekeeper",
+        "teaching assistant professor",
+        "counselor",
+        "coordinator",
+        "admissions",
+        "facilities",
+        "custodial",
+        "grounds"
+      ],
+      "excludeKeywords": [
+        "lecturer",
+        "practitioner",
+        "interior design",
+        "design history",
+        "building sciences",
+        "economics",
+        "housekeeper",
+        "advisor",
+        "residence life",
+        "teaching assistant professor",
+        "facilities",
+        "custodial",
+        "grounds"
+      ]
+    },
+    {
+      "name": "Marshall University Tech Slice",
+      "type": "peopleadmin",
+      "searchUrl": "https://marshall.peopleadmin.com/postings/search",
+      "companyName": "Marshall University",
+      "companyWebsite": "https://www.marshall.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 12,
+      "maxPages": 1,
+      "searchParams": {
+        "utf8": "✓",
+        "query": "",
+        "query_v0_posted_at_date": "",
+        "query_position_type_id[]": [
+          "1",
+          "2"
+        ],
+        "commit": "Search"
+      },
+      "allowedLocationPatterns": [
+        "MU - Marshall University",
+        "MUSOM - Marshall University School of Medicine",
+        "Huntington",
+        "South Charleston",
+        "Beckley",
+        "Point Pleasant",
+        "Teays Valley",
+        "Remote"
+      ],
+      "locationRules": [
+        {
+          "match": "MU - Marshall University",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "MUSOM - Marshall University School of Medicine",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "Huntington",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Huntington"
+        },
+        {
+          "match": "Beckley",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Beckley"
+        },
+        {
+          "match": "South Charleston",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "South Charleston"
+        },
+        {
+          "match": "Teays Valley",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Teays Valley"
+        },
+        {
+          "match": "Point Pleasant",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Point Pleasant"
+        },
+        {
+          "match": "Remote",
+          "locationState": "West Virginia",
+          "locationRegion": "Southern WV",
+          "locationCity": "Remote",
+          "remoteFriendly": true
+        }
+      ],
+      "includeKeywords": [
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "security",
+        "data",
+        "service desk",
+        "client services"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "information technology",
+        "technology",
+        "systems",
+        "software",
+        "developer",
+        "engineer",
+        "client services",
+        "service desk",
+        "web",
+        "application",
+        "security",
+        "network"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "records coordinator",
+        "administrative assistant",
+        "special events",
+        "student support",
+        "campus service worker",
+        "residential",
+        "philanthropy",
+        "alumni",
+        "landscape",
+        "office administrator",
+        "carpenter",
+        "hvac",
+        "painter",
+        "athletic",
+        "olympic",
+        "campus police",
+        "controls technician"
+      ],
+      "excludeKeywords": [
+        "landscape",
+        "campus service worker",
+        "residential",
+        "special events",
+        "office administrator",
+        "student support",
+        "custodial",
+        "grounds"
+      ]
+    },
+    {
+      "name": "Radford Tech Slice",
+      "type": "pageup",
+      "searchUrl": "https://jobs.radford.edu/jobs/search",
+      "companyName": "Radford University",
+      "companyWebsite": "https://www.radford.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "searchParams": {},
+      "allowedLocationPatterns": [
+        "Radford City - Main Campus",
+        "Radford, Virginia",
+        "Roanoke, Virginia"
+      ],
+      "locationRules": [
+        {
+          "match": "Radford City - Main Campus",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Radford"
+        },
+        {
+          "match": "Radford, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southwest Virginia",
+          "locationCity": "Radford"
+        },
+        {
+          "match": "Roanoke, Virginia",
+          "locationState": "Virginia",
+          "locationRegion": "Southside Virginia",
+          "locationCity": "Roanoke",
+          "locationNotes": "Regional Appalachian inclusion"
+        }
+      ],
+      "includeKeywords": [
+        "system administrator",
+        "software",
+        "technology",
+        "systems",
+        "web",
+        "application",
+        "security",
+        "data",
+        "sql",
+        "cognos",
+        "administrator"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "system administrator",
+        "software",
+        "technology",
+        "systems",
+        "web",
+        "application",
+        "security",
+        "data",
+        "sql",
+        "cognos",
+        "administrator"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "assistant professor",
+        "adjunct",
+        "nursing",
+        "music",
+        "dietetic",
+        "anthropological",
+        "housing",
+        "resident director",
+        "grant accountant",
+        "executive asst",
+        "finance",
+        "faculty"
+      ],
+      "excludeKeywords": [
+        "assistant professor",
+        "adjunct",
+        "nursing",
+        "music",
+        "dietetic",
+        "anthropological",
+        "housing",
+        "resident director",
+        "grant accountant",
+        "executive asst",
+        "finance",
+        "faculty"
+      ]
+    },
+    {
+      "name": "Western Carolina Tech Slice",
+      "type": "peopleadmin",
+      "searchUrl": "https://jobs.wcu.edu/postings/search",
+      "companyName": "Western Carolina University",
+      "companyWebsite": "https://www.wcu.edu",
+      "sourceWeight": 16,
+      "maxAccepted": 6,
+      "maxPages": 1,
+      "searchParams": {
+        "utf8": "✓",
+        "query": "",
+        "commit": "Search"
+      },
+      "allowedLocationPatterns": [
+        "Cullowhee, NC",
+        "Cullowhee"
+      ],
+      "locationRules": [
+        {
+          "match": "Cullowhee, NC",
+          "locationState": "North Carolina",
+          "locationRegion": "Western NC",
+          "locationCity": "Cullowhee"
+        },
+        {
+          "match": "Cullowhee",
+          "locationState": "North Carolina",
+          "locationRegion": "Western NC",
+          "locationCity": "Cullowhee"
+        }
+      ],
+      "includeKeywords": [
+        "engineer",
+        "systems",
+        "technology",
+        "software",
+        "web",
+        "application",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "engineer",
+        "engineering",
+        "systems",
+        "technology",
+        "software",
+        "web",
+        "application",
+        "security",
+        "data",
+        "it"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "facilities",
+        "warehouse",
+        "housekeeper",
+        "assistant professor",
+        "adjunct",
+        "marketing",
+        "athletic trainer",
+        "counselor",
+        "administrative support",
+        "development",
+        "sponsorships",
+        "psychologist",
+        "continuing education"
+      ],
+      "excludeKeywords": [
+        "facilities",
+        "warehouse",
+        "housekeeper",
+        "assistant professor",
+        "adjunct",
+        "marketing",
+        "athletic trainer",
+        "counselor",
+        "administrative support",
+        "development",
+        "sponsorships",
+        "psychologist"
+      ]
+    },
+    {
+      "name": "Radiance Huntsville Tech Adjacent",
+      "type": "workday",
+      "pageUrl": "https://radiancetech.wd12.myworkdayjobs.com/Radiance_External",
+      "apiBaseUrl": "https://radiancetech.wd12.myworkdayjobs.com/wday/cxs/radiancetech/Radiance_External",
+      "companyName": "Radiance Technologies",
+      "companyWebsite": "https://www.radiancetech.com",
+      "sourceWeight": 14,
+      "maxAccepted": 10,
+      "requestOffsets": [0, 20, 40, 60],
+      "requestDelayMs": 150,
+      "allowedLocationPatterns": [
+        "Huntsville, AL"
+      ],
+      "locationRules": [
+        {
+          "match": "Huntsville",
+          "locationState": "Alabama",
+          "locationRegion": "Northern Alabama",
+          "locationCity": "Huntsville"
+        }
+      ],
+      "includeKeywords": [
+        "solutions engineer",
+        "customer success",
+        "customer success engineer",
+        "technical account",
+        "implementation",
+        "scrum",
+        "project manager",
+        "support engineer",
+        "technical writer",
+        "documentation"
+      ],
+      "titleOrDepartmentIncludeKeywords": [
+        "solutions engineer",
+        "customer success",
+        "customer success engineer",
+        "technical account",
+        "implementation",
+        "scrum",
+        "project manager",
+        "support engineer",
+        "technical writer",
+        "documentation"
+      ],
+      "titleOrDepartmentExcludeKeywords": [
+        "manager",
+        "management",
+        "director",
+        "mechanical",
+        "optical",
+        "radar",
+        "rf specialist",
+        "program integrator",
+        "scientist",
+        "intern"
+      ]
     }
   ]
 }

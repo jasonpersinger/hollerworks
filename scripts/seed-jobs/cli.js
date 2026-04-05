@@ -1046,6 +1046,15 @@ async function fetchWorkdayJson(pageUrl, apiUrl, label, options = {}) {
     throw new Error(`${label} page bootstrap failed with ${pageResponse.status}`);
   }
 
+  const setCookies = pageResponse.headers.getSetCookie ? pageResponse.headers.getSetCookie() : [];
+  const cookieStr = setCookies.map(c => c.split(';')[0]).join('; ');
+  const csrfCookie = setCookies.find(c => c.startsWith('CALYPSO_CSRF_TOKEN='));
+  const csrfToken = csrfCookie ? csrfCookie.split(';')[0].split('=').slice(1).join('=') : '';
+
+  if (options.bootstrapDelayMs) {
+    await new Promise(resolve => setTimeout(resolve, options.bootstrapDelayMs));
+  }
+
   const response = await fetch(apiUrl, {
     method: options.method || 'GET',
     headers: {
@@ -1053,6 +1062,8 @@ async function fetchWorkdayJson(pageUrl, apiUrl, label, options = {}) {
       accept: 'application/json, text/plain, */*',
       origin,
       referer: pageUrl,
+      ...(cookieStr ? { cookie: cookieStr } : {}),
+      ...(csrfToken ? { 'X-Calypso-Csrf-Token': csrfToken } : {}),
       ...(options.body ? { 'content-type': 'application/json' } : {}),
       ...(options.headers || {}),
     },
@@ -1582,6 +1593,7 @@ async function loadSourceJobs(source, configPath) {
         `${source.name} offset ${offset}`,
         {
           method: 'POST',
+          bootstrapDelayMs: source.requestDelayMs ? Number(source.requestDelayMs) : undefined,
           body: JSON.stringify({
             limit: requestLimit,
             offset,
@@ -1607,7 +1619,8 @@ async function loadSourceJobs(source, configPath) {
         const detail = await fetchWorkdayJson(
           source.pageUrl,
           `${source.apiBaseUrl}${pathValue}`,
-          `${source.name} detail ${job.title || pathValue}`
+          `${source.name} detail ${job.title || pathValue}`,
+          { bootstrapDelayMs: requestDelayMs > 0 ? requestDelayMs : undefined }
         );
         detailJobs.push({
           title: job.title || detail?.jobPostingInfo?.title || '',

@@ -751,7 +751,6 @@ async function loadAnalyticsSummary(db, days = 7) {
     appliesPerPostView: computeRate(totals.applyClicks, totals.postViews),
     appliesPerBoardView: computeRate(totals.applyClicks, totals.boardViews),
     alertsPerBoardView: computeRate(totals.alertSignups, totals.boardViews),
-    submissionsPerBoardView: computeRate(totals.submitSuccesses, totals.boardViews),
   };
 
   return { daily, totals, funnel, topPosts };

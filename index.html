@@ -157,6 +157,7 @@
     .about-body { color: var(--gray); font-size: 13px; line-height: 1.8; margin-bottom: 14px; max-width: 560px; }
     .trust-panel { border: 1px solid #222; background: #111; padding: 14px 16px; margin-bottom: 18px; }
     .trust-title { color: var(--lgray); font-size: 13px; margin-bottom: 6px; }
+    .trust-job-count { color: var(--brown); font-size: 18px; font-weight: bold; margin-right: 2px; }
     .trust-copy { color: var(--gray); font-size: 12px; line-height: 1.8; margin-bottom: 10px; }
     .trust-items { display: flex; flex-wrap: wrap; gap: 8px; }
     .trust-item { border: 1px solid #2a2a2a; color: var(--brown); font-size: 10px; letter-spacing: 0.06em; padding: 3px 7px; text-transform: uppercase; }
@@ -765,8 +766,10 @@
         el.appendChild(pulseEl);
 
         // Fetch and update category counts
+        let totalPosts = 0;
         try {
           const { facets, nbHits } = await searchIndex.search('', { facets: ['category'], hitsPerPage: 0 });
+          totalPosts = nbHits;
           const counts = facets.category || {};
           CATEGORIES.forEach(cat => {
             const span = document.getElementById(`count-${cat}`);
@@ -784,7 +787,7 @@
         const trustPanel = document.createElement('section');
         trustPanel.className = 'trust-panel';
         trustPanel.innerHTML = `
-          <div class="trust-title">moderated tech jobs for appalachia</div>
+          <div class="trust-title"><span class="trust-job-count"></span>moderated tech jobs for appalachia</div>
           <div class="trust-copy">At holler.works, the focus is tech and tech-adjacent work connected to Appalachia. Every listing is reviewed by a real human before it goes live, compensation is required, and obvious junk gets filtered out before it reaches the board.</div>
           <div class="trust-items">
             <span class="trust-item">moderated listings</span>
@@ -792,6 +795,10 @@
             <span class="trust-item">tech-focused</span>
             <span class="trust-item">free to post</span>
           </div>`;
+        if (totalPosts > 0) {
+          const countSpan = trustPanel.querySelector('.trust-job-count');
+          if (countSpan) countSpan.textContent = `${totalPosts} `;
+        }
         boardGrid.appendChild(trustPanel);
 
         const alertPanel = document.createElement('section');
@@ -2520,7 +2527,6 @@
               <div class="mini-panel-row"><span>apply clicks per post view</span><strong>${dashboard.analytics?.funnel?.appliesPerPostView || 0}%</strong></div>
               <div class="mini-panel-row"><span>apply clicks per board view</span><strong>${dashboard.analytics?.funnel?.appliesPerBoardView || 0}%</strong></div>
               <div class="mini-panel-row"><span>alert signups per board view</span><strong>${dashboard.analytics?.funnel?.alertsPerBoardView || 0}%</strong></div>
-              <div class="mini-panel-row"><span>submissions per board view</span><strong>${dashboard.analytics?.funnel?.submissionsPerBoardView || 0}%</strong></div>
             </div>`;
 
           const topPostsPanel = document.createElement('div');
